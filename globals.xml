@@ -23,6 +23,10 @@
             <trans lang="en_EN">Active Timer</trans>
             <trans lang="de_DE">Aktiver Timer</trans>
         </token>
+        <token name="tr(conflict)">
+            <trans lang="en_EN">Conflict</trans>
+            <trans lang="de_DE">Konflikt</trans>
+        </token>        
         <token name="tr(conflicts)">
             <trans lang="en_EN">Conflicts</trans>
             <trans lang="de_DE">Konflikte</trans>

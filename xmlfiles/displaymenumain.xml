@@ -132,7 +132,8 @@
         </area>
         <area condition="{numtimerconflicts}" x="16%" y="74%" width="21%" height="5%" layer="3">
             <drawtext name="timer" align="left" y="15%" font="{light}" fontsize="80%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
-            <drawtext align="right" y="15%" font="{light}" fontsize="80%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
+            <drawtext condition="eq({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="80%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
+            <drawtext condition="gt({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="80%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
         </area>       
         <area x="1%" y="80%" width="52%" height="18%" layer="3">
             <loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areaheight}" overflow="cut">
