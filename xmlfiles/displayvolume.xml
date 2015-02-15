@@ -23,7 +23,7 @@
             <drawtext condition="{mute}" x="7%" y="20%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{tr(mute)}" />
         </area>
         <area x="25%" y="40%" width="50%" height="30%" layer="3">
-			<drawimage x="0" y="0" width="{volume}/{maxvolume}*{areawidth}" height="{areaheight}*0.7" imagetype="skinpart" path="replayProgress"/>
+			<drawimage condition="not{mute}" x="0" y="0" width="{volume}/{maxvolume}*{areawidth}" height="{areaheight}*0.7" imagetype="skinpart" path="replayProgress"/>
         </area>        
     </volume>
 
