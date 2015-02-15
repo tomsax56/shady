@@ -136,7 +136,7 @@
         </area>       
         <area x="1%" y="80%" width="52%" height="18%" layer="3">
             <loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areaheight}" overflow="cut">
-                <drawimage  cache="true" name="logo" y="{areaheight}*0.12" width="15%" height="15%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
+                <drawimage  cache="true" name="logo" y="{areaheight}*0.12" width="8%" height="15%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
                 <drawtextbox x="5" y="{height(logo)} + {areaheight}*0.25" width="{columnwidth}-20" align="center" maxlines="2" font="{light}" fontsize="18%" color="{clrLightGray}" text="{timers[title]}" />
                 <drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
                 <drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
