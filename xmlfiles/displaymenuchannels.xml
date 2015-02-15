@@ -105,9 +105,9 @@
         <currentelement  delay="0" fadetime="0">
             <area x="0" y="0" width="41%" height="60%" layer="3">
                 <drawtext condition="isset{presenteventtitle}" name="now" x="0" y="0" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{presenteventtitle}" />
-                <drawtext condition="isset{presenteventtitle}" name="start" x="{areawidth}/4 - {width(start)}" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{presenteventstart}" />
-                <drawtext condition="isset{presenteventtitle}" name="stop" x="{areawidth}*3/4" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{presenteventstop}" />
-                <drawimage condition="isset{presenteventtitle}" x="{posx(start)}+{width(start)}" y="11%" width="50%" height="5%" imagetype="skinpart" path="progress" />
+                <drawtext condition="isset{presenteventtitle}" name="start" x="{areawidth}/4 - {width(start)}-10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{presenteventstart}" />
+                <drawtext condition="isset{presenteventtitle}" name="stop" x="{areawidth}*3/4+10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{presenteventstop}" />
+                <drawimage condition="isset{presenteventtitle}" x="{posx(start)}+{width(start)}+10" y="11%" width="50%" height="5%" imagetype="skinpart" path="progress" />
                 <drawimage condition="isset{presenteventtitle}" x="{areawidth}/4+10" y="{height(now)} + {height(start)}/2-6" width="{areawidth}/2 * {presenteventelapsed} / {presenteventduration} - 20 * {presenteventelapsed} / {presenteventduration}" height="8" imagetype="skinpart" path="timeBar" />
                 <drawtextbox condition="isset{presenteventtitle}" name="nowshort" x="2%" y="{posy(start)} + {height(start)} + 10" align="center" width="94%" font="{light}" fontsize="8%" color="{clrLightGray}" text="{presenteventshorttext}" />   
                 <drawtextbox condition="isset{presenteventtitle}" name="nowdesc" x="2%" y="{posy(nowshort)} + {height(nowshort)}" width="94%" height="65%" font="{light}" fontsize="7%" color="{clrLightGray}" text="{presenteventdescription}" />

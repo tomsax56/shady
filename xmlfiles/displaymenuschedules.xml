@@ -67,9 +67,9 @@
         <currentelement delay="0" fadetime="0">
             <area condition="{whatson}" x="0" y="0" width="41%" height="60%" layer="3">
 				<drawtext name="now" x="0" y="0" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{title}" />
-                <drawtext condition="{running}" name="start" x="{areawidth}/4 - {width(start)}" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start}" />
-                <drawtext condition="{running}" name="stop" x="{areawidth}*3/4" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{stop}" />
-                <drawimage  condition="{running}" imagetype="skinpart" path="progress" x="{posx(start)}+{width(start)}" y="11%" width="50%" height="5%" />   
+				<drawtext condition="{running}" name="start" x="{areawidth}/4 - {width(start)}-10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start}" />
+                <drawtext condition="{running}" name="stop" x="{areawidth}*3/4+10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{stop}" />
+                <drawimage  condition="{running}" imagetype="skinpart" path="progress" x="{posx(start)}+{width(start)}+10" y="11%" width="50%" height="5%" />   
                 <drawimage  condition="{running}" x="{areawidth}/4+10" y="{height(now)} + {height(start)} / 2 - 6" width="{areawidth}/2 * {elapsed} / {duration} - 20 * {elapsed} / {duration}" height="8" imagetype="skinpart" path="timeBar" />
 				<drawtext condition="not{running}" x="25" y="{areaheight}/18 + 20" align="center" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start} - {stop} ({duration} min)" />
                 <drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="{posy(start)}+{height(start)}+20" width="{areawidth}/5" height="{areawidth}/5 * {posterheight} / {posterwidth}"/>
@@ -78,9 +78,9 @@
             </area>
             <area condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" y="0" width="41%" height="60%" layer="3">         
 				<drawtext name="now" x="0" y="0" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{title}" />
-                <drawtext condition="{running}" name="start" x="{areawidth}/4 - {width(start)}" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start}" />
-                <drawtext condition="{running}" name="stop" x="{areawidth}*3/4" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{stop}" />
-                <drawimage  condition="{running}" imagetype="skinpart" path="progress" x="{posx(start)}+{width(start)}" y="11%" width="50%" height="5%" />
+                <drawtext condition="{running}" name="start" x="{areawidth}/4 - {width(start)}-10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start}" />
+                <drawtext condition="{running}" name="stop" x="{areawidth}*3/4+10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{stop}" />
+                <drawimage  condition="{running}" imagetype="skinpart" path="progress" x="{posx(start)}+{width(start)}+10" y="11%" width="50%" height="5%" />
                 <drawimage  condition="{running}" x="{areawidth}/4+10" y="{height(now)} + {height(start)} / 2 - 6" width="{areawidth}/2 * {elapsed} / {duration} - 20 * {elapsed} / {duration}" height="8" imagetype="skinpart" path="timeBar" />              
 				<drawtext condition="not{running}" x="25" y="{areaheight}/18 + 20" align="center" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start} - {stop} ({duration} min)" />
                 <drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="{posy(start)}+{height(start)}+20" width="{areawidth}/5" height="{areawidth}/5 * {posterheight} / {posterwidth}"/>
