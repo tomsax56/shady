@@ -2,3 +2,18 @@ shady-skin Revision History
 -------------------------------------------
 
 2015-02-05: initial release
+
+2015-02-15:
+- Fixed numerus of timerconflicts in displaymainmenu
+- Added nowBar.svg
+- Reduced intensity of progressbars in whatsonnow
+- Fixed progressbar/mute in displayvolume
+- Reduced glow of VDR-logo
+- Enlarged messagebars
+- Enlarged gap between start-stop-time and progressbar
+- Reworked iconbar in setupmenu
+- Reduced width of timerlogos in displaymainmenu.xml
+- Added posters for folders in displaymenurecordings.xml
+- Fixed format of menuitemnumbers in displaymenu-main and -setup
+- Fixed condition for running timer in displaymenutimers.xml
+
