@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE displaychannel SYSTEM "../../../dtd/displaychannel.dtd">
+
+<displaychannel x="0" y="0" width="100%" height="100%" fadetime="{fadeTime}">
+    <background>
+        <area x="0" y="75%" width="100%" height="25%" layer="1">
+            <drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannel"/>
+        </area>		
+        <area x="0" y="75%" width="100%" height="25%" layer="2">
+            <drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsChannel"/>
+        </area>
+    </background>
+
+    <!-- Available Variables channelinfo:
+    {channelnumber}                 Number of Channel, with "-" in case of channel switching
+    {channelname}                   Name of current Channel
+    {channellogoexists}             true if a channel logo exists 
+    {channelid}                     ChannelID as path to display channel logo
+    {switching}                     true if a number is pressed on the remote to switch to a dedicated channel
+    -->
+    <channelinfo>
+        <area x="1%" y="95%" width="15%" height="4%" layer="3">
+            <drawtext  x="0" y="12" valign="center" align="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{channelnumber} - {channelname}" />
+        </area>
+        <area x="1%" y="78%" width="15%" height="15%" layer="3">
+            <drawimage cache="true" condition="{channellogoexists}" imagetype="channellogo" path="{channelid}" width="80%" height="80%" align="center" valign="center" />        </area>
+    </channelinfo>
+    <!-- Available Variables epginfo:
+    {currenttitle}                     Title of the current Schedule
+    {currentsubtitle}                  Subtitle of the current Schedule
+    {currentstart}                     Start of current Schedule in hh:mm
+    {currentstop}                      End of current Schedule in hh:mm 
+    {currentduration}                  Duration of current Schedule in min
+    {currentdurationhours}             Duration, full hours
+    {currentdurationminutes}           Duration, rest of minutes
+    {currentelapsed}                   Elapsed time of current Schedule in min
+    {currentremaining}                 Remaining time of current Schedule in min
+    {currentrecording}                 true if current Schedule is recorded
+    {hasVPS}                           true if current Schedule has VPS
+    {nexttitle}                        Title of next Schedule
+    {nextsubtitle}                     Subtitle of next Schedule
+    {nextstart}                        Start of next Schedule in hh:mm
+    {nextstop}                         Stop of next Schedule in hh:mm
+    {nextduration}                     Duration of next Schedule in min
+    {nextdurationhours}                Duration, full hours
+    {nextdurationminutes}              Duration, rest of minutes
+    {nextrecording}                    true if next Schedule will be recorded
+    -->
+    <epginfo>
+        <area x="19%" y="77%" width="79%" height="7%" layer="3">
+            <drawtext x="0" width="83%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currentstart} - {currentstop}   {currenttitle}      {currentsubtitle}"/>
+            <drawtext align="right" y="0" font="{light}" fontsize="50%" color="{clrLightGray}" text="{currentduration} min" />
+            <drawtext align="right" y="45%" font="{light}" fontsize="50%" color="{clrLightGray}" text="+ {currentremaining} min" />
+        </area>
+        <area x="19%" y="87%" width="79%" height="7%" layer="3">
+            <drawtext x="0" width="83%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nextstart} - {nextstop}   {nexttitle} - {nextsubtitle}"/>
+            <drawtext align="right" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{nextduration} min" />
+        </area>
+    </epginfo>
+
+    <!-- Available Variables progressbar:
+    {start}                            Start of current Schedule in hh:mm
+    {stop}                             End of current Schedule in hh:mm 
+    {duration}                         Total Duration of current Schedule in seconds
+    {elapsed}                          Elapsed time of current Schedule in seconds
+    {remaining}                        Remaining time of current Schedule in seconds
+    -->
+    <progressbar>
+        <area x="18%" y="85%" width="68%" height="1%" layer="3">
+            <!--<drawrectangle x="0" y="2" width="{elapsed}/{duration}*{areawidth}" height="{areaheight}*0.2" color="{clrHigh}" />-->
+            <drawimage   x="0" y="0" width="{elapsed}/{duration}*{areawidth}" height="{areaheight}*0.6" imagetype="skinpart" path="timeBar" />
+        </area>
+    </progressbar>
+    
+    <!-- Available Variables signalquality:
+    {signalstrength}                    STR value of currently displayed channel
+    {signalquality}                     SNR value of currently displayed channel
+    -->
+    <signalquality>
+        <area x="17%" y="95%" width="12%" height="4%" layer="3">
+            <drawtext x="0" y="0" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="STR: {signalstrength}%   SNR: {signalquality}%" />
+        </area>
+    </signalquality>
+    
+    <signalqualityback>
+    </signalqualityback>
+    
+    <!-- Available Variables screenresolution:
+    {screenwidth}                      width of currently displayed channel in px
+    {screenheight}                     height of currently displayed channel in px
+    {resolution}                       resolution: hd1080i, hd720p, sd576i
+    {aspect}                           screen aspect, each 4:3, 16:9 or 21:9
+    {isHD}                             true for hd1080i and hd720p
+    {isWideScreen}                     true if aspect is 16:9 or 21:9
+    -->
+    <screenresolution>
+        <area x="29%" y="95%" width="9%" height="4%" layer="3">
+            <drawtext  x="0" y="0" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="{screenwidth}x{screenheight}" />
+        </area>
+    </screenresolution>   
+
+    <!-- Available Variables statusinfo:
+    {isRadio}                          true if channel is a radio channel
+    {hasVT}                            true if channel has video text
+    {isStereo}                         true if a stereo audio trac is available
+    {isDolby}                          true if a dolby audio track is available
+    {isEncrypted}                      true if channel is encrypted
+    {isRecording}                      true if currently a recording is running on this channel
+    {newmails}                         true if mailbox plugin is installed and new mails are available
+    -->    
+    <statusinfo>
+        <area x="38%" y="95%" width="8%" height="4%" layer="3">
+            <drawtext condition="{isEncrypted}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="ENCR"/>
+            <drawtext condition="not{isEncrypted}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="FTA"/>
+        </area>
+        <area x="46%" y="95%" width="8%" height="4%" layer="3">     
+            <drawtext condition="{isDolby}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="DOLBY" />
+            <drawtext condition="not{isDolby}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="DOLBY"/>
+        </area>
+        <area x="54%" y="95%" width="8%" height="4%" layer="3">     
+            <drawtext condition="{isStereo}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="STEREO" />
+            <drawtext condition="not{isStereo}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="STEREO"/>
+        </area>             
+        <area x="62%" y="95%" width="8%" height="4%" layer="3">     
+            <drawtext condition="{isRadio}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="RADIO" />
+            <drawtext condition="not{isRadio}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="RADIO"/>
+        </area>             
+        <area x="70%" y="95%" width="8%" height="4%" layer="3">     
+            <drawtext condition="{hasVT}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="VTX" />
+            <drawtext condition="not{hasVT}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="VTX"/>
+        </area>      
+        <area x="78%" y="95%" width="9%" height="4%" layer="3">     
+            <drawtext condition="{isRecording}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrRed}" text="REC" />
+            <drawtext condition="not{isRecording}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="REC"/>
+        </area>
+    </statusinfo>
+
+    <!-- Available Variables audioinfo:
+    {numaudiotracks}                   number of available audio tracks for current channel
+    {audiochannel}                     0 if current channel is stereo, 1 for left chanel only, 2 for right channel only
+    {trackdesc}                        description of the current audio track
+    {tracklang}                        language of the current audio track
+    -->
+    <audioinfo>
+    </audioinfo>
+
+    <!-- Available Variables dvbdeviceinfo:
+    {prevAvailable}                     true if previous Channel Group is avaialble
+    {nextAvailable}                     true if next Channel Group is avaialble
+    {group}                             Name of current Channel Group
+    {nextgroup}                         Name of next Channel Group
+    {prevgroup}                         Name of prev Channel Group
+    {sepexists}                         true if a channel separator logo exists
+    {seppath}                           path for separator logo to use in imagetype "seplogo"
+    -->
+    <channelgroup>
+		<area x="1%" y="78%" width="15%" height="15%" layer="3">
+            <drawimage condition="{sepexists}" imagetype="seplogo" path="{seppath}" width="98%" height="98%" align="center" valign="center" />
+        </area>
+        <area x="19%" y="77%" width="65%" height="7%" layer="3">
+            <drawtext x="0" width="30%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{prevgroup}" />
+            <drawtext x="30%" width="40%" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="{group}" />
+            <drawtext x="70%" align="right" width="30%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{nextgroup}" />
+        </area>             
+    </channelgroup>
+
+    <!-- Available Variables devices:
+    {numdevices}                number of available devices
+    {devices[]}                 array with available devices
+    {devices[num]}              number of current device
+    {devices[type]}             type of device (DVB-S, DVB-C, ...)
+    {devices[istuned]}          true if device is currently tuned to a transponder
+    {devices[livetv]}           true if device is currently playing livetv
+    {devices[recording]}        true if device is currently recording
+    {devices[hascam]}           true if device has a CAM
+    {devices[cam]}              number of CAM
+    {devices[signalstrength]}   signalstrength of devcie
+    {devices[signalquality]}    signalstrength of devcie
+    {devices[channelnumber]}    number of the currently tuned channel
+    {devices[channelname]}      name of the currently tuned channel
+    {devices[channelid]}        ID of the currently tuned channel
+    {devices[source]}           source of the currently tuned channel
+    -->
+    <devices>
+    </devices>
+    <!-- Available Variables scrapercontent:
+    {posterpath}                        Full Path of Poster to use in image path attribute
+    {posterwidth}                       width of poster in pixel
+    {posterheight}                      height of poster in pixel
+    {hasPoster}                         true if poster is available
+    {bannerpath}                        Full Path of banner to use in image path attribute
+    {bannerwidth}                       width of banner in pixel
+    {bannerheight}                      height of banner in pixel
+    {hasBanner}                         true if banner is available
+
+    Use this tokens if you want to display a banner for series and a poster for movies:
+    {mediapath}                         Full Path of Poster or Banner to use in image path attribute
+    {mediawidth}                        width of image in pixel
+    {mediaheight}                       height of image in pixel
+    {isbanner}                          true if image is a banner, false if it is a poster
+    -->
+    <scrapercontent>
+        <area condition="{isbanner}" x="1%" y="2%" width="{areaheight}*0.13*{mediawidth}/{mediaheight}" height="13%" layer="2">
+            <drawimage imagetype="image" path="{mediapath}" align="center" valign="center"  width="{areawidth}" height="{areaheight}"/>
+        </area>
+        <area condition="not{isbanner}" x="1%" y="2%" width="{areaheight}*0.5*{mediawidth}/{mediaheight}" height="50%" layer="2">
+            <drawimage imagetype="image" path="{mediapath}" x="0" y="0" width="{areawidth}" height="{areaheight}"/>
+        </area>
+    </scrapercontent>
+
+    <!-- Available Variables datetime:
+    {time}                              time in hh:mm
+    {day}                               day in digits
+    {dayleadingzero}                    day in digits with leading 0
+    {dayname}                           Full name of the day
+    {daynameshort}                      Short 3 char name of the day
+    {month}                             month in digits with leading 0
+    {monthname}                         Full name of the month
+    {monthnameshort}                    3 letter abbrivation of month name
+    {year}                              year in yyyy
+    -->
+    <datetime>
+        <area x="87%" y="95%" width="12%" height="4%" layer="3">
+            <drawtext x="0" y="0" valign="center" align="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{dayleadingzero}.{month}.{year}      {time}" />
+        </area>
+    </datetime>
+    <!-- Available Variables message:
+    {text}                     message text
+    {status}                   true if message is a status message
+    {info}                     true if message is a info message
+    {warning}                  true if message is a warn message
+    {error}                    true if message is a error message
+    -->
+    <message>
+		<area x="20%" y="45%" width="60%" height="10%" layer="4">
+            <drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannel"/>
+        </area>
+        <area x="20%" y="45%" width="60%" height="10%" layer="5">
+			<drawimage x="5%" y="12%" width="{areawidth}*0.9" height="80%" imagetype="skinpart" path="buttonLong"/>
+            <drawimage condition="{status}" x="5%" y="12%" width="3%" height="80%" imagetype="skinpart" path="greenFlag" />
+            <drawimage condition="{info}" x="5%" y="12%" width="3%" height="80%" imagetype="skinpart" path="blueFlag" />
+            <drawimage condition="{warning}" x="5%" y="12%" width="3%" height="80%" imagetype="skinpart" path="yellowFlag" />
+            <drawimage condition="{error}" x="5%" y="12%" width="3%" height="80%" imagetype="skinpart" path="redFlag" />
+            <drawtext align="center" valign="center" width="{areawidth}*0.7" font="{light}" fontsize="45%" color="{clrWhite}" text="{text}" />
+        </area>
+    </message>
+    <!-- Available Variables customtokens:
+    all custom tokens set by the svdrp command SCTK are available in this viewelement
+    For instance, use an appropriate script which runs periodically as cronjob and
+    sets these custom tokens with svdrpsend or dbus2vdr
+    --> 
+    <customtokens>
+    </customtokens>
+</displaychannel>

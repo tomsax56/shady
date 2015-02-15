@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE displayvolume SYSTEM "../../../dtd/displayvolume.dtd">
+
+<displayvolume x="0" y="93%" width="100%" height="7%">
+    <background>
+		<area x="0" y="0" width="100%" height="100%" layer="1">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientReplayControl"/>
+		</area>
+		<area x="24%" y="0" width="52%" height="100%" layer="2">
+			<drawimage x="0" y="30%" width="{areawidth}" height="{areaheight}*0.4" imagetype="skinpart" path="shadowVol"/>
+		</area>
+    </background>
+
+    <!-- Available Variables volume:
+    {volume}                            current volume, range from 0 to 255
+    {volumepercent}                     current volume in %
+    {maxvolume}                         maximal volume
+    {mute}                              true if volume is muted
+    -->
+    <volume>
+        <area x="0" y="0" width="100%" height="100%" layer="3">
+            <drawtext condition="not{mute}" x="7%" y="20%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{tr(volume)}: {volpercent}%" />
+            <drawtext condition="{mute}" x="7%" y="20%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{tr(mute)}" />
+        </area>
+        <area x="25%" y="40%" width="50%" height="30%" layer="3">
+			<drawimage x="0" y="0" width="{volume}/{maxvolume}*{areawidth}" height="{areaheight}*0.7" imagetype="skinpart" path="replayProgress"/>
+        </area>        
+    </volume>
+
+</displayvolume>

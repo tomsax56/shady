@@ -1,0 +1,62 @@
+<menutimers x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="1%" scaletvy="58%" scaletvwidth="40%" scaletvheight="40%">	
+	<background>
+		<area x="0" y="0" width="100%" height="100%" layer="1">
+            <drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientSub" />           
+        </area>
+        <area x="0" y="0" width="100%" height="100%" layer="2">
+			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuChannel" />           
+        </area>
+        <area x="0" y="0" width="100%" height="11%" layer="2">
+            <drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />           
+        </area>      
+    </background>
+    
+    <header>
+		<area x="0" y="2%" width="60%" height="7%" layer="3">
+            <drawtext x="4%" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
+		</area>
+	</header>
+	
+	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="14"> 
+        <listelement>
+             <area  x="48%" width="48%" layer="3">
+				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
+				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>
+				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="redFlag" />
+				<drawimage condition="{flagactive}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="greenFlag" />
+				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="yellowFlag" />
+            </area>
+            <area x="42%" width="3%" layer="3">
+				<drawtext x="0" width="100%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{dayname}"/>
+            </area>
+            <area x="45%" width="3%" layer="3">
+				<drawtext x="0" width="100%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{printf('%02d', day)}."/>
+            </area>           	
+            <areascroll condition="{flagactive}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="44%" layer="3">
+				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{timerstart} - {timerstop}: {title}"/>
+            </areascroll>
+            <areascroll condition="not{flagactive}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="44%" layer="3">
+				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrDarkGray}" text="{timerstart} - {timerstop}: {title}"/>
+            </areascroll>                      
+        </listelement>
+        
+        <currentelement delay="0" fadetime="0">
+            <area x="0" y="0" width="41%" height="60%" layer="3">
+				<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="1%" y="0" width="8%" height="10%" />
+				<drawtext name="channel" x="{width(logo)} + 20" y="0" align="center" width="{areawidth} - {width(logo)} - 30" font="{light}" fontsize="8%" color="{clrWhite}" text="{channelnumber} - {channelname}     {day}.{month}.{year}     {timerstart} - {timerstop}"/>
+				<drawtext name="title" x="0" y="{posy(channel)}+{height(channel)}+10" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{eventtitle}" />
+				<drawtextbox name="shorttext" x="0" y="{posy(title)}+{height(title)}" align="center" width="100%" font="{light}" fontsize="9%" color="{clrWhite}" text="{eventshorttext}" />
+                <drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="{posy(shorttext)}+{height(shorttext)}" width="{areawidth}/5" height="{areawidth}/5 * {posterheight} / {posterwidth}"/>
+                <drawtextbox condition="{hasposter}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" float="topleft" floatwidth="{width(poster)} + 10" floatheight="{height(poster)} + 20" font="{light}" fontsize="7%" color="{clrLightGray}" text="{eventdescription}" />
+                <drawtextbox condition="not{hasposter}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{eventdescription}" />
+            </area>    
+        </currentelement>	
+    </menuitems>
+    
+    <scrollbar>
+		<area condition="lt({height},1000)" x="95%" y="15%" width="5%" height="73%" layer="3">
+			 <drawimage   x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
+		</area>
+    </scrollbar>
+</menutimers>

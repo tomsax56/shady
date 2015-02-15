@@ -1,0 +1,100 @@
+<menuschedules x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="1%" scaletvy="58%" scaletvwidth="40%" scaletvheight="40%">
+	
+	<background>
+		<area x="0" y="0" width="100%" height="100%" layer="1">
+            <drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientSub" />           
+        </area>
+        <area x="0" y="0" width="100%" height="100%" layer="2">
+			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuChannel" />           
+        </area>
+        <area x="0" y="0" width="100%" height="11%" layer="2">
+            <drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />           
+        </area>      
+    </background>
+
+    <header>
+		<area x="1%" y="2%" width="60%" height="7%" layer="3">
+            <drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="4%" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
+            <drawimage name="logo" condition="{whatson}" imagetype="channellogo" path="{channelid}" x="0" y="1%" width="15%" height="90%" valign="center" />
+            <drawtext name="channel" condition="{whatson}" x="{width(logo)}*1.2"  valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{channelnumber} - {channelname}" />
+		</area>
+    </header>
+
+   <menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="14"> 
+        <listelement>
+             <area  x="48%" width="48%" layer="3">
+				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
+				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>
+				<drawimage condition="{timerfull}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="redFlag" />
+            </area>       		
+<!-- WHATSON -->
+            <area condition="not{separator}++{whatson}" x="42%" width="7%" layer="4">
+				<drawtext x="0" width="100%" valign="center" font="{light}" fontsize="55%" color="{clrLightGray}" text="{day} {printf('%02d.%02d', daynumeric, month)}."/>
+            </area>
+            <areascroll condition="not{separator}++{whatson}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="45%" layer="4">
+				<drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}  {title}"/>
+            </areascroll>
+<!-- WHATSONNOW -->
+			<area condition="not{separator}++{whatsonnow}" x="42%" width="6%" layer="4">
+				<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="10%" y="15%" width="70%" height="70%"  />
+            </area>   
+            <area condition="not{separator}++{whatsonnow}++{running}" x="48%" width="46%" layer="4">
+                <drawimage  x="3%" y="{areaheight}-8" width="{areawidth} * {elapsed} / {duration}" height="{areaheight}/8" imagetype="skinpart" path="timeBar" />
+            </area>
+            <areascroll condition="not{separator}++{whatsonnow}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="45%" layer="4">
+                <drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start} - {stop}   {title}"/>
+            </areascroll>
+<!-- WHATSONNEXT -->
+            <area condition="not{separator}++{whatsonnext}" x="42%" width="6%" layer="4">
+                <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="0" width="100%" height="100%"  />
+            </area>         
+            <areascroll condition="not{separator}++{whatsonnext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="45%" layer="4">
+                <drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}   {title}"/>
+            </areascroll>
+<!-- WHATSONFAVORITES -->           
+              <area condition="not{separator}++{whatsonfavorites}" x="42%" width="6%" layer="4">
+                <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="0" width="100%" height="100%"  />
+            </area>         
+            <areascroll condition="not{separator}++{whatsonfavorites}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="45%" layer="4">
+                <drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}   {title}"/>
+            </areascroll>               
+<!-- Separator -->
+            <area condition="{separator}" x="50%" width="45%" layer="4">
+                <drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{title}" />
+            </area>
+        </listelement>
+
+        <currentelement delay="0" fadetime="0">
+            <area condition="{whatson}" x="0" y="0" width="41%" height="60%" layer="3">
+				<drawtext name="now" x="0" y="0" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{title}" />
+                <drawtext condition="{running}" name="start" x="{areawidth}/4 - {width(start)}" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start}" />
+                <drawtext condition="{running}" name="stop" x="{areawidth}*3/4" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{stop}" />
+                <drawimage  condition="{running}" imagetype="skinpart" path="progress" x="{posx(start)}+{width(start)}" y="11%" width="50%" height="5%" />   
+                <drawimage  condition="{running}" x="{areawidth}/4+10" y="{height(now)} + {height(start)} / 2 - 6" width="{areawidth}/2 * {elapsed} / {duration} - 20 * {elapsed} / {duration}" height="8" imagetype="skinpart" path="timeBar" />
+				<drawtext condition="not{running}" x="25" y="{areaheight}/18 + 20" align="center" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start} - {stop} ({duration} min)" />
+                <drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="{posy(start)}+{height(start)}+20" width="{areawidth}/5" height="{areawidth}/5 * {posterheight} / {posterwidth}"/>
+                <drawtextbox condition="{hasposter}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" float="topleft" floatwidth="{width(poster)} + 10" floatheight="{height(poster)} + 20" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
+                <drawtextbox condition="not{hasposter}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
+            </area>
+            <area condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" y="0" width="41%" height="60%" layer="3">         
+				<drawtext name="now" x="0" y="0" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{title}" />
+                <drawtext condition="{running}" name="start" x="{areawidth}/4 - {width(start)}" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start}" />
+                <drawtext condition="{running}" name="stop" x="{areawidth}*3/4" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{stop}" />
+                <drawimage  condition="{running}" imagetype="skinpart" path="progress" x="{posx(start)}+{width(start)}" y="11%" width="50%" height="5%" />
+                <drawimage  condition="{running}" x="{areawidth}/4+10" y="{height(now)} + {height(start)} / 2 - 6" width="{areawidth}/2 * {elapsed} / {duration} - 20 * {elapsed} / {duration}" height="8" imagetype="skinpart" path="timeBar" />              
+				<drawtext condition="not{running}" x="25" y="{areaheight}/18 + 20" align="center" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start} - {stop} ({duration} min)" />
+                <drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="{posy(start)}+{height(start)}+20" width="{areawidth}/5" height="{areawidth}/5 * {posterheight} / {posterwidth}"/>
+                <drawtextbox condition="{hasposter}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" float="topleft" floatwidth="{width(poster)} + 10" floatheight="{height(poster)} + 20" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
+                <drawtextbox condition="not{hasposter}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
+            </area>         
+        </currentelement>
+    </menuitems>
+
+	<scrollbar>
+		<area condition="lt({height},1000)" x="95%" y="15%" width="5%" height="73%" layer="3">
+			 <drawimage   x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
+		</area>
+    </scrollbar>
+
+</menuschedules>

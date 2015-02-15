@@ -1,0 +1,175 @@
+ <menudefault x="0" y="0" width="100%" height="100%" fadetime="0">
+     <background>
+        <area x="0" y="0" width="100%" height="100%" layer="1">
+            <drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientFull" />           
+        </area>
+        <area x="0" y="0" width="100%" height="100%" layer="2">
+            <drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuDefault" />           
+        </area>
+        <area x="0" y="0" width="100%" height="11%" layer="3">
+            <drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />           
+        </area>
+    </background>
+    <!-- Available Variables header:
+    {title}                   title of current menu
+    {vdrversion}              running VDR Version
+    {hasicon}                 true if a menu icon is available
+    {icon}                    path of menu icon
+    -->
+    <header>
+    </header>
+    <!-- Available Variables datetime:
+    {time}                              time in hh:mm
+    {day}                               day in digits
+    {dayleadingzero}                    day in digits with leading 0
+    {dayname}                           Full name of the day
+    {daynameshort}                      Short 3 char name of the day
+    {month}                             month in digits with leading 0
+    {monthname}                         Full name of the month
+    {year}                              year in yyyy
+    -->
+    <datetime>
+    </datetime>
+
+    <!-- Available Variables colorbuttons:
+    {red1}                    true if red button is button 1
+    {red2}                    true if red button is button 2
+    {red3}                    true if red button is button 3
+    {red4}                    true if red button is button 4
+    {green1}                  true if green button is button 1
+    {green2}                  true if green button is button 2
+    {green3}                  true if green button is button 3
+    {green4}                  true if green button is button 4
+    {yellow1}                 true if yellow button is button 1
+    {yellow2}                 true if yellow button is button 2
+    {yellow3}                 true if yellow button is button 3
+    {yellow4}                 true if yellow button is button 4
+    {blue1}                   true if blue button is button 1
+    {blue2}                   true if blue button is button 2
+    {blue3}                   true if blue button is button 3
+    {blue4}                   true if blue button is button 4
+    {red}                     label of red button
+    {green}                   label of green button
+    {yellow}                  label of yellow button
+    {blue}                    label of blue button
+    -->
+    <colorbuttons>
+        <area  x="43%" y="92%" width="13%" height="5%" layer="3">
+			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
+            <drawtext condition="{red1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{red}" />
+            <drawimage  condition="{red1}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
+            <drawtext condition="{green1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{green}" />
+            <drawimage  condition="{green1}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />            
+            <drawtext condition="{yellow1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{yellow}" />
+            <drawimage  condition="{yellow1}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />           
+            <drawtext condition="{blue1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{blue}" />
+            <drawimage  condition="{blue1}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />           
+        </area>
+        <area x="56%" y="92%" width="13%" height="5%" layer="3">
+			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
+            <drawtext condition="{red2}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{red}" />
+            <drawimage  condition="{red2}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />           
+            <drawtext condition="{green2}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{green}" />
+            <drawimage  condition="{green2}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
+            <drawtext condition="{yellow2}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{yellow}" />
+            <drawimage  condition="{yellow2}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />                    
+            <drawtext condition="{blue2}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{blue}" />
+            <drawimage  condition="{blue2}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
+        </area>
+        <area x="69%" y="92%" width="13%" height="5%" layer="3">
+			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
+            <drawtext condition="{red3}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{red}" />
+            <drawimage  condition="{red3}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
+            <drawtext condition="{green3}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{green}" />
+            <drawimage  condition="{green3}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />           
+            <drawtext condition="{yellow3}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{yellow}" />
+            <drawimage  condition="{yellow3}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />            
+            <drawtext condition="{blue3}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{blue}" />
+            <drawimage  condition="{blue3}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
+        </area>
+        <area x="82%" y="92%" width="13%" height="5%" layer="3">
+			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
+            <drawtext condition="{red4}" x="20" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{red}" />
+            <drawimage  condition="{red4}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />           
+            <drawtext condition="{green4}" x="20" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{green}" />
+            <drawimage  condition="{green4}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />           
+            <drawtext condition="{yellow4}" x="20" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{yellow}" />
+            <drawimage  condition="{yellow4}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />            
+            <drawtext condition="{blue4}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{blue}" />
+            <drawimage  condition="{blue4}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />            
+        </area>
+    </colorbuttons>
+
+    <scrollbar>
+		<area condition="lt({height},1000)" x="95%" y="15%" width="5%" height="73%" layer="3">
+			 <drawimage   x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
+		</area>
+    </scrollbar>
+    <!-- IMPORTANT: menuitemwidth and determinatefont have to be defined here. menuitemwidth defines the total width of the 
+    default menu items, determinatefont the function which sets the actual font to use. With that it is possible to determinate
+    the correct column widths -->
+    <menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" menuitemwidth="94%" determinatefont="column1" numlistelements="14">
+        <!-- Available Variables default menu listelement:
+        {nummenuitem}               number of item in list, starts with 1
+        {column1}                   text of column1
+        {column2}                   text of column2
+        {column3}                   text of column3
+        {column4}                   text of column4
+        {column5}                   text of column5
+        {column6}                   text of column6
+        {column2set}                true if column2 is used
+        {column3set}                true if column3 is used
+        {column4set}                true if column4 is used
+        {column5set}                true if column5 is used
+        {column6set}                true if column6 is used
+        {column2x}                  proposed x value of column2
+        {column3x}                  proposed x value of column3
+        {column4x}                  proposed x value of column4
+        {column5x}                  proposed x value of column5
+        {column6x}                  proposed x value of column6
+        {column1width}              proposed width of column1
+        {column2width}              proposed width of column2
+        {column3width}              proposed width of column3
+        {column4width}              proposed width of column4
+        {column5width}              proposed width of column5
+        {column6width}              proposed width of column6
+        {columnscroll}              number of column which should have scrollable text
+        {current}                   true if column is currently selected 
+        {separator}                 true if column is a list separator 
+        -->
+        <listelement>
+             <area x="2%" width="93%" layer="3">
+				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong" />
+				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongCurrent" />
+            </area>
+            <areascroll scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="{column1width}" layer="3">
+                <drawtext name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+            </areascroll>
+            <area condition="not{defaultcolumnwidth}" x="5%" width="87%" layer="3">
+				<!--VDR-Setup-->
+                <drawtext condition="{column2set}++not{column3set}" x="{column2x}" align="right" valign="center" font="{light}" fontsize="70%" width="{column2width}" color="{clrLightGray}" text="{column2}" />
+                <!--mail-plugin-->
+                <drawtext condition="{column2set}++{column3set}++not{column4set}" x="10%" valign="center" font="{light}" fontsize="70%" width="58%" color="{clrLightGray}" text="{column2}" />
+                <drawtext condition="{column2set}++{column3set}++not{column4set}" x="70%" align="left" valign="center" font="{light}" fontsize="70%" width="{column3width}" color="{clrLightGray}" text="{column3}" />
+                <!--epgsearch-suchtimer-->
+                <drawtext condition="{column2set}++{column3set}++{column4set}++not{column6set}" x="{column2x}" valign="center" font="{light}" fontsize="70%" width="60%" color="{clrLightGray}" text="{column2}" />
+                <drawtext condition="{column2set}++{column3set}++{column4set}++not{column6set}" x="65%" valign="center" font="{light}" fontsize="70%" width="{column3width}" color="{clrLightGray}" text="{column3}" />
+                <drawtext condition="{column2set}++{column3set}++{column4set}++not{column6set}" x="75%" valign="center" font="{light}" fontsize="70%" width="{column4width}" color="{clrLightGray}" text="{column4}" />
+                <drawtext condition="{column5set}++not{column6set}" x="85%" valign="center" font="{light}" fontsize="70%" width="{column5width}" color="{clrLightGray}" text="{column5}" />
+                <drawtext condition="{column6set}" x="{column2x}" valign="center" font="{light}" fontsize="70%" width="{column2width}" color="{clrLightGray}" text="{column2}" />
+                <drawtext condition="{column6set}" x="{column3x}" valign="center" font="{light}" fontsize="70%" width="{column3width}" color="{clrLightGray}" text="{column3}" />
+                <drawtext condition="{column6set}" x="{column4x}" valign="center" font="{light}" fontsize="70%" width="{column4width}" color="{clrLightGray}" text="{column4}" />
+                <drawtext condition="{column6set}" x="{column5x}" valign="center" font="{light}" fontsize="70%" width="{column5width}" color="{clrLightGray}" text="{column5}" />
+                <drawtext condition="{column6set}" x="{column6x}" valign="center" font="{light}" fontsize="70%" width="{column6width}" color="{clrLightGray}" text="{column6}" />
+            </area>            
+            <area condition="{defaultcolumnwidth}" x="5%" width="87%" layer="3">
+                <drawtext condition="{column2set}" x="{column2x}" valign="center" font="{light}" fontsize="70%" width="{column2width}" color="{clrWhite}" text="{column2}" />
+                <drawtext condition="{column3set}" x="{column3x}" valign="center" font="{light}" fontsize="70%" width="{column3width}" color="{clrWhite}" text="{column3}" />
+                <drawtext condition="{column4set}" x="{column4x}" valign="center" font="{light}" fontsize="70%" width="{column4width}" color="{clrWhite}" text="{column4}" />
+                <drawtext condition="{column5set}" x="{column5x}" valign="center" font="{light}" fontsize="70%" width="{column5width}" color="{clrWhite}" text="{column5}" />
+                <drawtext condition="{column6set}" x="{column6x}" valign="center" font="{light}" fontsize="70%" width="{column6width}" color="{clrWhite}" text="{column6}" />
+            </area>            
+        </listelement>
+    </menuitems>
+</menudefault>

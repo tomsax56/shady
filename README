@@ -1,0 +1,52 @@
+#    README for shady-skin for vdr-plugin-skindesigner
+#
+#    Copyright (C) 2015   Tomas Saxer <tsaxer@gmx.de> 
+#
+#    This program is free software; you can redistribute it and/or modify it under the terms of 
+#    the GNU General Public License as published by the Free Software Foundation; either 
+#    version 2 of the License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+#    without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+#    See the GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License along with this program; 
+#    if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, 
+#    MA 02110, USA
+
+
+Latest version is available at: http://www.anthra.de/shady/
+
+Screenshots: http://www.anthra.de/shady-skin
+
+Description:
+
+The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-skindesigner.
+
+
+1. Requirements:
+
+	a. vdr-plugin-skindesigner
+	
+	b. Font: VDROpen Sans, many other fonts are to fat and don't fit in some areas!
+	
+	c. A set of channellogos eg: http://creimer.net/channellogos/skindesigner-20150109.tar.bz2
+	
+	
+2. Setup:
+
+	a. Currently only one option can be set: "defaultcolumnwidth" yes or no.
+	
+		Preferably you test both settings with eg epgsearch-searchtimermenu or mailplugin which setting sweet your needs.
+		
+		If in doubt switch it to "no".
+
+
+
+If you encounter any bugs, problems, or have any issues,
+please don't hesitate to contact me or place a post at vdrportal.de
+even in English.
+
+Have fun ;)
+
+Tomas

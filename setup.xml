@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE setup SYSTEM "../../dtd/setup.dtd">
+
+<setup>
+    <!--
+    define all your parameters here which should be configurable via
+    OSD and the skindesigner setup menu.
+    Parameters must have type "bool" or "integer". For "bool" Parameters
+    a choice yes/no is shown in the setup menu, a "integer" parameter
+    can be configured to a value between "min" and "max". If "min" is not
+    set, "0" is the minimum, if "max" is not set, "1000" is maximum.
+    "displayname" is used to display the option in the setup menu.
+    The configured parameter value is the default value.
+    -->
+    <menu>
+<!--
+        <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">0</parameter>
+-->
+		<parameter type="bool" name="defaultcolumnwidth" displaytext="{tr(defaultcolumnwidth)}">0</parameter>
+    </menu>
+
+    <!--
+    translations of displaytexts
+    -->
+    <translations>
+        <token name="tr(defaultcolumnwidth)">
+            <trans lang="en_EN">Defaultcolumnwidth</trans>
+            <trans lang="de_DE">Standardspaltenbreite</trans>
+        </token>
+    </translations>
+</setup>

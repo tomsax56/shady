@@ -1,0 +1,124 @@
+<menuchannels x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="1%" scaletvy="58%" scaletvwidth="40%" scaletvheight="40%">
+	<background>
+		<area x="0" y="0" width="100%" height="100%" layer="1">
+            <drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientSub" />           
+        </area>
+        <area x="0" y="0" width="100%" height="100%" layer="2">
+			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuChannel" />           
+        </area>
+        <area x="0" y="0" width="100%" height="11%" layer="2">
+            <drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />           
+        </area>    
+    </background>
+
+	 <header>
+        <area x="3%" y="2%" width="34%" height="7%" layer="3">
+            <drawtext x="0" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
+        </area>
+    </header>	    
+	
+    <menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="14">
+        <!-- Available Variables channels menu listelement:
+        {nummenuitem}             number of item in list, starts with 1
+        {number}                  number of the displayed channel
+        {name}                    name of the displayed channel
+        {channelid}               ChannelID as path to display channel logo
+        {transponder}             Transponder of channel
+        {frequency}               Frequency of channel
+        {source}                  Source of channel (S, C, T)
+        {sourcedescription}       Descriptin of source from sources.conf
+        {position}                orbital position of the satellite in case this is a DVB-S source
+        {isAtsc}                  true if channel is a ATSC channel
+        {isCable}                 true if channel is cable channel
+        {isSat}                   true if channel is a satellite channel
+        {isTerr}                  true if channel is terrestrical
+        {presenteventtitle}       title of present event on this channel
+        {presenteventstart}       present event start time in hh::mm
+        {presenteventstop}        present event event stop time in hh::mm
+        {current}                 true if item is currently selected 
+        {separator}               true if item is a list separator 
+        -->
+		<listelement>
+            <area condition="not{separator}" x="42%" width="6%" layer="3">
+                <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="0" y="16%" width="70%" height="70%"  />
+            </area>
+            <area  x="48%" width="48%" layer="3">
+				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels" />
+				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent" />
+            </area>
+             <areascroll condition="not{separator}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="23%" layer="3">
+                <drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{printf('%4d', number)}    {name}" />
+            </areascroll>
+            <area condition="not{separator}" x="73%" width="21%" layer="3">
+                <drawtext name="menutext" x="0" align="right" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{sourcedescription}, Transp. {transponder}" />
+            </area>          
+            
+            <area condition="{separator}" x="48%" width="48%" layer="3">
+                <drawtext x="1%" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{name}" />
+            </area>
+        </listelement>
+        <!-- additional element which is drawn for current element -->
+        <!-- Available Variables channels menu currentelement:
+        {number}                        number of the displayed channel
+        {name}                          name of the displayed channel
+        {channelid}                     ChannelID as path to display channel logo
+        {transponder}                   Transponder of channel
+        {frequency}                     Frequency of channel
+        {source}                        Source of channel (S, C, T)
+        {sourcedescription}             Descriptin of source from sources.conf
+        {position}                      orbital position of the satellite in case this is a DVB-S source
+        {isAtsc}                        true if channel is a ATSC channel
+        {isCable}                       true if channel is cable channel
+        {isSat}                         true if channel is a satellite channel
+        {isTerr}                        true if channel is terrestrical
+        {presenteventtitle}             title of present event on this channel
+        {presenteventstart}             present event start time in hh::mm
+        {presenteventstop}              present event stop time in hh::mm
+        {presenteventshorttext}         present event short text
+        {presenteventdescription}       present event description
+        {presenteventday}               present event name of day
+        {presenteventdate}              present event date in dd:mm:yy
+        {presenteventelapsed}           present event elapsed time
+        {presenteventduration}          present event duration
+        {presenteventdurationhours}     duration, full hours
+        {presenteventdurationminutes}   duration, rest of minutes
+        {hasposter}                     true if a scraped poster is available for this elements present evemt
+        {posterwidth}                   width of scraped poster
+        {posterheight}                  height of scraped poster
+        {posterpath}                    absolute path of scraped poster
+        {nexteventtitle}                title of next event on this channel
+        {nexteventstart}                next event start time in hh::mm
+        {nexteventstop}                 next event event stop time in hh::mm
+        {nexteventshorttext}            next event short text
+        {nexteventdescription}          next event description
+        {nexteventday}                  next event name of day
+        {nexteventdate}                 next event date in dd:mm:yy
+        {nexteventduration}             next event duration
+        {nexteventdurationhours}        duration, full hours
+        {nexteventdurationminutes}      duration, rest of minutes
+        {schedule[]}                    array with following 10 schedules
+        {schedule[title]}               title of event
+        {schedule[shorttext]}           shorttext of event
+        {schedule[start]}               start time of event in hh:mm
+        {schedule[stop]}                stop time of event in hh:mm        
+        -->
+        <currentelement  delay="0" fadetime="0">
+            <area x="0" y="0" width="41%" height="60%" layer="3">
+                <drawtext condition="isset{presenteventtitle}" name="now" x="0" y="0" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{presenteventtitle}" />
+                <drawtext condition="isset{presenteventtitle}" name="start" x="{areawidth}/4 - {width(start)}" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{presenteventstart}" />
+                <drawtext condition="isset{presenteventtitle}" name="stop" x="{areawidth}*3/4" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{presenteventstop}" />
+                <drawimage condition="isset{presenteventtitle}" x="{posx(start)}+{width(start)}" y="11%" width="50%" height="5%" imagetype="skinpart" path="progress" />
+                <drawimage condition="isset{presenteventtitle}" x="{areawidth}/4+10" y="{height(now)} + {height(start)}/2-6" width="{areawidth}/2 * {presenteventelapsed} / {presenteventduration} - 20 * {presenteventelapsed} / {presenteventduration}" height="8" imagetype="skinpart" path="timeBar" />
+                <drawtextbox condition="isset{presenteventtitle}" name="nowshort" x="2%" y="{posy(start)} + {height(start)} + 10" align="center" width="94%" font="{light}" fontsize="8%" color="{clrLightGray}" text="{presenteventshorttext}" />   
+                <drawtextbox condition="isset{presenteventtitle}" name="nowdesc" x="2%" y="{posy(nowshort)} + {height(nowshort)}" width="94%" height="65%" font="{light}" fontsize="7%" color="{clrLightGray}" text="{presenteventdescription}" />
+            </area>
+        </currentelement>
+    </menuitems>
+
+    <scrollbar>
+		<area condition="lt({height},1000)" x="95%" y="15%" width="5%" height="73%" layer="3">
+			 <drawimage   x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
+		</area>
+    </scrollbar>
+</menuchannels>
