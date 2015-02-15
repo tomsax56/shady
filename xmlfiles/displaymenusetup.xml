@@ -117,14 +117,10 @@
         {number}                  number of menu item (or empty string if not set)
         {icon}                    path of appropriate icon
         -->
-        <currentelement delay="40" fadetime="400">
-            <area x="0" y="120%" width="100%" height="50%" layer="3">
-				<drawimage condition="lt({number},10)" imagetype="skinpart" path="mainIcons1" width="{areawidth}" height="{areaheight}"/>
-				<drawimage condition="eq({number},10)" imagetype="skinpart" path="mainIcons2" width="{areawidth}" height="{areaheight}"/>
-            </area>
-             <area x="0" y="115%" width="100%" height="60%" layer="4">
+        <currentelement delay="0" fadetime="300">
+            <area x="0" y="115%" width="100%" height="60%" layer="4">
                 <drawimage imagetype="menuicon" path="{icon}" width="{areawidth}" height="{areaheight}"/>
-            </area>           
+            </area>        
         </currentelement>
     </menuitems>
     
