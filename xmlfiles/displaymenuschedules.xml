@@ -39,7 +39,7 @@
 				<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="10%" y="15%" width="70%" height="70%"  />
             </area>   
             <area condition="not{separator}++{whatsonnow}++{running}" x="48%" width="46%" layer="4">
-                <drawimage  x="3%" y="{areaheight}-8" width="{areawidth} * {elapsed} / {duration}" height="{areaheight}/8" imagetype="skinpart" path="timeBar" />
+                <drawimage  x="3%" y="{areaheight}-8" width="{areawidth} * {elapsed} / {duration}" height="{areaheight}/8" imagetype="skinpart" path="nowBar" />
             </area>
             <areascroll condition="not{separator}++{whatsonnow}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="45%" layer="4">
                 <drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start} - {stop}   {title}"/>
