@@ -23,7 +23,7 @@
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
 				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>
 				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="redFlag" />
-				<drawimage condition="{flagactive}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="greenFlag" />
+				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="greenFlag" />
 				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="yellowFlag" />
             </area>
             <area x="42%" width="3%" layer="3">
