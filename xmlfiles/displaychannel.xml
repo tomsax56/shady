@@ -231,19 +231,20 @@
     {warning}                  true if message is a warn message
     {error}                    true if message is a error message
     -->
-    <message>
-		<area x="20%" y="45%" width="60%" height="10%" layer="4">
+	<message>
+		<area x="0" y="45%" width="100%" height="10%" layer="4">
             <drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannel"/>
         </area>
-        <area x="20%" y="45%" width="60%" height="10%" layer="5">
+        <area x="0" y="45%" width="100%" height="10%" layer="5">
 			<drawimage x="5%" y="12%" width="{areawidth}*0.9" height="80%" imagetype="skinpart" path="buttonLong"/>
-            <drawimage condition="{status}" x="5%" y="12%" width="3%" height="80%" imagetype="skinpart" path="greenFlag" />
-            <drawimage condition="{info}" x="5%" y="12%" width="3%" height="80%" imagetype="skinpart" path="blueFlag" />
-            <drawimage condition="{warning}" x="5%" y="12%" width="3%" height="80%" imagetype="skinpart" path="yellowFlag" />
-            <drawimage condition="{error}" x="5%" y="12%" width="3%" height="80%" imagetype="skinpart" path="redFlag" />
+            <drawimage condition="{status}" x="5%" y="12%" width="{areawidth}*0.012" height="80%" imagetype="skinpart" path="greenFlag" />
+            <drawimage condition="{info}" x="5%" y="12%" width="{areawidth}*0.012" height="80%" imagetype="skinpart" path="blueFlag" />
+            <drawimage condition="{warning}" x="5%" y="12%" width="{areawidth}*0.012" height="80%" imagetype="skinpart" path="yellowFlag" />
+            <drawimage condition="{error}" x="5%" y="12%" width="{areawidth}*0.012" height="80%" imagetype="skinpart" path="redFlag" />
             <drawtext align="center" valign="center" width="{areawidth}*0.7" font="{light}" fontsize="45%" color="{clrWhite}" text="{text}" />
         </area>
     </message>
+
     <!-- Available Variables customtokens:
     all custom tokens set by the svdrp command SCTK are available in this viewelement
     For instance, use an appropriate script which runs periodically as cronjob and
