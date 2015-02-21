@@ -20,7 +20,7 @@ shady-skin Revision History
 - Fixed condition for running timer in displaymenutimers.xml
 
 2015-02-21:
-
+- Changed position of folderposters in displaymenurecordings
 - Added flags for messagebars
 - Changed statusmarker for timers in displaymenuschedules
 - Added status-graphics
