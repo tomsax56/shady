@@ -22,9 +22,11 @@
              <area  x="48%" width="48%" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
 				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>
-				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="redFlag" />
-				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="greenFlag" />
-				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="yellowFlag" />
+			</area>
+            <area  x="49%" width="2%" layer="4">           				
+				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
+				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenFL" />
+				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
             </area>
             <area x="42%" width="3%" layer="3">
 				<drawtext x="0" width="100%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{dayname}"/>
@@ -32,10 +34,10 @@
             <area x="45%" width="3%" layer="3">
 				<drawtext x="0" width="100%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{printf('%02d', day)}."/>
             </area>           	
-            <areascroll condition="{flagactive}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="44%" layer="3">
+            <areascroll condition="{flagactive}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="51%" width="44%" layer="3">
 				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{timerstart} - {timerstop}: {title}"/>
             </areascroll>
-            <areascroll condition="not{flagactive}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="44%" layer="3">
+            <areascroll condition="not{flagactive}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="51%" width="44%" layer="3">
 				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrDarkGray}" text="{timerstart} - {timerstop}: {title}"/>
             </areascroll>                      
         </listelement>
