@@ -25,14 +25,17 @@
              <area  x="48%" width="48%" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
 				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>
-				<drawimage condition="{timerfull}" x="0" y="0" width="{areawidth}*0.024" height="{areaheight}" imagetype="skinpart" path="redFlag" />
+            </area>
+            <area  x="49%" width="2%" layer="4">           				
+				<drawimage condition="{timerfull}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
             </area>       		
 <!-- WHATSON -->
             <area condition="not{separator}++{whatson}" x="42%" width="7%" layer="4">
 				<drawtext x="0" width="100%" valign="center" font="{light}" fontsize="55%" color="{clrLightGray}" text="{day} {printf('%02d.%02d', daynumeric, month)}."/>
             </area>
             <areascroll condition="not{separator}++{whatson}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="45%" layer="4">
-				<drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}  {title}"/>
+				<drawtext condition="not{timerfull}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}  {title}"/>
+				<drawtext condition="{timerfull}" name="menutext" x="2%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}  {title}"/>
             </areascroll>
 <!-- WHATSONNOW -->
 			<area condition="not{separator}++{whatsonnow}" x="42%" width="6%" layer="4">
@@ -42,21 +45,24 @@
                 <drawimage  x="3%" y="{areaheight}-8" width="{areawidth} * {elapsed} / {duration}" height="{areaheight}/8" imagetype="skinpart" path="nowBar" />
             </area>
             <areascroll condition="not{separator}++{whatsonnow}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="45%" layer="4">
-                <drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start} - {stop}   {title}"/>
+				<drawtext condition="not{timerfull}" name="menutext" x="" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start} - {stop}   {title}"/>
+				<drawtext condition="{timerfull}" name="menutext" x="2%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start} - {stop}   {title}"/>
             </areascroll>
 <!-- WHATSONNEXT -->
             <area condition="not{separator}++{whatsonnext}" x="42%" width="6%" layer="4">
                 <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="10%" y="15%" width="70%" height="70%" />
             </area>         
             <areascroll condition="not{separator}++{whatsonnext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="45%" layer="4">
-                <drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}   {title}"/>
+                <drawtext condition="not{timerfull}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}   {title}"/>
+                <drawtext condition="{timerfull}" name="menutext" x="2%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}   {title}"/>
             </areascroll>
 <!-- WHATSONFAVORITES -->           
               <area condition="not{separator}++{whatsonfavorites}" x="42%" width="6%" layer="4">
                 <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="10%" y="15%" width="70%" height="70%" />
             </area>         
             <areascroll condition="not{separator}++{whatsonfavorites}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="45%" layer="4">
-                <drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}   {title}"/>
+                <drawtext condition="not{timerfull}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}   {title}"/>
+                <drawtext condition="{timerfull}" name="menutext" x="2%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{start}   {title}"/>
             </areascroll>               
 <!-- Separator -->
             <area condition="{separator}" x="50%" width="45%" layer="4">
