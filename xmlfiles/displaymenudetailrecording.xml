@@ -15,7 +15,7 @@
 
 	<detailheader>
 		<area x="1%" y="13%" width="38%" height="35%" layer="3">
-			<drawtext name="title" x="0"  y="0" font="{light}" align="center" fontsize="14%" color="{clrLightGray}" text="{name}"/>
+			<drawtext name="title" x="0"  y="0" font="{light}" align="center" fontsize="14%" color="{clrLightGray}" text="{epgname}"/>
 			<drawtext name="shorttext" x="0"  y="{posy(title)} + {height(title)}*1.2" align="center" font="{light}" fontsize="12%" color="{clrLightGray}" text="{shorttext}"/>
 			<drawtext name="startstop" x="0"  y="{posy(shorttext)} + {height(shorttext)}*2.5" align="center" font="{light}" fontsize="12%" color="{clrLightGray}" text="{date}"/>
 			<drawtext name="duration" x="0"  y="{posy(startstop)} + {height(startstop)}*1.2" align="center" font="{light}" fontsize="12%" color="{clrLightGray}" text="{duration}min"/>
