@@ -51,9 +51,19 @@
 				<drawtext condition="gt({numrecordingsfolder}, 1)" name="numrecordingsfolder" x="0" y="40%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recordings)}" />
 				<drawtext name="newrecordingsfolder" x="0" y="55%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{newrecordingsfolder} {tr(new)}" />
             </area>
-            <area condition="{folder}++{hasposter}" x="0" y="0" width="21%" height="70%" layer="4">
-				<drawimage condition="{hasposter}" name="poster" x="2%" y="20%" height="40%" width="40%" imagetype="image" path="{posterpath}" />				 
+			<area condition="{folder}++not{hasposter}" x="0" y="0" width="40%" height="60%" layer="4">
+				<drawtext condition="eq({numrecordingsfolder}, 1)" name="numrecordingsfolder" x="0" y="40%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recording)}" />
+				<drawtext condition="gt({numrecordingsfolder}, 1)" name="numrecordingsfolder" x="0" y="40%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recordings)}" />
+				<drawtext name="newrecordingsfolder" x="0" y="55%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{newrecordingsfolder} {tr(new)}" />
             </area>
+            <area condition="{folder}++{hasposter}" x="14%" y="0" width="20%" height="60%" layer="4">				
+				<drawtext condition="eq({numrecordingsfolder}, 1)" name="numrecordingsfolder" x="0" y="40%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recording)}" />
+				<drawtext condition="gt({numrecordingsfolder}, 1)" name="numrecordingsfolder" x="0" y="40%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recordings)}" />
+				<drawtext name="newrecordingsfolder" x="0" y="55%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{newrecordingsfolder} {tr(new)}" />
+            </area>
+            <area condition="{folder}++{hasposter}" x="5%" y="0" width="21%" height="70%" layer="4">
+				<drawimage condition="{hasposter}" name="poster" x="2%" y="20%" height="40%" width="40%" imagetype="image" path="{posterpath}" />
+			</area>
         </currentelement>        
     </menuitems>
  
