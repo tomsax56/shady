@@ -4,6 +4,7 @@ shady-skin Revision History
 2015-02-05: initial release
 
 2015-02-15:
+
 - Fixed height and width of channellogos in whatsonnext and favorites
 - Fixed numerus of timerconflicts in displaymainmenu
 - Added nowBar.svg
@@ -17,4 +18,12 @@ shady-skin Revision History
 - Added posters for folders in displaymenurecordings.xml
 - Fixed format of menuitemnumbers in displaymenu-main and -setup
 - Fixed condition for running timer in displaymenutimers.xml
+
+2015-02-21:
+
+- Added flags for messagebars
+- Changed statusmarker for timers in displaymenuschedules
+- Added status-graphics
+- Changed statusmarker for timers and recordings
+- Changed {name} to {epgname} in displaymenudetailrecording.xml
 
