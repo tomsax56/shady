@@ -29,7 +29,7 @@
 		</area>
     </scrollbar>     
 
-    <tab name="Info" x="42%" y="14%" width="53%" height="75%" layer="2" scrollheight="{areaheight}/2">
+    <tab name="Info" x="42%" y="14%" width="53%" height="76%" layer="2" scrollheight="{areaheight}/4">
         <drawtextbox condition="not{isseries}++not{ismovie}" x="0" y="0" width="96%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
         <drawimage condition="{isseries}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="{areawidth}*0.7" y="0" width="{areawidth}*0.3" height="{areawidth} * 0.3 * {seriesposter1height} / {seriesposter1width}"/>
         <drawimage condition="{ismovie}" name="movieposter" imagetype="image" path="{posterpath}" x="{areawidth}*0.7" y="0" width="{areawidth}*0.3" height="{areawidth} * 0.3 * {posterheight} / {posterwidth}" />
