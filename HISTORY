@@ -28,3 +28,10 @@ shady-skin Revision History
 - Changed statusmarker for timers and recordings
 - Changed {name} to {epgname} in displaymenudetailrecording.xml
 
+2015-02-22:
+
+- Changed position of series- and movies-posters in detailepg and detailrecording
+- Fixed scrolled text in epg-descriptions
+- Fixed textposition at recordingsfolder
+
+
