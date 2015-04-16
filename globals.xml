@@ -31,6 +31,10 @@
             <trans lang="en_EN">Conflicts</trans>
             <trans lang="de_DE">Konflikte</trans>
         </token>
+        <token name="tr(lastrecordings)">
+            <trans lang="en_EN">Last recordings</trans>
+            <trans lang="de_DE">Letzte Aufnahmen</trans>
+        </token>
         <token name="tr(disc)">
             <trans lang="en_EN">Disc</trans>
             <trans lang="de_DE">Disk</trans>
@@ -195,7 +199,90 @@
             <trans lang="en_EN">Recordings</trans>
             <trans lang="de_DE">Aufzeichnungen</trans>
         </token>       
-                       
+        <token name="tr(temp)">
+            <trans lang="en_EN">Temperature</trans>
+            <trans lang="de_DE">Temperatur</trans>
+        </token>
+        <token name="tr(apparenttemp)">
+            <trans lang="en_EN">Felt Temperature</trans>
+            <trans lang="de_DE">Gefühlte Temperatur</trans>
+        </token>
+        <token name="tr(todaymin)">
+            <trans lang="en_EN">minimum today</trans>
+            <trans lang="de_DE">heutiges Minimum</trans>
+        </token>
+        <token name="tr(todaymax)">
+            <trans lang="en_EN">maximum today</trans>
+            <trans lang="de_DE">heutiges Maximum</trans>
+        </token>
+        <token name="tr(precipitationprobability)">
+            <trans lang="en_EN">Precipitation Probality</trans>
+            <trans lang="de_DE">Regenwahrscheinlichkeit</trans>
+        </token>
+        <token name="tr(precipitationintensity)">
+            <trans lang="en_EN">Precipitation Intensity</trans>
+            <trans lang="de_DE">Regenmenge</trans>
+        </token>
+        <token name="tr(precipitationtype)">
+            <trans lang="en_EN">Precipitation Type</trans>
+            <trans lang="de_DE">Niederschlagsart</trans>
+        </token>
+        <token name="tr(humidity)">
+            <trans lang="en_EN">Humidity</trans>
+            <trans lang="de_DE">Luftfeuchtigkeit</trans>
+        </token>
+        <token name="tr(apparenttemp)">
+            <trans lang="en_EN">Felt Temperature</trans>
+            <trans lang="de_DE">Gefühlte Temperatur</trans>
+        </token>
+        <token name="tr(windbearing)">
+            <trans lang="en_EN">Wind Bearing</trans>
+            <trans lang="de_DE">Windrichtung</trans>
+        </token>
+        <token name="tr(windspeed)">
+            <trans lang="en_EN">Wind Speed</trans>
+            <trans lang="de_DE">Windgeschwindigkeit</trans>
+        </token>
+        <token name="tr(cloudcover)">
+            <trans lang="en_EN">Cloud Cover</trans>
+            <trans lang="de_DE">Bewölkung</trans>
+        </token>
+        <token name="tr(pressure)">
+            <trans lang="en_EN">Pressure</trans>
+            <trans lang="de_DE">Luftdruck</trans>
+        </token>
+        <token name="tr(ozone)">
+            <trans lang="en_EN">Ozone</trans>
+            <trans lang="de_DE">Ozon</trans>
+        </token>
+        <token name="tr(visibility)">
+            <trans lang="en_EN">visibility</trans>
+            <trans lang="de_DE">Sicht</trans>
+        </token>
+        <token name="tr(conditions)">
+            <trans lang="en_EN">Weather Conditions</trans>
+            <trans lang="de_DE">Wetterlage</trans>
+        </token>
+        <token name="tr(from)">
+            <trans lang="en_EN">from</trans>
+            <trans lang="de_DE">aus</trans>
+        </token>
+        <token name="tr(felt)">
+            <trans lang="en_EN">felt</trans>
+            <trans lang="de_DE">gefühlt</trans>
+        </token>
+        <token name="tr(min)">
+            <trans lang="en_EN">min</trans>
+            <trans lang="de_DE">min</trans>
+        </token>
+        <token name="tr(max)">
+            <trans lang="en_EN">max</trans>
+            <trans lang="de_DE">max</trans>
+        </token>
+       <token name="tr(for)">
+            <trans lang="en_EN">for</trans>
+            <trans lang="de_DE">für</trans>
+        </token>              
     </translations>
     <!--
     The three Fonts FontOSD, FontFix and FontSml configured in VDR

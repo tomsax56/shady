@@ -15,10 +15,17 @@
         <color name="clrTransWhite">C0FFFFFF</color>
         <color name="clrWhite">FFFFFFFF</color>
         <color name="clrDarkGray">FF808080</color>
-        <color name="clrLightGray">FFD2D2D2</color>     
+        <color name="clrLightGray">FFEBEBEB</color>
         <color name="clrTransparent">00000000</color>
         <color name="clrHigh">C8009CD7</color>
         <color name="clrActive">C8009CD7</color>
+        <color name="clrMenuBGTVG">E1000000</color>
+        <color name="clrBackGroundGray">FF131313</color>
+        <color name="clrTransRed">99FF0000</color>
+        <color name="clrRecMenuHide">F0000000</color>
+        <color name="clrRecMenuBorderTop">FF4D4D4D</color>               
+        <color name="clrRecMenuBorderBottom">FF171717</color>
+        <color name="clrRecMenuConflTop">FF373938</color>
     </colors>
     <!--
     these variables can be used everywhere in the templates

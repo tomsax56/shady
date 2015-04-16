@@ -39,6 +39,14 @@
        id="radialGradient3043"
        xlink:href="#linearGradient5010"
        inkscape:collect="always" />
+    <filter
+       inkscape:collect="always"
+       id="filter4474">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.19950512"
+         id="feGaussianBlur4476" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -59,10 +67,10 @@
      fit-margin-bottom="0"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1680"
-     inkscape:window-height="966"
-     inkscape:window-x="-4"
-     inkscape:window-y="32"
+     inkscape:window-width="1280"
+     inkscape:window-height="725"
+     inkscape:window-x="-2"
+     inkscape:window-y="25"
      inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="1,0"
@@ -93,7 +101,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -102,6 +110,16 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(69.197693,-727.21312)">
+    <path
+       transform="matrix(2.2054572,0,0,2.2054572,-195.47649,716.40114)"
+       d="m 72.225909,18.045992 c 0,2.754591 -2.233037,4.987628 -4.987628,4.987628 -2.754591,0 -4.987628,-2.233037 -4.987628,-4.987628 0,-2.754591 2.233037,-4.987628 4.987628,-4.987628 2.754591,0 4.987628,2.233037 4.987628,4.987628 z"
+       sodipodi:ry="4.987628"
+       sodipodi:rx="4.987628"
+       sodipodi:cy="18.045992"
+       sodipodi:cx="67.238281"
+       id="path3948"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;filter:url(#filter4474)"
+       sodipodi:type="arc" />
     <path
        sodipodi:type="arc"
        style="fill:url(#radialGradient3043);fill-opacity:1;fill-rule:nonzero;stroke:none"
