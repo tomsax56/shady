@@ -42,7 +42,7 @@
 				<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 			</areascroll>
 <!--recordingtime-->
-			<area  condition="{showRecordingTime}" x="55%" width="39%" layer="3">
+			<area condition="{showRecordingTime}" x="55%" width="40%" layer="3">
 				<drawimage condition="not{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
 				<drawimage condition="{current}++eq({coloredButtons},0)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient"/>
@@ -103,9 +103,9 @@
 	</menuitems>
 
 	<scrollbar>
-		<area condition="lt({height},1000)" x="95%" y="14%" width="3%" height="75%" layer="3">
-			 <drawimage   x="15%" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
-			 <drawimage x="28%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
+		<area condition="lt({height},1000)" x="95%" y="14%" width="5%" height="75%" layer="3">
+			 <drawimage   x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
 		</area>
 	</scrollbar>
 </menurecordings>

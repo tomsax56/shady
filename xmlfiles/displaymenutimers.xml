@@ -78,7 +78,7 @@
 	</menuitems>
 
 	<scrollbar>
-		<area condition="lt({height},1000)" x="95%" y="15%" width="5%" height="73%" layer="3">
+		<area condition="lt({height},1000)" x="95%" y="15%" width="5%" height="75%" layer="3">
 			 <drawimage   x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
 			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
 		</area>
