@@ -24,13 +24,13 @@
 			<parameter type="int" name="numShortSubmenuitems" min="12" max="18" displaytext="{tr(numShortSubmenuitems)}">15</parameter>
 		</submenu>
 		<submenu name="miscellaneous" displaytext="{tr(miscellaneous)}">
-			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">1</parameter>
-			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">0</parameter>
-			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">0</parameter>
-			<parameter type="int" name="menuFadetime" min="0" max="500" displaytext="{tr(menuFadetime)}">0</parameter>
+			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
+			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
+			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">1</parameter>
+			<parameter type="int" name="menuFadetime" min="0" max="500" displaytext="{tr(menuFadetime)}">300</parameter>
 			<parameter type="bool" name="showChannelDetails" displaytext="{tr(showChannelDetails)}">0</parameter>
-			<parameter type="bool" name="showTimerStopTime" displaytext="{tr(showTimerStopTime)}">0</parameter>
-			<parameter type="bool" name="showRecordingTime" displaytext="{tr(showRecordingTime)}">0</parameter>
+			<parameter type="bool" name="showTimerStopTime" displaytext="{tr(showTimerStopTime)}">1</parameter>
+			<parameter type="bool" name="showRecordingTime" displaytext="{tr(showRecordingTime)}">1</parameter>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
 		</submenu>
 		<!--<submenu name="presets" displaytext="Presets">
