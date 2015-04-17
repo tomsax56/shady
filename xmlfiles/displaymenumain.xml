@@ -113,7 +113,7 @@
 			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(lastrecordings)}" />
 		</area>
 		<area x="45%" y="80%" width="33%" height="18%" layer="3">
-			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}" overflow="cut">
+			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/5" rowheight="{areaheight}" overflow="cut">
 				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
 				<drawtext x="4%" y="10%" width="{columnwidth}*0.8" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
 				<drawtextbox x="2%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" /> 

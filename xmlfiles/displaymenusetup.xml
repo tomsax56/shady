@@ -12,7 +12,7 @@
 		<area x="0" y="0" width="100%" height="11%" layer="3">
 			<drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />           
 		</area>
-		<area condition="{setupIconbar}" x="0" y="73%" width="100%" height="20%" layer="3">
+		<area condition="{setupIconbar}" x="0" y="73%" width="100%" height="27%" layer="3">
 			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="setupIcons" />
 		</area>
 		<area x="2%" y="0" width="10%" height="10%" layer="4">
@@ -93,7 +93,7 @@
 		</listelement>
 
 		<currentelement delay="0" fadetime="300">
-			<area condition="{setupIconbar}" x="0" y="100%" width="100%" height="60%" layer="4">
+			<area condition="{setupIconbar}" x="0" y="100%" width="100%" height="70%" layer="4">
 				<drawimage imagetype="menuicon" path="{icon}" width="100%" height="100%"/>
 			</area>
 		</currentelement>
