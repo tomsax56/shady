@@ -127,16 +127,18 @@
 		</area>
 	</discusage>
 
-	<devices detached="true" delay="{devicesDelay}" fadetime="{devicesFadetime}">
+	<devices mode="light" detached="true" delay="{devicesDelay}" fadetime="{devicesFadetime}">
 		<area x="80%" y="74%" width="16%" height="12%" layer="3">
 			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/2" overflow="cut">
-				<drawtext name="label" x="5" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.4" color="{clrLightGray}" text="{devices[num]}: {devices[type]}" />
-				<drawtext condition="{devices[hascam]}" x="{width(label)} + 15" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.40" color="{clrLightGray}" text="(CAM {devices[cam]})" />
-				<drawtext condition="{devices[recording]} ++ {devices[livetv]}" align="right" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.40" color="{clrRed}" text="LiveTV, Recording ({devices[channelname]}) " />
-				<drawtext condition="{devices[recording]} ++ not{devices[livetv]}" align="right" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.40" color="{clrRed}" text="Recording ({devices[channelname]}) " />
-				<drawtext condition="not{devices[recording]} ++ {devices[livetv]}" align="right" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.40" color="{clrLightGray}" text="LiveTV ({devices[channelname]}) " />
-				<drawrectangle  x="5" y="{rowheight}*0.5" width="{areawidth}*{devices[signalstrength]}/100" height="{areaheight}*0.015" color="{clrLightGray}" />
-				<drawrectangle  x="5" y="{rowheight}*0.65" width="{areawidth}*{devices[signalquality]}/100" height="{areaheight}*0.015" color="{clrLightGray}" />
+				<drawtext name="label" x="5" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{devices[num]}: {devices[type]}" />
+				<!--<drawtext condition="{devices[hascam]}" x="{width(label)} + 15" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.40" color="{clrLightGray}" text="(CAM {devices[cam]})" />-->
+				<drawimage cache="true" x="80%" y="8%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
+				<drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="LiveTV, Recording" />
+				<drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="Recording" />
+				<drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="LiveTV" />
+				<drawtext x="5" y="{rowheight}*0.4" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{devices[channelname]}" />
+				<!--<drawrectangle  x="5" y="{rowheight}*0.5" width="{areawidth}*{devices[signalstrength]}/100*0.8" height="{areaheight}*0.015" color="{clrLightGray}" />
+				<drawrectangle  x="5" y="{rowheight}*0.65" width="{areawidth}*{devices[signalquality]}/100*0.8" height="{areaheight}*0.015" color="{clrLightGray}" />-->
 			</loop>  
 		</area> 
 	</devices>

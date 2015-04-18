@@ -17,7 +17,8 @@
 			<drawtext  x="0" y="12" valign="center" align="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{channelnumber} - {channelname}" />
 		</area>
 		<area x="1%" y="78%" width="15%" height="15%" layer="3">
-			<drawimage cache="true" condition="{channellogoexists}" imagetype="channellogo" path="{channelid}" width="80%" height="80%" align="center" valign="center" />        </area>
+			<drawimage cache="true" condition="{channellogoexists}" imagetype="channellogo" path="{channelid}" width="80%" height="80%" align="center" valign="center" />
+		</area>
 	</channelinfo>
 
 	<epginfo>
