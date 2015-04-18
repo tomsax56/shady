@@ -33,31 +33,21 @@
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
 		</submenu>
 		<submenu name="Fadetimes" displaytext="{tr(Delay and Fadetimes)}">
-			<parameter type="int" name="menuFadetime" min="0" max="500" displaytext="{tr(menuFadetime)}">300</parameter>
-			
-			<parameter type="int" name="discusageDelay" min="1" max="500" displaytext="{tr(discusageDelay)}">1</parameter>
-			<parameter type="int" name="discusageFadetime" min="0" max="500" displaytext="{tr(discusageFadetime)}">0</parameter>
-			
-			<parameter type="int" name="lastrecordingsDelay" min="1" max="500" displaytext="{tr(lastrecordingsDelay)}">1</parameter>
-			<parameter type="int" name="lastrecordingsFadetime" min="0" max="500" displaytext="{tr(lastrecordingsFadetime)}">0</parameter>
-			
-			<parameter type="int" name="devicesDelay" min="1" max="500" displaytext="{tr(devicesDelay)}">1</parameter>
-			<parameter type="int" name="devicesFadetime" min="0" max="500" displaytext="{tr(devicesFadetime)}">0</parameter>
-			
-			<parameter type="int" name="currentweatherDelay" min="1" max="500" displaytext="{tr(currentweatherDelay)}">1</parameter>
-			<parameter type="int" name="currentweatherFadetime" min="0" max="500" displaytext="{tr(currentweatherFadetime)}">0</parameter>
-			
-			<parameter type="int" name="systemloadDelay" min="1" max="500" displaytext="{tr(systemloadDelay)}">1</parameter>
-			<parameter type="int" name="systemloadFadetime" min="0" max="500" displaytext="{tr(systemloadFadetime)}">0</parameter>
-			
-			<parameter type="int" name="temperaturesDelay" min="1" max="500" displaytext="{tr(temperaturesDelay)}">1</parameter>
-			<parameter type="int" name="temperaturesFadetime" min="0" max="500" displaytext="{tr(temperaturesFadetime)}">0</parameter>
-			
-			<parameter type="int" name="timersDelay" min="1" max="500" displaytext="{tr(timersDelay)}">1</parameter>
-			<parameter type="int" name="timersFadetime" min="0" max="500" displaytext="{tr(timersFadetime)}">0</parameter>
-			
-			<parameter type="int" name="systemloadDelay" min="1" max="500" displaytext="{tr(sytemloadDelay)}">1</parameter>
-			<parameter type="int" name="systemloadFadetime" min="0" max="500" displaytext="{tr(systemloadFadetime)}">0</parameter>
+			<parameter type="int" name="01_menuFadetime" min="0" max="500" displaytext="{tr(01_menuFadetime)}">300</parameter>
+			<parameter type="int" name="02_timersDelay" min="1" max="500" displaytext="{tr(02_timersDelay)}">1</parameter>
+			<parameter type="int" name="02_timersFadetime" min="0" max="500" displaytext="{tr(02_timersFadetime)}">0</parameter>
+			<parameter type="int" name="03_lastrecordingsDelay" min="1" max="500" displaytext="{tr(03_lastrecordingsDelay)}">1</parameter>
+			<parameter type="int" name="03_lastrecordingsFadetime" min="0" max="500" displaytext="{tr(03_lastrecordingsFadetime)}">0</parameter>
+			<parameter type="int" name="04_devicesDelay" min="1" max="500" displaytext="{tr(04_devicesDelay)}">1</parameter>
+			<parameter type="int" name="04_devicesFadetime" min="0" max="500" displaytext="{tr(04_devicesFadetime)}">0</parameter>
+			<parameter type="int" name="05_discusageDelay" min="1" max="500" displaytext="{tr(05_discusageDelay)}">1</parameter>
+			<parameter type="int" name="05_discusageFadetime" min="0" max="500" displaytext="{tr(05_discusageFadetime)}">0</parameter>
+			<parameter type="int" name="06_systemloadDelay" min="1" max="500" displaytext="{tr(06_systemloadDelay)}">1</parameter>
+			<parameter type="int" name="06_systemloadFadetime" min="0" max="500" displaytext="{tr(06_systemloadFadetime)}">0</parameter>
+			<parameter type="int" name="07_temperaturesDelay" min="1" max="500" displaytext="{tr(07_temperaturesDelay)}">1</parameter>
+			<parameter type="int" name="07_temperaturesFadetime" min="0" max="500" displaytext="{tr(07_temperaturesFadetime)}">0</parameter>
+			<parameter type="int" name="08_currentweatherDelay" min="1" max="500" displaytext="{tr(08_currentweatherDelay)}">1</parameter>
+			<parameter type="int" name="08_currentweatherFadetime" min="0" max="500" displaytext="{tr(08_currentweatherFadetime)}">0</parameter>
 		</submenu>
     </menu>
 
@@ -133,63 +123,63 @@
 			<trans lang="en_EN">Delay and fadetimes</trans>
 			<trans lang="de_DE">Verzögerungen und Einblendzeiten</trans>
 		</token>
-		<token name="tr(menuFadetime)">
+		<token name="tr(01_menuFadetime)">
 			<trans lang="en_EN">Fadetime menus</trans>
 			<trans lang="de_DE">Einblendzeit Menüs</trans>
 		</token>
-		<token name="tr(timersDelay)">
+		<token name="tr(02_timersDelay)">
 			<trans lang="en_EN">Delay timers</trans>
 			<trans lang="de_DE">Verzögerung Timer</trans>
 		</token>
-		<token name="tr(timersFadetime)">
+		<token name="tr(02_timersFadetime)">
 			<trans lang="en_EN">Fadetime timers</trans>
 			<trans lang="de_DE">Einblendzeit Timer</trans>
 		</token>
-		<token name="tr(lastrecordingsDelay)">
+		<token name="tr(03_lastrecordingsDelay)">
 			<trans lang="en_EN">Delay last recordings</trans>
 			<trans lang="de_DE">Verzögerung 'letzte Aufzeichnungen'</trans>
 		</token>
-		<token name="tr(lastrecordingsFadetime)">
+		<token name="tr(03_lastrecordingsFadetime)">
 			<trans lang="en_EN">Fadetime last recordings</trans>
 			<trans lang="de_DE">Einblendzeit 'letzte Aufzeichnungen'</trans>
 		</token>
-		<token name="tr(devicesDelay)">
+		<token name="tr(04_devicesDelay)">
 			<trans lang="en_EN">Delay DVB-devices</trans>
 			<trans lang="de_DE">Verzögerung DVB-Geräte</trans>
 		</token>
-		<token name="tr(devicesFadetime)">
+		<token name="tr(04_devicesFadetime)">
 			<trans lang="en_EN">Fadetime DVB-devices</trans>
 			<trans lang="de_DE">Einblendzeit DVB-Geräte</trans>
 		</token>
-		<token name="tr(currentweatherDelay)">
+		<token name="tr(08_currentweatherDelay)">
 			<trans lang="en_EN">Delay weather</trans>
 			<trans lang="de_DE">Verzögerung Wetter</trans>
 		</token>
-		<token name="tr(currentweatherFadetime)">
+		<token name="tr(08_currentweatherFadetime)">
 			<trans lang="en_EN">Fadetime weather</trans>
 			<trans lang="de_DE">Einblendzeit Wetterdaten</trans>
 		</token>
-		<token name="tr(temperaturesDelay)">
+		<token name="tr(07_temperaturesDelay)">
 			<trans lang="en_EN">Delay temps</trans>
 			<trans lang="de_DE">Verzögerung Temperaturen</trans>
 		</token>        
-		<token name="tr(temperaturesFadetime)">
+		<token name="tr(07_temperaturesFadetime)">
 			<trans lang="en_EN">Fadetime temps</trans>
 			<trans lang="de_DE">Einblendzeit Temperaturen</trans>
 		</token>
-		<token name="tr(discusageDelay)">
+		<token name="tr(05_discusageDelay)">
 			<trans lang="en_EN">Delay discusage</trans>
 			<trans lang="de_DE">Verzögerung Festplattenausnutzung</trans>
 		</token>        
-		<token name="tr(discusageFadetime)">
+		<token name="tr(05_discusageFadetime)">
 			<trans lang="en_EN">Fadetime discusage</trans>
 			<trans lang="de_DE">Einblendzeit Festplattenausnutzung</trans>
 		</token>
-		<token name="tr(systemloadDelay)">
+		<token name="tr(06_systemloadDelay)">
 			<trans lang="en_EN">Delay load</trans>
 			<trans lang="de_DE">Verzögerung Last</trans>
 		</token>        
-		<token name="tr(systemloadFadetime)">
+		<token name="tr(06_systemloadFadetime)">
 			<trans lang="en_EN">Fadetime load</trans>
 			<trans lang="de_DE">Einblendzeit Last</trans>
 		</token>
