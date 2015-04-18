@@ -16,14 +16,12 @@
 <!--
         <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">0</parameter>
 -->
-		<!--<submenu name="mainMenu" displaytext="{tr(mainMenu)}">
-		</submenu>-->
-		<submenu name="menuItems" displaytext="{tr(menuItems)}">
+		<submenu name="MenuItems" displaytext="{tr(menuItems)}">
 			<parameter type="int" name="numShortMenuitems" min="8" max="10" displaytext="{tr(numShortMenuitems)}">10</parameter>
 			<parameter type="int" name="numLongSubmenuitems" min="12" max="18" displaytext="{tr(numLongSubmenuitems)}">14</parameter>
 			<parameter type="int" name="numShortSubmenuitems" min="12" max="18" displaytext="{tr(numShortSubmenuitems)}">15</parameter>
 		</submenu>
-		<submenu name="miscellaneous" displaytext="{tr(miscellaneous)}">
+		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
 			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
 			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">1</parameter>
