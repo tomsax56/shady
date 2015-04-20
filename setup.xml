@@ -29,6 +29,8 @@
 			<parameter type="bool" name="showTimerStopTime" displaytext="{tr(showTimerStopTime)}">1</parameter>
 			<parameter type="bool" name="showRecordingTime" displaytext="{tr(showRecordingTime)}">1</parameter>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
+			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
+			<!--<parameter type="int" name="devices" min="0" max="1" displaytext="{tr(devices)}">0</parameter>-->
 		</submenu>
 		<submenu name="Fadetimes" displaytext="{tr(Delay and Fadetimes)}">
 			<parameter type="int" name="01_menuFadetime" min="0" max="500" displaytext="{tr(01_menuFadetime)}">300</parameter>
@@ -117,6 +119,14 @@
 			<trans lang="en_EN">Scroll descriptions in TVGuideNG</trans>
 			<trans lang="de_DE">Scrolltext bei Beschreibungen in TVGuideNG</trans>
 		</token>
+		<token name="tr(sysinfoPBtheme)">
+			<trans lang="en_EN">Bars in systeminfo-plugin in themecolors</trans>
+			<trans lang="de_DE">Balken im systeminfo-plugin in Themefarben</trans>
+		</token>
+		<!--<token name="tr(devices)">
+			<trans lang="en_EN">DVB-Devices in mainmenu (0=light, 1=with bars)</trans>
+			<trans lang="de_DE">DVB-Geräte im Hauptmenü (0=light, 1=mit Balkenanzeige)</trans>
+		</token>-->
 		<token name="tr(Delay and Fadetimes)">
 			<trans lang="en_EN">Delay and fadetimes</trans>
 			<trans lang="de_DE">Verzögerungen und Einblendzeiten</trans>
