@@ -43,4 +43,20 @@ shady-skin Revision History
 - Enhanced postion of setupiconbar
 - Added setup for delay and fadetimes
 
+2015-04-18:
+
+- Switched devices in mainmenu to modus=light
+- Numbered setup for delay and fadetimes
+
+2015-04-19:
+
+- Increased size of channellogos for timers in mainmenu (provided by utility@vdrportal.de)
+
+2015-04-20:
+
+- Optimized position of timerstextbox in displaymenumain
+- Optimized position of timerstoptime in displaymenutimers (provided by utility@vdrportal.de)
+- Added section for neutrinoepg-plugin in displaymenudefault
+- Added graphical progressbars for systeminfo-plugin
+
 
