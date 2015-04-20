@@ -106,8 +106,14 @@
 			<area x="24%" condition="not{separator}++{systeminfo}" width="35%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
 			</area>
-			<area x="59%" condition="not{separator}++{systeminfo}" width="33%" layer="4">
+			<area x="59%" condition="not{separator}++{systeminfo}++not{column3pb}" width="34%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column3}" />
+			</area>
+			<area x="59%" condition="not{separator}++{systeminfo}++{column3pb}" width="31%" layer="4">
+				<drawimage condition="not{sysinfoPBtheme}" x="0" y="0" valign="center" width="{areawidth}+1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBSpec" />
+				<drawimage condition="{sysinfoPBtheme}" x="0" y="0" valign="center" width="{areawidth}+1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
+				<drawimage  x="{column3pbsize}*20" y="0" valign="center" width="{column3pbtotalsize}*20-{column3pbsize}*20" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMask" />
+				<drawimage x="{areawidth}-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 			</area>
 <!--mail-plugin-->
 			<area x="4%" condition="not{separator}++{mailbox}" width="6%" layer="4">
