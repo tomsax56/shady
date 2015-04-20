@@ -51,9 +51,12 @@
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color"/>
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="5%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient"/>
 			</area>
-			<area condition="{showTimerStopTime}" x="52%" width="4%" layer="3">
+			<!--<area condition="{showTimerStopTime}" x="52%" width="4%" layer="3">
 				<drawtext x="0" width="100%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="- {timerstop}"/>
-			</area>            
+			</area>-->
+			<area condition="{showTimerStopTime}" x="51%" width="5%" layer="3">
+				<drawtext x="10" width="100%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="- {timerstop}"/>
+			</area>
 			<area condition="{showTimerStopTime}" x="57%" width="2%" layer="4">
 				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
 				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenFL" />
