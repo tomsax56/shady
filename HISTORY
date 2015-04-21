@@ -58,5 +58,10 @@ shady-skin Revision History
 - Optimized position of timerstoptime in displaymenutimers (provided by utility@vdrportal.de)
 - Added section for neutrinoepg-plugin in displaymenudefault
 - Added graphical progressbars for systeminfo-plugin
+- Added symbol for remotetimers in mainmenutimers
+
+2015-04-21:
+
+- Updated HISTORY, increased luminescence of remoteTimers.png
 
 
