@@ -26,7 +26,8 @@
 
 	<rectitle>
 		<area x="3%" y="77%" width="94%" height="8%" layer="3">
-			<drawtext x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{recsubtitle}" />
+			<drawtext condition="isset{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
+			<drawtext condition="empty{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{rectitle}" />
 		</area>
 	</rectitle>
 
