@@ -68,5 +68,6 @@ shady-skin Revision History
 - Added percentseen in displaymenurecordings
 - Reworked displayreplay, added recend
 - Added setup for colored/gray elapsed-bars
+- Fixed rectitle
 
 
