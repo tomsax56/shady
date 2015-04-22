@@ -50,12 +50,12 @@ shady-skin Revision History
 
 2015-04-19:
 
-- Increased size of channellogos for timers in mainmenu (provided by utility@vdrportal.de)
+- Increased size of channellogos for timers in mainmenu (provided by utiltiy@vdrportal.de)
 
 2015-04-20:
 
 - Optimized position of timerstextbox in displaymenumain
-- Optimized position of timerstoptime in displaymenutimers (provided by utility@vdrportal.de)
+- Optimized position of timerstoptime in displaymenutimers (provided by utiltiy@vdrportal.de)
 - Added section for neutrinoepg-plugin in displaymenudefault
 - Added graphical progressbars for systeminfo-plugin
 - Added symbol for remotetimers in mainmenutimers
@@ -63,5 +63,11 @@ shady-skin Revision History
 2015-04-21:
 
 - Updated HISTORY, increased luminescence of remoteTimers.png
+
+2015-04-22:
+
+- Added percentseen in displaymenurecordings
+- Reworked displayreplay, added recend
+
 
 

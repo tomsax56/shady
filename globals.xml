@@ -282,7 +282,15 @@
        <token name="tr(for)">
             <trans lang="en_EN">for</trans>
             <trans lang="de_DE">für</trans>
-        </token>              
+        </token>
+                <token name="tr(recordedat)">
+        <trans lang="en_EN">Recorded</trans>
+            <trans lang="de_DE">Aufgenommen</trans>
+        </token>
+       <token name="tr(replayends)">
+            <trans lang="en_EN">Replay ends</trans>
+            <trans lang="de_DE">Wiedergabe endet</trans>
+        </token>
     </translations>
     <!--
     The three Fonts FontOSD, FontFix and FontSml configured in VDR
