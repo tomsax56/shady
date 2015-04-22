@@ -72,7 +72,8 @@
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title} - {shorttext}"/>
 			</areascroll>
 			<area condition="not{separator}++{whatsonnow}++{running}" x="52%" width="43%" layer="4">
-				<drawimage  x="4%" y="{areaheight}-3" width="{areawidth}*{elapsed}/{duration}*0.945" height="{areaheight}/18" imagetype="skinpart" path="elapsedBar" />
+				<drawimage condition="{coloredElapsed}" x="4%" y="{areaheight}-3" width="{areawidth}*{elapsed}/{duration}*0.945" height="{areaheight}/20" imagetype="skinpart" path="elapsedBar" />
+				<drawimage condition="not{coloredElapsed}" x="4%" y="{areaheight}-3" width="{areawidth}*{elapsed}/{duration}*0.945" height="{areaheight}/20" imagetype="skinpart" path="elapsedBarMono" />
 			</area>
 <!-- WHATSONNEXT -->
 			<area condition="not{separator}++{whatsonnext}" x="42%" width="6%" layer="4">
