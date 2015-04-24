@@ -14,7 +14,7 @@
    height="3"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91+devel r13930"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="elapsedBarMono.svg">
   <defs
      id="defs4">
@@ -27,7 +27,7 @@
       <stop
          id="stop2995"
          offset="0.5"
-         style="stop-color:#979797;stop-opacity:1" />
+         style="stop-color:#6e6e6e;stop-opacity:1" />
       <stop
          style="stop-color:#000000;stop-opacity:1"
          offset="1"
@@ -51,16 +51,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="195"
-     inkscape:cx="0.54856293"
-     inkscape:cy="1.6525184"
+     inkscape:zoom="256"
+     inkscape:cx="2.7324959"
+     inkscape:cy="1.5118934"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="966"
-     inkscape:window-x="-4"
-     inkscape:window-y="32"
+     inkscape:window-width="1920"
+     inkscape:window-height="1005"
+     inkscape:window-x="-2"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -74,7 +74,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

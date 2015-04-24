@@ -20,8 +20,8 @@
 				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient"/>
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color"/>
-				<drawimage  condition="not{folder}++{coloredElapsed}" x="4%" y="{areaheight}-3" width="{areawidth}*{percentseen}/100" height="{areaheight}/20" imagetype="skinpart" path="elapsedBar" />
-				<drawimage  condition="not{folder}++not{coloredElapsed}" x="4%" y="{areaheight}-3" width="{areawidth}*{percentseen}/100" height="{areaheight}/20" imagetype="skinpart" path="elapsedBarMono" />
+				<drawimage  condition="not{folder}++{coloredElapsed}" x="47" y="{areaheight}-3" width="{areawidth}*{percentseen}/100" height="{areaheight}/20" imagetype="skinpart" path="elapsedBar" />
+				<drawimage  condition="not{folder}++not{coloredElapsed}" x="47" y="{areaheight}-3" width="{areawidth}*{percentseen}/100" height="{areaheight}/20" imagetype="skinpart" path="elapsedBarMono" />
 			</area>
 			<area condition="not{folder}" x="41%" width="7%" layer="3">
 				<drawtext x="5%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
@@ -49,14 +49,14 @@
 				<drawimage condition="{current}++eq({coloredButtons},0)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient"/>
 				<drawimage condition="{current}++eq({coloredButtons},1)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color"/>
-				<drawimage  condition="not{folder}++{coloredElapsed}" x="4%" y="{areaheight}-3" width="{areawidth}*{percentseen}/100" height="{areaheight}/20" imagetype="skinpart" path="elapsedBar" />
-				<drawimage  condition="not{folder}++not{coloredElapsed}" x="4%" y="{areaheight}-3" width="{areawidth}*{percentseen}/100" height="{areaheight}/20" imagetype="skinpart" path="elapsedBarMono" />
+				<drawimage  condition="not{folder}++{coloredElapsed}" x="42" y="{areaheight}-3" width="{areawidth}*{percentseen}/100" height="{areaheight}/20" imagetype="skinpart" path="elapsedBar" />
+				<drawimage  condition="not{folder}++not{coloredElapsed}" x="42" y="{areaheight}-3" width="{areawidth}*{percentseen}/100" height="{areaheight}/20" imagetype="skinpart" path="elapsedBarMono" />
 			</area>
 			<area condition="not{folder}++{showRecordingTime}" x="49%" width="5%" layer="3">
 					<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{time}" />
 			</area>
 			<area condition="not{folder}++{showRecordingTime}" x="53%" width="5%" layer="3">
-				<drawtext x="10%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{durationhours}:{durationminutes} " />
+				<drawtext x="10%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{duration}" />
 			</area>
 			<area  condition="{showRecordingTime}" x="57%" width="2%" layer="4">
 				<drawimage condition="not{folder}++{new}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenFL" />
