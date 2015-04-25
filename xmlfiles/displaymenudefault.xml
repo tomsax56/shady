@@ -133,7 +133,7 @@
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column3}" />
 			</area>
 			<area x="29%" condition="not{separator}++{neutrinoepg}++{column4pb}" width="5%" layer="4">
-				<drawimage debug="true" x="0" y="0" valign="center" width="{areawidth}" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
+				<drawimage x="0" y="0" valign="center" width="{areawidth}" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
 				<drawimage x="{column4pbsize}*12" y="0" valign="center" width="{column4pbtotalsize}*12-{column4pbsize}*12" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMask" />
 				<drawimage x="0" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 				<drawimage x="{areawidth}-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
