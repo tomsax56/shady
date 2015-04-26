@@ -211,7 +211,7 @@
 		</token>
 		<token name="tr(02_newNotCutted-recordingsMarker)">
 			<trans lang="en_EN">Marker for unseen, not cutted recordings</trans>
-			<trans lang="de_DE">Marker für ungesehene, ungeschnittene Aufnahmen</trans>
+			<trans lang="de_DE">Marker für ungesehene, nicht geschnittene Aufnahmen</trans>
 		</token>
 		<token name="tr(03_newCutted-recordingsMarker)">
 			<trans lang="en_EN">Marker for unseen, cutted recordings</trans>
