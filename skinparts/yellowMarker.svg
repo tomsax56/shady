@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="42"
+   width="39"
    height="57"
    id="svg4334"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="yellowFL.svg">
+   sodipodi:docname="yellowMarker.svg">
   <defs
      id="defs4336">
     <linearGradient
@@ -25,7 +25,7 @@
          offset="0"
          id="stop5012" />
       <stop
-         style="stop-color:#242210;stop-opacity:1;"
+         style="stop-color:#000000;stop-opacity:1;"
          offset="1"
          id="stop5014" />
     </linearGradient>
@@ -41,7 +41,8 @@
        inkscape:collect="always" />
     <filter
        inkscape:collect="always"
-       id="filter6401">
+       id="filter6401"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.19950512"
@@ -55,7 +56,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
+     inkscape:zoom="22.4"
      inkscape:cx="11.717154"
      inkscape:cy="30.216065"
      inkscape:document-units="px"
@@ -67,8 +68,8 @@
      fit-margin-bottom="0"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="725"
+     inkscape:window-width="1920"
+     inkscape:window-height="1005"
      inkscape:window-x="-2"
      inkscape:window-y="25"
      inkscape:window-maximized="1">
@@ -101,7 +102,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -111,8 +112,18 @@
      id="layer1"
      transform="translate(69.197693,-727.21312)">
     <path
+       sodipodi:type="arc"
+       style="fill:#0f0f0f;fill-opacity:1;stroke:none"
+       id="path3783"
+       sodipodi:cx="28.035715"
+       sodipodi:cy="15.616072"
+       sodipodi:rx="12.142858"
+       sodipodi:ry="11.205358"
+       d="m 40.178573,15.616072 a 12.142858,11.205358 0 1 1 -24.285715,0 12.142858,11.205358 0 1 1 24.285715,0 z"
+       transform="matrix(1.0147962,0,0,1.0996995,-75.635704,738.93761)" />
+    <path
        transform="matrix(2.2054572,0,0,2.2054572,-195.47649,716.40114)"
-       d="m 72.225909,18.045992 c 0,2.754591 -2.233037,4.987628 -4.987628,4.987628 -2.754591,0 -4.987628,-2.233037 -4.987628,-4.987628 0,-2.754591 2.233037,-4.987628 4.987628,-4.987628 2.754591,0 4.987628,2.233037 4.987628,4.987628 z"
+       d="m 72.225909,18.045992 a 4.987628,4.987628 0 1 1 -9.975256,0 4.987628,4.987628 0 1 1 9.975256,0 z"
        sodipodi:ry="4.987628"
        sodipodi:rx="4.987628"
        sodipodi:cy="18.045992"
@@ -128,7 +139,7 @@
        sodipodi:cy="18.045992"
        sodipodi:rx="4.987628"
        sodipodi:ry="4.987628"
-       d="m 72.225909,18.045992 c 0,2.754591 -2.233037,4.987628 -4.987628,4.987628 -2.754591,0 -4.987628,-2.233037 -4.987628,-4.987628 0,-2.754591 2.233037,-4.987628 4.987628,-4.987628 2.754591,0 4.987628,2.233037 4.987628,4.987628 z"
+       d="m 72.225909,18.045992 a 4.987628,4.987628 0 1 1 -9.975256,0 4.987628,4.987628 0 1 1 9.975256,0 z"
        transform="matrix(2.2054572,0,0,2.2054572,-195.47649,716.40114)" />
   </g>
 </svg>

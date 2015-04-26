@@ -27,7 +27,6 @@
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">1</parameter>
 			<parameter type="bool" name="showChannelDetails" displaytext="{tr(showChannelDetails)}">0</parameter>
 			<parameter type="bool" name="showTimerStopTime" displaytext="{tr(showTimerStopTime)}">1</parameter>
-			<parameter type="bool" name="showRecordingTime" displaytext="{tr(showRecordingTime)}">1</parameter>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
 			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
 			<parameter type="bool" name="coloredElapsed" displaytext="{tr(coloredElapsed)}">0</parameter>
@@ -49,6 +48,14 @@
 			<parameter type="int" name="07_temperaturesFadetime" min="0" max="500" displaytext="{tr(07_temperaturesFadetime)}">0</parameter>
 			<parameter type="int" name="08_currentweatherDelay" min="1" max="500" displaytext="{tr(08_currentweatherDelay)}">1</parameter>
 			<parameter type="int" name="08_currentweatherFadetime" min="0" max="500" displaytext="{tr(08_currentweatherFadetime)}">0</parameter>
+		</submenu>
+		<submenu name="Recordings" displaytext="{tr(recordingsmarkerandprogress)}">
+			<parameter type="bool" name="01_seenProgress" displaytext="{tr(01_seenProgress)}">1</parameter>
+			<parameter type="int" name="02_newNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(02_newNotCutted-recordingsMarker)}">2</parameter>
+			<parameter type="int" name="03_newCutted-recordingsMarker" min="0" max="9" displaytext="{tr(03_newCutted-recordingsMarker)}">4</parameter>
+			<parameter type="int" name="04_notNewNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(04_notNewNotCutted-recordingsMarker)}">9</parameter>
+			<parameter type="int" name="05_notNewCutted-recordingsMarker" min="0" max="9" displaytext="{tr(05_notNewCutted-recordingsMarker)}">5</parameter>
+			<parameter type="bool" name="06_showRecordingTime" displaytext="{tr(06_showRecordingTime)}">1</parameter>
 		</submenu>
     </menu>
 
@@ -91,10 +98,6 @@
 		<token name="tr(showTimerStopTime)">
 			<trans lang="en_EN">Show timersstoptime</trans>
 			<trans lang="de_DE">Zeige Endzeit für Timer</trans>
-		</token>        
-		<token name="tr(showRecordingTime)">
-			<trans lang="en_EN">Show time of recordings</trans>
-			<trans lang="de_DE">Zeige Uhrzeit der Aufnahmen</trans>
 		</token>       
 		<token name="tr(showOnlyTimers)">
 			<trans lang="en_EN">Show only timers in mainmenu</trans>
@@ -132,6 +135,7 @@
 			<trans lang="en_EN">DVB-Devices in mainmenu (0=light, 1=with bars)</trans>
 			<trans lang="de_DE">DVB-Geräte im Hauptmenü (0=light, 1=mit Balkenanzeige)</trans>
 		</token>-->
+<!--Delay and Fadetimes-->
 		<token name="tr(Delay and Fadetimes)">
 			<trans lang="en_EN">Delay and fadetimes</trans>
 			<trans lang="de_DE">Verzögerungen und Einblendzeiten</trans>
@@ -196,5 +200,34 @@
 			<trans lang="en_EN">Fadetime load</trans>
 			<trans lang="de_DE">Einblendzeit Last</trans>
 		</token>
+<!--RecordingMarkersProgress-->
+		<token name="tr(recordingsmarkerandprogress)">
+			<trans lang="en_EN">Settings menu Recordings</trans>
+			<trans lang="de_DE">Einstellungen Menü Aufzeichnungen</trans>
+		</token>
+		<token name="tr(01_seenProgress)">
+			<trans lang="en_EN">Show 'percentseen-bar' for recordings</trans>
+			<trans lang="de_DE">Zeige 'Prozent-gesehen-Balken' für Aufnahmen</trans>
+		</token>
+		<token name="tr(02_newNotCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for unseen, not cutted recordings</trans>
+			<trans lang="de_DE">Marker für ungesehene, ungeschnittene Aufnahmen</trans>
+		</token>
+		<token name="tr(03_newCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for unseen, cutted recordings</trans>
+			<trans lang="de_DE">Marker für ungesehene, geschnittene Aufnahmen</trans>
+		</token>        
+		<token name="tr(04_notNewNotCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for seen, not cutted recordings</trans>
+			<trans lang="de_DE">Marker für gesehene, nicht geschnittene Aufnahmen</trans>
+		</token>
+		<token name="tr(05_notNewCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for seen, cutted recordings</trans>
+			<trans lang="de_DE">Marker für gesehene, geschnittene Aufnahmen</trans>
+		</token>
+		<token name="tr(06_showRecordingTime)">
+			<trans lang="en_EN">Show time of recordings</trans>
+			<trans lang="de_DE">Zeige Uhrzeit der Aufnahmen</trans>
+		</token>        
 	</translations>
 </setup>

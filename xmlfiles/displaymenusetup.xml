@@ -15,9 +15,6 @@
 		<area condition="{setupIconbar}" x="0" y="73%" width="100%" height="27%" layer="3">
 			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="setupIcons" />
 		</area>
-		<area x="2%" y="0" width="10%" height="10%" layer="4">
-			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="VDR" />
-		</area>
 	</background>
 
 	<header>
