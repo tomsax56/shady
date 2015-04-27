@@ -83,11 +83,34 @@
 				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
 			</area>
 <!--separators-->
-			<area condition="{separator}" x="2%" width="92%" layer="3">
+			<area condition="{separator}++not{fritzbox}" x="2%" width="92%" layer="3">
 				<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorLong" />
 			</area>
-			<area condition="{separator}" x="4%" width="91%" layer="4">
-				<drawtext align="center" valign="center"  font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+<!--separators-fritzbox-Anrufdetails-->
+			<area condition="{separator}++{fritzbox}" x="2%" width="92%" layer="3">
+				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong1" />
+				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
+				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
+				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
+			</area>
+			<areascroll condition="{separator}++{fritzbox}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="25%" layer="4">
+				<drawtext x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+			</areascroll>
+			<area x="30%" condition="{separator}++{fritzbox}" width="62%" layer="4">
+				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+			</area>
+<!--setup-plex-UUID-->
+			<areascroll condition="{separator}++{setup}++{column2set}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="45%" layer="4">
+				<drawtext x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{column1}" />
+			</areascroll>
+			<area x="50%" condition="{separator}++{setup}++{column2set}" width="42%" layer="4">
+				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrHigh}" text="{column2}" />
+			</area>
+			<area condition="{separator}++{setup}++not{column2set}" x="4%" width="91%" layer="4">
+				<drawtext align="center" valign="center"  font="{light}" fontsize="70%" color="{clrHigh}" text="{column1}" />
+			</area>
+			<area condition="{separator}++not{setup}++not{fritzbox}" x="4%" width="91%" layer="4">
+				<drawtext align="center" valign="center"  font="{light}" fontsize="70%" color="{clrHigh}" text="{column1}" />
 			</area>
 <!-- setup-->
 			<areascroll condition="not{separator}++{setup}++{column2set}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="45%" layer="4">
@@ -99,6 +122,7 @@
 			<area x="4%" condition="not{separator}++{setup}++not{column2set}" width="92%" layer="4">
                 <drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
             </area>
+<!--shady-recordings-->
 			<area condition="strcontains({column1}, 'Marker')" x="90%" y="0" width="2%"  layer="5">
 				<drawimage condition="strequal({column2}, '1')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
 				<drawimage condition="strequal({column2}, '2')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
