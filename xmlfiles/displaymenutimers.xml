@@ -37,12 +37,12 @@
 				<drawtext x="5%" width="100%" valign="center"  font="{light}" fontsize="60%" color="{clrLightGray}" text="{timerstart}"/>
 			</area>
 			<area condition="not{showTimerStopTime}" x="53%" width="2%" layer="4">
-				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
-				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenFL" />
-				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
+				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redMarker" />
+				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
+				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
 			</area>                                	
 			<areascroll condition="not{showTimerStopTime}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="55%" width="38%" layer="3">
-				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{eventtitle}"/>
 			</areascroll>
  
 			<area  condition="{showTimerStopTime}" x="54%" width="41%" layer="3">
@@ -58,12 +58,12 @@
 				<drawtext x="10" width="100%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="- {timerstop}"/>
 			</area>
 			<area condition="{showTimerStopTime}" x="57%" width="2%" layer="4">
-				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
-				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenFL" />
-				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
+				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redMarker" />
+				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
+				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
 			</area>
 			<areascroll condition="{showTimerStopTime}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="59%" width="34%" layer="3">
-				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{eventtitle}"/>
 			</areascroll>
 		</listelement>
 
