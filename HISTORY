@@ -79,4 +79,11 @@ shady-skin Revision History
 - Added skinsetup for recordingsmenu
 - Fixed translation in setup.xml
 
+2015-04-27:
 
+- Added special treatment for fritzbox "Call details" and plex-setup "UUID" in displaymenudefault
+
+2015-04-28:
+
+- Some small fixes
+- Updated HISTORY
