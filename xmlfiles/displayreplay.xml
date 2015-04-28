@@ -26,8 +26,8 @@
 
 	<rectitle>
 		<area x="3%" y="77%" width="94%" height="8%" layer="3">
-			<drawtext condition="isset{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
-			<drawtext condition="empty{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{rectitle}" />
+			<drawtext condition="isset{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{recdate}   {rectitle} - {recsubtitle}" />
+			<drawtext condition="empty{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{recdate}    {rectitle}" />
 		</area>
 	</rectitle>
 
@@ -59,9 +59,9 @@
 	</currenttime>
 	
 		<datetime>
-		<area x="9%" y="92%" width="14%" height="7%" layer="3">
-			<drawtext x="20%" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}:"/>
-		</area>
+		<!--<area x="9%" y="92%" width="14%" height="7%" layer="3">
+			<drawtext x="20%" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
+		</area>-->
 				<area x="23%" y="92%" width="11%" height="7%" layer="3">
 			<drawtext x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{dayleadingzero}.{month}.{year}   {time}"/>
 		</area>
