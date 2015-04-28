@@ -89,3 +89,5 @@ shady-skin Revision History
 - Updated HISTORY
 - Fixed tokens title/eventtitle in displaymenutimers
 - Fixed areascroll in displaymenuschedules
+- Fixed nonsense in display replay (datetime)
+- Removed {recdate} in  displayreplay
