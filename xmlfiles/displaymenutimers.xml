@@ -42,7 +42,7 @@
 				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
 			</area>                                	
 			<areascroll condition="not{showTimerStopTime}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="55%" width="38%" layer="3">
-				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{eventtitle}"/>
+				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 			</areascroll>
  
 			<area  condition="{showTimerStopTime}" x="54%" width="41%" layer="3">
@@ -63,7 +63,7 @@
 				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
 			</area>
 			<areascroll condition="{showTimerStopTime}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="59%" width="34%" layer="3">
-				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{eventtitle}"/>
+				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 			</areascroll>
 		</listelement>
 
