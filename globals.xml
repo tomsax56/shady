@@ -284,8 +284,8 @@
             <trans lang="de_DE">für</trans>
         </token>
                 <token name="tr(recordedat)">
-        <trans lang="en_EN">Recorded</trans>
-            <trans lang="de_DE">Aufgenommen</trans>
+        <trans lang="en_EN">rec at</trans>
+            <trans lang="de_DE">rec am</trans>
         </token>
        <token name="tr(replayends)">
             <trans lang="en_EN">Replay ends</trans>

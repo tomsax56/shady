@@ -55,7 +55,7 @@
        xlink:href="#linearGradient5010-3"
        id="radialGradient3796"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(2.2054572,0,0,2.2054572,-126.86258,-10.81752)"
+       gradientTransform="matrix(2.2054572,0,0,2.2054572,-199.84837,716.3956)"
        cx="67.238281"
        cy="18.045992"
        fx="67.238281"
@@ -104,9 +104,9 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1005"
-     inkscape:window-x="-2"
-     inkscape:window-y="25"
+     inkscape:window-height="1025"
+     inkscape:window-x="1278"
+     inkscape:window-y="32"
      inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="1,0"
@@ -147,9 +147,9 @@
        sodipodi:rx="12.142858"
        sodipodi:ry="11.205358"
        d="m 40.178573,15.616072 a 12.142858,11.205358 0 1 1 -24.285715,0 12.142858,11.205358 0 1 1 24.285715,0 z"
-       transform="matrix(1.0147962,0,0,1.0996995,-75.635704,738.93761)" />
+       transform="matrix(1.0147962,0,0,1.0996995,-79.423774,738.93761)" />
     <path
-       transform="matrix(2.2054572,0,0,2.2054572,-195.47649,716.40114)"
+       transform="matrix(2.2054572,0,0,2.2054572,-199.26459,716.40114)"
        d="m 72.225909,18.045992 a 4.987628,4.987628 0 1 1 -9.975256,0 4.987628,4.987628 0 1 1 9.975256,0 z"
        sodipodi:ry="4.987628"
        sodipodi:rx="4.987628"
@@ -167,11 +167,10 @@
        sodipodi:rx="4.987628"
        sodipodi:ry="4.987628"
        d="m 72.225909,18.045992 a 4.987628,4.987628 0 1 1 -9.975256,0 4.987628,4.987628 0 1 1 9.975256,0 z"
-       transform="matrix(2.2054572,0,0,2.2054572,-195.47649,716.40114)" />
+       transform="matrix(2.2054572,0,0,2.2054572,-199.26459,716.40114)" />
     <path
        style="fill:url(#radialGradient3796);fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 22.21875,18 0,21.9375 C 27.93069,39.538047 32.4375,34.782139 32.4375,28.96875 32.4375,23.155243 27.930831,18.399284 22.21875,18 z"
-       transform="translate(-69.197693,727.21312)"
+       d="m -50.767013,745.21312 0,21.9375 c 5.71194,-0.39945 10.21875,-5.15536 10.21875,-10.96875 0,-5.81351 -4.506669,-10.56947 -10.21875,-10.96875 z"
        id="path4976-8"
        inkscape:connector-curvature="0" />
     <rect
@@ -179,8 +178,7 @@
        id="rect3799"
        width="0.47350901"
        height="21.907682"
-       x="21.781414"
-       y="18.014425"
-       transform="translate(-69.197693,727.21312)" />
+       x="-51.204388"
+       y="745.22754" />
   </g>
 </svg>

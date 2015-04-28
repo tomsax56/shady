@@ -91,3 +91,4 @@ shady-skin Revision History
 - Fixed areascroll in displaymenuschedules
 - Fixed nonsense in display replay (datetime)
 - Removed {recdate} in  displayreplay
+- Some small fixes

@@ -29,6 +29,9 @@
 			<drawtext condition="isset{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
 			<drawtext condition="empty{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{rectitle}" />
 		</area>
+		<area x="9%" y="92%" width="14%" height="7%" layer="3">
+			<drawtext  y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
+		</area>
 	</rectitle>
 
     <progressbar>

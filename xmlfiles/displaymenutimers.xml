@@ -46,10 +46,10 @@
 			</areascroll>
  
 			<area  condition="{showTimerStopTime}" x="54%" width="41%" layer="3">
-				<drawimage condition="not{current}" x="5%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
-				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="5%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>
+				<drawimage condition="not{current}" x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
+				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color"/>
-				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="5%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient"/>
+				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient"/>
 			</area>
 			<!--<area condition="{showTimerStopTime}" x="52%" width="4%" layer="3">
 				<drawtext x="0" width="100%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="- {timerstop}"/>

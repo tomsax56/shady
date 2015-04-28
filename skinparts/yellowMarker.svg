@@ -69,9 +69,9 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1005"
-     inkscape:window-x="-2"
-     inkscape:window-y="25"
+     inkscape:window-height="1025"
+     inkscape:window-x="1278"
+     inkscape:window-y="32"
      inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="1,0"
@@ -120,9 +120,9 @@
        sodipodi:rx="12.142858"
        sodipodi:ry="11.205358"
        d="m 40.178573,15.616072 a 12.142858,11.205358 0 1 1 -24.285715,0 12.142858,11.205358 0 1 1 24.285715,0 z"
-       transform="matrix(1.0147962,0,0,1.0996995,-75.635704,738.93761)" />
+       transform="matrix(1.0147962,0,0,1.0996995,-76.974994,738.93761)" />
     <path
-       transform="matrix(2.2054572,0,0,2.2054572,-195.47649,716.40114)"
+       transform="matrix(2.2054572,0,0,2.2054572,-196.81569,716.40114)"
        d="m 72.225909,18.045992 a 4.987628,4.987628 0 1 1 -9.975256,0 4.987628,4.987628 0 1 1 9.975256,0 z"
        sodipodi:ry="4.987628"
        sodipodi:rx="4.987628"
@@ -140,6 +140,6 @@
        sodipodi:rx="4.987628"
        sodipodi:ry="4.987628"
        d="m 72.225909,18.045992 a 4.987628,4.987628 0 1 1 -9.975256,0 4.987628,4.987628 0 1 1 9.975256,0 z"
-       transform="matrix(2.2054572,0,0,2.2054572,-195.47649,716.40114)" />
+       transform="matrix(2.2054572,0,0,2.2054572,-196.81569,716.40114)" />
   </g>
 </svg>
