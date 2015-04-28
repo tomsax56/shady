@@ -96,9 +96,9 @@
 			<area condition="not{separator}++{whatsonfavorites}" x="53%" width="5%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{start}" />
 			</area>
-			<areascroll condition="not{separator}++{whatsonfavorites}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="58%" width="34%" layer="4">
-				<drawtext condition="isset{shorttext}" name="menutext" x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title} - {shorttext}"/>
-				<drawtext condition="empty{shorttext}" name="menutext" x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+			<areascroll condition="not{separator}++{whatsonfavorites}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="59%" width="33%" layer="4">
+				<drawtext condition="isset{shorttext}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title} - {shorttext}"/>
+				<drawtext condition="empty{shorttext}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 			</areascroll>               
 <!-- Separator -->
 			<area condition="{separator}" x="50%" width="45%" layer="4">
