@@ -16,6 +16,9 @@
 <!--
         <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">0</parameter>
 -->
+		<submenu name="MainMenu" displaytext="{tr(MainMenu)}">
+			<parameter type="bool" name="showLastrecordings" displaytext="{tr(showLastrecordings)}">1</parameter>
+		</submenu>
 		<submenu name="MenuItems" displaytext="{tr(menuItems)}">
 			<parameter type="int" name="numShortMenuitems" min="8" max="10" displaytext="{tr(numShortMenuitems)}">10</parameter>
 			<parameter type="int" name="numLongSubmenuitems" min="12" max="18" displaytext="{tr(numLongSubmenuitems)}">14</parameter>
@@ -63,7 +66,7 @@
     translations of displaytexts
     -->
     <translations>
-		<token name="tr(mainMenu)">
+		<token name="tr(MainMenu)">
 			<trans lang="en_EN">Main menu</trans>
 			<trans lang="de_DE">Hauptmenü</trans>
 		</token>
@@ -98,14 +101,10 @@
 		<token name="tr(showTimerStopTime)">
 			<trans lang="en_EN">Show timersstoptime</trans>
 			<trans lang="de_DE">Zeige Endzeit für Timer</trans>
-		</token>       
-		<token name="tr(showOnlyTimers)">
-			<trans lang="en_EN">Show only timers in mainmenu</trans>
-			<trans lang="de_DE">Zeige nur Timer im Hauptmenü</trans>
 		</token>
-		<token name="tr(showTimersRecordingsandInfos)">
-			<trans lang="en_EN">Show timers, last recordings and infos in mainmenu</trans>
-			<trans lang="de_DE">Zeige Timer, letzte Aufnahmen und Infos im Hauptmenü</trans>
+		<token name="tr(showLastrecordings)">
+			<trans lang="en_EN">Show last recordings in mainmenu</trans>
+			<trans lang="de_DE">Zeige letzte Aufnahmen im Hauptmenü</trans>
 		</token>
 		<token name="tr(menuFadetime)">
 			<trans lang="en_EN">Fadetime of menus in ms</trans>
