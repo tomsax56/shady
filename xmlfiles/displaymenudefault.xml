@@ -160,11 +160,11 @@
 			<area x="63%" condition="not{separator}++{mailbox}" width="35%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column3}" />
 			</area>
-<!--neutrinoepg-->
-			<area x="4%" condition="not{separator}++{neutrinoepg}" width="5%" layer="4">
+<!--neutrinoepg with channelnumbers-->
+			<area x="4%" condition="not{separator}++{neutrinoepg}++{column4pb}" width="5%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
 			</area>
-			<area x="9%" condition="not{separator}++{neutrinoepg}" width="20%" layer="4">
+			<area x="9%" condition="not{separator}++{neutrinoepg}++{column4pb}" width="20%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column3}" />
 			</area>
 			<area x="29%" condition="not{separator}++{neutrinoepg}++{column4pb}" width="5%" layer="4">
@@ -173,11 +173,21 @@
 				<drawimage x="0" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 				<drawimage x="{areawidth}-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 			</area>
-			<area x="29%" condition="not{separator}++{neutrinoepg}++not{column4pb}" width="5%" layer="4">
-				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column4}" />
-			</area>
-			<area x="36%" condition="not{separator}++{neutrinoepg}" width="60%" layer="4">
+			<area x="36%" condition="not{separator}++{neutrinoepg}++{column4pb}" width="60%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column5}" />
+			</area>
+<!--neutrinoepg without channelnumbers-->
+			<area x="4%" condition="not{separator}++{neutrinoepg}++{column3pb}" width="20%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+			</area>
+			<area x="24%" condition="not{separator}++{neutrinoepg}++{column3pb}" width="5%" layer="4">
+				<drawimage x="0" y="0" valign="center" width="{areawidth}" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
+				<drawimage x="{column3pbsize}*12" y="0" valign="center" width="{column3pbtotalsize}*12-{column3pbsize}*12" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMask" />
+				<drawimage x="0" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
+				<drawimage x="{areawidth}-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
+			</area>
+			<area x="31%" condition="not{separator}++{neutrinoepg}++{column3pb}" width="65%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column4}" />
 			</area>
 <!--remotetimers-->
 			<!--<areascroll condition="{remotetimers}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="45%" layer="4">
