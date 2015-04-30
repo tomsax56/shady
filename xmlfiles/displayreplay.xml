@@ -25,10 +25,18 @@
 	</scrapercontent>
 
 	<rectitle>
-		<area x="3%" y="77%" width="94%" height="8%" layer="3">
+<!--single-line display-->
+		<area condition="not{twoLineDisplay}" x="3%" y="77%" width="94%" height="8%" layer="3">
 			<drawtext condition="isset{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
 			<drawtext condition="empty{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{rectitle}" />
 		</area>
+<!--two-line display-->
+		<area condition="{twoLineDisplay}" x="3%" y="77%" width="94%" height="8%" layer="3">
+			<drawtext condition="isset{recsubtitle}" x="{width(title)}+10" y="7%" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="50%" color="{clrLightGray}" text="{rectitle}" />
+			<drawtext condition="isset{recsubtitle}" x="{width(title)}+10" y="50%" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="40%" color="{clrLightGray}" text="{recsubtitle}" />
+			<drawtext condition="empty{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{rectitle}" />
+		</area>
+
 		<area x="9%" y="92%" width="14%" height="7%" layer="3">
 			<drawtext  y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
 		</area>

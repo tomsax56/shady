@@ -92,3 +92,7 @@ shady-skin Revision History
 - Fixed nonsense in display replay (datetime)
 - Removed {recdate} in  displayreplay
 - Some small fixes
+
+2015-04-30:
+
+- Added setup for single- or two-line display of titel/subtitle in replay and channelinfo

@@ -27,6 +27,7 @@
 		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
 			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
 			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
+			<parameter type="bool" name="twoLineDisplay" displaytext="{tr(twoLineDisplay)}">1</parameter>
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">1</parameter>
 			<parameter type="bool" name="showChannelDetails" displaytext="{tr(showChannelDetails)}">0</parameter>
 			<parameter type="bool" name="showTimerStopTime" displaytext="{tr(showTimerStopTime)}">1</parameter>
@@ -93,6 +94,10 @@
 		<token name="tr(brightBackground)">
 			<trans lang="en_EN">Bright backgroundgradient</trans>
 			<trans lang="de_DE">Heller Hintergrundverlauf</trans>
+		</token>
+		<token name="tr(twoLineDisplay)">
+			<trans lang="en_EN">Two-line display of titel/subtitle in replay and channelinfo</trans>
+			<trans lang="de_DE">Zweizeilige Anzeige von Titel/Subtitel in Replay und Kanalinfo</trans>
 		</token>
 		<token name="tr(showChannelDetails)">
 			<trans lang="en_EN">Show details of channels</trans>
