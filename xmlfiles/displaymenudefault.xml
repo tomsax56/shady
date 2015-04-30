@@ -66,7 +66,7 @@
 	</colorbuttons>
 
 	<scrollbar>
-		<area condition="lt({height},1000)" x="95%" y="15%" width="3%" height="73%" layer="3">
+		<area condition="lt({height},1000)" x="95%" y="15%" width="5%" height="73%" layer="3">
 			 <drawimage   x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
 			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
 		</area>
@@ -116,14 +116,14 @@
 			<areascroll condition="not{separator}++{setup}++{column2set}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="45%" layer="4">
 				<drawtext x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
-			<area x="50%" condition="not{separator}++{setup}++{column2set}" width="42%" layer="4">
+			<area x="50%" condition="not{separator}++{setup}++strnotcontains({column1}, 'Marker')" width="42%" layer="4">
 				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
 			</area>
 			<area x="4%" condition="not{separator}++{setup}++not{column2set}" width="92%" layer="4">
                 <drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
             </area>
 <!--shady-recordings-->
-			<area condition="strcontains({column1}, 'Marker')" x="90%" y="0" width="2%"  layer="5">
+			<area condition="{setup}++strcontains({column1}, 'Marker')" x="90%" y="0" width="2%"  layer="5">
 				<drawimage condition="strequal({column2}, '1')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
 				<drawimage condition="strequal({column2}, '2')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
 				<drawimage condition="strequal({column2}, '3')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
@@ -203,10 +203,7 @@
 				<drawtext name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
 			<area condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}" x="5%" width="87%" layer="4">
-<!--workaround for missing MenuCategory-->
-				<drawtext condition="{column2set}++not{column3set}++strnotcontains({column1}, 'Marker')" x="48%" align="right" valign="center" font="{light}" fontsize="70%" width="51%" color="{clrLightGray}" text="{column2}" />
-<!-- -->
-				<drawtext condition="{column2set}++{column3set}" x="{column2x}" valign="center" font="{light}" fontsize="70%" width="{column2width}" color="{clrLightGray}" text="{column2}" />
+				<drawtext condition="{column2set}" x="{column2x}" valign="center" font="{light}" fontsize="70%" width="{column2width}" color="{clrLightGray}" text="{column2}" />
 				<drawtext condition="{column3set}" x="{column3x}" valign="center" font="{light}" fontsize="70%" width="{column3width}" color="{clrLightGray}" text="{column3}" />
 				<drawtext condition="{column4set}" x="{column4x}" valign="center" font="{light}" fontsize="70%" width="{column4width}" color="{clrLightGray}" text="{column4}" />
 				<drawtext condition="{column5set}" x="{column5x}" valign="center" font="{light}" fontsize="70%" width="{column5width}" color="{clrLightGray}" text="{column5}" />

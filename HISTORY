@@ -96,3 +96,4 @@ shady-skin Revision History
 2015-04-30:
 
 - Added setup for single- or two-line display of titel/subtitle in replay and channelinfo
+- Adapted defaultmenu.xml to menucategory setup 
