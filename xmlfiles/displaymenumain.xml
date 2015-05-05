@@ -129,7 +129,7 @@
 				<drawtextbox x="1%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
 				<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
 				<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
-				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="4%" height="20%" imagetype="skinpart" path="remoteTimers" />
+				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="2%" height="20%" imagetype="skinpart" path="remoteTimers" />
 			</loop>
 		</area>
 	</timers>
