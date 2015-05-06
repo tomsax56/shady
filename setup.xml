@@ -28,6 +28,7 @@
 			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
 			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
 			<parameter type="bool" name="twoLineDisplay" displaytext="{tr(twoLineDisplay)}">1</parameter>
+			<parameter type="bool" name="twoLineDisplayReplay" displaytext="{tr(twoLineDisplayReplay)}">1</parameter>
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">1</parameter>
 			<parameter type="bool" name="showChannelDetails" displaytext="{tr(showChannelDetails)}">0</parameter>
 			<parameter type="bool" name="showTimerStopTime" displaytext="{tr(showTimerStopTime)}">1</parameter>
@@ -97,8 +98,12 @@
 			<trans lang="de_DE">Heller Hintergrundverlauf</trans>
 		</token>
 		<token name="tr(twoLineDisplay)">
-			<trans lang="en_EN">Two-line display of titel/subtitle in replay and channelinfo</trans>
-			<trans lang="de_DE">Zweizeilige Anzeige von Titel/Subtitel in Replay und Kanalinfo</trans>
+			<trans lang="en_EN">Two-line display of titel/subtitle in channelinfo</trans>
+			<trans lang="de_DE">Zweizeilige Anzeige von Titel/Subtitel in Kanalinfo</trans>
+		</token>
+		<token name="tr(twoLineDisplayReplay)">
+			<trans lang="en_EN">Two-line display of titel/subtitle in replay</trans>
+			<trans lang="de_DE">Zweizeilige Anzeige von Titel/Subtitel in Replay</trans>
 		</token>
 		<token name="tr(showChannelDetails)">
 			<trans lang="en_EN">Show details of channels</trans>
