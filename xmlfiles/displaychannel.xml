@@ -26,12 +26,12 @@
 			<drawtext x="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currentstart} - {currentstop}"/>
 		</area>
 <!--single-line display-->
-		<area condition="not{twoLineDisplay}" x="31%" y="77%" width="55%" height="7%" layer="3">
+		<area condition="not{twoLineDisplay}" x="31%" y="77%" width="54%" height="7%" layer="3">
 			<drawtext condition="isset{currentsubtitle}" x="0" y="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currenttitle} - {currentsubtitle}"/>
 			<drawtext condition="empty{currentsubtitle}" x="0" y="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currenttitle}"/>
 		</area>
 <!--two-line display-->
-		<area condition="{twoLineDisplay}" x="31%" y="77%" width="55%" height="7%" layer="3">
+		<area condition="{twoLineDisplay}" x="31%" y="77%" width="54%" height="7%" layer="3">
 			<drawtext condition="isset{currentsubtitle}" x="0" y="0" font="{light}" fontsize="53%" color="{clrLightGray}" text="{currenttitle}"/>
 			<drawtext condition="isset{currentsubtitle}" x="0" y="55%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{currentsubtitle}"/>
 			<drawtext condition="empty{currentsubtitle}" x="0" y="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currenttitle}"/>
@@ -44,12 +44,12 @@
 			<drawtext x="0" y="10%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nextstart} - {nextstop}"/>
 		</area>
 <!--single-line display-->
-		<area condition="not{twoLineDisplay}" x="31%" y="87%" width="55%" height="7%" layer="3">
+		<area condition="not{twoLineDisplay}" x="31%" y="87%" width="54%" height="7%" layer="3">
 			<drawtext condition="isset{nextsubtitle}" x="0" y="10%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nexttitle} - {nextsubtitle}"/>
 			<drawtext condition="empty{nextsubtitle}" x="0" y="10%" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nexttitle}"/>
 		</area>
 <!--two-line display-->
-		<area condition="{twoLineDisplay}" x="31%" y="87%" width="55%" height="7%" layer="3">
+		<area condition="{twoLineDisplay}" x="31%" y="87%" width="54%" height="7%" layer="3">
 			<drawtext condition="empty{nextsubtitle}" x="0" y="10%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nexttitle}"/>
 			<drawtext condition="isset{nextsubtitle}" x="0" y="10%" font="{light}" fontsize="53%" color="{clrLightGray}" text="{nexttitle}"/>
 			<drawtext condition="isset{nextsubtitle}" x="0" y="65%"  font="{light}" fontsize="40%" color="{clrLightGray}" text="{nextsubtitle}"/>
@@ -77,7 +77,7 @@
 			<drawimage y="5%" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="ECM"/>
 		</area>
 		<area condition="gt({ecmtime}, 0)++not{ecmInside}" x="62%" y="73%" width="37%" height="4%" layer="4">
-			<drawtext x="0" y="15%" align="right" font="{light}" fontsize="65%" color="{clrLightGray}" text="CA-ID: {caid}    System: {cardsystem}    Reader: {reader}    ECM time: {ecmtime}ms" />
+			<drawtext x="0" y="0" align="right" font="{light}" fontsize="65%" color="{clrLightGray}" text="CA-ID: {caid}    System: {cardsystem}    Reader: {reader}    ECM time: {ecmtime}ms" />
 		</area>
 		
 		<area x="52%" y="95%" width="11%" height="4%" layer="3">
@@ -109,7 +109,7 @@
 			<drawtext condition="not{isRadio}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="RADIO"/>
 		</area>
 		<area x="52%" y="95%" width="11%" height="4%" layer="3">
-			<drawtext condition="{isEncrypted}++not{ecmInside}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="Free-To-Air"/>
+			<drawtext condition="{isEncrypted}++not{ecmInside}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="ENCRYPTED"/>
 			<drawtext condition="not{isEncrypted}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="Free-To-Air"/>
 		</area>
 		<area x="71%" y="95%" width="7%" height="4%" layer="3">     
