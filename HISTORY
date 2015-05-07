@@ -107,3 +107,7 @@ shady-skin Revision History
 
 - Added alternate, extended ecminfo
 - Added separate twoline-settings for channelinfo and replay
+
+2015-05-07:
+
+- Fixed ECM
