@@ -117,3 +117,4 @@ shady-skin Revision History
 - Optimized ECM-infos (provided by utiltiy@vdrportal.de)
 - Changed display of resolution in channelinfo
 - Fixed scrollbar in displaymenusetup
+- Added markers for recordings seen less or more 85%

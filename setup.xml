@@ -57,11 +57,14 @@
 		</submenu>
 		<submenu name="Recordings" displaytext="{tr(recordingsmarkerandprogress)}">
 			<parameter type="bool" name="01_seenProgress" displaytext="{tr(01_seenProgress)}">1</parameter>
-			<parameter type="int" name="02_newNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(02_newNotCutted-recordingsMarker)}">2</parameter>
-			<parameter type="int" name="03_newCutted-recordingsMarker" min="0" max="9" displaytext="{tr(03_newCutted-recordingsMarker)}">4</parameter>
-			<parameter type="int" name="04_notNewNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(04_notNewNotCutted-recordingsMarker)}">9</parameter>
-			<parameter type="int" name="05_notNewCutted-recordingsMarker" min="0" max="9" displaytext="{tr(05_notNewCutted-recordingsMarker)}">5</parameter>
-			<parameter type="bool" name="06_showRecordingTime" displaytext="{tr(06_showRecordingTime)}">1</parameter>
+			<parameter type="bool" name="02_showRecordingTime" displaytext="{tr(02_showRecordingTime)}">1</parameter>
+			<parameter type="int" name="03_newNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(03_newNotCutted-recordingsMarker)}">2</parameter>
+			<parameter type="int" name="04_newCutted-recordingsMarker" min="0" max="9" displaytext="{tr(04_newCutted-recordingsMarker)}">4</parameter>
+			<parameter type="int" name="05_notNewNotWatchedNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(05_notNewNotWatchedNotCutted-recordingsMarker)}">9</parameter>
+			<parameter type="int" name="06_notNewNotWatchedCutted-recordingsMarker" min="0" max="9" displaytext="{tr(06_notNewNotWatchedCutted-recordingsMarker)}">5</parameter>
+			<parameter type="int" name="07_notNewWatchedNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(07_notNewWatchedNotCutted-recordingsMarker)}">6</parameter>
+			<parameter type="int" name="08_notNewWatchedCutted-recordingsMarker" min="0" max="9" displaytext="{tr(08_notNewWatchedCutted-recordingsMarker)}">1</parameter>
+			
 		</submenu>
     </menu>
 
@@ -223,25 +226,33 @@
 			<trans lang="en_EN">Show 'percentseen-bar' for recordings</trans>
 			<trans lang="de_DE">Zeige 'Prozent-gesehen-Balken' für Aufnahmen</trans>
 		</token>
-		<token name="tr(02_newNotCutted-recordingsMarker)">
+		<token name="tr(02_showRecordingTime)">
+			<trans lang="en_EN">Show time of recordings</trans>
+			<trans lang="de_DE">Zeige Uhrzeit der Aufnahmen</trans>
+		</token>
+		<token name="tr(03_newNotCutted-recordingsMarker)">
 			<trans lang="en_EN">Marker for unseen, not cutted recordings</trans>
 			<trans lang="de_DE">Marker für ungesehene, nicht geschnittene Aufnahmen</trans>
 		</token>
-		<token name="tr(03_newCutted-recordingsMarker)">
+		<token name="tr(04_newCutted-recordingsMarker)">
 			<trans lang="en_EN">Marker for unseen, cutted recordings</trans>
 			<trans lang="de_DE">Marker für ungesehene, geschnittene Aufnahmen</trans>
 		</token>        
-		<token name="tr(04_notNewNotCutted-recordingsMarker)">
-			<trans lang="en_EN">Marker for seen, not cutted recordings</trans>
-			<trans lang="de_DE">Marker für gesehene, nicht geschnittene Aufnahmen</trans>
+		<token name="tr(05_notNewNotWatchedNotCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for seen &lt; 85% not cutted recordings</trans>
+			<trans lang="de_DE">Marker für gesehen &lt; 85%, nicht geschnittene Aufnahmen</trans>
 		</token>
-		<token name="tr(05_notNewCutted-recordingsMarker)">
-			<trans lang="en_EN">Marker for seen, cutted recordings</trans>
-			<trans lang="de_DE">Marker für gesehene, geschnittene Aufnahmen</trans>
+		<token name="tr(06_notNewNotWatchedCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for seen &lt; 85% cutted recordings</trans>
+			<trans lang="de_DE">Marker für gesehen &lt; 85%, geschnittene Aufnahmen</trans>
 		</token>
-		<token name="tr(06_showRecordingTime)">
-			<trans lang="en_EN">Show time of recordings</trans>
-			<trans lang="de_DE">Zeige Uhrzeit der Aufnahmen</trans>
-		</token>        
+		<token name="tr(07_notNewWatchedNotCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for seen &gt; 85% not cutted recordings</trans>
+			<trans lang="de_DE">Marker für gesehen &gt; 85%, ungeschnittene Aufnahmen</trans>
+		</token>
+		<token name="tr(08_notNewWatchedCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for seen &gt; 85% cutted recordings</trans>
+			<trans lang="de_DE">Marker für gesehen &gt; 85%, geschnittene Aufnahmen</trans>
+		</token>
 	</translations>
 </setup>
