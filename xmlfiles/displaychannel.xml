@@ -90,7 +90,9 @@
 	
 	<screenresolution>
 		<area x="63%" y="95%" width="9%" height="4%" layer="3">
-			<drawtext  x="0" y="0" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="{resolution}" />
+			<drawtext condition="strequal({resolution}, 'sd576i')" x="0" y="0" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="SD 576i" />
+			<drawtext condition="strequal({resolution}, 'hd720p')" x="0" y="0" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="HD 720p" />
+			<drawtext condition="strequal({resolution}, 'hd1080i')" x="0" y="0" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="HD1080i" />
 		</area>
 	</screenresolution>
 
