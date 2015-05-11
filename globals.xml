@@ -33,7 +33,11 @@
         </token>
         <token name="tr(lastrecordings)">
             <trans lang="en_EN">Last recordings</trans>
-            <trans lang="de_DE">Letzte Aufnahmen</trans>
+            <trans lang="de_DE">Letzte Aufzeichnungen</trans>
+        </token>
+        <token name="tr(last)">
+            <trans lang="en_EN">Last</trans>
+            <trans lang="de_DE">Letzte</trans>
         </token>
         <token name="tr(disc)">
             <trans lang="en_EN">Disc</trans>
@@ -149,19 +153,19 @@
         </token>
         <token name="tr(recsize)">
             <trans lang="en_EN">Recording size</trans>
-            <trans lang="de_DE">Größe der Aufnahme</trans>
+            <trans lang="de_DE">Größe der Aufzeichnung</trans>
         </token>
         <token name="tr(recsizecutted)">
             <trans lang="en_EN">Cutted Recording Size</trans>
-            <trans lang="de_DE">Größe der geschnittenen Aufnahme</trans>
+            <trans lang="de_DE">Größe der geschnittenen Aufzeichnung</trans>
         </token>
         <token name="tr(reclength)">
             <trans lang="en_EN">Recording Length</trans>
-            <trans lang="de_DE">Länge der Aufnahme</trans>
+            <trans lang="de_DE">Länge der Aufzeichnung</trans>
         </token>
         <token name="tr(reclengthcutted)">
             <trans lang="en_EN">Cutted Recording Length</trans>
-            <trans lang="de_DE">Länge der geschnittenen Aufnahme</trans>
+            <trans lang="de_DE">Länge der geschnittenen Aufzeichnung</trans>
         </token>
         <token name="tr(bitrate)">
             <trans lang="en_EN">Bit Rate</trans>

@@ -117,8 +117,8 @@
 			<trans lang="de_DE">Zeige Endzeit für Timer</trans>
 		</token>
 		<token name="tr(showLastrecordings)">
-			<trans lang="en_EN">Show last recordings in mainmenu</trans>
-			<trans lang="de_DE">Zeige letzte Aufnahmen im Hauptmenü</trans>
+			<trans lang="en_EN">Show beside timers at least three last recordings</trans>
+			<trans lang="de_DE">Zeige neben Timern min. die drei letzten Aufnahmen</trans>
 		</token>
 		<token name="tr(menuFadetime)">
 			<trans lang="en_EN">Fadetime of menus in ms</trans>

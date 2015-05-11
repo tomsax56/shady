@@ -70,51 +70,25 @@
 	</colorbuttons>
 
 	<timers detached="true" delay="{02_timersDelay}" fadetime="{02_timersFadetime}" >
-		<area condition="{showLastrecordings}" x="0" y="74%" width="45%" height="6%" layer="3">
-			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsTimersHeader" />
+		<area condition="gt({numtimers}, 0)++lt({numtimers}, 6)" x="0" y="74%" width="78%" height="6%" layer="3">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsOnlyTimersHeader" />
 		</area>
-		<area condition="not{showLastrecordings}" x="0" y="74%" width="79%" height="6%" layer="3">
-			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsOnlyTimersHeader" />
-		</area>
-		<area condition="not{numtimerconflicts}++{showLastrecordings}" x="1%" y="74%" width="45%" height="5%" layer="3">
+<!--showLastrecordings-->
+		<area condition="not{numtimerconflicts}++{showLastrecordings}++gt({numtimers}, 3)" x="1%" y="74%" width="45%" height="5%" layer="3">
 			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
 			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
 		</area>
-		<area condition="not{numtimerconflicts}++not{showLastrecordings}" x="1%" y="74%" width="79%" height="5%" layer="3">
-			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
-			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
-		</area>
-		
-		
-		<area condition="{numtimerconflicts}++{showLastrecordings}" x="16%" y="74%" width="19%" height="5%" layer="3">
+		<area condition="{numtimerconflicts}++{showLastrecordings}++gt({numtimers}, 3)" x="16%" y="74%" width="19%" height="5%" layer="3">
 			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
 			<drawtext condition="eq({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
 			<drawtext condition="gt({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
 		</area>
-		<area condition="{numtimerconflicts}++not{showLastrecordings}" x="30%" y="74%" width="19%" height="5%" layer="3">
-			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
-			<drawtext condition="eq({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
-			<drawtext condition="gt({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
-		</area>
-		<!--<area x="1%" y="80%" width="95%" height="18%" layer="3">
-			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/9*1.005" rowheight="{areaheight}" overflow="cut">
-				<drawimage  cache="true" name="logo" y="{areaheight}*0.11" width="5%" height="15%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
-				<drawtextbox x="1%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
-				<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
-				<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
-			</loop>
-		</area>-->
-		<area condition="{showLastrecordings}" x="1%" y="80%" width="44%" height="18%" layer="3">
+		<area condition="{showLastrecordings}++gt({numtimers}, 3)" x="1%" y="80%" width="44%" height="18%" layer="3">
 			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areaheight}" overflow="cut">
 				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
 			</loop>
 		</area>
-		<area condition="not{showLastrecordings}" x="1%" y="80%" width="78%" height="18%" layer="3">
-			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/7" rowheight="{areaheight}" overflow="cut">
-				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
-			</loop>
-		</area>
-		<area condition="{showLastrecordings}" x="1%" y="80%" width="44%" height="18%" layer="3">
+		<area condition="{showLastrecordings}++gt({numtimers}, 3)" x="1%" y="80%" width="44%" height="18%" layer="3">
 			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/4*1.005" rowheight="{areaheight}" overflow="cut">
 				<drawimage  cache="true" name="logo" y="{areaheight}*0.08" width="9%" height="18%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
 				<drawtextbox x="2%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
@@ -123,7 +97,25 @@
 				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="4%" height="20%" imagetype="skinpart" path="remoteTimers" />
 			</loop>
 		</area>
-		<area condition="not{showLastrecordings}" x="0" y="80%" width="79%" height="18%" layer="3">
+
+		<area condition="not{showLastrecordings}++gt({numtimers}, 5)" x="0" y="74%" width="79%" height="6%" layer="3">
+			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsOnlyTimersHeader" />
+		</area>
+		<area condition="not{numtimerconflicts}++not{showLastrecordings}++gt({numtimers}, 6)" x="1%" y="74%" width="79%" height="5%" layer="3">
+			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
+			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+		</area>
+		<area condition="{numtimerconflicts}++not{showLastrecordings}++gt({numtimers}, 6)" x="30%" y="74%" width="19%" height="5%" layer="3">
+			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
+			<drawtext condition="eq({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
+			<drawtext condition="gt({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
+		</area>
+		<area condition="not{showLastrecordings}++gt({numtimers}, 6)" x="1%" y="80%" width="78%" height="18%" layer="3">
+			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/7" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+			</loop>
+		</area>
+		<area condition="not{showLastrecordings}++gt({numtimers}, 6)" x="0" y="80%" width="79%" height="18%" layer="3">
 			<loop name="timers" x="1%" y="0" orientation="horizontal" columnwidth="{areawidth}/7*0.99" rowheight="{areaheight}" overflow="cut">
 				<drawimage  cache="true" name="logo" y="{areaheight}*0.08" width="9%" height="18%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
 				<drawtextbox x="1%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
@@ -132,16 +124,155 @@
 				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="2%" height="20%" imagetype="skinpart" path="remoteTimers" />
 			</loop>
 		</area>
-	</timers>
-	<!--<lastrecordings condition="lt({numtimers}, 4)++{showTimersRecordingsandInfos}" detached="true" delay="100" fadetime="500">-->
-	<lastrecordings condition="{showLastrecordings}" detached="true" delay="{03_lastrecordingsDelay}" fadetime="{03_lastrecordingsFadetime}">
-		<area x="45%" y="74%" width="33%" height="6%" layer="3">
-			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsLastTimersHeader" />
+
+		<area condition="not{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 6)" x="1%" y="74%" width="68%" height="5%" layer="3">
+			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
+			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
 		</area>
-		<area x="45%" y="74%" width="33%" height="5%" layer="3">
+		<area condition="{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 6)" x="25%" y="74%" width="19%" height="5%" layer="3">
+			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
+			<drawtext condition="eq({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
+			<drawtext condition="gt({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
+		</area>
+		<area condition="not{showLastrecordings}++eq({numtimers}, 6)" x="1%" y="80%" width="67%" height="18%" layer="3">
+			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/6" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+			</loop>
+		</area>
+		<area condition="not{showLastrecordings}++eq({numtimers}, 6)" x="0" y="80%" width="68%" height="18%" layer="3">
+			<loop name="timers" x="1%" y="0" orientation="horizontal" columnwidth="{areawidth}/6*0.99" rowheight="{areaheight}" overflow="cut">
+				<drawimage  cache="true" name="logo" y="{areaheight}*0.08" width="9%" height="18%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
+				<drawtextbox x="1%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
+				<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
+				<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
+				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="2%" height="20%" imagetype="skinpart" path="remoteTimers" />
+			</loop>
+		</area>
+
+		<area condition="not{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 5)" x="1%" y="74%" width="56%" height="5%" layer="3">
+			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
+			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+		</area>
+		<area condition="{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 5)" x="19%" y="74%" width="19%" height="5%" layer="3">
+			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
+			<drawtext condition="eq({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
+			<drawtext condition="gt({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
+		</area>
+		<area condition="not{showLastrecordings}++eq({numtimers}, 5)" x="1%" y="80%" width="55%" height="18%" layer="3">
+			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/5" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+			</loop>
+		</area>
+		<area condition="not{showLastrecordings}++eq({numtimers}, 5)" x="0" y="80%" width="56%" height="18%" layer="3">
+			<loop name="timers" x="1%" y="0" orientation="horizontal" columnwidth="{areawidth}/5*0.99" rowheight="{areaheight}" overflow="cut">
+				<drawimage  cache="true" name="logo" y="{areaheight}*0.08" width="9%" height="18%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
+				<drawtextbox x="2%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
+				<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
+				<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
+				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="2%" height="20%" imagetype="skinpart" path="remoteTimers" />
+			</loop>
+		</area>
+
+		<area condition="not{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 4)" x="1%" y="74%" width="45%" height="5%" layer="3">
+			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
+			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+		</area>
+		<area condition="{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 4)" x="13%" y="74%" width="19%" height="5%" layer="3">
+			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
+			<drawtext condition="eq({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
+			<drawtext condition="gt({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
+		</area>
+		<area condition="not{showLastrecordings}++eq({numtimers}, 4)" x="1%" y="80%" width="44%" height="18%" layer="3">
+			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+			</loop>
+		</area>
+		<area condition="not{showLastrecordings}++eq({numtimers}, 4)" x="0" y="80%" width="45%" height="18%" layer="3">
+			<loop name="timers" x="1%" y="0" orientation="horizontal" columnwidth="{areawidth}/4*0.99" rowheight="{areaheight}" overflow="cut">
+				<drawimage  cache="true" name="logo" y="{areaheight}*0.08" width="9%" height="18%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
+				<drawtextbox x="2%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
+				<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
+				<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
+				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="2%" height="20%" imagetype="skinpart" path="remoteTimers" />
+			</loop>
+		</area>
+
+		<area condition="not{numtimerconflicts}++eq({numtimers}, 3)" x="1%" y="74%" width="34%" height="5%" layer="3">
+			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
+			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+		</area>
+		<area condition="{numtimerconflicts}++eq({numtimers}, 3)" x="9%" y="74%" width="16%" height="5%" layer="3">
+			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
+			<drawtext condition="eq({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
+			<drawtext condition="gt({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
+		</area>
+		<area condition="eq({numtimers}, 3)" x="1%" y="80%" width="33%" height="18%" layer="3">
+			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+			</loop>
+		</area>
+		<area condition="eq({numtimers}, 3)" x="0" y="80%" width="34%" height="18%" layer="3">
+			<loop name="timers" x="1%" y="0" orientation="horizontal" columnwidth="{areawidth}/3*0.99" rowheight="{areaheight}" overflow="cut">
+				<drawimage  cache="true" name="logo" y="{areaheight}*0.08" width="9%" height="18%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
+				<drawtextbox x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
+				<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
+				<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
+				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="2%" height="20%" imagetype="skinpart" path="remoteTimers" />
+			</loop>
+		</area>
+		
+		<area condition="not{numtimerconflicts}++eq({numtimers}, 2)" x="3%" y="74%" width="17%" height="5%" layer="3">
+			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
+			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+		</area>
+		<area condition="{numtimerconflicts}++eq({numtimers}, 2)" x="3%" y="74%" width="17%" height="5%" layer="3">
+			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
+			<drawtext condition="eq({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
+			<drawtext condition="gt({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
+		</area>
+		<area condition="eq({numtimers}, 2)" x="1%" y="80%" width="22%" height="18%" layer="3">
+			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/2" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+			</loop>
+		</area>
+		<area condition="eq({numtimers}, 2)" x="0" y="80%" width="23%" height="18%" layer="3">
+			<loop name="timers" x="1%" y="0" orientation="horizontal" columnwidth="{areawidth}/2*0.99" rowheight="{areaheight}" overflow="cut">
+				<drawimage  cache="true" name="logo" y="{areaheight}*0.08" width="9%" height="18%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
+				<drawtextbox x="6%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
+				<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
+				<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
+				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="2%" height="20%" imagetype="skinpart" path="remoteTimers" />
+			</loop>
+		</area>
+		
+		<area condition="not{numtimerconflicts}++eq({numtimers}, 1)" x="3%" y="74%" width="17%" height="5%" layer="3">
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+		</area>
+		<area condition="{numtimerconflicts}" x="3%" y="74%" width="17%" height="5%" layer="3">
+			<drawtext align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
+		</area>
+		<area condition="eq({numtimers}, 1)" x="1%" y="80%" width="22%" height="18%" layer="3">
+			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+			</loop>
+		</area>
+		<area condition="eq({numtimers}, 1)" x="0" y="80%" width="23%" height="18%" layer="3">
+			<loop name="timers" x="1%" y="0" orientation="horizontal" columnwidth="{areawidth}*0.99" rowheight="{areaheight}" overflow="cut">
+				<drawimage  cache="true" name="logo" y="{areaheight}*0.08" width="9%" height="18%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
+				<drawtextbox x="6%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
+				<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
+				<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
+				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="2%" height="20%" imagetype="skinpart" path="remoteTimers" />
+			</loop>
+		</area>
+	</timers>
+	
+	<lastrecordings detached="true" delay="{03_lastrecordingsDelay}" fadetime="{03_lastrecordingsFadetime}">
+
+		<area condition="{showLastrecordings}++gt({numtimers}, 3)" x="45%" y="74%" width="33%" height="5%" layer="3">
 			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(lastrecordings)}" />
 		</area>
-		<area x="45%" y="80%" width="33%" height="18%" layer="3">
+		<area condition="{showLastrecordings}++gt({numtimers}, 3)" x="45%" y="80%" width="33%" height="18%" layer="3">
 			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}" overflow="cut">
 				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
 				<drawtext x="4%" y="10%" width="{columnwidth}*0.8" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
@@ -149,6 +280,88 @@
 				<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
 			</loop>
 		</area>
+		
+<!--6 numtimers-->
+		<area condition="not{showLastrecordings}++eq({numtimers}, 6)" x="67%" y="74%" width="12%" height="5%" layer="3">
+			<drawtext align="center" y="7%" font="{light}" fontsize="55%" color="{clrLightGray}" text="{tr(last)}" />
+			<drawtext align="center" y="49%" font="{light}" fontsize="55%" color="{clrLightGray}" text="{tr(recording)}" />
+		</area>
+		<area condition="not{showLastrecordings}++eq({numtimers}, 6)" x="68%" y="80%" width="11%" height="18%" layer="3">
+			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+				<drawtext y="10%" align="center" width="{columnwidth}*0.9" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+				<drawtextbox condition="isset{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+				<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+			</loop>
+		</area>
+		
+<!--5 numtimers-->
+		<area condition="not{showLastrecordings}++eq({numtimers}, 5)" x="56%" y="74%" width="22%" height="5%" layer="3">
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(lastrecordings)}" />
+		</area>
+		<area condition="not{showLastrecordings}++eq({numtimers}, 5)" x="56%" y="80%" width="22%" height="18%" layer="3">
+			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/2" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+				<drawtext x="8%" y="10%" width="{columnwidth}*0.75" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+				<drawtextbox condition="isset{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+				<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+			</loop>
+		</area>
+	
+<!--4 numtimers-->
+		<area condition="not{showLastrecordings}++eq({numtimers}, 4)" x="44%" y="74%" width="35%" height="5%" layer="3">
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(lastrecordings)}" />
+		</area>
+		<area condition="not{showLastrecordings}++eq({numtimers}, 4)" x="45%" y="80%" width="33%" height="18%" layer="3">
+			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+				<drawtext x="4%" y="10%" width="{columnwidth}*0.8" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+				<drawtextbox condition="isset{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+				<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+			</loop>
+		</area>
+<!--3 numtimers-->
+		<area condition="eq({numtimers}, 3)" x="34%" y="74%" width="44%" height="5%" layer="3">
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(lastrecordings)}" />
+		</area>
+		<area condition="eq({numtimers}, 3)" x="34%" y="80%" width="44%" height="18%" layer="3">
+			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+				<drawtext x="4%" y="10%" width="{columnwidth}*0.8" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+				<drawtextbox condition="isset{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+				<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+			</loop>
+		</area>
+<!--2,1 numtimers-->
+		<area condition="lt({numtimers}, 3)++gt({numtimers}, 0)" x="23%" y="74%" width="55%" height="5%" layer="3">
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(lastrecordings)}" />
+		</area>
+		<area condition="lt({numtimers}, 3)++gt({numtimers}, 0)" x="23%" y="80%" width="55%" height="18%" layer="3">
+			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/5" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
+				<drawtext x="3%" y="10%" width="{columnwidth}*0.9" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+				<drawtextbox condition="isset{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+				<drawtextbox condition="empty{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+			</loop>
+		</area>
+<!--0 numtimers-->
+		<area condition="eq({numtimers},  0)" x="0" y="74%" width="80%" height="6%" layer="3">
+			<drawimage  x="0" width="{areawidth}*0.9899" height="{areaheight}" imagetype="skinpart" path="shadowsOnlyTimersHeader" />
+		</area>
+		<area condition="eq({numtimers},  0)" x="1%" y="74%" width="78%" height="5%" layer="3">
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(lastrecordings)}" />
+		</area>
+		<area condition="eq({numtimers}, 0)" x="0" y="80%" width="79%" height="18%" layer="3">
+			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/5" rowheight="{areaheight}" overflow="cut">
+				<drawimage x="10" y="0" width="{columnwidth}*0.99" height="{rowheight}" imagetype="skinpart" path="shadowsRecordingsMain1" />
+				<drawtext y="10%" align="center" width="{columnwidth}" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+				<drawtextbox condition="isset{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+				<drawtextbox condition="empty{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+			</loop>
+		</area>
+		
+		
+		
 	</lastrecordings>
 
 	<discusage detached="true" delay="{05_discusageDelay}" fadetime="{05_discusageFadetime}">

@@ -118,3 +118,7 @@ shady-skin Revision History
 - Changed display of resolution in channelinfo
 - Fixed scrollbar in displaymenusetup
 - Added markers for recordings seen less or more 85%
+
+2015-05-10:
+
+- Changed timers- and lastrecordings-handling in mainmenu
