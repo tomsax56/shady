@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE displayaudiotracks SYSTEM "../../../dtd/displayaudiotracks.dtd">
 
-<displayaudiotracks x="60%" y="40%" width="40%" height="40%" fadetime="{menuFadetime}">
+<displayaudiotracks x="60%" y="40%" width="40%" height="40%" fadetime="{00_menuFadetime}">
 
 	<background>
 	</background>

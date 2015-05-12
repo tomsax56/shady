@@ -123,3 +123,7 @@ shady-skin Revision History
 
 - Changed timers- and lastrecordings-handling in mainmenu
 - Added shadowsRecordingsMain1.png
+
+2015-05-10:
+
+- Fixed menuFadetime-parameter, added shifting for displaychannel (both provided by MegaX@vdrportal)

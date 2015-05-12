@@ -38,8 +38,9 @@
 			<parameter type="bool" name="ecmInside" displaytext="{tr(ecmInside)}">1</parameter>
 			<!--<parameter type="int" name="devices" min="0" max="1" displaytext="{tr(devices)}">0</parameter>-->
 		</submenu>
-		<submenu name="Fadetimes" displaytext="{tr(Delay and Fadetimes)}">
-			<parameter type="int" name="01_menuFadetime" min="0" max="500" displaytext="{tr(01_menuFadetime)}">300</parameter>
+		<submenu name="Fadetimes" displaytext="{tr(Delay, Shift- and Fadetimes)}">
+			<parameter type="int" name="00_menuFadetime" min="0" max="500" displaytext="{tr(00_menuFadetime)}">300</parameter>
+			<parameter type="int" name="01_ShifttimeChannelDisplay" min="0" max="1000" displaytext="{tr(01_ShifttimeChannelDisplay)}">0</parameter>
 			<parameter type="int" name="02_timersDelay" min="1" max="500" displaytext="{tr(02_timersDelay)}">1</parameter>
 			<parameter type="int" name="02_timersFadetime" min="0" max="500" displaytext="{tr(02_timersFadetime)}">0</parameter>
 			<parameter type="int" name="03_lastrecordingsDelay" min="1" max="500" displaytext="{tr(03_lastrecordingsDelay)}">1</parameter>
@@ -152,14 +153,18 @@
 			<trans lang="en_EN">DVB-Devices in mainmenu (0=light, 1=with bars)</trans>
 			<trans lang="de_DE">DVB-Geräte im Hauptmenü (0=light, 1=mit Balkenanzeige)</trans>
 		</token>-->
-<!--Delay and Fadetimes-->
-		<token name="tr(Delay and Fadetimes)">
-			<trans lang="en_EN">Delay and fadetimes</trans>
-			<trans lang="de_DE">Verzögerungen und Einblendzeiten</trans>
+<!--Delay, Shift- and Fadetimes-->
+		<token name="tr(Delay, Shift- and Fadetimes)">
+			<trans lang="en_EN">Delay, Shift- and Fadetimes</trans>
+			<trans lang="de_DE">Verzögerungen, Einfahr- und Einblendzeiten</trans>
 		</token>
-		<token name="tr(01_menuFadetime)">
+		<token name="tr(00_menuFadetime)">
 			<trans lang="en_EN">Fadetime menus</trans>
 			<trans lang="de_DE">Einblendzeit Menüs</trans>
+		</token>
+		<token name="tr(01_ShifttimeChannelDisplay)">
+			<trans lang="en_EN">Shift time Channel Display</trans>
+			<trans lang="de_DE">Einfahrzeit Kanalanzeige</trans>
 		</token>
 		<token name="tr(02_timersDelay)">
 			<trans lang="en_EN">Delay timers</trans>
