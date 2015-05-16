@@ -258,7 +258,7 @@
 		</token>
 		<token name="tr(07_notNewWatchedNotCutted-recordingsMarker)">
 			<trans lang="en_EN">Marker for seen &gt; 85% not cutted recordings</trans>
-			<trans lang="de_DE">Marker für gesehen &gt; 85%, ungeschnittene Aufnahmen</trans>
+			<trans lang="de_DE">Marker für gesehen &gt; 85%, nicht geschnittene Aufnahmen</trans>
 		</token>
 		<token name="tr(08_notNewWatchedCutted-recordingsMarker)">
 			<trans lang="en_EN">Marker for seen &gt; 85% cutted recordings</trans>
