@@ -41,6 +41,7 @@
 		<submenu name="Fadetimes" displaytext="{tr(Delay, Shift- and Fadetimes)}">
 			<parameter type="int" name="00_menuFadetime" min="0" max="500" displaytext="{tr(00_menuFadetime)}">300</parameter>
 			<parameter type="int" name="01_ShifttimeChannelDisplay" min="0" max="1000" displaytext="{tr(01_ShifttimeChannelDisplay)}">0</parameter>
+			<parameter type="int" name="01_ShifttimeMessageDisplay" min="0" max="1000" displaytext="{tr(01_ShifttimeMessageDisplay)}">0</parameter>
 			<parameter type="int" name="02_timersDelay" min="1" max="500" displaytext="{tr(02_timersDelay)}">1</parameter>
 			<parameter type="int" name="02_timersFadetime" min="0" max="500" displaytext="{tr(02_timersFadetime)}">0</parameter>
 			<parameter type="int" name="03_lastrecordingsDelay" min="1" max="500" displaytext="{tr(03_lastrecordingsDelay)}">1</parameter>
@@ -165,6 +166,10 @@
 		<token name="tr(01_ShifttimeChannelDisplay)">
 			<trans lang="en_EN">Shift time Channel Display</trans>
 			<trans lang="de_DE">Einfahrzeit Kanalanzeige</trans>
+		</token>
+		<token name="tr(01_ShifttimeMessageDisplay)">
+			<trans lang="en_EN">Shift time for Message, Replay and Volume Display</trans>
+			<trans lang="de_DE">Einfahrzeit Nachrichten-, Wiedergabe- und Lautstärkeanzeige</trans>
 		</token>
 		<token name="tr(02_timersDelay)">
 			<trans lang="en_EN">Delay timers</trans>
