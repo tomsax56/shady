@@ -127,3 +127,12 @@ shady-skin Revision History
 2015-05-10:
 
 - Fixed menuFadetime-parameter, added shifting for displaychannel (both provided by MegaX@vdrportal)
+
+2015-05-16:
+
+- Added shifting for displaymessage, displayreplay and displayvolume (provided by MegaX@vdrportal)
+- Fixed typo in 07_notNewWatchedNotCutted-recordingsMarker (provided by MegaX@vdrportal)
+
+2015-05-18:
+
+- Fixed floatwidth and floatheight in displaymenudetailrecording

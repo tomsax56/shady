@@ -33,10 +33,10 @@
 
 	<tab name="Info" x="42%" y="14%" width="53%" height="76%" layer="2" scrollheight="{areaheight}/4">
 		<drawtextbox condition="not{isseries}++not{ismovie}" x="0" y="0" width="96%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
-		<drawimage condition="{isseries}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="0" y="0" width="{areawidth}*0.3" height="{areawidth} * 0.3 * {seriesposter1height} / {seriesposter1width}"/>
-		<drawimage condition="{ismovie}" name="movieposter" imagetype="image" path="{posterpath}" x="0" y="0" width="{areawidth}*0.3" height="{areawidth} * 0.3 * {posterheight} / {posterwidth}" />
-		<drawtextbox condition="{isseries}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)} + 10" floatheight="{height(seriesposter)} + 20" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
-		<drawtextbox condition="{ismovie}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)} + 10" floatheight="{height(movieposter)} + 20" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
+		<drawimage condition="{isseries}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="0" y="1%" width="{areawidth}*0.25" height="{areawidth} * 0.375 *" />
+		<drawimage condition="{ismovie}" name="movieposter" imagetype="image" path="{posterpath}" x="0" y="1%" width="{areawidth}*0.25" height="{areawidth} * 0.375" />
+		<drawtextbox condition="{isseries}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)}*1.1" floatheight="{height(seriesposter)}*1.1" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
+		<drawtextbox condition="{ismovie}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.1" floatheight="{height(movieposter)}*1.1" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
 	</tab>
 	<tab name="{tr(recinfo)}" x="42%" y="14%" width="53%" height="75%" layer="2" scrollheight="{areaheight}/2">
 		<drawtext align="center" y="0" name="title" font="{light}" fontsize="6%" color="{clrLightGray}" text="{tr(recinfo)}" />
