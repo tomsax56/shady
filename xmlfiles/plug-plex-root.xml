@@ -159,14 +159,123 @@
 	{banner}
 	-->
 
-	<grid name="browser" x="1%" y="14%" width="73%" height="75%">
+	<grid name="coverbrowser" x="1%" y="14%" width="73%" height="75%">
 		<area layer="2">
-			<!-- <drawrectangle condition="{current}" x="0" y="5%" width="100%" height="100%" color="{clrBackGroundGray}" />
-			-->
 			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 			<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_ver" />
 			<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Color_ver" />
 			<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Gradient_ver" />
+			<drawtext x="10%" y="5" width="100%" font="{bold}" fontsize="6%" color="{clrLightGray}" text="Cover" />
+		</area> 
+		<area condition="{ismovie}" layer="3">
+			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawrectangle x="10%" y="{height(thumb)}*0.92" width="{viewoffset}/{duration}*{areawidth}*0.8" height="1%" color="{clrBlue}" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+			<drawtext x="10%" y="{posy(title)} + {height(title)}" width="40%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{duration} min" />
+			<drawtext x="65%" y="{posy(title)} + {height(title)}" width="30%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{year}" />
+			<drawtext x="10%" y="{posy(title)} + {height(title)}*2.0" width="40%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{container}" />
+			<drawtext x="65%" y="{posy(title)} + {height(title)}*2.0" width="30%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{audioCodec}" />
+			<drawtext x="10%" y="{posy(title)} + {height(title)}*3.0" width="40%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{contentrating}" />
+			<drawtext x="65%" y="{posy(title)} + {height(title)}*3.0" width="30%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{ratingstring}" />
+		</area>
+		
+		<area condition="{isepisode}" layer="3">
+			<drawimage name="thumb" condition="not{hasseriesthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasseriesthumb}" imagetype="image" path="{seriesthumb}" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawrectangle x="10%" y="{height(thumb)}*0.92" width="{viewoffset}/{duration}*{areawidth}*0.8" height="1%" color="{clrBlue}" />
+			<drawtext condition="eq({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+			<drawtext condition="lt({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{seriestitle}" />
+			<drawtext name="season" x="10%" y="{posy(title)} + {height(title)}" width="80%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{printf('S%02d E%02d', season, episode)}" />
+		</area>
+		<area condition="{isdirectory}" layer="3">
+			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="100%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96"  font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+		</area>
+		<area condition="{isshow}" layer="3">
+			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+		</area>
+		<area condition="{isseason}" layer="3">
+			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+		</area>
+		<area condition="{isdummy}" layer="3">
+			<drawimage name="thumb" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+		</area>
+		<area condition="{isserver}" layer="3">
+			<drawimage name="thumb" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+			<drawtext x="10%" y="{posy(title)} + {height(title)}" width="80%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{serverstartpointname}" />
+		</area>
+	</grid>
+
+	<grid name="detailbrowser" x="1%" y="14%" width="73%" height="75%">
+		<area layer="2">
+			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
+			<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_ver" />
+			<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Color_ver" />
+			<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Gradient_ver" />
+			<drawtext x="10%" y="5" width="100%" font="{bold}" fontsize="6%" color="{clrLightGray}" text="Detail" />
+		</area> 
+		<area condition="{ismovie}" layer="3">
+			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawrectangle x="10%" y="{height(thumb)}*0.92" width="{viewoffset}/{duration}*{areawidth}*0.8" height="1%" color="{clrBlue}" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+			<drawtext x="10%" y="{posy(title)} + {height(title)}" width="40%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{duration} min" />
+			<drawtext x="65%" y="{posy(title)} + {height(title)}" width="30%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{year}" />
+			<drawtext x="10%" y="{posy(title)} + {height(title)}*2.0" width="40%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{container}" />
+			<drawtext x="65%" y="{posy(title)} + {height(title)}*2.0" width="30%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{audioCodec}" />
+			<drawtext x="10%" y="{posy(title)} + {height(title)}*3.0" width="40%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{contentrating}" />
+			<drawtext x="65%" y="{posy(title)} + {height(title)}*3.0" width="30%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{ratingstring}" />
+		</area>
+		
+		<area condition="{isepisode}" layer="3">
+			<drawimage name="thumb" condition="not{hasseriesthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasseriesthumb}" imagetype="image" path="{seriesthumb}" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawrectangle x="10%" y="{height(thumb)}*0.92" width="{viewoffset}/{duration}*{areawidth}*0.8" height="1%" color="{clrBlue}" />
+			<drawtext condition="eq({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+			<drawtext condition="lt({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{seriestitle}" />
+			<drawtext name="season" x="10%" y="{posy(title)} + {height(title)}" width="80%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{printf('S%02d E%02d', season, episode)}" />
+		</area>
+		<area condition="{isdirectory}" layer="3">
+			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="100%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96"  font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+		</area>
+		<area condition="{isshow}" layer="3">
+			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+		</area>
+		<area condition="{isseason}" layer="3">
+			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+		</area>
+		<area condition="{isdummy}" layer="3">
+			<drawimage name="thumb" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+		</area>
+		<area condition="{isserver}" layer="3">
+			<drawimage name="thumb" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+			<drawtext x="10%" y="{posy(title)} + {height(title)}" width="80%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{serverstartpointname}" />
+		</area>
+	</grid>
+
+	<grid name="listbrowser" x="1%" y="14%" width="73%" height="75%">
+		<area layer="2">
+			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
+			<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_ver" />
+			<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Color_ver" />
+			<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Gradient_ver" />
+			<drawtext x="10%" y="5" width="100%" font="{bold}" fontsize="6%" color="{clrLightGray}" text="List" />
 		</area> 
 		<area condition="{ismovie}" layer="3">
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
