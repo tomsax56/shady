@@ -237,7 +237,9 @@
 			<drawtext x="76%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{container}" />
 			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="starsFull" x="68%" y="7%" width="{areaheight}*0.52" height="{areaheight}*0.1" />
 			<drawrectangle condition="gt({rating}, 0)" x="{posx(stars)}+{width(stars)}*{rating}/100" y="7%" width="{width(stars)}-{rating}/100*{width(stars)}" height="{areaheight}*0.1" color="{clrTransparent}" />
-			<!--<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="stars" x="68%" y="7%" width="{areaheight}*0.52" height="{areaheight}*0.1" />-->
+		</area>
+		<area condition="{ismovie}" layer="5">
+			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="stars" x="68%" y="7%" width="{areaheight}*0.52" height="{areaheight}*0.1" />
 		</area>
 		<area condition="{isepisode}" layer="4">
 			<drawimage name="thumb" condition="not{hasseriesthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
@@ -290,15 +292,16 @@
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 <!--TODO<drawrectangle x="1%" y="{posy(thumb)}+{height(thumb)}*0.96" width="{viewoffset}/{duration}*{areaheight}*0.6" height="2%" color="{clrHigh}" />-->
-			<drawtext name="title" x="5%" y="8%" width="73%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
+			<drawtext name="title" x="5%" y="8%" width="62%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
 			<drawtext x="95%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{year}" />
 			<drawtext x="88%" y="10%" width="7%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{duration}min" />
 			<drawtext x="83%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{audioCodec}" />
 			<drawtext x="78%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{container}" />
 			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="starsFull" x="68%" y="15%" width="{areaheight}*1.56" height="{areaheight}*0.3" />
 			<drawrectangle condition="gt({rating}, 0)" x="{posx(stars)}+{width(stars)}*{rating}/100" y="15%" width="{width(stars)}-{rating}/100*{width(stars)}" height="{areaheight}*0.3" color="{clrTransparent}" />
-			<!--<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="stars" x="68%" y="7%" width="{areaheight}*0.52" height="{areaheight}*0.1" />-->
-			
+		</area>
+		<area condition="{ismovie}" layer="5">
+			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="stars" x="68%" y="15%" width="{areaheight}*1.56" height="{areaheight}*0.3" />
 		</area>
 		
 		

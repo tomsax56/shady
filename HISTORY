@@ -140,3 +140,11 @@ shady-skin Revision History
 2015-05-20:
 
 - Fixed typo in displaymenudetailrecording
+
+2015-05-21:
+
+- Added detail- and list-view for plex-plugin (incomplete)
+
+2015-05-21:
+
+- Fixed timerconflicts in mainmenu, removed useless code, minor improvements for plex-template

@@ -75,8 +75,7 @@
 		</area>
 <!--showLastrecordings-->
 		<area condition="not{numtimerconflicts}++{showLastrecordings}++gt({numtimers}, 3)" x="1%" y="74%" width="45%" height="5%" layer="3">
-			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
-			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
 		</area>
 		<area condition="{numtimerconflicts}++{showLastrecordings}++gt({numtimers}, 3)" x="16%" y="74%" width="19%" height="5%" layer="3">
 			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
@@ -102,8 +101,7 @@
 			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsOnlyTimersHeader" />
 		</area>
 		<area condition="not{numtimerconflicts}++not{showLastrecordings}++gt({numtimers}, 6)" x="1%" y="74%" width="79%" height="5%" layer="3">
-			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
-			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
 		</area>
 		<area condition="{numtimerconflicts}++not{showLastrecordings}++gt({numtimers}, 6)" x="30%" y="74%" width="19%" height="5%" layer="3">
 			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
@@ -126,8 +124,7 @@
 		</area>
 
 		<area condition="not{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 6)" x="1%" y="74%" width="68%" height="5%" layer="3">
-			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
-			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
 		</area>
 		<area condition="{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 6)" x="25%" y="74%" width="19%" height="5%" layer="3">
 			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
@@ -150,8 +147,7 @@
 		</area>
 
 		<area condition="not{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 5)" x="1%" y="74%" width="56%" height="5%" layer="3">
-			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
-			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
 		</area>
 		<area condition="{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 5)" x="19%" y="74%" width="19%" height="5%" layer="3">
 			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
@@ -174,8 +170,7 @@
 		</area>
 
 		<area condition="not{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 4)" x="1%" y="74%" width="45%" height="5%" layer="3">
-			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
-			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
 		</area>
 		<area condition="{numtimerconflicts}++not{showLastrecordings}++eq({numtimers}, 4)" x="13%" y="74%" width="19%" height="5%" layer="3">
 			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
@@ -198,10 +193,9 @@
 		</area>
 
 		<area condition="not{numtimerconflicts}++eq({numtimers}, 3)" x="1%" y="74%" width="34%" height="5%" layer="3">
-			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
-			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
 		</area>
-		<area condition="{numtimerconflicts}++eq({numtimers}, 3)" x="9%" y="74%" width="16%" height="5%" layer="3">
+		<area condition="{numtimerconflicts}++eq({numtimers}, 3)" x="8%" y="74%" width="17%" height="5%" layer="3">
 			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
 			<drawtext condition="eq({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
 			<drawtext condition="gt({numtimerconflicts}, 1)" align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
@@ -217,13 +211,12 @@
 				<drawtextbox x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
 				<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
 				<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
-				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="2%" height="20%" imagetype="skinpart" path="remoteTimers" />
+				<drawimage condition="{timers[isremotetimer]}" x="3%" y="73%" width="5%" height="20%" imagetype="skinpart" path="remoteTimers" />
 			</loop>
 		</area>
 		
 		<area condition="not{numtimerconflicts}++eq({numtimers}, 2)" x="3%" y="74%" width="17%" height="5%" layer="3">
-			<drawtext condition="eq({numtimers}, 0)||gt({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
-			<drawtext condition="eq({numtimers}, 1)" align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
 		</area>
 		<area condition="{numtimerconflicts}++eq({numtimers}, 2)" x="3%" y="74%" width="17%" height="5%" layer="3">
 			<drawtext name="timer" align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
@@ -241,16 +234,14 @@
 				<drawtextbox x="6%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
 				<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
 				<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
-				<drawimage condition="{timers[isremotetimer]}" x="1%" y="73%" width="2%" height="20%" imagetype="skinpart" path="remoteTimers" />
+				<drawimage condition="{timers[isremotetimer]}" x="4%" y="73%" width="7%" height="20%" imagetype="skinpart" path="remoteTimers" />
 			</loop>
 		</area>
 		
 		<area condition="not{numtimerconflicts}++eq({numtimers}, 1)" x="3%" y="74%" width="17%" height="5%" layer="3">
 			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
 		</area>
-		<area condition="{numtimerconflicts}" x="3%" y="74%" width="17%" height="5%" layer="3">
-			<drawtext align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />           
-		</area>
+		
 		<area condition="eq({numtimers}, 1)" x="1%" y="80%" width="22%" height="18%" layer="3">
 			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}" rowheight="{areaheight}" overflow="cut">
 				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />
