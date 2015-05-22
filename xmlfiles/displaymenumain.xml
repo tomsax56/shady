@@ -241,7 +241,10 @@
 		<area condition="not{numtimerconflicts}++eq({numtimers}, 1)" x="3%" y="74%" width="17%" height="5%" layer="3">
 			<drawtext align="center" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
 		</area>
-		
+		<area condition="eq({numtimerconflicts}, 1)++eq({numtimers}, 1)" x="3%" y="74%" width="17%" height="5%" layer="3">
+			<drawtext align="left" y="15%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{tr(activetimer)}" />
+			<drawtext align="right" y="15%" font="{light}" fontsize="70%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />
+		</area>
 		<area condition="eq({numtimers}, 1)" x="1%" y="80%" width="22%" height="18%" layer="3">
 			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}" rowheight="{areaheight}" overflow="cut">
 				<drawimage x="0" y="0" width="{columnwidth}" height="{rowheight}" imagetype="skinpart" path="shadowsTimerMain" />

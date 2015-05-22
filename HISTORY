@@ -148,3 +148,7 @@ shady-skin Revision History
 2015-05-21:
 
 - Fixed timerconflicts in mainmenu, removed useless code, minor improvements for plex-template
+
+2015-05-22:
+
+- Fixed timerconflicts in mainmenu (second try)
