@@ -153,3 +153,8 @@ shady-skin Revision History
 
 - Fixed timerconflicts in mainmenu (second try)
 - Some more improvements for plex-template
+
+2015-05-23
+
+- Changed columns- and rows-info in plex-template
+- Fixed startpoint of elapsed-bar in plex-template

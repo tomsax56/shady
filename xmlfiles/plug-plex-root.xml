@@ -31,10 +31,24 @@
 
 	<viewelement name="header">
 		<area x="2%" y="1%" width="100%" height="9%" layer="4">
-			<drawtext x="0%" y="0%" width="100%" font="{light}" fontsize="45%" color="{clrLightGray}" text="Plex for VDR" />
-			<drawtext x="0%" y="50%" width="100%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{tabname}" />
+			<drawtext x="0" y="0" width="100%" font="{light}" fontsize="45%" color="{clrLightGray}" text="Plex for VDR" />
+			<drawtext x="0" y="50%" width="100%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{tabname}" />
 			<drawimage condition="{hasbanner}" imagetype="image" path="{banner}" x="50%" y="5%" width="50%" height="90%" />
 		</area>
+
+		<!--<area condition="eq({viewmode}, 0)" x="33%" y="1%" width="66%" height="9%" layer="6">
+			<drawtext condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" animtype="blink" animfreq="500" x="7%" y="0" font="{light}" fontsize="50%" color="{clrRed}" text="For Cover-View please set:" />
+			<drawtext condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" x="0" y="50%" font="{light}" fontsize="45%" color="{clrLightGray}" text="Cover Grid Columns: 7, Cover Grid Rows: 2"/>
+		</area>
+		<area condition="eq({viewmode}, 1)" x="33%" y="1%" width="66%" height="9%" layer="6">
+			<drawtext condition="lt({rows}, 1)||gt({rows}, 1)||lt({columns}, 14)||gt({columns}, 14)" animtype="blink" animfreq="500" x="7%" y="0" font="{light}" fontsize="50%" color="{clrRed}" text="For List-View please set:" />
+			<drawtext condition="lt({rows}, 1)||gt({rows}, 1)||lt({columns}, 14)||gt({columns}, 14)" x="0" y="50%" font="{light}" fontsize="45%" color="{clrLightGray}" text="List Grid Columns: 1, List Grid Rows: 14"/>
+		</area>
+		<area condition="eq({viewmode}, 2)" x="33%" y="1%" width="66%" height="9%" layer="6">
+			<drawtext condition="lt({rows}, 1)||gt({rows}, 1)||lt({columns}, 4)||gt({columns}, 4)" animtype="blink" animfreq="500" x="7%" y="0" font="{light}" fontsize="50%" color="{clrRed}" text="For Detail-View please set:" />
+			<drawtext condition="lt({rows}, 1)||gt({rows}, 1)||lt({columns}, 4)||gt({columns}, 4)" x="0" y="50%" font="{light}" fontsize="45%" color="{clrLightGray}" text="Detail Grid Columns: 1, Detail Grid Rows: 4"/>
+		</area>-->
+
 	</viewelement>
 
       <!-- Available Variables time:
@@ -156,13 +170,13 @@
 	-->
 
 	<grid name="coverbrowser" x="1%" y="14%" width="73%" height="75%">
-		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" layer="5">
-			<drawimage x="0" y="0" width="99%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
+		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" layer="7">
+			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 		</area>
-		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" x="2%" y="1%" width="100%" height="9%" layer="6">
-			<drawtext x="0" y="5%" font="{light}" fontsize="30%" color="{clrLightGray}" text="For detail-view please set:" />
-			<drawtext x="5%" y="35%" font="{light}" fontsize="30%" color="{clrRed}" text="Detail Grid Columns: 7"/>
-			<drawtext x="5%" y="65%" font="{light}" fontsize="30%" color="{clrRed}" text="Detail Grid Rows: 2"/>
+		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" x="2%" y="2%" width="90%" height="90%" layer="8">
+			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="25%" color="{clrRed}" text="For Cover-View please set:" />
+			<drawtext animtype="blink" animfreq="1500" x="0" y="30%" font="{light}" fontsize="25%" color="{clrLightGray}" text="Cover Grid Columns: 7"/>
+			<drawtext animtype="blink" animfreq="1500" x="0" y="60%" font="{light}" fontsize="25%" color="{clrLightGray}" text="Cover Grid Rows: 2"/>
 		</area>
 		<area layer="3">
 			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
@@ -219,14 +233,14 @@
 		</area>
 	</grid>
 	
-		<grid name="detailbrowser" x="1%" y="14%" width="98%" height="75%">
-		<area condition="lt({rows}, 4)||gt({rows}, 6)||lt({columns}, 1)||gt({columns}, 1)" layer="5">
-			<drawimage x="0" y="0" width="99%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
+	<grid name="detailbrowser" x="1%" y="14%" width="98%" height="75%">
+		<area condition="lt({rows}, 4)||gt({rows}, 4)||lt({columns}, 1)||gt({columns}, 1)" layer="7">
+			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 		</area>
-		<area condition="lt({rows}, 4)||gt({rows}, 6)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="1%" width="100%" height="9%" layer="6">
-			<drawtext x="0" y="5%" font="{light}" fontsize="30%" color="{clrLightGray}" text="For detail-view please set:" />
-			<drawtext x="5%" y="35%" font="{light}" fontsize="30%" color="{clrRed}" text="Detail Grid Columns: 1"/>
-			<drawtext x="5%" y="65%" font="{light}" fontsize="30%" color="{clrRed}" text="Detail Grid Rows: 4"/>
+		<area condition="lt({rows}, 4)||gt({rows}, 4)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="0" width="90%" height="90%" layer="8">
+			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="32%" color="{clrRed}" text="For Detail-View please set:" />
+			<drawtext animtype="blink" animfreq="1500" x="0" y="30%" font="{light}" fontsize="32%" color="{clrLightGray}" text="Detail Grid Columns: 1"/>
+			<drawtext animtype="blink" animfreq="1500" x="0" y="60%" font="{light}" fontsize="32%" color="{clrLightGray}" text="Detail Grid Rows: 4"/>
 		</area>
 		<area layer="3">
 			<drawimage condition="not{current}" x="0" y="0" width="95%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
@@ -287,11 +301,12 @@
 	</grid>
 
 	<grid name="listbrowser" x="1%" y="14%" width="60%" height="75%">
-		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" layer="5">
-			<drawimage x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="buttonLong1" />
+		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" layer="7">
+			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLong1" />
 		</area>
-		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="1%" width="100%" height="9%" layer="6">
-			<drawtext x="0" y="8%" font="{light}" fontsize="55%" color="{clrRed}" text="For list-view please set: List Grid Columns: 1, List Grid Rows: 14" />
+		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="0" width="90%" height="100%" layer="8">
+			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="50%" color="{clrRed}" text="For List-View please set:" />
+			<drawtext animtype="blink" animfreq="1500" x="0" y="50%" font="{light}" fontsize="50%" color="{clrLightGray}" text="List Grid Columns: 1, List Grid Rows: 14"/>
 		</area>
 		<area layer="2">
 			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLong1" />
@@ -315,7 +330,7 @@
 		</area>
 		<!--progressbar-->
 		<area condition="{ismovie}||{isepisode}" layer="4">
-			<drawimage condition="{coloredElapsed}++{duration}" x="4%" y="{areaheight}-3" width="{areawidth}*{viewoffset}/{duration}*0.945" height="{areaheight}/20" imagetype="skinpart" path="elapsedBar" />
+			<drawimage condition="{coloredElapsed}++{duration}" x="0%" y="{areaheight}-3" width="{areawidth}*{viewoffset}/{duration}*0.945" height="{areaheight}/20" imagetype="skinpart" path="elapsedBar" />
 			<drawimage condition="not{coloredElapsed}++{duration}" x="4%" y="{areaheight}-3" width="{areawidth}*{viewoffset}/{duration}*0.945" height="{areaheight}/20" imagetype="skinpart" path="elapsedBarMono" />
 		</area>
 		<area condition="{isepisode}" layer="4">
@@ -421,5 +436,4 @@
 			<drawimage  condition="{blue4}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />            
 		</area>
 	</viewelement>
-
 </displayplugin>
