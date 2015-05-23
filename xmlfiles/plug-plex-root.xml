@@ -266,13 +266,13 @@
 		</area>
 
 		<area condition="{isepisode}" layer="4">
-			<drawimage name="thumb" condition="not{hasseriesthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
-			<drawimage name="thumb" condition="{hasseriesthumb}" imagetype="image" path="{seriesthumb}" x="1%" y="0" valign="center" width="{areaheight}*1.6" height="{areaheight}*0.9" />
+			<drawimage name="thumb" condition="not{hasseriesthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
+			<drawimage name="thumb" condition="{hasseriesthumb}" imagetype="image" path="{seriesthumb}" x="1%" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}" />
 <!--TODO<drawrectangle x="10%" y="{height(thumb)}" width="{viewoffset}/{duration}*{areawidth}*0.1" height="2%" color="{clrBlue}" />-->
-			<drawtext condition="eq({viewgroup}, 4)" name="title" x="20%" y="8%" width="60%" font="{semibold}" fontsize="16%" color="{clrLightGray}" text="{seriestitle}  {title}" />
-			<drawtext condition="lt({viewgroup}, 4)" name="title" x="80%" y="5%" width="18%" font="{semibold}" fontsize="14%" color="{clrLightGray}" text="{seriestitle}" />
-			<drawtext name="season" x="80%" y="5%" width="18%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{printf('S%02d E%02d', season, episode)}" />
-			<drawtextbox x="20%" y="{posy(title)}+{height(title)}*1.5" width="72%" height="80%" font="{light}" fontsize="13%" color="{clrLightGray}" text="{summary}" />
+			<drawtext condition="eq({viewgroup}, 4)" name="title" x="9%" y="8%" width="64%" font="{semibold}" fontsize="16%" color="{clrLightGray}" text="{seriestitle}  {title}" />
+			<drawtext condition="lt({viewgroup}, 4)" name="title" x="9%" y="8%" width="64%" font="{semibold}" fontsize="16%" color="{clrLightGray}" text="{seriestitle}" />
+			<drawtext name="season" x="90%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{printf('S%02d E%02d', season, episode)}" />
+			<drawtextbox x="9%" y="{posy(title)}+{height(title)}*1.5" width="83%" height="80%" font="{light}" fontsize="13%" color="{clrLightGray}" text="{summary}" />
 		</area>
 		<area condition="{isdirectory}" layer="3"> <!--Biblio-->
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
