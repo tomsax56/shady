@@ -299,7 +299,43 @@
 			<trans lang="en_EN">Plex for VDR</trans>
 			<trans lang="de_DE">Plex für VDR</trans>
 		</token>
-    </translations>
+		<token name="tr(For_Cover-View_please_set)">
+			<trans lang="en_EN">For Cover-View please set</trans>
+			<trans lang="de_DE">Für den Plakat-Modus setze</trans>
+		</token>
+		<token name="tr(For_Detail-View_please_set)">
+			<trans lang="en_EN">For Detail-View please set</trans>
+			<trans lang="de_DE">Für den Detail-Modus setze</trans>
+		</token>
+		<token name="tr(For_List-View_please_set)">
+			<trans lang="en_EN">For List-View please set</trans>
+			<trans lang="de_DE">Für den Listen-Modus setze</trans>
+		</token>
+		<token name="tr(Cover_Grid_Columns)">
+			<trans lang="en_EN">Cover-Grid Columns</trans>
+			<trans lang="de_DE">Plakat-Modus Spalten</trans>
+		</token>
+		<token name="tr(Detail_Grid_Columns)">
+			<trans lang="en_EN">Detail-Grid Columns</trans>
+			<trans lang="de_DE">Detail-Modus Spalten</trans>
+		</token>
+		<token name="tr(List_Grid_Columns)">
+			<trans lang="en_EN">List-Grid Columns</trans>
+			<trans lang="de_DE">Listen-Modus Spalten</trans>
+		</token>
+		<token name="tr(Cover_Grid_Rows)">
+			<trans lang="en_EN">Cover-Grid Rows</trans>
+			<trans lang="de_DE">Plakat-Modus Reihen</trans>
+		</token>
+		<token name="tr(Detail_Grid_Rows)">
+			<trans lang="en_EN">Detail-Grid Rows</trans>
+			<trans lang="de_DE">Detail-Modus Reihen</trans>
+		</token>
+		<token name="tr(List_Grid_Rows)">
+			<trans lang="en_EN">List-Grid Rows</trans>
+			<trans lang="de_DE">Listen-Modus Reihen</trans>
+		</token>
+	</translations>
     <!--
     The three Fonts FontOSD, FontFix and FontSml configured in VDR
     can be used in all template "font" attributes with this tokens:

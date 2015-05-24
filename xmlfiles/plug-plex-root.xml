@@ -175,9 +175,9 @@
 			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 		</area>
 		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" x="2%" y="2%" width="90%" height="90%" layer="8">
-			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="25%" color="{clrRed}" text="For Cover-View please set:" />
-			<drawtext animtype="blink" animfreq="1500" x="0" y="30%" font="{light}" fontsize="25%" color="{clrLightGray}" text="Cover Grid Columns: 7"/>
-			<drawtext animtype="blink" animfreq="1500" x="0" y="60%" font="{light}" fontsize="25%" color="{clrLightGray}" text="Cover Grid Rows: 2"/>
+			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="25%" color="{clrRed}" text="{tr(For_Cover-View_please_set)}:" />
+			<drawtext animtype="blink" animfreq="1500" x="0" y="30%" font="{light}" fontsize="25%" color="{clrLightGray}" text="{tr(Cover_Grid_Columns)}: 7"/>
+			<drawtext animtype="blink" animfreq="1500" x="0" y="60%" font="{light}" fontsize="25%" color="{clrLightGray}" text="{tr(Cover_Grid_Rows)}: 2"/>
 		</area>
 		<area layer="3">
 			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
@@ -210,12 +210,12 @@
 		</area>
 		<area condition="{isdirectory}" layer="3">
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
-			<drawimage debug="true" name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" align="center" x="0" y="0" width="100%" height="80%" />
-			<drawtext name="title" x="10%" y="{height(thumb)}*0.96"  font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+			<drawimage debug="true" name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="100%" height="80%" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96"  width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isshow}" layer="3">
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" align="center" x="0" y="0" width="100%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="100%" height="80%" />
 			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isseason}" layer="3">
@@ -239,9 +239,9 @@
 			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 		</area>
 		<area condition="lt({rows}, 4)||gt({rows}, 4)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="0" width="90%" height="90%" layer="8">
-			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="32%" color="{clrRed}" text="For Detail-View please set:" />
-			<drawtext animtype="blink" animfreq="1500" x="0" y="30%" font="{light}" fontsize="32%" color="{clrLightGray}" text="Detail Grid Columns: 1"/>
-			<drawtext animtype="blink" animfreq="1500" x="0" y="60%" font="{light}" fontsize="32%" color="{clrLightGray}" text="Detail Grid Rows: 4"/>
+			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="32%" color="{clrRed}" text="{tr(For_Detail-View_please_set)}:" />
+			<drawtext animtype="blink" animfreq="1500" x="0" y="30%" font="{light}" fontsize="32%" color="{clrLightGray}" text="{tr(Detail_Grid_Columns)}: 1"/>
+			<drawtext animtype="blink" animfreq="1500" x="0" y="60%" font="{light}" fontsize="32%" color="{clrLightGray}" text="{tr(Detail_Grid_Rows)}: 4"/>
 		</area>
 		<area layer="3">
 			<drawimage condition="not{current}" x="0" y="0" width="95%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
@@ -277,12 +277,12 @@
 		</area>
 		<area condition="{isdirectory}" layer="3"> <!--Biblio-->
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext name="title" x="10%" y="{height(thumb)}*0.6" font="{semibold}" fontsize="16%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isshow}" layer="3"><!--auch Biblio-->
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext name="title" x="10%" y="{height(thumb)}*0.6" width="80%" font="{semibold}" fontsize="16%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isseason}" layer="3">
@@ -306,8 +306,8 @@
 			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLong1" />
 		</area>
 		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="0" width="90%" height="100%" layer="8">
-			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="50%" color="{clrRed}" text="For List-View please set:" />
-			<drawtext animtype="blink" animfreq="1500" x="0" y="50%" font="{light}" fontsize="50%" color="{clrLightGray}" text="List Grid Columns: 1, List Grid Rows: 14"/>
+			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="50%" color="{clrRed}" text="{tr(For_List-View_please_set)}:" />
+			<drawtext animtype="blink" animfreq="1500" x="0" y="50%" font="{light}" fontsize="50%" color="{clrLightGray}" text="{tr(List_Grid_Columns)}: 1, {tr(List_Grid_Rows)}: 14"/>
 		</area>
 		<area layer="2">
 			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLong1" />
@@ -343,12 +343,12 @@
 		</area>
 		<area condition="{isdirectory}" layer="3"> <!--Biblio-->
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext name="title" x="5%" y="8%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isshow}" layer="3"><!--auch Biblio-->
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext name="title" x="5%" y="8%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isseason}" layer="3">
