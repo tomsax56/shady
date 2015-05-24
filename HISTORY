@@ -158,3 +158,8 @@ shady-skin Revision History
 
 - Changed columns- and rows-info in plex-template
 - Fixed startpoint of elapsed-bar in plex-template
+- Fixed episodes in detail-grid (plex-template)
+
+2015-05-24
+
+- Some more improvements for plex-template (III)

@@ -30,9 +30,10 @@
 	-->
 
 	<viewelement name="header">
-		<area x="2%" y="1%" width="100%" height="9%" layer="4">
-			<drawtext x="0" y="0" width="100%" font="{light}" fontsize="45%" color="{clrLightGray}" text="Plex for VDR" />
-			<drawtext x="0" y="50%" width="100%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{tabname}" />
+		<area x="1%" y="1%" width="98%" height="9%" layer="4">
+			<drawimage name="thumb" imagetype="skinpart" path="plexplaceholder" x="0" y="0" width="{areaheight}*0.6" height="{areaheight}" />
+			<drawtext name="title" x="{posx(thumb)}+{width(thumb)}*1.1" y="0" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{tr(Plex for VDR)}" />
+			<drawtext x="{posx(title)}+{width(title)}*1.3" y="0" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{tabname}" />
 			<drawimage condition="{hasbanner}" imagetype="image" path="{banner}" x="50%" y="5%" width="50%" height="90%" />
 		</area>
 
@@ -89,7 +90,7 @@
 
 	<viewelement name="infopane">
 		<area condition="eq({viewmode}, 0)" x="75%" y="14%" width="21%" height="24%"  layer="2">
-			<drawtext x="1%" y="2%" width="100%" align="center" font="{semibold}" fontsize="15%" color="{clrLightGray}" text="{title}" />
+			<drawtext condition="isset{title}" x="1%" y="2%" width="100%" align="center" font="{semibold}" fontsize="15%" color="{clrLightGray}" text="{title}" />
 			<drawimage condition="{hasart}++not{isepisode}" imagetype="image" path="{art}" x="0" y="20%" width="100%" height="100%" />
 			<drawimage condition="{hasthumb}++{isepisode}" imagetype="image" path="{thumb}" x="0" y="20%" width="100%" height="100%" />
 		</area>

@@ -287,7 +287,7 @@
             <trans lang="en_EN">for</trans>
             <trans lang="de_DE">für</trans>
         </token>
-                <token name="tr(recordedat)">
+        <token name="tr(recordedat)">
         <trans lang="en_EN">rec at</trans>
             <trans lang="de_DE">rec am</trans>
         </token>
@@ -295,6 +295,10 @@
             <trans lang="en_EN">Replay ends</trans>
             <trans lang="de_DE">Wiedergabe endet</trans>
         </token>
+        <token name="tr(Plex for VDR)">
+			<trans lang="en_EN">Plex for VDR</trans>
+			<trans lang="de_DE">Plex für VDR</trans>
+		</token>
     </translations>
     <!--
     The three Fonts FontOSD, FontFix and FontSml configured in VDR
