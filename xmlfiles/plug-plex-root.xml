@@ -30,7 +30,7 @@
 	-->
 
 	<viewelement name="header">
-		<area x="1%" y="1%" width="98%" height="9%" layer="4">
+		<area x="1%" y="2%" width="98%" height="7%" layer="4">
 			<drawimage name="thumb" imagetype="skinpart" path="plexplaceholder" x="0" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext name="title" x="{posx(thumb)}+{width(thumb)}*1.1" y="0" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{tr(Plex for VDR)}" />
 			<drawtext x="{posx(title)}+{width(title)}*1.3" y="0" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{tabname}" />
@@ -98,7 +98,7 @@
 			<drawtextbox condition="isset{summary}" x="0" y="0" width="100%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{summary}" />
 		</areascroll>
 		<area condition="eq({viewmode}, 1)" x="62%" y="14%" width="34%" height="4%"  layer="2">
-			<drawtext x="0" y="2%" align="center" width="100%" font="{semibold}" fontsize="100%" color="{clrLightGray}" text="{title}" />
+			<drawtext x="0" y="2%" align="center" width="100%" font="{semibold}" fontsize="90%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="eq({viewmode}, 1)" x="62%" y="12%" width="34%" height="32%"  layer="2">
 			<drawimage condition="{hasart}++not{isepisode}" imagetype="image" path="{art}" x="0" y="25%" width="100%" height="100%" />
@@ -210,12 +210,12 @@
 		</area>
 		<area condition="{isdirectory}" layer="3">
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="100%" height="80%" />
+			<drawimage debug="true" name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" align="center" x="0" y="0" width="100%" height="80%" />
 			<drawtext name="title" x="10%" y="{height(thumb)}*0.96"  font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isshow}" layer="3">
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="80%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" align="center" x="0" y="0" width="100%" height="80%" />
 			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isseason}" layer="3">
@@ -277,12 +277,12 @@
 		</area>
 		<area condition="{isdirectory}" layer="3"> <!--Biblio-->
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext name="title" x="10%" y="{height(thumb)}*0.6" font="{semibold}" fontsize="16%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isshow}" layer="3"><!--auch Biblio-->
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext name="title" x="10%" y="{height(thumb)}*0.6" width="80%" font="{semibold}" fontsize="16%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isseason}" layer="3">
@@ -343,12 +343,12 @@
 		</area>
 		<area condition="{isdirectory}" layer="3"> <!--Biblio-->
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext name="title" x="5%" y="8%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isshow}" layer="3"><!--auch Biblio-->
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{art}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext name="title" x="5%" y="8%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isseason}" layer="3">
