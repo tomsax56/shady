@@ -182,7 +182,7 @@
 		<area layer="3">
 			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 			<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_ver" />
-			<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Color_ver" />
+			<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonPlexActiveCover" />
 			<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Gradient_ver" />
 		</area> 
 		<area condition="{ismovie}" layer="4">
@@ -245,8 +245,8 @@
 		</area>
 		<area layer="3">
 			<drawimage condition="not{current}" x="0" y="0" width="95%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
-			<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0%" width="95%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_ver" />
-			<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0%" width="95%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Color_ver" />
+			<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0%" width="95%" height="100%" imagetype="skinpart" path="buttonPlexActiveDetail" />
+			<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0%" width="95%" height="100%" imagetype="skinpart" path="buttonPlexActiveDetailColor" />
 			<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0%" width="95%" height="100%" imagetype="skinpart" path="buttonPlexCurrent_Gradient_ver" />
 		</area> 
 		<area condition="{ismovie}" layer="4">
@@ -339,7 +339,7 @@
 			<drawimage name="thumb" condition="{hasseriesthumb}" imagetype="image" path="{seriesthumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext condition="eq({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="65%" color="{clrLightGray}" text="{title}" />
 			<drawtext condition="lt({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="65%" color="{clrLightGray}" text="{seriestitle}" />
-			<drawtext name="season" x="5%" y="8%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title} {printf('S%02d E%02d', season, episode)}" />
+			<drawtext name="season" x="5%" y="8%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{printf('S%02d E%02d', season, episode)} - {seriestitle} {title}" />
 		</area>
 		<area condition="{isdirectory}" layer="3"> <!--Biblio-->
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6666" height="{areaheight}" />
