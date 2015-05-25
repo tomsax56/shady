@@ -154,14 +154,19 @@ shady-skin Revision History
 - Fixed timerconflicts in mainmenu (second try)
 - Some more improvements for plex-template
 
-2015-05-23
+2015-05-23:
 
 - Changed columns- and rows-info in plex-template
 - Fixed startpoint of elapsed-bar in plex-template
 - Fixed episodes in detail-grid (plex-template)
 
-2015-05-24
+2015-05-24:
 
 - Some more improvements for plex-template (III)
 - Fixed height of plex-header
 - Added translations for columns- and rows-info (plex-template)
+
+2015-05-24:
+
+- Some more improvements for plex-template (IV)
+

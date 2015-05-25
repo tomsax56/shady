@@ -95,17 +95,17 @@
 			<drawimage condition="{hasthumb}++{isepisode}" imagetype="image" path="{thumb}" x="0" y="20%" width="100%" height="100%" />
 		</area>
 		<areascroll condition="eq({viewmode}, 0)" orientation="vertical" mode="forthandback" delay="1000" scrollspeed="medium" x="75%" y="39%" width="21%" height="50%" layer="4">
-			<drawtextbox condition="isset{summary}" x="0" y="0" width="100%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{summary}" />
+			<drawtextbox condition="isset{summary}" x="0" y="0" width="100%" font="{light}" fontsize="7%" color="{clrLightGray}" text="{summary}" />
 		</areascroll>
 		<area condition="eq({viewmode}, 1)" x="62%" y="14%" width="34%" height="4%"  layer="2">
-			<drawtext x="0" y="2%" align="center" width="100%" font="{semibold}" fontsize="90%" color="{clrLightGray}" text="{title}" />
+			<drawtext x="0" y="2%" align="center" width="100%" font="{semibold}" fontsize="95%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="eq({viewmode}, 1)" x="62%" y="12%" width="34%" height="32%"  layer="2">
 			<drawimage condition="{hasart}++not{isepisode}" imagetype="image" path="{art}" x="0" y="25%" width="100%" height="100%" />
 			<drawimage condition="{hasthumb}++{isepisode}" imagetype="image" path="{thumb}" x="0" y="25%" width="100%" height="100%" />
 		</area>
 		<areascroll condition="eq({viewmode}, 1)" orientation="vertical" mode="forthandback" delay="1000" scrollspeed="medium" x="62%" y="46%" width="34%" height="43%" layer="4">
-			<drawtextbox condition="isset{summary}" x="0" y="0" width="100%" font="{light}" fontsize="7%" color="{clrLightGray}" text="{summary}" />
+			<drawtextbox condition="isset{summary}" x="0" y="0" width="100%" font="{light}" fontsize="8%" color="{clrLightGray}" text="{summary}" />
 		</areascroll>
 	</viewelement>
 
@@ -210,7 +210,7 @@
 		</area>
 		<area condition="{isdirectory}" layer="3">
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
-			<drawimage debug="true" name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="100%" height="80%" />
+			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="100%" height="80%" />
 			<drawtext name="title" x="10%" y="{height(thumb)}*0.96"  width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isshow}" layer="3">
@@ -254,7 +254,7 @@
 			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawrectangle x="1%" y="{posy(thumb)}+{height(thumb)}*0.96" width="{viewoffset}/{duration}*{areaheight}*0.6" height="2%" color="{clrHigh}" />
 			<drawtext name="title" x="9%" y="8%" width="64%" font="{semibold}" fontsize="16%" color="{clrLightGray}" text="{title}" />
-			<drawtextbox x="9%" y="{posy(title)}+{height(title)}*1.5" width="83%" height="80%" font="{light}" fontsize="13%" color="{clrLightGray}" text="{summary}" />
+			<drawtextbox x="9%" y="{posy(title)}+{height(title)}*1.5" width="83%" height="80%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{summary}" />
 			<drawtext x="91%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{year}" />
 			<drawtext x="86%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{duration}min" />
 			<drawtext x="81%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{audioCodec}" />
@@ -302,12 +302,12 @@
 	</grid>
 
 	<grid name="listbrowser" x="1%" y="14%" width="60%" height="75%">
-		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" layer="7">
+		<area condition="lt({rows}, 12)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" layer="7">
 			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLong1" />
 		</area>
-		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="0" width="90%" height="100%" layer="8">
+		<area condition="lt({rows}, 12)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="0" width="90%" height="100%" layer="8">
 			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="50%" color="{clrRed}" text="{tr(For_List-View_please_set)}:" />
-			<drawtext animtype="blink" animfreq="1500" x="0" y="50%" font="{light}" fontsize="50%" color="{clrLightGray}" text="{tr(List_Grid_Columns)}: 1, {tr(List_Grid_Rows)}: 14"/>
+			<drawtext animtype="blink" animfreq="1500" x="0" y="50%" font="{light}" fontsize="50%" color="{clrLightGray}" text="{tr(List_Grid_Columns)}: 1, {tr(List_Grid_Rows)}: 12 - 14"/>
 		</area>
 		<area layer="2">
 			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLong1" />
@@ -319,15 +319,15 @@
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawtext name="title" x="5%" y="8%" width="62%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
-			<drawtext x="95%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{year}" />
-			<drawtext x="88%" y="10%" width="7%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{duration}min" />
-			<drawtext x="83%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{audioCodec}" />
-			<drawtext x="78%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{container}" />
-			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="starsFull" x="68%" y="15%" width="{areaheight}*1.56" height="{areaheight}*0.3" />
+			<drawtext x="94%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{year}" />
+			<drawtext x="87%" y="10%" width="7%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{duration}min" />
+			<drawtext x="82%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{audioCodec}" />
+			<drawtext x="77%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{container}" />
+			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="starsFull" x="67%" y="15%" width="{areaheight}*1.56" height="{areaheight}*0.3" />
 			<drawrectangle condition="gt({rating}, 0)" x="{posx(stars)}+{width(stars)}*{rating}/100" y="15%" width="{width(stars)}-{rating}/100*{width(stars)}" height="{areaheight}*0.3" color="{clrTransparent}" />
 		</area>
 		<area condition="{ismovie}" layer="5">
-			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="stars" x="68%" y="15%" width="{areaheight}*1.56" height="{areaheight}*0.3" />
+			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="stars" x="67%" y="15%" width="{areaheight}*1.56" height="{areaheight}*0.3" />
 		</area>
 		<!--progressbar-->
 		<area condition="{ismovie}||{isepisode}" layer="4">
