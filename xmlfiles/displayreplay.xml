@@ -38,17 +38,18 @@
 		</area>
 
 		<area x="9%" y="92%" width="14%" height="7%" layer="3">
-			<drawtext  y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
+			<drawtext  condition="isset{recdate}" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
+			<!--<drawtext  condition="isset{year}" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{year}"/>-->
 		</area>
 	</rectitle>
 
-    <progressbar>
-        <area x="2%" y="87%" width="96%" height="3%" layer="3">
-            <!--<fill color="{clrRed}" />-->
-            <!--<drawrectangle x="0" y="0" width="{current}/{total}*{areawidth}" height="95%" color="{clrHigh}" />-->
-            <drawimage imagetype="skinpart" path="replayProgress" x="0" y="0" width="{current}/{total}*{areawidth}" height="{areaheight}*0.98"/>
-        </area>
-    </progressbar>
+	<progressbar>
+		<area x="2%" y="87%" width="96%" height="3%" layer="3">
+			<!--<fill color="{clrRed}" />-->
+			<!--<drawrectangle x="0" y="0" width="{current}/{total}*{areawidth}" height="95%" color="{clrHigh}" />-->
+			<drawimage imagetype="skinpart" path="replayProgress" x="0" y="0" width="{current}/{total}*{areawidth}" height="{areaheight}*0.98"/>
+		</area>
+	</progressbar>
 
 	<cutmarks>
 		<area x="2%" y="87%" width="96%" height="3%" layer="4">
@@ -63,17 +64,17 @@
 		</area>
 	</cutmarks>
 	
-		<currenttime>
+	<currenttime>
 		<area x="3%" y="92%" width="6%" height="7%" layer="3">
 			<drawtext x="0" align="center" valign="center" font="{light}" fontsize="45%" color="{clrLightGray}" text="{reccurrent}" />
 		</area>
 	</currenttime>
 	
-		<datetime>
+	<datetime>
 		<!--<area x="9%" y="92%" width="14%" height="7%" layer="3">
 			<drawtext x="20%" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
 		</area>-->
-				<area x="23%" y="92%" width="11%" height="7%" layer="3">
+		<area x="23%" y="92%" width="11%" height="7%" layer="3">
 			<drawtext x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{dayleadingzero}.{month}.{year}   {time}"/>
 		</area>
 	</datetime>
@@ -105,10 +106,10 @@
 	
 	<endtime>
 		<area x="66%" y="92%" width="12%" height="7%" layer="3">
-			<drawtext align="center" valign="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(replayends)}:" />
+			<drawtext condition="isset{recend}" align="center" valign="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(replayends)}:" />
 		</area>
 		<area x="78%" y="92%" width="11%" height="7%" layer="3">
-			<drawtext align="center" valign="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{recend}" />
+			<drawtext condition="isset{recend}" align="center" valign="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{recend}" />
 		</area>
 	</endtime>
 
