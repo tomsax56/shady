@@ -179,4 +179,5 @@ shady-skin Revision History
 
 - Increased possible count of displayed lastrecordings to seven
 - Added plug-setup-skinpreview.xml
+- Adapted displayreplay for time/perma-shift
 
