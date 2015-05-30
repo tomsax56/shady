@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menuplugin SYSTEM "../../../dtd/displaymenuplugin.dtd">
+
+<menuplugin x="0" y="0" width="100%" height="100%" fadetime="0">
+	<background>
+		<area x="0" y="0" width="100%" height="100%" layer="1">
+			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
+			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />                    
+		</area>
+		<area x="0" y="0" width="100%" height="100%" layer="2">
+			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuDefault" />           
+		</area>
+		<area x="0" y="0" width="100%" height="11%" layer="3">
+			<drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />   
+		</area>
+	</background>
+
+	<header>
+	</header>
+
+	<datetime>
+	</datetime>
+
+	<colorbuttons>
+		<area  x="43%" y="92%" width="13%" height="5%" layer="3">
+			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
+			<drawtext condition="{red1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{red}" />
+			<drawimage  condition="{red1}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
+			<drawtext condition="{green1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{green}" />
+			<drawimage  condition="{green1}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />            
+			<drawtext condition="{yellow1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{yellow}" />
+			<drawimage  condition="{yellow1}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />           
+			<drawtext condition="{blue1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{blue}" />
+			<drawimage  condition="{blue1}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />           
+		</area>
+		<area x="56%" y="92%" width="13%" height="5%" layer="3">
+			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
+			<drawtext condition="{red2}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{red}" />
+			<drawimage  condition="{red2}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />           
+			<drawtext condition="{green2}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{green}" />
+			<drawimage  condition="{green2}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
+			<drawtext condition="{yellow2}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{yellow}" />
+			<drawimage  condition="{yellow2}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />                    
+			<drawtext condition="{blue2}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{blue}" />
+			<drawimage  condition="{blue2}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
+		</area>
+		<area x="69%" y="92%" width="13%" height="5%" layer="3">
+			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
+			<drawtext condition="{red3}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{red}" />
+			<drawimage  condition="{red3}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
+			<drawtext condition="{green3}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{green}" />
+			<drawimage  condition="{green3}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />           
+			<drawtext condition="{yellow3}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{yellow}" />
+			<drawimage  condition="{yellow3}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />            
+			<drawtext condition="{blue3}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{blue}" />
+			<drawimage  condition="{blue3}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
+		</area>
+		<area x="82%" y="92%" width="13%" height="5%" layer="3">
+			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
+			<drawtext condition="{red4}" x="20" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{red}" />
+			<drawimage  condition="{red4}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />           
+			<drawtext condition="{green4}" x="20" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{green}" />
+			<drawimage  condition="{green4}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />           
+			<drawtext condition="{yellow4}" x="20" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{yellow}" />
+			<drawimage  condition="{yellow4}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />            
+			<drawtext condition="{blue4}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{blue}" />
+			<drawimage  condition="{blue4}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />            
+		</area>
+	</colorbuttons>
+	
+	<scrollbar>
+		<area condition="lt({height},1000)" x="95%" y="15%" width="5%" height="73%" layer="3">
+			 <drawimage   x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
+		</area>
+	</scrollbar>
+
+
+	<!-- Available Variables in detailheader and tab:
+	{menuheader}                        "Preview: Skin <skinname>"
+	{skinname}                          name of skin
+	{author}                            skin author
+
+	{fonts[]}                           array with fonts used by skin
+	{fonts[name]}                       name of font
+	{fonts[installed]}                  true if font is installed on system
+
+	{plugins[]}                         array with plugins supported by skin
+	{plugins[name]}                     name of plugin
+
+	{screenshots[]}                     array with screenshots
+	{screenshots[desc]}                 description of screenshot
+	{screenshots[path]}                 screenshot path
+	-->
+	<detailheader>
+		<area x="3%" y="13%" width="50%" height="6%" layer="3">
+			<drawtext valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="Skin: {skinname} - Author: {author} " />
+		</area>
+	</detailheader>
+
+	<tab name="preview" x="3%" y="20%" width="94%" height="69%" layer="2" scrollheight="{areaheight}/4">
+		<drawtext name="headerplugs" x="0" y="20%" font="{light}" fontsize="6%" color="{clrLightGray}" text="Supported Plugins:" />
+		<loop name="plugins" x="1%" y="{posy(headerplugs)} + {height(headerplugs)}*1.3" orientation="vertical" columnwidth="{areawidth}/2" rowheight="{areaheight}*0.06">
+			<drawtext x="0" valign="center" font="{light}" fontsize="5%" color="{clrLightGray}" text="{plugins[name]}" />
+		</loop>
+
+		<drawtext name="headerfonts" x="0" y="55%" font="{light}" fontsize="6%" color="{clrLightGray}" text="Used Fonts:" />
+		<loop name="fonts" x="1%" y="{posy(headerfonts)} + {height(headerfonts)}*1.3" orientation="vertical" columnwidth="{areawidth}/2" rowheight="{areaheight}*0.06">
+			<drawtext condition="{fonts[installed]}" x="0" valign="center" font="{light}" fontsize="5%" color="{clrLightGray}" text="{fonts[name]} (installed)" />
+			<drawtext condition="not{fonts[installed]}" x="0" valign="center" font="{light}" fontsize="5%" color="{clrLightGray}" text="{fonts[name]} (NOT installed)" />
+		</loop>
+
+		<loop name="screenshots" x="30%" y="0" orientation="vertical" columnwidth="{areawidth}*0.6" rowheight="{areawidth}*0.43">
+			<drawtext name="desc" align="center" y="0" font="{light}" fontsize="7%" color="{clrWhite}" text="{screenshots[desc]}" />
+			<drawimage imagetype="image" path="{screenshots[path]}" align="center" y="{height(desc)}*1.3" width="{areawidth}*0.6" height="{areawidth}*0.3375"/>
+		</loop>
+	</tab>
+</menuplugin>
