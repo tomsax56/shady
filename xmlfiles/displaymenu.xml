@@ -18,13 +18,13 @@
 	</background>
 
 	<header>
-		<area x="3%" y="2%" width="58%" height="7%" layer="4">
+		<area x="3%" y="2%" width="58%" height="7%" layer="6">
 			<drawtext x="0" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
 		</area>
 	</header>
 
 	<datetime>
-	<area x="60%" y="3%" width="35%" height="10%" layer="4">
+	<area x="60%" y="3%" width="35%" height="10%" layer="6">
 		<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{dayname}   {dayleadingzero}. {monthnameshort}    {time}" />
 	</area>
 	</datetime>
@@ -34,7 +34,6 @@
 			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannel"/>
 		</area>
 		<area x="0" y="90%" width="100%" height="6%" layer="5">
-			<!--<drawimage x="5%" y="12%" width="{areawidth}*0.9" height="80%" imagetype="skinpart" path="buttonLong1"/>-->
 			<drawimage condition="{status}" x="5%" y="12%" width="{areawidth}*0.9" height="80%" imagetype="skinpart" path="buttonMessageGreen" />
 			<drawimage condition="{info}" x="5%" y="12%" width="{areawidth}*0.9" height="80%" imagetype="skinpart" path="buttonMessageBlue" />
 			<drawimage condition="{warning}" x="5%" y="12%" width="{areawidth}*0.9" height="80%" imagetype="skinpart" path="buttonMessageYellow" />

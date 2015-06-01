@@ -335,6 +335,31 @@
 			<trans lang="en_EN">List-Grid Rows</trans>
 			<trans lang="de_DE">Listen-Modus Reihen</trans>
 		</token>
+		
+		<token name="tr(List_Grid_Rows)">
+			<trans lang="en_EN">List-Grid Rows</trans>
+			<trans lang="de_DE">Listen-Modus Reihen</trans>
+		</token>
+		<token name="tr(Supported_Plugins)">
+			<trans lang="en_EN">Supported Plugins</trans>
+			<trans lang="de_DE">Unterstützte Plugins</trans>
+		</token>
+		<token name="tr(Used_Fonts)">
+			<trans lang="en_EN">Used Fonts</trans>
+			<trans lang="de_DE">Benötigte Fonts</trans>
+		</token>
+		<token name="tr(installed)">
+			<trans lang="en_EN">installed</trans>
+			<trans lang="de_DE">installiert</trans>
+		</token>
+		<token name="tr(not_installed)">
+			<trans lang="en_EN">not installed</trans>
+			<trans lang="de_DE">nicht installiert</trans>
+		</token>
+		<token name="tr(Large_Screenshots)">
+			<trans lang="en_EN">Large Screenshots</trans>
+			<trans lang="de_DE">Große Screenshots</trans>
+		</token>
 	</translations>
     <!--
     The three Fonts FontOSD, FontFix and FontSml configured in VDR
