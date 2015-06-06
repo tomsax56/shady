@@ -117,12 +117,16 @@
 				<drawtext x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
 			<area x="50%" condition="not{separator}++{setup}++strnotcontains({column1}, 'Marker')" width="42%" layer="4">
-				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+				<drawtext condition="strcontains({column1}, '(4 = Detail')++strnotequal({column2}, '4')" align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+				<drawtext condition="strnotcontains({column1}, '(4 = Detail')" align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
 			</area>
 			<area x="4%" condition="not{separator}++{setup}++not{column2set}" width="92%" layer="4">
                 <drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
             </area>
 <!--shady-recordings-->
+			<area condition="{setup}++strcontains({column1}, '(4 = Detail')++strequal({column2}, '4')" x="50%" y="0" width="42%"  layer="4">
+				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{tr(Detail_View)}" />
+			</area>
 			<area condition="{setup}++strcontains({column1}, 'Marker')" x="90%" y="0" width="2%"  layer="5">
 				<drawimage condition="strequal({column2}, '1')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
 				<drawimage condition="strequal({column2}, '2')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />

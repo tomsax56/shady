@@ -58,6 +58,7 @@
 			<parameter type="int" name="08_currentweatherFadetime" min="0" max="500" displaytext="{tr(08_currentweatherFadetime)}">0</parameter>
 		</submenu>
 		<submenu name="Recordings" displaytext="{tr(recordingsmarkerandprogress)}">
+			<parameter type="int" name="00_numRecordingsmenuitems" min="4" max="18" displaytext="{tr(00_numRecordingsmenuitems)}">15</parameter>
 			<parameter type="bool" name="01_seenProgress" displaytext="{tr(01_seenProgress)}">1</parameter>
 			<parameter type="bool" name="02_showRecordingTime" displaytext="{tr(02_showRecordingTime)}">1</parameter>
 			<parameter type="int" name="03_newNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(03_newNotCutted-recordingsMarker)}">2</parameter>
@@ -97,6 +98,10 @@
 		<token name="tr(numShortSubmenuitems)">
 			<trans lang="en_EN">Number of items in submenus (short)</trans>
 			<trans lang="de_DE">Anzahl der Elemente in Submenüs (kurz)</trans>
+		</token>
+		<token name="tr(00_numRecordingsmenuitems)">
+			<trans lang="en_EN">Number of items in recordingsmenu (4 = Detailview)</trans>
+			<trans lang="de_DE">Anzahl der Elemente im Aufnahmenmenü (4 = Detailansicht)</trans>
 		</token>
 		<token name="tr(brightBackground)">
 			<trans lang="en_EN">Bright backgroundgradient</trans>

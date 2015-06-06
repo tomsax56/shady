@@ -335,7 +335,6 @@
 			<trans lang="en_EN">List-Grid Rows</trans>
 			<trans lang="de_DE">Listen-Modus Reihen</trans>
 		</token>
-		
 		<token name="tr(List_Grid_Rows)">
 			<trans lang="en_EN">List-Grid Rows</trans>
 			<trans lang="de_DE">Listen-Modus Reihen</trans>
@@ -359,6 +358,10 @@
 		<token name="tr(Large_Screenshots)">
 			<trans lang="en_EN">Large Screenshots</trans>
 			<trans lang="de_DE">Große Screenshots</trans>
+		</token>
+		<token name="tr(Detail_View)">
+			<trans lang="en_EN">Detailview</trans>
+			<trans lang="de_DE">Detailansicht</trans>
 		</token>
 	</translations>
     <!--

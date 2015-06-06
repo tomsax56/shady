@@ -140,7 +140,7 @@
 	<devices>
 	</devices>
 
-	<scrapercontent>
+	<scrapercontent shifttime="{01_ShifttimeChannelDisplay}" shifttype="left" shiftmode="slowed">
 		<area condition="{isbanner}" x="1%" y="2%" width="{areaheight}*0.13*{mediawidth}/{mediaheight}" height="13%" layer="2">
 			<drawimage imagetype="image" path="{mediapath}" align="center" valign="center"  width="{areawidth}" height="{areaheight}"/>
 		</area>
