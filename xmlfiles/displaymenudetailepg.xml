@@ -59,10 +59,10 @@
 		</loop>
 	</tab>
 	<!-- TAB ACTORS -->
-	<tab condition="{isseries}||{ismovie}" name="{tr(actors)}" x="42%" y="14%" width="53%" height="76%" layer="2" scrollheight="{areaheight}/4">
+	<tab condition="{isseries}||{ismovie}" name="{tr(actors)}" x="44%" y="14%" width="50%" height="74%" layer="2" scrollheight="{areaheight}/4">
 		<drawtext align="center" name="title" y="0" font="{light}" fontsize="7%" color="{clrLightGray}" text="{tr(actors)}" />
-		<loop name="actors" x="0" y="{height(title)} + 10" width="{areawidth}" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areawidth}/4*1.8" overflow="linewrap">
-			<drawimage name="thumb" imagetype="image" path="{actors[thumb]}" x="20" y="0" width="{columnwidth}-40" height="{columnwidth} * {actors[thumbheight]} / {actors[thumbwidth]} - 40 * {actors[thumbheight]} / {actors[thumbwidth]}"/>
+		<loop name="actors" x="0" y="{height(title)} + 10" width="{areawidth}" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areawidth}/4*1.5" overflow="linewrap">
+			<drawimage name="thumb" imagetype="image" path="{actors[thumb]}" x="20" y="0" width="{columnwidth}-60" height="{columnwidth} * {actors[thumbheight]} / {actors[thumbwidth]} - 60 * {actors[thumbheight]} / {actors[thumbwidth]}"/>
 			<drawtext align="center" y="{height(thumb)} + 10" width="{columnwidth}" name="actorname" font="{light}" fontsize="4%" color="{clrLightGray}" text="{actors[name]}" />
 			<drawtext align="center" y="{height(thumb)} + 10 + {height(actorname)}" width="{columnwidth}" font="{light}" fontsize="4%" color="{clrLightGray}" text="{actors[role]}" />
 		</loop>
