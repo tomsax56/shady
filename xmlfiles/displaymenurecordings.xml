@@ -223,7 +223,8 @@
 			
 		</listelement>
 
-		<currentelement condition="gt({00_numRecordingsmenuitems}, 4)" delay="0" fadetime="0">
+		<!--<currentelement condition="gt({00_numRecordingsmenuitems}, 4)" delay="0" fadetime="0">-->
+		<currentelement delay="0" fadetime="0">
 			<area condition="not{folder}" x="0" y="0" width="41%" height="60%" layer="3">
 				<drawtext name="title" x="0" y="0" width="100%" align="center" font="{light}" fontsize="12%" color="{clrLightGray}" text="{name}" />
 				<drawtext name="shorttext" x="0" y="{height(title)}" align="center" width="98%" font="{light}" fontsize="7%" color="{clrLightGray}" text="{shorttext}" />
