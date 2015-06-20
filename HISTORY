@@ -202,3 +202,7 @@ shady-skin Revision History
 
 - Removed detailview for displaymenurecordings, small fixes
 - Removed condition for currentelemnt in displaymenurecordings
+
+2015-06-10:
+
+- Fixed 00_menuFadetime in displayreplay
