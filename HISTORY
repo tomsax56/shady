@@ -206,3 +206,7 @@ shady-skin Revision History
 2015-06-10:
 
 - Fixed 00_menuFadetime in displayreplay
+
+2015-07-05:
+
+- Added channelname if no channelogo exists in schedules-list

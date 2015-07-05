@@ -79,7 +79,6 @@
 		<area condition="gt({ecmtime}, 0)++not{ecmInside}" x="62%" y="73%" width="37%" height="4%" layer="4">
 			<drawtext x="0" y="0" align="right" font="{light}" fontsize="65%" color="{clrLightGray}" text="System: {cardsystem}    CAID: {caid}    Reader: {reader}    Hops: {hops}    ECM: {ecmtime}ms" />
 		</area>
-		
 		<area x="52%" y="95%" width="11%" height="4%" layer="3">
 			<drawtext condition="gt({ecmtime}, 0)++{ecmInside}" x="0" y="0" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="ECM: {ecmtime}ms" />
 		</area>

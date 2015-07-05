@@ -67,7 +67,6 @@
 			<parameter type="int" name="06_notNewNotWatchedCutted-recordingsMarker" min="0" max="9" displaytext="{tr(06_notNewNotWatchedCutted-recordingsMarker)}">5</parameter>
 			<parameter type="int" name="07_notNewWatchedNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(07_notNewWatchedNotCutted-recordingsMarker)}">6</parameter>
 			<parameter type="int" name="08_notNewWatchedCutted-recordingsMarker" min="0" max="9" displaytext="{tr(08_notNewWatchedCutted-recordingsMarker)}">1</parameter>
-			
 		</submenu>
     </menu>
 
