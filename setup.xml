@@ -152,7 +152,7 @@
 			<trans lang="de_DE">Balken im systeminfo-plugin in Themefarben</trans>
 		</token>
 		<token name="tr(coloredElapsed)">
-			<trans lang="en_EN">Bars for elapsed (recordings, whatsonnow)in themecolors</trans>
+			<trans lang="en_EN">Bars for elapsed (recordings, whatsonnow) in themecolors</trans>
 			<trans lang="de_DE">Balken für abgelaufene Zeit (Aufzeichnungen, Jetzt) in Themefarben</trans>
 		</token>
 		<token name="tr(ecmInside)">

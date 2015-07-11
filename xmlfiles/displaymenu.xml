@@ -30,7 +30,7 @@
 	</datetime>
 	<time>
 		<area x="85%" y="3%" width="10%" height="10%" layer="4">
-			<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{hour}:{min}" />
+			<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{printf('%02d:%02d', hour, min)}" />
 		</area>
 	</time>
 
