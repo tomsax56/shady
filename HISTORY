@@ -4,7 +4,6 @@ shady-skin Revision History
 2015-02-05: initial release
 
 2015-02-15:
-
 - Fixed height and width of channellogos in whatsonnext and favorites
 - Fixed numerus of timerconflicts in displaymainmenu
 - Added nowBar.svg
@@ -20,7 +19,6 @@ shady-skin Revision History
 - Fixed condition for running timer in displaymenutimers.xml
 
 2015-02-21:
-
 - Changed position of folderposters in displaymenurecordings
 - Added flags for messagebars
 - Changed statusmarker for timers in displaymenuschedules
@@ -29,13 +27,11 @@ shady-skin Revision History
 - Changed {name} to {epgname} in displaymenudetailrecording.xml
 
 2015-02-22:
-
 - Changed position of series- and movies-posters in detailepg and detailrecording
 - Fixed scrolled text in epg-descriptions
 - Fixed textposition at recordingsfolder
 
 2015-04-16:
-
 - Merged with shady_KISS
 - Fixed setupiconbar
 - Fixed scrollbars
@@ -44,47 +40,38 @@ shady-skin Revision History
 - Added setup for delay and fadetimes
 
 2015-04-18:
-
 - Switched devices in mainmenu to modus=light
 - Numbered setup for delay and fadetimes
 
 2015-04-19:
-
 - Increased size of channellogos for timers in mainmenu (provided by utiltiy@vdrportal.de)
 
 2015-04-20:
-
 - Optimized position of timerstoptime in displaymenutimers (provided by utiltiy@vdrportal.de)
 - Added section for neutrinoepg-plugin in displaymenudefault
 - Added graphical progressbars for systeminfo-plugin
 - Added symbol for remotetimers in mainmenutimers
 
 2015-04-21:
-
 - Updated HISTORY, increased luminescence of remoteTimers.png
 
 2015-04-22:
-
 - Added percentseen in displaymenurecordings
 - Reworked displayreplay, added recend
 - Added setup for colored/gray elapsed-bars
 - Fixed rectitle
 
 2015-04-24:
-
 - Optimized bar and position of percentseen
 
 2015-04-26:
-
 - Added skinsetup for recordingsmenu
 - Fixed translation in setup.xml
 
 2015-04-27:
-
 - Added special treatment for fritzbox "Call details" and plex-setup "UUID" in displaymenudefault
 
 2015-04-28:
-
 - Some small fixes
 - Updated HISTORY
 - Fixed tokens title/eventtitle in displaymenutimers
@@ -94,127 +81,101 @@ shady-skin Revision History
 - Some small fixes
 
 2015-04-30:
-
 - Added setup for single- or two-line display of titel/subtitle in replay and channelinfo
 - Adapted defaultmenu.xml to menucategory setup
 
 2015-05-05:
-
 - Added ecmtime to channelinfo
 - Adapted width of remotetimerssymbol in mainmenutimers
 
 2015-05-06:
-
 - Added alternate, extended ecminfo
 - Added separate twoline-settings for channelinfo and replay
 
 2015-05-07:
-
 - Fixed ECM
 
 2015-05-10:
-
 - Optimized ECM-infos (provided by utiltiy@vdrportal.de)
 - Changed display of resolution in channelinfo
 - Fixed scrollbar in displaymenusetup
 - Added markers for recordings seen less or more 85%
 
 2015-05-10:
-
 - Changed timers- and lastrecordings-handling in mainmenu
 - Added shadowsRecordingsMain1.png
 
 2015-05-10:
-
 - Fixed menuFadetime-parameter, added shifting for displaychannel (both provided by MegaX@vdrportal)
 
 2015-05-16:
-
 - Added shifting for displaymessage, displayreplay and displayvolume (provided by MegaX@vdrportal)
 - Fixed typo in 07_notNewWatchedNotCutted-recordingsMarker (provided by MegaX@vdrportal)
 
 2015-05-18:
-
 - Fixed floatwidth and floatheight in displaymenudetailrecording
 
 2015-05-20:
-
 - Fixed typo in displaymenudetailrecording
 
 2015-05-21:
-
 - Added detail- and list-view for plex-plugin (incomplete)
 
 2015-05-21:
-
 - Fixed timerconflicts in mainmenu, removed useless code, minor improvements for plex-template
 
 2015-05-22:
-
 - Fixed timerconflicts in mainmenu (second try)
 - Some more improvements for plex-template
 
 2015-05-23:
-
 - Changed columns- and rows-info in plex-template
 - Fixed startpoint of elapsed-bar in plex-template
 - Fixed episodes in detail-grid (plex-template)
 
 2015-05-24:
-
 - Some more improvements for plex-template (III)
 - Fixed height of plex-header
 - Added translations for columns- and rows-info (plex-template)
 
 2015-05-24:
-
 - Some more improvements for plex-template (IV)
 - Some more improvements for plex-template (V)
 
 2015-05-26:
-
 - Changed buttonPlexActiveCover.png
 
 2015-05-31:
-
 - Increased possible count of displayed lastrecordings to seven
 - Added plug-setup-skinpreview.xml
 - Adapted displayreplay for time/perma-shift
 - Added replayTimeshift.svg
 
 2015-05-31:
-
 - Some graphical improvements for skinpreview
 
 2015-06-01:
-
 - Reworked plug-setup-skinpreview.xml
 
 2015-06-02:
-
 - Small improvements plug-setup-skinpreview.xml
 
 2015-06-06:
-
 - Added detailview for displaymenurecordings
 
 2015-06-10:
-
 - Removed detailview for displaymenurecordings, small fixes
 - Removed condition for currentelemnt in displaymenurecordings
 
 2015-06-10:
-
 - Fixed 00_menuFadetime in displayreplay
 
 2015-07-05:
-
 - Added channelname if no channelogo exists in schedules-list
 
 2015-07-07:
-
 - Small fixes
 
 2015-07-11:
-
 - Fixed time-format
+- Added scrollbars for plex-plugin
