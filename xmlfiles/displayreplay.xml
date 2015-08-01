@@ -139,26 +139,26 @@
     <controliconsmodeonly>
 		<area x="0" y="94%" width="100%" height="6%" layer="1">
 			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientReplayControl"/>
-		</area>		
-		<area x="34%" y="94%" width="33%" height="6%" layer="2">
+		</area>
+		<area x="0" y="94%" width="100%" height="6%" layer="2">
 			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="replayControl"/>
 		</area>
-		<area x="34%" y="95%" width="8%" height="4%" layer="3">
+		<area x="17%" y="95%" width="8%" height="4%" layer="3">
 			<drawtext condition="not{rewind}++ not{rewind1x}++not{rewind2x}++ not{rewind3x}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="70%" color="{clrDarkGray}" text="REW"/>
 			<drawtext condition="{rewind}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="70%" color="{clrHigh}" text="REW"/>
 			<drawtext condition="{rewind1x}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="70%" color="{clrHigh}" text="1x REW"/>
 			<drawtext condition="{rewind2x}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="70%" color="{clrHigh}" text="2x REW"/>
 			<drawtext condition="{rewind3x}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="70%" color="{clrHigh}" text="3x REW"/>
 		</area>
-		<area x="42%" y="95%" width="8%" height="4%" layer="3">
+		<area x="25%" y="95%" width="8%" height="4%" layer="3">
 			<drawtext condition="not{pause}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="70%" color="{clrDarkGray}" text="PAUSE"/>
 			<drawtext condition="{pause}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="70%" color="{clrHigh}" text="PAUSE"/>
 		</area>
-		<area x="50%" y="95%" width="8%" height="4%" layer="3">
+		<area x="67%" y="95%" width="8%" height="4%" layer="3">
 			<drawtext condition="not{play}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="70%" color="{clrDarkGray}" text="PLAY"/>
 			<drawtext condition="{play}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="70%" color="{clrHigh}" text="PLAY"/>
 		</area>
-		<area x="58%" y="95%" width="8%" height="4%" layer="3">
+		<area x="75%" y="95%" width="8%" height="4%" layer="3">
 			<drawtext condition="not{forward}++ not{forward1x}++not{forward2x}++ not{forward3x}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="70%" color="{clrDarkGray}" text="FWD"/>
 			<drawtext condition="{forward}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="70%" color="{clrHigh}" text="FWD"/>
 			<drawtext condition="{forward1x}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="70%" color="{clrHigh}" text="1x FWD"/>
@@ -166,6 +166,19 @@
 			<drawtext condition="{forward3x}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="70%" color="{clrHigh}" text="3x FWD"/>
 		</area>
 	</controliconsmodeonly>
+
+	<progressmodeonly>
+		<area x="33%" y="95%" width="7%" height="4%" layer="3">
+			<drawtext x="0" align="right" valign="center" font="{light}" fontsize="75%" color="{clrLightGray}" text="{timecurrent}" />
+		</area>
+		<area x="60%" y="95%" width="7%" height="4%" layer="3">
+			<drawtext x="0" valign="center" font="{light}" fontsize="75%" color="{clrLightGray}" text="{timetotal}" />
+		</area>
+
+		<area x="41%" y="96%" width="18%" height="3%" layer="2">
+			<drawimage x="0" y="20%" width="{areawidth}*{current}/{total}" height="{areaheight}*0.33" imagetype="skinpart" path="timeBar" />
+		</area>
+	</progressmodeonly>
 	
 	<jump>
 		<area x="35%" y="45%" width="30%" height="10%" layer="1">
