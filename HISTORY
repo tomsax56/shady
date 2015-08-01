@@ -181,4 +181,7 @@ shady-skin Revision History
 - Added scrollbars for plex-plugin
 
 2015-07-15:
-Fixed layer for timeshifttotal
+- Fixed layer for timeshifttotal
+
+2015-08-01:
+- Added discusage in menutimers and menurecordings (optional)

@@ -16,6 +16,22 @@
 		</area>
 	</background>
 
+	<header condition="{showDiscUsage}">
+		<area x="0" y="0" width="5%" height="10%" layer="3">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="disc" />
+		</area>
+		<area x="0" y="1%" width="6%" height="9%" layer="4">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="discSpec" />
+			<drawimage x="0" width="{areawidth}" height="{areaheight}/100*{freepercent}" imagetype="skinpart" path="discSpecHide" />
+		</area>
+		<area x="0" y="6%" width="5%" height="4%" layer="4">
+			<drawtext x="0" y="25%"  align="center" font="{light}" fontsize="75%" color="{clrLightGray}" text="{usedpercent}%" />
+		</area>
+		<area x="6%" y="2%" width="60%" height="7%" layer="4">
+			<drawtext x="1%" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
+		</area>
+	</header>
+
 	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="{00_numRecordingsmenuitems}">
 		<listelement>
 			<area condition="not{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" x="50%" width="45%" layer="3">

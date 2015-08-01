@@ -166,7 +166,7 @@
 			<drawtext condition="{forward3x}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="70%" color="{clrHigh}" text="3x FWD"/>
 		</area>
 	</controliconsmodeonly>
-
+	
 	<jump>
 		<area x="35%" y="45%" width="30%" height="10%" layer="1">
 			<fill color="{clrTransBlack}" />
