@@ -188,3 +188,6 @@ shady-skin Revision History
 
 2015-08-01:
 - Added progressmodeonly in displayreplay
+
+2016-01-12:
+- Added numrecordingsfolder and newrecordingsfolder in recordingslists (Patch provided by P. Maier)

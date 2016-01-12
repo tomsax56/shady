@@ -370,7 +370,7 @@
 
 	<viewelement name="scrollbar">
 		<area condition="lt({height},100)" x="95%" y="14%" width="5%" height="75%" layer="5">
-			 <drawimage debug="true" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
 			 <drawimage x="15%" y="{areaheight} * {offset} / 100" width="{areawidth}*0.1" height="{areaheight} * {height} / 100" imagetype="skinpart" path="scrollBar" />
 		</area>
 	</viewelement>
