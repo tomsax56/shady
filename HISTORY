@@ -191,3 +191,6 @@ shady-skin Revision History
 
 2016-01-12:
 - Added numrecordingsfolder and newrecordingsfolder in recordingslists (Patch provided by P. Maier)
+
+2016-01-21:
+- Fixed conditions for neutrinoepg
