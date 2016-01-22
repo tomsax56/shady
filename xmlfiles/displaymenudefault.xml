@@ -182,7 +182,12 @@
 					<drawimage x="{areawidth}-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 				</area>
 				<area x="36%" condition="{column5set}" width="60%" layer="4">
-				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="95%" color="{clrLightGray}" text="{column5}" />
+					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="95%" color="{clrLightGray}" text="{column5}" />
+				</area>
+				<area x="80%" width="15%" layer="5">
+					<drawtext condition="{column2pb}" align="left" valign="center" font="{light}" fontsize="70%" width="95%" color="{clrRed}" text="column2pb" />
+					<drawtext condition="{column3pb}" align="left" valign="center" font="{light}" fontsize="70%" width="95%" color="{clrRed}" text="column3pb" />
+					<drawtext condition="{column4pb}" align="left" valign="center" font="{light}" fontsize="70%" width="95%" color="{clrRed}" text="column4pb" />
 				</area>
 <!--neutrinoepg without channelnumbers-->
 				<area x="4%" condition="not{column5set}" width="20%" layer="4">
