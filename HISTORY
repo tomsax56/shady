@@ -195,3 +195,6 @@ shady-skin Revision History
 2016-01-21:
 - Fixed conditions for neutrinoepg
 - Added starttimes for neutrinoepg
+
+2016-01-24:
+- Fixed areas of numrecordingsfolder and newrecordingsfolder in recordingslist 
