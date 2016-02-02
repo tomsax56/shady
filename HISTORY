@@ -201,3 +201,6 @@ shady-skin Revision History
 
 2016-01-26:
 - Workaround for NeutrinoEPG
+
+2016-02-02:
+- Added EPG-images in displaymenudetailepg, displaymenudetailrecording and plug-tvguideng-detail
