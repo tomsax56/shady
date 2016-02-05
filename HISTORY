@@ -204,3 +204,6 @@ shady-skin Revision History
 
 2016-02-02:
 - Added EPG-images in displaymenudetailepg, displaymenudetailrecording and plug-tvguideng-detail
+
+2016-02-05:
+- Fixed conditions in displaymenudetailrecording
