@@ -85,7 +85,7 @@
 			</area>
 			<areascroll scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="62%" width="33%" layer="3">
 				<drawtext condition="{current}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{label}" />
-				<drawtext condition="not{current}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{label}" />                
+				<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{label}" />                
 			</areascroll>
 		</listelement>
 

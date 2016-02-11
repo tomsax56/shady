@@ -182,7 +182,8 @@
 				</area>
 <!--default-->
 			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="4%" width="{column1width}" layer="4">
-				<drawtext name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				<drawtext condition="{current}" name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				<drawtext condition="not{current}" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
 			<area condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}" x="5%" width="87%" layer="4">
 				<drawtext condition="{column2set}" x="{column2x}" valign="center" font="{light}" fontsize="70%" width="{column2width}" color="{clrLightGray}" text="{column2}" />

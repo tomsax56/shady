@@ -40,25 +40,24 @@
 		</area>
 	</scrollbar>
 
-	<!-- TAB EPGINFO -->
-	<tab condition="empty{epgpic1path}" name="EPG Info" x="42%" y="14%" width="53%" height="76%" layer="2" scrollheight="{areaheight}/4">
-		<drawtextbox condition="empty{seriesposter1path}++empty{posterpath}" x="0" y="0" width="96%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
-		<drawimage condition="isset{seriesposter1path}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="0" y="1%" width="{areawidth}*0.25" height="{areawidth} * 0.375" />
-		<drawimage condition="isset{posterpath}" name="movieposter" imagetype="image" path="{posterpath}" x="0" y="1%" width="{areawidth}*0.25" height="{areawidth} * 0.375" />
-		<drawtextbox condition="isset{seriesposter1path}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)}*1.1" floatheight="{height(seriesposter)}*1.1" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
-		<drawtextbox condition="isset{seriesposter1path}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.1" floatheight="{height(movieposter)}*1.1" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
-	</tab>
-	<tab condition="isset{epgpic1path}" name="EPG Info" x="42%" y="14%" width="53%" height="76%" layer="2" scrollheight="{areaheight}/4">
-		<drawimage condition="empty{seriesposter1path}++empty{posterpath}" name="epgpic" imagetype="image" path="{epgpic1path}" x="1%" y="0" width="{areawidth}*0.3" height="{areawidth}*0.3*130/174"/>
-		<drawtextbox condition="empty{seriesposter1path}++empty{posterpath}" x="0" y="0" float="topleft" floatwidth="{width(epgpic)}*1.2" floatheight="{height(epgpic)}*1.2" width="96%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
-		<drawimage condition="isset{seriesposter1path}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="0" y="1%" width="{areawidth}*0.25" height="{areawidth} * 0.375" />
-		<drawimage condition="isset{posterpath}" name="movieposter" imagetype="image" path="{posterpath}" x="0" y="1%" width="{areawidth}*0.25" height="{areawidth} * 0.375" />
-		<drawimage condition="isset{seriesposter1path}||isset{posterpath}" imagetype="image" path="{epgpic1path}" x="0" y="50%" width="{areawidth}*0.25" height="{areawidth}*0.25*130/174"/>
-		<drawtextbox condition="isset{seriesposter1path}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)}*1.1" floatheight="{height(seriesposter)}*1.7" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
-		<drawtextbox condition="isset{posterpath}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.1" floatheight="{height(movieposter)}*1.7" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
+	<tab name="EPG Info" x="42%" y="14%" width="53%" height="76%" layer="3" scrollheight="{areaheight}/4">
+		<drawtextbox condition="empty{seriesposter1path}++empty{posterpath}++not{epgpic1available}" x="0" y="0" width="96%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
+		<drawimage condition="isset{seriesposter1path}++not{epgpic1available}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="0" y="1%" width="{areawidth}*0.25" height="{areawidth} * 0.375" />
+		<drawimage condition="isset{posterpath}++not{epgpic1available}" name="movieposter" imagetype="image" path="{posterpath}" x="0" y="1%" width="{areawidth}*0.25" height="{areawidth} * 0.375" />
+		<drawtextbox condition="isset{seriesposter1path}++not{epgpic1available}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)}*1.1" floatheight="{height(seriesposter)}*1.1" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
+		<drawtextbox condition="isset{posterpath}++not{epgpic1available}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.1" floatheight="{height(movieposter)}*1.1" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
+
+		<drawimage condition="empty{seriesposter1path}++empty{posterpath}++{epgpic1available}" name="epgpic" imagetype="image" path="{epgpic1path}" x="1%" y="0" width="{areawidth}*0.3" height="{areawidth}*0.3*130/174"/>
+		<drawtextbox condition="empty{seriesposter1path}++empty{posterpath}++{epgpic1available}" x="0" y="0" float="topleft" floatwidth="{width(epgpic)}*1.2" floatheight="{height(epgpic)}*1.05" width="96%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
+		<drawimage condition="isset{seriesposter1path}++{epgpic1available}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="0" y="1%" width="{areawidth}*0.25" height="{areawidth} * 0.375" />
+		<drawimage condition="isset{posterpath}++{epgpic1available}" name="movieposter" imagetype="image" path="{posterpath}" x="0" y="1%" width="{areawidth}*0.25" height="{areawidth} * 0.375" />
+		<drawimage condition="isset{seriesposter1path}++{epgpic1available}" imagetype="image" path="{epgpic1path}" x="0" y="50%" width="{areawidth}*0.25" height="{areawidth}*0.25*130/174"/>
+		<drawimage condition="isset{posterpath}++{epgpic1available}" imagetype="image" path="{epgpic1path}" x="0" y="50%" width="{areawidth}*0.25" height="{areawidth}*0.25*130/174"/>
+		<drawtextbox condition="isset{seriesposter1path}++{epgpic1available}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)}*1.1" floatheight="{height(seriesposter)}*1.6" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
+		<drawtextbox condition="isset{posterpath}++{epgpic1available}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.1" floatheight="{height(movieposter)}*1.6" font="{light}" fontsize="5%" color="{clrLightGray}" text="{description}" />
 	</tab>
 	<!-- TAB RERUNS -->
-	<tab condition="{hasreruns}" name="{tr(reruns)}" x="42%" y="14%" width="53%" height="76%" layer="2" scrollheight="{areaheight}/4">
+	<tab condition="{hasreruns}" name="{tr(reruns)}" x="42%" y="14%" width="53%" height="76%" layer="3" scrollheight="{areaheight}/4">
 		<drawtext align="center" y="0" name="title" font="{light}" fontsize="6%" color="{clrLightGray}" text="{tr(reruns)}" />
 		<loop name="reruns" x="0" y="{height(title)} + 20" width="{areawidth}" orientation="vertical">
 			<drawimage name="logo" condition="{reruns[channellogoexists]}" imagetype="channellogo" path="{reruns[channelid]}" x="0" y="3%" width="6%" height="6%" />
@@ -68,7 +67,7 @@
 		</loop>
 	</tab>
 	<!-- TAB ACTORS -->
-	<tab condition="{isseries}||{ismovie}" name="{tr(actors)}" x="44%" y="14%" width="50%" height="74%" layer="2" scrollheight="{areaheight}/4">
+	<tab condition="{isseries}||{ismovie}" name="{tr(actors)}" x="44%" y="14%" width="50%" height="74%" layer="3" scrollheight="{areaheight}/4">
 		<drawtext align="center" name="title" y="0" font="{light}" fontsize="7%" color="{clrLightGray}" text="{tr(actors)}" />
 		<loop name="actors" x="0" y="{height(title)} + 10" width="{areawidth}" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areawidth}/4*1.5" overflow="linewrap">
 			<drawimage name="thumb" imagetype="image" path="{actors[thumb]}" x="20" y="0" width="{columnwidth}-60" height="{columnwidth} * {actors[thumbheight]} / {actors[thumbwidth]} - 60 * {actors[thumbheight]} / {actors[thumbwidth]}"/>
@@ -77,12 +76,12 @@
 		</loop>
 	</tab>
 	<!-- TAB TVDBINFO -->
-	<tab condition="{isseries}" name="TvDBInfo" x="42%" y="14%" width="53%" height="76%" layer="2" scrollheight="{areaheight}/4">
+	<tab condition="{isseries}" name="TvDBInfo" x="42%" y="14%" width="53%" height="76%" layer="3" scrollheight="{areaheight}/4">
 		<drawimage name="banner" imagetype="image" path="{seriesbanner1path}" align="center" y="10" width="{areawidth}*0.7" height="{areawidth} * 0.7 * {seriesbanner1height} / {seriesbanner1width}"/>
 		<drawtextbox x="0" y="{height(banner)}*1.2" width="96%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(episode)}: {episodetitle} ({tr(season)} {episodeseason}, {tr(episode)} {episodenumber}) &#10;&#10;{episodeoverview}|&#10;&#10;{tr(gueststars)}: {episodegueststars}||&#10;&#10;{tr(seriesfirstaired)}: {seriesfirstaired}||&#10;{tr(episodefirstaired)}: {episodefirstaired}||&#10;{tr(network)}: {seriesnetwork}||&#10;{tr(genre)}: {seriesgenre}||&#10;{tr(status)}: {seriesstatus}||&#10;{tr(rating)}: {seriesrating}||&#10;{tr(episoderating)}: {episoderating}&#10;|{seriesoverview}&#10;" />
 	</tab>
 	<!-- TAB SERIESGALERY -->
-	<tab condition="{isseries}" name="{tr(seriesgalery)}" x="42%" y="14%" width="53%" height="76%" layer="2" scrollheight="{areaheight}/4">
+	<tab condition="{isseries}" name="{tr(seriesgalery)}" x="42%" y="14%" width="53%" height="76%" layer="3" scrollheight="{areaheight}/4">
 		<drawimage name="banner1" imagetype="image" path="{seriesbanner1path}" align="center" y="10" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {seriesbanner1height} / {seriesbanner1width}"/>
 		<drawimage name="fanart1" imagetype="image" path="{seriesfanart1path}" align="center" y="{posy(banner1)} + {height(banner1)} + 20" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {seriesfanart1height} / {seriesfanart1width}"/>
 		<drawimage name="banner2" imagetype="image" path="{seriesbanner2path}" align="center" y="{posy(fanart1)} + {height(fanart1)} + 20" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {seriesbanner2height} / {seriesbanner2width}"/>
@@ -94,12 +93,12 @@
 		<drawimage name="poster3" imagetype="image" path="{seriesposter3path}" align="center" y="{posy(poster2)} + {height(poster2)} + 20" width="{areawidth}*0.5" height="{areawidth} * 0.5 * {seriesposter3height} / {seriesposter3width}"/>
 	</tab>
 	<!-- TAB MOVIEDBINFO -->
-	<tab condition="{ismovie}" name="MovieDBInfo" x="42%" y="14%" width="53%" height="76%" layer="2" scrollheight="{areaheight}/4">
+	<tab condition="{ismovie}" name="MovieDBInfo" x="42%" y="14%" width="53%" height="76%" layer="3" scrollheight="{areaheight}/4">
 		<drawimage name="poster" imagetype="image" path="{posterpath}" x="0" y="10" width="{areawidth}*0.3" height="{areawidth} * 0.3 * {posterheight} / {posterwidth}"/>
 		<drawtextbox x="0" y="10" width="96%" float="topleft" floatwidth="{width(poster)}*1.1" floatheight="{height(poster)}*1.08" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(originaltitle)}: {movieoriginalTitle}&#10;&#10;|{tr(genre)}: {moviegenres}&#10;&#10;||{movietagline}&#10;&#10;|{movieoverview}&#10;&#10;|{tr(budget)}: {moviebudget}&#10;||{tr(revenue)}: {movierevenue}&#10;&#10;||{tr(adult)}: {movieadult}&#10;||{tr(releasedate)}: {moviereleasedate}&#10;||{tr(runtime)}: {movieruntime} min&#10;||&#10;{tr(popularity)}: {moviepopularity}&#10;||&#10;{tr(voteaverage)}: {movievoteaverage}&#10;||&#10;{tr(homepage)}: {moviehomepage}|&#10;" />
 	</tab>
 	<!-- TAB MOVIEGALERY -->
-	<tab condition="{ismovie}" name="{tr(moviegalery)}" x="42%" y="14%" width="53%" height="76%" layer="2" scrollheight="{areaheight}/4">
+	<tab condition="{ismovie}" name="{tr(moviegalery)}" x="42%" y="14%" width="53%" height="76%" layer="3" scrollheight="{areaheight}/4">
 		<drawimage name="fanart" imagetype="image" path="{fanartpath}" align="center" y="10" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {fanartheight} / {fanartwidth}"/>
 		<drawimage name="poster" imagetype="image" path="{posterpath}" align="center" y="{height(fanart)} + 30" width="{areawidth}*0.6" height="{areawidth} * 0.6 * {posterheight} / {posterwidth}"/>
 		<drawimage condition="{movieiscollection}" name="collectionfanart" imagetype="image" path="{collectionfanartpath}" align="center" y="{posy(poster)} + {height(poster)} + 20" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {collectionfanartheight} / {collectionfanartwidth}"/>

@@ -41,7 +41,7 @@
 		</submenu>
 		<submenu name="Fadetimes" displaytext="{tr(Delay, Shift- and Fadetimes)}">
 			<parameter type="int" name="00_menuFadetime" min="0" max="500" displaytext="{tr(00_menuFadetime)}">300</parameter>
-			<parameter type="int" name="01_ShifttimeChannelDisplay" min="0" max="1000" displaytext="{tr(01_ShifttimeChannelDisplay)}">0</parameter>
+			<!--<parameter type="int" name="01_ShifttimeChannelDisplay" min="0" max="1000" displaytext="{tr(01_ShifttimeChannelDisplay)}">0</parameter>-->
 			<parameter type="int" name="01_ShifttimeMessageDisplay" min="0" max="1000" displaytext="{tr(01_ShifttimeMessageDisplay)}">0</parameter>
 			<parameter type="int" name="02_timersDelay" min="1" max="500" displaytext="{tr(02_timersDelay)}">1</parameter>
 			<parameter type="int" name="02_timersFadetime" min="0" max="500" displaytext="{tr(02_timersFadetime)}">0</parameter>
@@ -96,8 +96,8 @@
 			<trans lang="de_DE">Anzahl der Elemente in Submenüs (lang, default=14)</trans>
 		</token>
 		<token name="tr(numShortSubmenuitems)">
-			<trans lang="en_EN">Number of items in submenus (short, default=14))</trans>
-			<trans lang="de_DE">Anzahl der Elemente in Submenüs (kurz, default=14))</trans>
+			<trans lang="en_EN">Number of items in submenus (short, default=14)</trans>
+			<trans lang="de_DE">Anzahl der Elemente in Submenüs (kurz, default=14)</trans>
 		</token>
 		<!--<token name="tr(00_numRecordingsmenuitems)">
 			<trans lang="en_EN">Number of items in recordingsmenu (4 = Detailview)</trans>
@@ -174,8 +174,8 @@
 			<trans lang="de_DE">Verzögerungen, Einfahr- und Einblendzeiten</trans>
 		</token>
 		<token name="tr(00_menuFadetime)">
-			<trans lang="en_EN">Fadetime menus</trans>
-			<trans lang="de_DE">Einblendzeit Menüs</trans>
+			<trans lang="en_EN">Fadetime (audio, channel, message, replay, vol)</trans>
+			<trans lang="de_DE">Einblendzeit (audio, channel, message, replay, vol)</trans>
 		</token>
 		<token name="tr(01_ShifttimeChannelDisplay)">
 			<trans lang="en_EN">Shift time Channel Display</trans>

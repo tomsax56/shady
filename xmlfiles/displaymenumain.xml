@@ -72,7 +72,7 @@
 		</area>
 	</colorbuttons>
 
-	<timers detached="true" delay="{02_timersDelay}" fadetime="{02_timersFadetime}" >
+	<timers delay="{02_timersDelay}" fadetime="{02_timersFadetime}" >
 
 		<area condition="not{numtimerconflicts}++{showLastrecordings}++gt({numtimers}, 3)" x="1%" y="74%" width="45%" height="6%" layer="3">
 			<drawtext align="center" valign="center" y="0" font="{light}" fontsize="65%" color="{clrLightGray}" text="{numtimers}  {tr(activetimers)}" />
@@ -179,7 +179,7 @@
 
 	</timers>
 
-	<lastrecordings detached="true" delay="{03_lastrecordingsDelay}" fadetime="{03_lastrecordingsFadetime}">
+	<lastrecordings delay="{03_lastrecordingsDelay}" fadetime="{03_lastrecordingsFadetime}">
 		<!--<area debug="true" x="{areawidth}*{numtimers}*11/100" y="80%" width="{areawidth}*0.77-{areawidth}*0.33" height="18%" layer="3">
 			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/{numtimers}+{areawidth}/7" rowheight="{areaheight}" overflow="cut">
 				<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
@@ -292,13 +292,13 @@
 		
 	</lastrecordings>
 
-	<discusage detached="true" delay="{05_discusageDelay}" fadetime="{05_discusageFadetime}">
+	<discusage delay="{05_discusageDelay}" fadetime="{05_discusageFadetime}">
 		<area x="75%" y="67%" width="20%" height="6%" layer="3">
 			<drawtext x="0" y="0" align="right" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{vdrusagestring}" />
 		</area>
 	</discusage>
 
-	<devices mode="light" detached="true" delay="{04_devicesDelay}" fadetime="{04_devicesFadetime}">
+	<devices mode="light" delay="{04_devicesDelay}" fadetime="{04_devicesFadetime}">
 		<area x="80%" y="74%" width="16%" height="12%" layer="3">
 			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/2" overflow="cut">
 				<drawtext name="label" x="5" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{devices[num]}: {devices[type]}" />
@@ -327,7 +327,7 @@
 		</area>
 	</systemmemory>-->
 
-	<currentweather detached="true" delay="{08_currentweatherDelay}" fadetime="{08_currentweatherFadetime}" >
+	<currentweather delay="{08_currentweatherDelay}" fadetime="{08_currentweatherFadetime}" >
 		<area x="80%" y="92%" width="8%" height="6%" layer="3">
 			<drawimage name="weathericon" x="0" valign="center" width="{areaheight}*0.8" height="{areaheight}*0.8" imagetype="icon" path="{icon}" />
 			<drawtext name="temperature" x="0" align="right" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{temperature}°C" />
@@ -338,7 +338,7 @@
 		</area>
 	</currentweather>
 
-	<systemload detached="true" delay="{06_systemloadDelay}" fadetime="{06_systemloadFadetime}500" >
+	<systemload delay="{06_systemloadDelay}" fadetime="{06_systemloadFadetime}500" >
 		<!--<area x="79%" y="74%" width="21%" height="26%" layer="3">
 			<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsInfoMainLast" />
 		</area>-->
@@ -347,7 +347,7 @@
 		</area>-->
 	</systemload>
 	
-	<temperatures detached="true" delay="{07_temperaturesDelay}" fadetime="{07_temperaturesFadetime}" >
+	<temperatures delay="{07_temperaturesDelay}" fadetime="{07_temperaturesFadetime}" >
 		<area x="80%" y="86%" width="16%" height="6%" layer="3">		
 			<drawtext x="0" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="CPU: {cputemp}°C        GPU: {gputemp}°C"/>
 		</area>

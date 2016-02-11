@@ -208,3 +208,6 @@ shady-skin Revision History
 2016-02-05:
 - Fixed conditions in displaymenudetailrecording
 - Fixed conditions in displaymenudetailepg and tvguideng-detail
+
+2016-02-10:
+- Adapted for skindesigner-0.8.x
