@@ -42,7 +42,7 @@
 				<drawimage condition="not{folder}++{coloredElapsed}++{01_seenProgress}" x="47" y="{areaheight}-3" width="{areawidth}*0.939*{percentseen}/100" height="{areaheight}/20" imagetype="skinpart" path="elapsedBar" />
 				<drawimage condition="not{folder}++not{coloredElapsed}++{01_seenProgress}" x="47" y="{areaheight}-3" width="{areawidth}*0.939*{percentseen}/100" height="{areaheight}/20" imagetype="skinpart" path="elapsedBarMono" />
 			</area>
-			<area condition="not{folder}++gt({00_numRecordingsmenuitems}, 4)" x="41%" width="7%" layer="3">
+			<area condition="not{folder}++gt({00_numRecordingsmenuitems}, 4)" x="41%" width="8%" layer="3">
 				<drawtext x="5%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
 			</area>
 			<area condition="not{folder}++not{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" x="48%" width="6%" layer="3">
@@ -111,7 +111,7 @@
 			</area>
 
 			<areascroll condition="not{folder}++not{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="54%" width="40%" layer="4">
-				<drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
 			</areascroll>
 			<area condition="{folder}++not{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" x="39%" width="8%" layer="3">
 				<drawimage name="foldericon" imagetype="icon" path="ico_recfolder" x="0" width="{areawidth}" height="{areaheight}" valign="center" align="center"/>
@@ -123,7 +123,7 @@
 				<drawtext x="0%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="/{newrecordingsfolder} {tr(new)}" />
 			</area>
 			<areascroll condition="{folder}++not{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="53%" width="40%" layer="4">
-				<drawtext x="1%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<drawtext x="1%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
 			</areascroll>
 <!--recordingtime-->
 			<area condition="{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" x="55%" width="40%" layer="3">
@@ -137,8 +137,8 @@
 			<area condition="not{folder}++{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" x="49%" width="5%" layer="3">
 					<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{time}" />
 			</area>
-			<area condition="not{folder}++{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" x="53%" width="5%" layer="3">
-				<drawtext x="10%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{duration}" />
+			<area condition="not{folder}++{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" x="52%" width="4%" layer="3">
+				<drawtext x="10%" align="right" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{duration}" />
 			</area>
 			<area condition="{02_showRecordingTime}++not{folder}++gt({00_numRecordingsmenuitems}, 4)" x="57%" width="2%" layer="4">
 				<drawimage condition="{new}++not{cutted}++eq({03_newNotCutted-recordingsMarker}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
@@ -202,7 +202,7 @@
 				<drawimage condition="not{new}++{watched}++{cutted}++eq({08_notNewWatchedCutted-recordingsMarker}, 9)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
 			</area>
 			<areascroll condition="not{folder}++{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="58%" width="34%" layer="4">
-				<drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
 			</areascroll>
 			<area condition="{folder}++{02_showRecordingTime}++gt({00_numRecordingsmenuitems}, 4)" x="40%" width="8%" layer="3">
 				<drawimage name="foldericon" imagetype="icon" path="ico_recfolder" x="0" width="{areawidth}" height="{areaheight}" valign="center" align="center"/>
@@ -254,7 +254,7 @@
 		<!--<currentelement condition="gt({00_numRecordingsmenuitems}, 4)" delay="0" fadetime="0">-->
 		<currentelement delay="0" fadetime="0">
 			<area condition="not{folder}" x="0" y="0" width="41%" height="60%" layer="3">
-				<drawtext name="title" x="0" y="0" width="100%" align="center" font="{light}" fontsize="12%" color="{clrLightGray}" text="{name}" />
+				<drawtext name="title" x="0" y="0" width="100%" align="center" font="{light}" fontsize="12%" color="{clrLightGray}" text="{epgname}" />
 				<drawtext name="shorttext" x="0" y="{height(title)}" align="center" width="98%" font="{light}" fontsize="7%" color="{clrLightGray}" text="{shorttext}" />
 				<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="{posy(shorttext)}+{height(shorttext)}*1.7" width="{areawidth}*0.2" height="{areawidth}*0.3" />
 				<drawtextbox condition="{hasposter}" x="2%" y="{posy(shorttext)}+{height(shorttext)}*1.5" width="94%" height="{areaheight} - {posy(poster)}" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
