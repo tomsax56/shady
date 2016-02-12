@@ -212,3 +212,6 @@ shady-skin Revision History
 2016-02-10:
 - Adapted for skindesigner-0.8.x
 - Some small fixes in menurecordings
+
+2016-02-12:
+- Changed {epgname} to {name} in menurecordings
