@@ -18,6 +18,7 @@
 -->
 		<submenu name="MainMenu" displaytext="{tr(MainMenu)}">
 			<parameter type="bool" name="showLastrecordings" displaytext="{tr(showLastrecordings)}">1</parameter>
+			<parameter type="string" name="mainMenuOrientation" displaytext="{tr(mainMenuOrientation)}" options="right, left">0</parameter>
 		</submenu>
 		<submenu name="MenuItems" displaytext="{tr(menuItems)}">
 			<parameter type="int" name="numShortMenuitems" min="8" max="10" displaytext="{tr(numShortMenuitems)}">10</parameter>
@@ -80,6 +81,18 @@
 			<trans lang="en_EN">Main menu</trans>
 			<trans lang="de_DE">Hauptmenü</trans>
 		</token>
+		<token name="tr(mainMenuOrientation)">
+			<trans lang="en_EN">Position list main- and setupmenu</trans>
+			<trans lang="de_DE">Position Liste Haupt- und Setupmenü</trans>
+		</token>
+		<token name="tr(left)">
+			<trans lang="en_EN">left</trans>
+			<trans lang="de_DE">links</trans>
+		</token>
+		<token name="tr(right)">
+			<trans lang="en_EN">right</trans>
+			<trans lang="de_DE">rechts</trans>
+		</token>
 		<token name="tr(menuItems)">
 			<trans lang="en_EN">Number of menu items </trans>
 			<trans lang="de_DE">Anzahl der Menüpunkte</trans>
@@ -132,10 +145,6 @@
 		<token name="tr(showLastrecordings)">
 			<trans lang="en_EN">Show beside timers at least three last recordings</trans>
 			<trans lang="de_DE">Zeige neben Timern min. die drei letzten Aufnahmen</trans>
-		</token>
-		<token name="tr(menuFadetime)">
-			<trans lang="en_EN">Fadetime of menus in ms</trans>
-			<trans lang="de_DE">Einblendzeit der Menüs in ms</trans>
 		</token>
 		<token name="tr(setupIconbar)">
 			<trans lang="en_EN">Show iconbar in setup-menu</trans>
