@@ -1,5 +1,7 @@
 shady-skin Revision History
 ----------------------------------
+2016-02-21:
+- Fixed twofold left curl brackets in displaymenutimers
 
 2016-02-17:
 - Added setup for main- and setupmenulist on the left or right side
