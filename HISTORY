@@ -1,6 +1,7 @@
 shady-skin Revision History
 ----------------------------------
 2016-02-21:
+- Conformed plex-grids to shady_KISS
 - Reimplemented support for plexplugin
 - Fixed twofold left curl brackets in displaymenutimers
 

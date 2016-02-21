@@ -171,10 +171,10 @@
 	-->
 
 	<grid name="coverbrowser" x="1%" y="14%" width="73%" height="75%">
-		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" layer="7">
+		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 6)||gt({columns}, 6)" layer="7">
 			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 		</area>
-		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" x="2%" y="2%" width="90%" height="90%" layer="8">
+		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 6)||gt({columns}, 6)" x="2%" y="2%" width="90%" height="90%" layer="8">
 			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="25%" color="{clrRed}" text="{tr(For_Cover-View_please_set)}:" />
 			<drawtext animtype="blink" animfreq="1500" x="0" y="30%" font="{light}" fontsize="25%" color="{clrLightGray}" text="{tr(Cover_Grid_Columns)}: 7"/>
 			<drawtext animtype="blink" animfreq="1500" x="0" y="60%" font="{light}" fontsize="25%" color="{clrLightGray}" text="{tr(Cover_Grid_Rows)}: 2"/>
@@ -302,10 +302,10 @@
 	</grid>
 
 	<grid name="listbrowser" x="1%" y="14%" width="60%" height="75%">
-		<area condition="lt({rows}, 12)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" layer="7">
+		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" layer="7">
 			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLong1" />
 		</area>
-		<area condition="lt({rows}, 12)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="0" width="90%" height="100%" layer="8">
+		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="0" width="90%" height="100%" layer="8">
 			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="50%" color="{clrRed}" text="{tr(For_List-View_please_set)}:" />
 			<drawtext animtype="blink" animfreq="1500" x="0" y="50%" font="{light}" fontsize="50%" color="{clrLightGray}" text="{tr(List_Grid_Columns)}: 1, {tr(List_Grid_Rows)}: 12 - 14"/>
 		</area>
