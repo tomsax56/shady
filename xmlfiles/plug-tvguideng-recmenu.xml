@@ -111,11 +111,11 @@
         <!-- Int Selector
         {intselector}   true
         {text}          title of selector
-        {value}         current value of selector, integer
+        {intvalue}         current value of selector, integer
         -->
         <area condition="{intselector}" layer="6">
             <drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{text}" />
-            <drawtext x="90%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{stringvalue} " />
+            <drawtext x="92%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{intvalue} " />
         </area>
         <!-- Bool Selector 
         {boolselector}  true
@@ -180,10 +180,10 @@
         -->
         <area condition="{channelselector}" width="90%" layer="6">
             <drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrWhite}" text="{text}" />
-            <drawimage condition="{channellogoexisis}" imagetype="channellogo" path="{channelid}" x="{areawidth}-{areaheight}*1.3" valign="center" width="{areaheight}*0.7" height="{areaheight}*0.7" />
-            <drawtext name="channelnumberlogo" condition="{channellogoexisis}" x="{areawidth}-{areaheight}-{width(channelnumberlogo)}-40" valign="center" font="{light}" fontsize="70%" color="{clrWhite}" text="{channelnumber}" />
-            <drawtext condition="not{channellogoexisis}++{channelnumber}" x="75%" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{channelnumber} {channelname} " />
-            <drawtext condition="not{channelnumber}" x="75%" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{channelname} " />
+            <drawimage condition="{channellogoexisis}" imagetype="channellogo" path="{channelid}" x="72%" valign="center" width="{areaheight}*0.7" height="{areaheight}*0.7" />
+            <drawtext name="channelnumberlogo" condition="{channellogoexisis}" x="68%" valign="center" font="{light}" fontsize="70%" color="{clrWhite}" text="{channelnumber}" />
+            <drawtext condition="not{channellogoexisis}++{channelnumber}" x="68%" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{channelnumber} {channelname} " />
+            <drawtext condition="not{channelnumber}" x="70%" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{channelname} " />
         </area>
         <!-- Weekday Selector 
         {weekdayselector}    true
