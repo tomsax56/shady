@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2016-02-23:
+- Added graphics for progressbars
+
 2016-02-22:
 - Fixed layer in plug-plex-root
 - Fixed int- and channel-selector in tvguideng-recmenu
