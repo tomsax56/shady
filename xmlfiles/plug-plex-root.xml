@@ -36,20 +36,6 @@
 			<drawtext x="{posx(title)}+{width(title)}*1.3" y="0" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{tabname}" />
 			<drawimage condition="{hasbanner}" imagetype="image" path="{banner}" x="50%" y="5%" width="50%" height="90%" />
 		</area>
-
-		<!--<area condition="eq({viewmode}, 0)" x="33%" y="1%" width="66%" height="9%" layer="6">
-			<drawtext condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" animtype="blink" animfreq="500" x="7%" y="0" font="{light}" fontsize="50%" color="{clrRed}" text="For Cover-View please set:" />
-			<drawtext condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 7)||gt({columns}, 7)" x="0" y="50%" font="{light}" fontsize="45%" color="{clrLightGray}" text="Cover Grid Columns: 7, Cover Grid Rows: 2"/>
-		</area>
-		<area condition="eq({viewmode}, 1)" x="33%" y="1%" width="66%" height="9%" layer="6">
-			<drawtext condition="lt({rows}, 1)||gt({rows}, 1)||lt({columns}, 14)||gt({columns}, 14)" animtype="blink" animfreq="500" x="7%" y="0" font="{light}" fontsize="50%" color="{clrRed}" text="For List-View please set:" />
-			<drawtext condition="lt({rows}, 1)||gt({rows}, 1)||lt({columns}, 14)||gt({columns}, 14)" x="0" y="50%" font="{light}" fontsize="45%" color="{clrLightGray}" text="List Grid Columns: 1, List Grid Rows: 14"/>
-		</area>
-		<area condition="eq({viewmode}, 2)" x="33%" y="1%" width="66%" height="9%" layer="6">
-			<drawtext condition="lt({rows}, 1)||gt({rows}, 1)||lt({columns}, 4)||gt({columns}, 4)" animtype="blink" animfreq="500" x="7%" y="0" font="{light}" fontsize="50%" color="{clrRed}" text="For Detail-View please set:" />
-			<drawtext condition="lt({rows}, 1)||gt({rows}, 1)||lt({columns}, 4)||gt({columns}, 4)" x="0" y="50%" font="{light}" fontsize="45%" color="{clrLightGray}" text="Detail Grid Columns: 1, Detail Grid Rows: 4"/>
-		</area>-->
-
 	</viewelement>
 
       <!-- Available Variables time:
@@ -89,6 +75,21 @@
 	</viewelement>
 
 	<viewelement name="infopane">
+		<areacontainer condition="eq({viewmode}, 0)" >
+			<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 6)||gt({columns}, 6)" x="2%" y="28%" width="60%" height="50%" layer="7">
+				<drawtext x="0" y="15%" font="{light}" fontsize="10%" align="center" color="{clrRed}" text="{tr(For_Cover-View_please_set)}:" />
+				<drawtext x="0" y="35%" font="{light}" fontsize="10%" align="center" color="{clrLightGray}" text="{tr(Cover_Grid_Columns)}: 6"/>
+				<drawtext x="0" y="50%" font="{light}" fontsize="10%" align="center" color="{clrLightGray}" text="{tr(Cover_Grid_Rows)}: 2"/>
+			</area>
+		</areacontainer>
+		<areacontainer condition="eq({viewmode}, 2)" >
+			<area condition="lt({rows}, 4)||gt({rows}, 4)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="28%" width="96%" height="50%" layer="7">
+				<drawtext x="0" y="15%" font="{light}" fontsize="10%" align="center" color="{clrRed}" text="{tr(For_Detail-View_please_set)}:" />
+				<drawtext x="0" y="35%" font="{light}" fontsize="10%" align="center" color="{clrLightGray}" text="{tr(Detail_Grid_Columns)}: 1"/>
+				<drawtext x="0" y="50%" font="{light}" fontsize="10%" align="center" color="{clrLightGray}" text="{tr(Detail_Grid_Rows)}: 4"/>
+			</area>
+		</areacontainer>
+		
 		<area condition="eq({viewmode}, 0)" x="75%" y="14%" width="20%" height="24%"  layer="2">
 			<drawtext condition="isset{title}" x="1%" y="2%" width="100%" align="center" font="{semibold}" fontsize="15%" color="{clrLightGray}" text="{title}" />
 			<drawimage condition="{hasart}++not{isepisode}" imagetype="image" path="{art}" x="0" y="20%" width="100%" height="100%" />
@@ -171,13 +172,8 @@
 	-->
 
 	<grid name="coverbrowser" x="1%" y="14%" width="73%" height="75%">
-		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 6)||gt({columns}, 6)" layer="7">
+		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 6)||gt({columns}, 6)" layer="6">
 			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
-		</area>
-		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 6)||gt({columns}, 6)" x="2%" y="2%" width="90%" height="90%" layer="7">
-			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="25%" color="{clrRed}" text="{tr(For_Cover-View_please_set)}:" />
-			<drawtext animtype="blink" animfreq="1500" x="0" y="30%" font="{light}" fontsize="25%" color="{clrLightGray}" text="{tr(Cover_Grid_Columns)}: 7"/>
-			<drawtext animtype="blink" animfreq="1500" x="0" y="60%" font="{light}" fontsize="25%" color="{clrLightGray}" text="{tr(Cover_Grid_Rows)}: 2"/>
 		</area>
 		<area layer="3">
 			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
@@ -233,15 +229,10 @@
 			<drawtext x="10%" y="{posy(title)} + {height(title)}" width="80%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{serverstartpointname}" />
 		</area>
 	</grid>
-	
+<!--detailbrowser-->
 	<grid name="detailbrowser" x="1%" y="14%" width="99%" height="75%">
-		<area condition="lt({rows}, 4)||gt({rows}, 4)||lt({columns}, 1)||gt({columns}, 1)" layer="7">
-			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
-		</area>
-		<area condition="lt({rows}, 4)||gt({rows}, 4)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="0" width="90%" height="90%" layer="7">
-			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="32%" color="{clrRed}" text="{tr(For_Detail-View_please_set)}:" />
-			<drawtext animtype="blink" animfreq="1500" x="0" y="30%" font="{light}" fontsize="32%" color="{clrLightGray}" text="{tr(Detail_Grid_Columns)}: 1"/>
-			<drawtext animtype="blink" animfreq="1500" x="0" y="60%" font="{light}" fontsize="32%" color="{clrLightGray}" text="{tr(Detail_Grid_Rows)}: 4"/>
+		<area condition="lt({rows}, 4)||gt({rows}, 4)||lt({columns}, 1)||gt({columns}, 1)" layer="6">
+			<drawimage x="0" y="0" width="95%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 		</area>
 		<area layer="3">
 			<drawimage condition="not{current}" x="0" y="0" width="95%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
@@ -254,7 +245,7 @@
 			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
 			<drawrectangle x="1%" y="{posy(thumb)}+{height(thumb)}*0.96" width="{viewoffset}/{duration}*{areaheight}*0.6" height="2%" color="{clrHigh}" />
 			<drawtext name="title" x="9%" y="8%" width="64%" font="{semibold}" fontsize="16%" color="{clrLightGray}" text="{title}" />
-			<drawtextbox x="9%" y="{posy(title)}+{height(title)}*1.5" width="83%" height="80%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{summary}" />
+			<drawtextbox x="9%" y="{posy(title)}+{height(title)}*1.2" width="83%" height="80%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{summary}" />
 			<drawtext x="91%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{year}" />
 			<drawtext x="86%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{duration}min" />
 			<drawtext x="81%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{audioCodec}" />
@@ -300,15 +291,8 @@
 			<drawtext x="10%" y="{posy(title)} + {height(title)}" width="80%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{serverstartpointname}" />
 		</area>
 	</grid>
-
+<!--Listbrowser-->
 	<grid name="listbrowser" x="1%" y="14%" width="60%" height="75%">
-		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" layer="7">
-			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLong1" />
-		</area>
-		<area condition="lt({rows}, 14)||gt({rows}, 14)||lt({columns}, 1)||gt({columns}, 1)" x="2%" y="0" width="90%" height="100%" layer="7">
-			<drawtext animtype="blink" animfreq="1500" x="0" y="0" font="{semibold}" fontsize="50%" color="{clrRed}" text="{tr(For_List-View_please_set)}:" />
-			<drawtext animtype="blink" animfreq="1500" x="0" y="50%" font="{light}" fontsize="50%" color="{clrLightGray}" text="{tr(List_Grid_Columns)}: 1, {tr(List_Grid_Rows)}: 12 - 14"/>
-		</area>
 		<area layer="2">
 			<drawimage condition="not{current}" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLong1" />
 			<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLongActive" />

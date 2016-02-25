@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2015-02-25:
+- Changed warnings related to wrong settings for columns and rows
+
 2016-02-23:
 - Adjusted y-values of progressbar in displayreplay
 - Added graphics for progressbars
