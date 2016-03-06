@@ -1,7 +1,10 @@
 shady-skin Revision History
 ----------------------------------
 
-2015-02-25:
+2016-03-06:
+- Fixed bug in translation of setup-parameters
+
+2016-02-25:
 - Changed warnings related to wrong settings for columns and rows
 
 2016-02-23:

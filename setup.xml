@@ -28,7 +28,7 @@
 		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
 			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
 			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
-			<parameter type="string" name="showPosterAndEPGpic" displaytext="{tr(showPosterAndEPGpic)}" options="primarilyOnlyPoster,posterAndEPGpic">0</parameter>
+			<parameter type="string" name="showPosterAndEPGpic" displaytext="{tr(showPosterAndEPGpic)}" options="primarilyOnlyPoster,postersAndEPGpic">0</parameter>
 			<parameter type="bool" name="twoLineDisplay" displaytext="{tr(twoLineDisplay)}">1</parameter>
 			<parameter type="bool" name="twoLineDisplayReplay" displaytext="{tr(twoLineDisplayReplay)}">1</parameter>
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">1</parameter>
@@ -113,10 +113,15 @@
 			<trans lang="en_EN">Number of items in submenus (short, default=14)</trans>
 			<trans lang="de_DE">Anzahl der Elemente in Submenüs (kurz, default=14)</trans>
 		</token>
+		
+		
+		
 		<!--<token name="tr(00_numRecordingsmenuitems)">
 			<trans lang="en_EN">Number of items in recordingsmenu (4 = Detailview)</trans>
 			<trans lang="de_DE">Anzahl der Elemente im Aufnahmenmenü (4 = Detailansicht)</trans>
 		</token>-->
+		
+		
 		<token name="tr(00_numRecordingsmenuitems)">
 			<trans lang="en_EN">Number of items in recordingsmenu (default=14)</trans>
 			<trans lang="de_DE">Anzahl der Elemente im Aufnahmenmenü (default=14)</trans>
@@ -159,10 +164,10 @@
 			<trans lang="de_DE">Poster und EPGpic in Details</trans>
 		</token>
 		<token name="tr(primarilyOnlyPoster)">
-			<trans lang="en_EN">Primarily only poster</trans>
-			<trans lang="de_DE">Vorrangig nur Poster</trans>
+			<trans lang="en_EN">Primarily poster</trans>
+			<trans lang="de_DE">Vorrangig Poster</trans>
 		</token>
-		<token name="tr(posterAndEPGpic)">
+		<token name="tr(postersAndEPGpic)">
 			<trans lang="en_EN">If available both</trans>
 			<trans lang="de_DE">Wenn vorhanden beides</trans>
 		</token>
