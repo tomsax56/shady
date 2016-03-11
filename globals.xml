@@ -380,6 +380,7 @@
 	<fonts>
 		<font name="light">Open Sans:Light</font>
 		<font name="semibold">Open Sans:Semibold</font>
+		<font name="regular">Open Sans:Regular</font>
 		<!--<font name="light">VDROpen Sans Light:Light</font>
 		<font name="semibold">VDROpen Sans Semibold:Semibold</font>-->
 	</fonts>

@@ -26,6 +26,8 @@
         <color name="clrRecMenuBorderTop">FF4D4D4D</color>               
         <color name="clrRecMenuBorderBottom">FF171717</color>
         <color name="clrRecMenuConflTop">FF373938</color>
+		<!--plex-detail-->
+		<color name="clrPlexFill">EB080808</color>
     </colors>
     <!--
     these variables can be used everywhere in the templates

@@ -47,7 +47,7 @@
 	<tab name="daily" x="2%" y="14%" width="54%" height="72%" layer="4" scrollheight="{areaheight}/5">
 		<loop name="daily" x="0" y="{rowheight}-4" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/5">
 			<drawimage imagetype="skinpart" path="weatherDivider" width="{areawidth}" height="{rowheight}*0.02"/>
-		</loop>			
+		</loop>
 		<loop name="daily" x="0" y="0" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/5">
 			<drawtext x="0" y="{rowheight}*0.03" font="{light}" fontsize="{rowheight}*0.28" color="{clrLightGray}" text="{daily[dayname]} {daily[day]}" />
 			<drawtext x="15%" y="1%" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{daily[summary]}" />
