@@ -17,16 +17,18 @@
 		{coverpath}	string/path
     -->
 	<viewelement name="background">
-		<area x="0" y="0" width="100%" height="100%" layer="1">
-			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
-			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />    
-		</area>
-		<area x="0" y="0" width="100%" height="100%" layer="2">
-			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuDefault" />
-		</area>
-		<area x="0" y="0" width="100%" height="11%" layer="2">
-			<drawimage x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />           
-		</area>
+		<areacontainer condition="eq({indexplexDetail}, 0)">
+			<area x="0" y="0" width="100%" height="100%" layer="1">
+				<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
+				<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />    
+			</area>
+			<area x="0" y="0" width="100%" height="100%" layer="2">
+				<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuDefault" />
+			</area>
+			<area x="0" y="0" width="100%" height="11%" layer="2">
+				<drawimage x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />           
+			</area>
+		</areacontainer>
     </viewelement>
 	
 	<!-- Tokens available in info
@@ -80,42 +82,135 @@
 			{banner}		Image path
 		{hasseriesthumb}	bool, seriesthumb (seasoncover, seriescover)
 			{seriesthumb}	Image path
-    
 	-->
 	<viewelement name="info">
-		<area x="0" y="0" width="100%" height="100%" layer="3">
-			<drawimage name="art" condition="{hasart}" x="0" width="{areawidth}" height="{areaheight}" imagetype="image" path="{art}" />
-		</area>
-		<area condition="{hasart}" x="0" y="0" width="100%" height="100%" layer="4">
-			<fill color="{clrPlexFill}" />
-		</area>
-		<area x="2%" y="16%" width="25%" height="75%" layer="5">
-			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="{areawidth}" height="{areawidth}*480/320" />
-		</area>
-		<area x="30%" y="18%" width="65%" height="7%" layer="5">
-			<drawtext x="1%" y="0" width="80%" font="{regular}" fontsize="80%" color="{clrLightGray}" text="{title}" />
-			<drawtext x="1%" y="0" align="right" width="80%" font="{regular}" fontsize="80%" color="{clrDarkGray}" text="{year}" />
-		</area>
-		<area x="30%" y="26%" width="65%" height="1%" layer="5">
-			<drawrectangle x="0" y="0" width="{areawidth}" height="30%" color="{clrRecMenuBorderTop}" />
-			<drawrectangle x="0" y="0" width="74%" height="30%" color="{clrHigh}" />
-		</area>
-		<area x="85%" y="28%" width="10%" height="4%" layer="5">
-			<drawtext x="1%" y="0" align="right" width="80%" font="{regular}" fontsize="84%" color="{clrLightGray}" text="{duration}min" />
-		</area>
-		<area x="30%" y="28%" width="50%" height="4%" layer="5">
-			<loop name="genres" x="0" y="0" orientation="horizontal" width="{areawidth}" height="4%" rowheight="{areaheight}" >
-				<drawtext x="0" y="0" width="100%" font="{regular}" fontsize="60%" color="{clrLightGray}" text="{genres[genre]} " />
-			</loop>
-		</area>
-		<area x="30%" y="32%" width="65%" height="4%" layer="5">
-			<loop name="roles" x="0" y="0" orientation="horizontal" width="{areawidth}" height="4%" rowheight="{areaheight}" >
-				<drawtext x="0" y="0" width="100%" font="{regular}" fontsize="60%" color="{clrLightGray}" text="{roles[actor]} " />
-			</loop>
-		</area>
-		<areascroll orientation="vertical" mode="forthandback" delay="1000" scrollspeed="medium" x="30%" y="58%" width="65%" height="34%" layer="5">
-			<drawtextbox condition="isset{summary}" x="0" y="0" width="100%" font="{regular}" fontsize="8%" color="{clrLightGray}" text="{summary}" />
-		</areascroll>
+		<areacontainer condition="{hasart}++eq({indexplexDetail}, 1)">
+			<area x="0" y="0" width="100%" height="100%" layer="3">
+			<drawimage name="art" x="0" width="{areawidth}" height="{areaheight}" imagetype="image" path="{art}" />
+			</area>
+			<area x="0" y="0" width="100%" height="23%" layer="4">
+				<fill color="{clrSemiTransBlack}" />
+			</area>
+			<area x="0" y="23%" width="100%" height="77%" layer="4">
+				<fill color="{clrPlexFill}" />
+			</area>
+		</areacontainer>
+		<areacontainer condition="{ismovie}">
+			<area x="2%" y="14%" width="25%" height="75%" layer="5">
+				<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="{areawidth}" height="{areawidth}*480/320" />
+				<!--<drawrectangle x="{posx(thumb)}" y="{posy(thumb)}" width="4" height="{height(thumb)}" color="{clrRecMenuBorderTop}" />
+				<drawrectangle x="{posx(thumb)}+{width(thumb)}-4" y="{posy(thumb)}" width="4" height="{height(thumb)}" color="{clrRecMenuBorderTop}" />
+				<drawrectangle x="{posx(thumb)}" y="{posy(thumb)}" width="{width(thumb)}" height="4" color="{clrRecMenuBorderTop}" />
+				<drawrectangle x="{posx(thumb)}" y="{posy(thumb)}+{height(thumb)}-4" width="{width(thumb)}" height="4" color="{clrRecMenuBorderTop}" />-->
+			</area>
+			<area x="30%" y="15%" width="65%" height="7%" layer="5">
+				<drawtext x="1%" y="0" width="80%" font="{regular}" fontsize="80%" color="{clrLightGray}" text="{title}" />
+				<drawtext x="1%" y="0" align="right" width="80%" font="{regular}" fontsize="80%" color="{clrDarkGray}" text="{year}" />
+			</area>
+			<area x="30%" y="23%" width="65%" height="1%" layer="5">
+				<drawrectangle x="0" y="0" width="{areawidth}" height="30%" color="{clrRecMenuBorderTop}" />
+				<drawrectangle x="0" y="0" width="74%" height="30%" color="{clrBar}" />
+			</area>
+			<area x="30%" y="26%" width="65%" height="4%" layer="5">
+				<drawimage name="stars" condition="gt({rating}, 0)" x="44%" y="15%" width="{areawidth}*0.1154" height="{areaheight}*0.5" imagetype="skinpart" path="starsFull" />
+				<drawrectangle condition="gt({rating}, 0)" x="{posx(stars)}+{width(stars)}*{rating}/100" y="0" width="{width(stars)}-{rating}/100*{width(stars)}" height="{areaheight}" color="{clrTransparent}" />
+				<drawtext x="0" y="0" align="right" width="80%" font="{regular}" fontsize="84%" color="{clrLightGray}" text="{duration}min" />
+				<loop name="genres" x="0" y="0" orientation="horizontal" width="{areawidth}" height="4%" rowheight="{areaheight}">
+					<drawtext x="0" y="0" width="100%" font="{regular}" fontsize="84%" color="{clrLightGray}" text="{genres[genre]}  " />
+				</loop>
+			</area>
+			<area x="30%" y="26%" width="65%" height="4%" layer="5">
+				<drawimage condition="gt({rating}, 0)" x="44%" y="15%" width="{areawidth}*0.1154" height="{areaheight}*0.5" imagetype="skinpart" path="stars" />
+			</area>
+			<area x="30%" y="32%" width="65%" height="4%" layer="5">
+				<drawtext name="actors" x="0" y="0" width="{width(actors)}" font="{regular}" fontsize="75%" color="{clrDarkGray}" text="{tr(actors)}: " />
+				<loop name="roles" x="{width(actors)}*1.1" y="0" orientation="horizontal" width="{areawidth}*0.93" height="{areaheight}" columnwidth="{areawidth}/5" rowheight="{areaheight}" overflow="linewrap">
+					<drawtext x="0" y="0" align="center" width="100%" font="{regular}" fontsize="75%" color="{clrLightGray}" text="{roles[actor]}" />
+				</loop>
+				<!--<loop name="roles" x="7%" y="0" orientation="horizontal" width="{areawidth}*0.94" height="{areaheight}" rowheight="{areaheight}" overflow="linewrap">
+					<drawtext x="0" y="0" width="100%" font="{regular}" fontsize="75%" color="{clrLightGray}" text="{roles[actor]}, " />
+				</loop>-->
+			</area>
+			<area x="30%" y="37%" width="65%" height="30%" layer="5">
+				<drawtextbox x="0" y="0" width="100%" font="{regular}" fontsize="{areaheight}*0.11" color="{clrLightGray}" text="{summary}" />
+			</area>
+		</areacontainer>
+		<areacontainer condition="{isepisode}">
+			<area x="2%" y="14%" width="25%" height="75%" layer="5">
+				<drawimage name="thumb" condition="{hasseriesthumb}" imagetype="image" path="{seriesthumb}" align="center" x="0" y="0" width="{areawidth}" height="{areawidth}*480/320" />
+				<!--<drawrectangle x="{posx(thumb)}" y="{posy(thumb)}" width="4" height="{height(thumb)}" color="{clrRecMenuBorderTop}" />
+				<drawrectangle x="{posx(thumb)}+{width(thumb)}-4" y="{posy(thumb)}" width="4" height="{height(thumb)}" color="{clrRecMenuBorderTop}" />
+				<drawrectangle x="{posx(thumb)}" y="{posy(thumb)}" width="{width(thumb)}" height="4" color="{clrRecMenuBorderTop}" />
+				<drawrectangle x="{posx(thumb)}" y="{posy(thumb)}+{height(thumb)}-4" width="{width(thumb)}" height="4" color="{clrRecMenuBorderTop}" />-->
+			</area>
+			<area x="30%" y="16%" width="65%" height="7%" layer="5">
+				<drawtext x="1%" y="0" width="80%" font="{regular}" fontsize="80%" color="{clrLightGray}" text="{seriestitle}" />
+				<drawtext x="1%" y="0" align="right" width="80%" font="{regular}" fontsize="80%" color="{clrDarkGray}" text="{printf('S%02d E%02d', season, episode)}" />
+			</area>
+			<area x="30%" y="23%" width="65%" height="1%" layer="5">
+				<drawrectangle x="0" y="0" width="{areawidth}" height="30%" color="{clrRecMenuBorderTop}" />
+				<drawrectangle x="0" y="0" width="74%" height="30%" color="{clrBar}" />
+			</area>
+			<area x="30%" y="25%" width="65%" height="5%" layer="5">
+				<drawtext x="1%" y="0" width="80%" font="{regular}" fontsize="80%" color="{clrDarkGray}" text="{title}" />
+				<drawtext x="1%" y="0" align="right" width="80%" font="{regular}" fontsize="80%" color="{clrDarkGray}" text="{originallyAvailableDay}.{originallyAvailableMonth}.{originallyAvailableYear}" />
+			</area>
+
+			<area x="30%" y="31%" width="{areawidth}*0.084" height="4%" layer="5">
+				<drawimage name="stars" condition="gt({rating}, 0)" x="0" y="15%" width="{areawidth}" height="{areaheight}*0.5" imagetype="skinpart" path="starsFull" />
+				<drawrectangle condition="gt({rating}, 0)" x="{posx(stars)}+{width(stars)}*{rating}/100" y="0" width="{width(stars)}-{rating}/100*{width(stars)}" height="{areaheight}" color="{clrTransparent}" />
+			</area>
+			<area x="30%" y="31%" width="{areawidth}*0.084" height="4%" layer="5">
+				<drawimage condition="gt({rating}, 0)" x="0" y="15%" width="{areawidth}" height="{areaheight}*0.5" imagetype="skinpart" path="stars" />
+			</area>
+			<area x="85%" y="31%" width="10%" height="4%" layer="5">
+				<drawtext x="1%" y="0" align="right" width="80%" font="{regular}" fontsize="84%" color="{clrLightGray}" text="{duration}min" />
+			</area>
+			<!--<area x="40%" y="23%" width="44%" height="4%" layer="5">
+				<loop name="genres" x="0" y="0" orientation="horizontal" width="{areawidth}" height="4%" rowheight="{areaheight}">
+					<drawtext x="0" y="0" width="100%" font="{regular}" fontsize="84%" color="{clrLightGray}" text="{genres[genre]}  " />
+				</loop>
+			</area>-->
+			<!--<area x="30%" y="32%" width="65%" height="4%" layer="5">
+				<drawtext x="0" y="0" width="7%" font="{regular}" fontsize="75%" color="{clrDarkGray}" text="Actors: " />
+				<loop name="roles" x="7%" y="0" orientation="horizontal" width="{areawidth}*0.94" height="{areaheight}" rowheight="{areaheight}" overflow="linewrap">
+					<drawtext x="0" y="0" width="100%" font="{regular}" fontsize="75%" color="{clrLightGray}" text="{roles[actor]}, " />
+				</loop>
+			</area>-->
+			<areascroll orientation="vertical" mode="forthandback" delay="1000" scrollspeed="medium" x="30%" y="37%" width="65%" height="55%" layer="5">
+				<drawtextbox condition="isset{summary}" x="0" y="0" width="100%" font="{regular}" fontsize="{areaheight}*0.055" color="{clrLightGray}" text="{summary}" />
+			</areascroll>
+		</areacontainer>
+		
+			<!--{videoResolution}	string (sd, 720, 1080)
+				{bitrate}			int
+				{width}				int
+				{height}			int
+				{audioChannels}		int
+				{aspectRatio}		string (1.33, 1.78, 1.85, 2.35)
+				{audioCodec}		string (aac, mp3, mp2, ac3, dca) hint: dca==DTS
+				{videoCodec}		string (mpeg4, msmpeg4, h264)
+				{container}			string (avi, mp4, mkv)
+				{videoFrameRate}	string (PAL, NTSC, 24p)
+			-->
+
+			<area x="4%" y="82%" width="21%" height="3%" layer="5">
+				<!--videoResolution-->
+				<drawimage condition="strequal({videoResolution}, '480')" x="0" y="20%" width="{areaheight}*0.7407*43/20" height="{areaheight}*0.7407" imagetype="icon" path="480p" />
+				<drawimage condition="strequal({videoResolution}, 'sd')" x="0" y="20%" width="{areaheight}*0.7407*27/20" height="{areaheight}*0.7407" imagetype="icon" path="SD" />
+				<drawimage condition="strequal({videoResolution}, '720')" x="0" y="20%" width="{areaheight}*0.7407*42/20" height="{areaheight}*0.7407" imagetype="icon" path="720p" />
+				<drawimage condition="strequal({videoResolution}, '1080')" x="0" y="20%" width="{areaheight}*0.7407*52/20" height="{areaheight}*0.7407" imagetype="icon" path="1080p" />
+				<!--audioCodec-->
+				<drawimage condition="strequal({audioCodec}, 'aac')" x="0" y="20%" align="center" width="{areaheight}*0.7407*77/20" height="{areaheight}*0.7407" imagetype="icon" path="aac" />
+				<drawimage condition="strequal({audioCodec}, 'mp3')" x="0" y="20%" align="center" width="{areaheight}*0.7407*40/20" height="{areaheight}*0.7407" imagetype="icon" path="mp3" />
+				<drawimage condition="strequal({audioCodec}, 'ac3')" x="0" y="0" align="center" width="{areaheight}*44/20" height="{areaheight}" imagetype="icon" path="dolby" />
+				<drawimage condition="strequal({audioCodec}, 'dca')" x="0" y="5%" align="center" width="{areaheight}*0.9*48/20" height="{areaheight}*0.9" imagetype="icon" path="dts" />
+				<!--audioChannels-->
+				<drawimage condition="eq({audioChannels}, 2)" x="0" y="20%" align="right" width="{areaheight}*0.7407*29/20" height="{areaheight}*0.7407" imagetype="icon" path="2.0" />
+				<drawimage condition="eq({audioChannels}, 5)" x="0" y="20%" align="right" width="{areaheight}*0.7407*26/20" height="{areaheight}*0.7407" imagetype="icon" path="5.1" />
+				<drawimage condition="eq({audioChannels}, 6)" x="0" y="20%" align="right" width="{areaheight}*0.7407*26/20" height="{areaheight}*0.7407" imagetype="icon" path="6.1" />
+				<!--<drawtext x="0" y="20%" align="right" font="{regular}" fontsize="84%" color="{clrLightGray}" text="{audioChannels}" />-->
+			</area>
 	</viewelement>
 	
 	<!-- Tokens available for scrollbar
@@ -123,12 +218,10 @@
 		{offset}	offset for the position marker from the top of the scrollbar in percent
 	-->
 	<viewelement name="scrollbar">
-	<!-- example:
-		<area x="66%" y="15%" width="9%" height="75%" layer="4">
-			<drawrectangle x="0" y="2" width="{areawidth}-2" height="{areaheight}" color="{clrRed}" />
-			<drawrectangle x="0" y="{areaheight} / 100 * {offset}" width="{areawidth}" height="{areaheight} / 100 * {height}" color="{clrGreen}" />
+		<area condition="{hasscrollbar}" x="95%" y="70%" width="5%" height="{areaheight}*0.158" layer="4">
+			 <drawimage condition="lt({height}, 100)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage condition="lt({height}, 100)" x="18%" y="{areaheight}*{offset}/100" width="{areawidth}*0.05" height="{areaheight}*{height}/100" imagetype="skinpart" path="scrollBar" />
 		</area>
-	-->
 	</viewelement>
 	
 	<!--
@@ -142,10 +235,28 @@
 	{originallyAvailableMonth}	Month of release/first aired
 	{originallyAvailableDay}		Day of release/first aired
 	-->
-  <!--<grid name="extragrid">  
-	</grid>-->
 	
-
+	<grid name="extragrid" x="30%" y="68%" width="66%" height="26%">
+		<area height="{areaheight}*0.7692" layer="4">
+			<drawimage name="thumb" condition="{hasthumb}" align="left" imagetype="image" path="{thumb}" x="0" y="0" width="95%" height="{areawidth}*0.95*240/320" />
+			<drawrectangle x="0" y="0" width="95%" height="10%" color="{clrTransparent}"/>
+			<drawrectangle x="0" y="90%" width="95%" height="16%" color="{clrTransparent}"/>
+		</area>
+		<area condition="{current}" height="{areaheight}*0.7692" layer="5">
+			<drawimage name="play" x="0" y="10%" width="95%" height="80%" imagetype="skinpart" path="plexArrow"/>
+			<drawrectangle x="0" y="10%" width="1" height="{height(play)}" color="{clrBar}" />
+			<drawrectangle x="{width(play)}-1" y="10%" width="1" height="80%" color="{clrBar}" />
+			<drawrectangle x="0" y="10%" width="{width(play)}" height="1" color="{clrBar}" />
+			<drawrectangle x="0" y="{posy(play)}+{height(play)}-1" width="95%" height="1" color="{clrBar}" />
+		</area>
+		<!--<area layer="6">
+			<drawtext condition="eq({extraType}, 1)" name="clip" x="0" y="65%" width="95%" font="{regular}" fontsize="{areaheight}*0.1025" color="{clrRed}" text="Trailer" />
+			<drawtext condition="eq({extraType}, 5)" name="clip" x="0" y="65%" width="95%" font="{regular}" fontsize="{areaheight}*0.1025" color="{clrRed}" text="Behind the scenes" />
+		</area>-->
+		<area layer="5">
+			<drawtext name="title" x="0" y="72%" width="95%" font="{regular}" fontsize="{areaheight}*0.1025" color="{clrLightGray}" text="{title}" />
+		</area>
+	</grid>
 	
 	<!-- Available Variables Footer:
     {red1}                    true if red button is button 1
@@ -169,7 +280,7 @@
     {yellow}                  label of yellow button
     {blue}                    label of blue button
     -->
-    <viewelement name="footer">
+	<viewelement name="footer">
 		<area  x="43%" y="92%" width="13%" height="5%" layer="7">
 			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
 			<drawtext condition="{red1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{red}" />
