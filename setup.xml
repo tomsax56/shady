@@ -25,22 +25,6 @@
 			<parameter type="int" name="numLongSubmenuitems" min="12" max="18" displaytext="{tr(numLongSubmenuitems)}">14</parameter>
 			<parameter type="int" name="numShortSubmenuitems" min="12" max="18" displaytext="{tr(numShortSubmenuitems)}">15</parameter>
 		</submenu>
-		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
-			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
-			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
-			<parameter type="string" name="showPosterAndEPGpic" displaytext="{tr(showPosterAndEPGpic)}" options="primarilyOnlyPoster,postersAndEPGpic">0</parameter>
-			<parameter type="bool" name="twoLineDisplay" displaytext="{tr(twoLineDisplay)}">1</parameter>
-			<parameter type="bool" name="twoLineDisplayReplay" displaytext="{tr(twoLineDisplayReplay)}">1</parameter>
-			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">1</parameter>
-			<parameter type="bool" name="showChannelDetails" displaytext="{tr(showChannelDetails)}">0</parameter>
-			<parameter type="bool" name="showTimerStopTime" displaytext="{tr(showTimerStopTime)}">1</parameter>
-			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
-			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
-			<parameter type="bool" name="coloredElapsed" displaytext="{tr(coloredElapsed)}">0</parameter>
-			<parameter type="bool" name="ecmInside" displaytext="{tr(ecmInside)}">1</parameter>
-			<parameter type="bool" name="showDiscUsage" displaytext="{tr(showDiscUsage)}">1</parameter>
-			<!--<parameter type="int" name="devices" min="0" max="1" displaytext="{tr(devices)}">0</parameter>-->
-		</submenu>
 		<submenu name="Fadetimes" displaytext="{tr(Delay, Shift- and Fadetimes)}">
 			<parameter type="int" name="00_menuFadetime" min="0" max="500" displaytext="{tr(00_menuFadetime)}">300</parameter>
 			<!--<parameter type="int" name="01_ShifttimeChannelDisplay" min="0" max="1000" displaytext="{tr(01_ShifttimeChannelDisplay)}">0</parameter>-->
@@ -70,6 +54,25 @@
 			<parameter type="int" name="06_notNewNotWatchedCutted-recordingsMarker" min="0" max="9" displaytext="{tr(06_notNewNotWatchedCutted-recordingsMarker)}">5</parameter>
 			<parameter type="int" name="07_notNewWatchedNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(07_notNewWatchedNotCutted-recordingsMarker)}">6</parameter>
 			<parameter type="int" name="08_notNewWatchedCutted-recordingsMarker" min="0" max="9" displaytext="{tr(08_notNewWatchedCutted-recordingsMarker)}">1</parameter>
+		</submenu>
+		<submenu name="Plugins" displaytext="Plugins">
+			<parameter type="string" name="plexDetail" displaytext="{tr(plexDetail)}" options="shadyStyle,fanartStyle">0</parameter>
+			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
+			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
+		</submenu>
+		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
+			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
+			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
+			<parameter type="string" name="showPosterAndEPGpic" displaytext="{tr(showPosterAndEPGpic)}" options="primarilyOnlyPoster,postersAndEPGpic">0</parameter>
+			<parameter type="bool" name="twoLineDisplay" displaytext="{tr(twoLineDisplay)}">1</parameter>
+			<parameter type="bool" name="twoLineDisplayReplay" displaytext="{tr(twoLineDisplayReplay)}">1</parameter>
+			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">1</parameter>
+			<parameter type="bool" name="showChannelDetails" displaytext="{tr(showChannelDetails)}">0</parameter>
+			<parameter type="bool" name="showTimerStopTime" displaytext="{tr(showTimerStopTime)}">1</parameter>
+			<parameter type="bool" name="coloredElapsed" displaytext="{tr(coloredElapsed)}">0</parameter>
+			<parameter type="bool" name="ecmInside" displaytext="{tr(ecmInside)}">1</parameter>
+			<parameter type="bool" name="showDiscUsage" displaytext="{tr(showDiscUsage)}">1</parameter>
+			<!--<parameter type="int" name="devices" min="0" max="1" displaytext="{tr(devices)}">0</parameter>-->
 		</submenu>
     </menu>
 
@@ -304,6 +307,18 @@
 		<token name="tr(08_notNewWatchedCutted-recordingsMarker)">
 			<trans lang="en_EN">Marker for seen &gt; 85% cutted recordings</trans>
 			<trans lang="de_DE">Marker für gesehen &gt; 85%, geschnittene Aufnahmen</trans>
+		</token>
+		<token name="tr(plexDetail)">
+			<trans lang="en_EN">Background Plex-Detail</trans>
+			<trans lang="de_DE">Hintergrund Plex-Detail</trans>
+		</token>
+		<token name="tr(shadyStyle)">
+			<trans lang="en_EN">Shady</trans>
+			<trans lang="de_DE">Shady</trans>
+		</token>
+		<token name="tr(fanartStyle)">
+			<trans lang="en_EN">Art</trans>
+			<trans lang="de_DE">Art</trans>
 		</token>
 	</translations>
 </setup>
