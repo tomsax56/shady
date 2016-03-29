@@ -55,12 +55,14 @@
 	<cutmarks>
 		<area condition="not{timeshift}" x="2%" y="{areaheight}*0.8685" width="96%" height="3%" layer="4">
 			<loop name="marks" x="0" y="0" orientation="absolute">
+				<!-- draw bar to next mark if mark is startmark-->
+				<drawrectangle condition="{marks[startmark]}++not{replayPGBG}" x="{marks[position]}/{marks[total]}*{areawidth}" y="37%" width="{marks[endposition]}/{marks[total]}*{areawidth} - {marks[position]}/{marks[total]}*{areawidth}" height="30%" color="{clrBlack}" />
+				<drawimage condition="{marks[startmark]}++{replayPGBG}" x="{marks[position]}/{marks[total]}*{areawidth}" y="38%" width="{marks[endposition]}/{marks[total]}*{areawidth} - {marks[position]}/{marks[total]}*{areawidth}" height="30%" imagetype="skinpart" path="pgGrad"/>
 				<!-- draw mark -->
-				<drawrectangle condition="not{marks[active]}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="1" height="100%" color="{clrBlack}" />
+				<drawrectangle condition="not{marks[active]}++not{replayPGBG}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="1" height="100%" color="{clrBlack}" />
+				<drawimage condition="not{marks[active]}++{replayPGBG}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="1" height="100%" imagetype="skinpart" path="cutMark" />
 				<!-- draw active mark -->
 				<drawrectangle condition="{marks[active]}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="2" height="100%" color="{clrGreen}" />
-				<!-- draw bar to next mark if mark is startmark-->
-				<drawrectangle condition="{marks[startmark]}" x="{marks[position]}/{marks[total]}*{areawidth}" y="37%" width="{marks[endposition]}/{marks[total]}*{areawidth} - {marks[position]}/{marks[total]}*{areawidth}" height="30%" color="{clrBlack}" />
 			</loop>
 		</area>
 

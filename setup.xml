@@ -45,6 +45,7 @@
 			<parameter type="int" name="08_currentweatherFadetime" min="0" max="500" displaytext="{tr(08_currentweatherFadetime)}">0</parameter>
 		</submenu>
 		<submenu name="Recordings" displaytext="{tr(recordingsmarkerandprogress)}">
+			<parameter type="bool" name="replayPGBG" displaytext="{tr(replayPGBG)}">0</parameter>
 			<parameter type="int" name="00_numRecordingsmenuitems" min="12" max="18" displaytext="{tr(00_numRecordingsmenuitems)}">15</parameter>
 			<parameter type="bool" name="01_seenProgress" displaytext="{tr(01_seenProgress)}">1</parameter>
 			<parameter type="bool" name="02_showRecordingTime" displaytext="{tr(02_showRecordingTime)}">1</parameter>
@@ -273,8 +274,12 @@
 		</token>
 <!--RecordingMarkersProgress-->
 		<token name="tr(recordingsmarkerandprogress)">
-			<trans lang="en_EN">Settings menu Recordings</trans>
-			<trans lang="de_DE">Einstellungen Menü Aufzeichnungen</trans>
+			<trans lang="en_EN">Recordings</trans>
+			<trans lang="de_DE">Aufzeichnungen</trans>
+		</token>
+		<token name="tr(replayPGBG)">
+			<trans lang="en_EN">Bright cutbars in replayprogressbar</trans>
+			<trans lang="de_DE">Helle Schnittbalken in der Wiedergabeprogressbar</trans>
 		</token>
 		<token name="tr(01_seenProgress)">
 			<trans lang="en_EN">Show 'percentseen-bar' for recordings</trans>
