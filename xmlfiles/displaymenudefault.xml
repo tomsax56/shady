@@ -121,22 +121,22 @@
 				<drawtext condition="strnotcontains({column1}, '(4 = Detail')" align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
 			</area>
 			<area x="4%" condition="not{separator}++{setup}++not{column2set}" width="92%" layer="4">
-				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="97%" color="{clrLightGray}" text="{column1}" />
 			</area>
 <!--shady-recordings-->
 			<area condition="{setup}++strcontains({column1}, '(4 = Detail')++strequal({column2}, '4')" x="50%" y="0" width="42%"  layer="4">
 				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{tr(Detail_View)}" />
 			</area>
 			<area condition="{setup}++strcontains({column1}, 'Marker')" x="90%" y="0" width="2%"  layer="5">
-				<drawimage condition="strequal({column2}, '1')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
-				<drawimage condition="strequal({column2}, '2')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
-				<drawimage condition="strequal({column2}, '3')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
-				<drawimage condition="strequal({column2}, '4')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
-				<drawimage condition="strequal({column2}, '5')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="lightGrayMarker" />
-				<drawimage condition="strequal({column2}, '6')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="orangeMarker" />
-				<drawimage condition="strequal({column2}, '7')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redMarker" />
-				<drawimage condition="strequal({column2}, '8')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="turquoiseMarker" />
-				<drawimage condition="strequal({column2}, '9')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
+				<drawimage condition="strequal({column2}, '1')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+				<drawimage condition="strequal({column2}, '2')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
+				<drawimage condition="strequal({column2}, '3')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+				<drawimage condition="strequal({column2}, '4')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+				<drawimage condition="strequal({column2}, '5')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="lightGrayMarker" />
+				<drawimage condition="strequal({column2}, '6')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="orangeMarker" />
+				<drawimage condition="strequal({column2}, '7')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+				<drawimage condition="strequal({column2}, '8')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="turquoiseMarker" />
+				<drawimage condition="strequal({column2}, '9')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 			</area>
 <!--syteminfo-->
 			<area x="4%" condition="not{separator}++{systeminfo}" width="20%" layer="4">

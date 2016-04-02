@@ -49,12 +49,9 @@
 			<parameter type="int" name="00_numRecordingsmenuitems" min="12" max="18" displaytext="{tr(00_numRecordingsmenuitems)}">15</parameter>
 			<parameter type="bool" name="01_seenProgress" displaytext="{tr(01_seenProgress)}">1</parameter>
 			<parameter type="bool" name="02_showRecordingTime" displaytext="{tr(02_showRecordingTime)}">1</parameter>
-			<parameter type="int" name="03_newNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(03_newNotCutted-recordingsMarker)}">2</parameter>
-			<parameter type="int" name="04_newCutted-recordingsMarker" min="0" max="9" displaytext="{tr(04_newCutted-recordingsMarker)}">4</parameter>
-			<parameter type="int" name="05_notNewNotWatchedNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(05_notNewNotWatchedNotCutted-recordingsMarker)}">9</parameter>
-			<parameter type="int" name="06_notNewNotWatchedCutted-recordingsMarker" min="0" max="9" displaytext="{tr(06_notNewNotWatchedCutted-recordingsMarker)}">5</parameter>
-			<parameter type="int" name="07_notNewWatchedNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(07_notNewWatchedNotCutted-recordingsMarker)}">6</parameter>
-			<parameter type="int" name="08_notNewWatchedCutted-recordingsMarker" min="0" max="9" displaytext="{tr(08_notNewWatchedCutted-recordingsMarker)}">1</parameter>
+			<parameter type="int" name="03_new-recordingsMarker" min="0" max="9" displaytext="{tr(03_new-recordingsMarker)}">2</parameter>
+			<parameter type="int" name="05_notNewNotWatched-recordingsMarker" min="0" max="9" displaytext="{tr(05_notNewNotWatched-recordingsMarker)}">9</parameter>
+			<parameter type="int" name="07_notNewWatched-recordingsMarker" min="0" max="9" displaytext="{tr(07_notNewWatched-recordingsMarker)}">6</parameter>
 		</submenu>
 		<submenu name="Plugins" displaytext="Plugins">
 			<parameter type="string" name="plexDetail" displaytext="{tr(plexDetail)}" options="shadyStyle,fanartStyle">0</parameter>
@@ -289,29 +286,17 @@
 			<trans lang="en_EN">Show time of recordings</trans>
 			<trans lang="de_DE">Zeige Uhrzeit der Aufnahmen</trans>
 		</token>
-		<token name="tr(03_newNotCutted-recordingsMarker)">
-			<trans lang="en_EN">Marker for unseen, not cutted recordings</trans>
-			<trans lang="de_DE">Marker für ungesehene, nicht geschnittene Aufnahmen</trans>
+				<token name="tr(03_new-recordingsMarker)">
+			<trans lang="en_EN">Marker for new recordings</trans>
+			<trans lang="de_DE">Marker f&#252;r neue Aufnahmen</trans>
 		</token>
-		<token name="tr(04_newCutted-recordingsMarker)">
-			<trans lang="en_EN">Marker for unseen, cutted recordings</trans>
-			<trans lang="de_DE">Marker für ungesehene, geschnittene Aufnahmen</trans>
-		</token>        
-		<token name="tr(05_notNewNotWatchedNotCutted-recordingsMarker)">
-			<trans lang="en_EN">Marker for seen &lt; 85% not cutted recordings</trans>
-			<trans lang="de_DE">Marker für gesehen &lt; 85%, nicht geschnittene Aufnahmen</trans>
+		<token name="tr(05_notNewNotWatched-recordingsMarker)">
+			<trans lang="en_EN">Marker for recordings seen &lt; 85%</trans>
+			<trans lang="de_DE">Marker f&#252;r Aufnahmen gesehen &lt; 85%</trans>
 		</token>
-		<token name="tr(06_notNewNotWatchedCutted-recordingsMarker)">
-			<trans lang="en_EN">Marker for seen &lt; 85% cutted recordings</trans>
-			<trans lang="de_DE">Marker für gesehen &lt; 85%, geschnittene Aufnahmen</trans>
-		</token>
-		<token name="tr(07_notNewWatchedNotCutted-recordingsMarker)">
-			<trans lang="en_EN">Marker for seen &gt; 85% not cutted recordings</trans>
-			<trans lang="de_DE">Marker für gesehen &gt; 85%, nicht geschnittene Aufnahmen</trans>
-		</token>
-		<token name="tr(08_notNewWatchedCutted-recordingsMarker)">
-			<trans lang="en_EN">Marker for seen &gt; 85% cutted recordings</trans>
-			<trans lang="de_DE">Marker für gesehen &gt; 85%, geschnittene Aufnahmen</trans>
+		<token name="tr(07_notNewWatched-recordingsMarker)">
+			<trans lang="en_EN">Marker for recordings seen &gt; 85%</trans>
+			<trans lang="de_DE">Marker f&#252;r Aufnahmen gesehen &gt; 85%</trans>
 		</token>
 		<token name="tr(plexDetail)">
 			<trans lang="en_EN">Background Plex-Detail</trans>

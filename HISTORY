@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2016-04-02:
+- Some fixes for numMenuItems < 13 
+
 2016-03-29:
 - Added optional bright cutmarks in displayreplay
 
