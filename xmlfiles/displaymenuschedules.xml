@@ -118,27 +118,34 @@
 		</listelement>
 
 		<currentelement delay="0" fadetime="0">
-			<area condition="{whatson}" x="0" y="0" width="41%" height="60%" layer="3">
-				<drawtext condition="isset{title}" name="now" x="0" y="0" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{title}" />
-				<drawtext condition="{running}++isset{title}" name="start" x="{areawidth}/4 - {width(start)}-10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start}" />
-				<drawtext condition="{running}++isset{title}" name="stop" x="{areawidth}*3/4+10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{stop}" />
-				<drawimage condition="{running}++isset{title}" imagetype="skinpart" path="progress" x="{posx(start)}+{width(start)}+10" y="11%" width="50%" height="5%" />
-				<drawimage condition="{running}++isset{title}" x="{areawidth}/4+10" y="{height(now)} + {height(start)} / 2 - 6" width="{areawidth}/2 * {elapsed} / {duration} - 20 * {elapsed} / {duration}" height="8" imagetype="skinpart" path="timeBar" />
-				<drawtext condition="not{running}++isset{title}" x="25" y="{areaheight}/18 + 20" align="center" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start} - {stop} ({duration} min)" />
-				<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="{posy(start)}+{height(start)}*2" width="{areawidth}*0.2" height="{areawidth}*0.3"/>
-				<drawtextbox condition="{hasposter}" x="2%" y="{posy(poster)}*0.968" width="94%" height="{areaheight} - {posy(poster)}" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
-				<drawtextbox condition="not{hasposter}++isset{title}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
-			</area>
-			<area condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" y="0" width="41%" height="60%" layer="3">
-				<drawtext condition="isset{title}" name="now" x="0" y="0" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{title}" />
-				<drawtext condition="{running}++isset{title}" name="start" x="{areawidth}/4 - {width(start)}-10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start}" />
-				<drawtext condition="{running}++isset{title}" name="stop" x="{areawidth}*3/4+10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{stop}" />
-				<drawimage condition="{running}++isset{title}" imagetype="skinpart" path="progress" x="{posx(start)}+{width(start)}+10" y="11%" width="50%" height="5%" />
-				<drawimage condition="{running}++isset{title}" x="{areawidth}/4+10" y="{height(now)} + {height(start)} / 2 - 6" width="{areawidth}/2 * {elapsed} / {duration} - 20 * {elapsed} / {duration}" height="8" imagetype="skinpart" path="timeBar" />
-				<drawtext condition="not{running}++isset{title}" x="25" y="{areaheight}/18 + 20" align="center" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start} - {stop} ({duration} min)" />
-				<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="{posy(start)}+{height(start)}*2" width="{areawidth} * 0.2" height="{areawidth} * 0.3"/>
+			<areacontainer condition="{currentTitle}">
+				<area condition="{whatson}" x="0" y="0" width="41%" height="60%" layer="3">
+					<drawtext condition="isset{title}" name="now" x="0" y="0" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{title}" />
+					<drawtext condition="{running}++isset{title}" name="start" x="{areawidth}/4 - {width(start)}-10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start}" />
+					<drawtext condition="{running}++isset{title}" name="stop" x="{areawidth}*3/4+10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{stop}" />
+					<drawimage condition="{running}++isset{title}" imagetype="skinpart" path="progress" x="{posx(start)}+{width(start)}+10" y="11%" width="50%" height="5%" />
+					<drawimage condition="{running}++isset{title}" x="{areawidth}/4+10" y="{height(now)} + {height(start)} / 2 - 6" width="{areawidth}/2 * {elapsed} / {duration} - 20 * {elapsed} / {duration}" height="8" imagetype="skinpart" path="timeBar" />
+					<drawtext condition="not{running}++isset{title}" x="25" y="{areaheight}/18 + 20" align="center" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start} - {stop} ({duration} min)" />
+					<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="{posy(start)}+{height(start)}*2" width="{areawidth}*0.2" height="{areawidth}*0.3"/>
+					<drawtextbox condition="{hasposter}" x="2%" y="{posy(poster)}*0.968" width="94%" height="{areaheight} - {posy(poster)}" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
+					<drawtextbox condition="not{hasposter}++isset{title}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
+				</area>
+				<area condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" y="0" width="41%" height="60%" layer="3">
+					<drawtext condition="isset{title}" name="now" x="0" y="0" width="100%" align="center" font="{light}" fontsize="10%" color="{clrLightGray}" text="{title}" />
+					<drawtext condition="{running}++isset{title}" name="start" x="{areawidth}/4 - {width(start)}-10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start}" />
+					<drawtext condition="{running}++isset{title}" name="stop" x="{areawidth}*3/4+10" y="{height(now)}" font="{light}" fontsize="8%" color="{clrLightGray}" text="{stop}" />
+					<drawimage condition="{running}++isset{title}" imagetype="skinpart" path="progress" x="{posx(start)}+{width(start)}+10" y="11%" width="50%" height="5%" />
+					<drawimage condition="{running}++isset{title}" x="{areawidth}/4+10" y="{height(now)} + {height(start)} / 2 - 6" width="{areawidth}/2 * {elapsed} / {duration} - 20 * {elapsed} / {duration}" height="8" imagetype="skinpart" path="timeBar" />
+					<drawtext condition="not{running}++isset{title}" x="25" y="{areaheight}/18 + 20" align="center" font="{light}" fontsize="8%" color="{clrLightGray}" text="{start} - {stop} ({duration} min)" />
+					<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="{posy(start)}+{height(start)}*2" width="{areawidth} * 0.2" height="{areawidth} * 0.3"/>
+					<drawtextbox condition="{hasposter}" x="2%" y="{posy(poster)}*0.968" width="94%" height="{areaheight} - {posy(poster)}" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)} * 1.2" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
+					<drawtextbox condition="not{hasposter}++isset{title}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
+				</area>
+			</areacontainer>
+			<area condition="not{currentTitle}" x="0" y="0" width="41%" height="60%" layer="3">
+				<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="0" width="{areawidth} * 0.2" height="{areawidth}*0.2 * {posterheight} / {posterwidth}"/>
 				<drawtextbox condition="{hasposter}" x="2%" y="{posy(poster)}*0.968" width="94%" height="{areaheight} - {posy(poster)}" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)} * 1.2" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
-				<drawtextbox condition="not{hasposter}++isset{title}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
+				<drawtextbox condition="not{hasposter}++isset{title}" x="2%" y="0" width="94%" height="{areaheight} " font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
 			</area>
 		</currentelement>
 	</menuitems>

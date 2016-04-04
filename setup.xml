@@ -61,6 +61,7 @@
 		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
 			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
 			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
+			<parameter type="bool" name="currentTitle" displaytext="{tr(currentTitle)}">0</parameter>
 			<parameter type="string" name="showPosterAndEPGpic" displaytext="{tr(showPosterAndEPGpic)}" options="primarilyOnlyPoster,postersAndEPGpic">0</parameter>
 			<parameter type="bool" name="twoLineDisplay" displaytext="{tr(twoLineDisplay)}">1</parameter>
 			<parameter type="bool" name="twoLineDisplayReplay" displaytext="{tr(twoLineDisplayReplay)}">1</parameter>
@@ -159,6 +160,10 @@
 		<token name="tr(coloredButtons)">
 			<trans lang="en_EN">Colored active buttons (0=no, 1=only border, 2=gradient)</trans>
 			<trans lang="de_DE">Farbige Auswahlbalken (0=nein, 1=nur Rand, 2=Farbverlauf)</trans>
+		</token>
+		<token name="tr(currentTitle)">
+			<trans lang="en_EN">Show title and progressbar in active menuelement</trans>
+			<trans lang="de_DE">Zeige Titel und Progressbar im aktiven Menüelement </trans>
 		</token>
 		<token name="tr(showPosterAndEPGpic)">
 			<trans lang="en_EN">Poster and EPGpic in Details</trans>
