@@ -2,7 +2,8 @@ shady-skin Revision History
 ----------------------------------
 
 2016-04-05:
-- Unified currentelement of schedules, channels, recordings and timers 
+- Unified currentelement of schedules, channels, recordings and timers
+- Filled bottommost line of OSD with Black (workaround for?) 
 
 2016-04-04:
 - Added setup to show title and progressbar in active menuelement

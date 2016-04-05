@@ -3,7 +3,7 @@
 
 <displaychannel x="0" y="0" width="100%" height="100%" fadetime="{00_menuFadetime}" shifttime="0" shifttype="bottom" shiftmode="slowed">
 	<background>
-		<area debug="true" x="0" y="{areaheight}*0.999" width="100%" height="{areaheight}*0.001" layer="1">
+		<area x="0" y="{areaheight}*0.999" width="100%" height="{areaheight}*0.001" layer="1">
 			<fill color="{clrBlack}" />
 		</area>
 		<area x="0" y="75%" width="100%" height="25%" layer="1">
