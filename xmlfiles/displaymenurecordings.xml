@@ -174,8 +174,8 @@
 				<drawtextbox condition="not{hasposter}" x="2%" y="{posy(shorttext)}+{height(shorttext)}+20" width="94%" height="{areaheight} - {posy(poster)}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
 			</area>
 			<area condition="not{folder}++not{currentTitle}" x="0" y="0" width="41%" height="60%" layer="3">
-				<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="0" width="{areawidth}*0.2" height="{areawidth}*0.2 * {posterheight} / {posterwidth}" />
-				<drawtextbox condition="{hasposter}" x="2%" y="0" width="94%" height="{areaheight}" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
+				<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="1%" y="2%" width="{areawidth}*0.2" height="{areawidth}*0.2 * {posterheight} / {posterwidth}" />
+				<drawtextbox condition="{hasposter}" x="2%" y="0" width="94%" height="{areaheight}" float="topleft" floatwidth="{width(poster)}*1.1" floatheight="{height(poster)}*1.1" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
 				<drawtextbox condition="not{hasposter}" x="2%" y="0" width="94%" height="{areaheight}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
 			</area>
 			<area condition="{folder}" x="0" y="0" width="40%" height="60%" layer="3">

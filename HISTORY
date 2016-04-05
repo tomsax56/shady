@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2016-04-05:
+- Unified currentelement of schedules, channels, recordings and timers 
+
 2016-04-04:
 - Added setup to show title and progressbar in active menuelement
 - Added setup to show title and progressbar in active menuelement in displaymenuchannels
