@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2016-04-06:
+- Enlarged size of posters in currentelements
+
 2016-04-05:
 - Unified currentelement of schedules, channels, recordings and timers
 - Filled bottommost line of OSD with Black (workaround for?) 
