@@ -88,6 +88,7 @@
 				<drawtextbox condition="not{hasposter}" x="2%" y="{posy(poster)}" width="94%" height="{areaheight} - {posy(poster)}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{eventdescription}" />
 			</area>
 			<area condition="not{currentTitle}" x="0" y="0" width="41%" height="60%" layer="3">
+				<drawimage condition="{hasposter}" imagetype="skinpart" path="posterBGCurrent" x="{areawidth}*0.014" y="{areaheight}*0.009" width="{areawidth}*0.28" height="{areawidth}*0.265 * {posterheight} / {posterwidth}"/>
 				<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="2%" y="2%" width="{areawidth}*0.25" height="{areawidth}*0.25 * {posterheight} / {posterwidth}"/>
 				<drawtextbox condition="{hasposter}" x="2%" y="0" width="94%" height="{areaheight} - {posy(poster)}" float="topleft" floatwidth="{width(poster)}*1.1" floatheight="{height(poster)}*1.05" font="{light}" fontsize="7%" color="{clrLightGray}" text="{eventdescription}" />
 				<drawtextbox condition="not{hasposter}" x="2%" y="0" width="94%" height="{areaheight}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{eventdescription}" />
