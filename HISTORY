@@ -4,6 +4,7 @@ shady-skin Revision History
 2016-04-10:
 - Added lost equal sign and removed redundant whitespaces in tvguideng-root
 - Optimized tablabels in detailviews
+- Fixed position of scrollbar in displaymenutimers
 
 2016-04-07:
 - Added marker for switchtimer in tvguideng
