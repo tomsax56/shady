@@ -7,19 +7,19 @@
 		<area x="0" y="0" width="100%" height="100%" layer="1">
 			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
 			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
-			<drawrectangle  x="1%" y="59%" width="39%" height="39%" color="{clrTransparent}" />                    
+			<drawrectangle x="1%" y="59%" width="39%" height="39%" color="{clrTransparent}" />
 		</area>
 		<area x="0" y="0" width="100%" height="100%" layer="2">
-			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsTVguideRootHor" />
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsTVguideRootHor" />
 		</area>
 		<area x="0" y="0" width="100%" height="11%" layer="3">
-			<drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
+			<drawimage x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
 		</area>
 		<area x="11%" y="12%" width="2%" height="46%" layer="3">
-			<drawimage  x="30%" width="{areawidth}*0.2" height="{areaheight}*0.975" imagetype="skinpart" path="tvGuideButtonLeft" />
+			<drawimage x="30%" width="{areawidth}*0.2" height="{areaheight}*0.975" imagetype="skinpart" path="tvGuideButtonLeft" />
 		</area>
 		<area x="95%" y="15%" width="1%" height="43%" layer="3">
-			<drawimage  x="70%" width="{areawidth}*0.2" height="{areaheight}*0.972" imagetype="skinpart" path="tvGuideButtonRight" />
+			<drawimage x="70%" width="{areawidth}*0.2" height="{areaheight}*0.972" imagetype="skinpart" path="tvGuideButtonRight" />
 		</area>
 	</viewelement>
 
@@ -29,10 +29,10 @@
 			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
 		</area>
 		<area x="0" y="0" width="100%" height="100%" layer="2">
-			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsTVguideRootVer" />
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsTVguideRootVer" />
 		</area>
 		<area x="0" y="0" width="100%" height="11%" layer="3">
-			<drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
+			<drawimage x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
 		</area>
 	</viewelement>
 
@@ -63,7 +63,7 @@
     {posterpath}              absolute path of scraped poster
     -->
 	<viewelement name="header_hor">
-			<area condition="not{isdummy}++not{hasposter}"  x="3%" y="1%" width="54%" height="9%" layer="3">
+			<area condition="not{isdummy}++not{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
 			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}. {start} - {stop}"/>
 			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
 		</area>
@@ -84,7 +84,7 @@
 		<area condition="not{isdummy}++{hasposter}" x="84%" y="59%" width="{areaheight}*0.29*{posterwidth}/{posterheight}" height="30%" layer="2">
 			<drawimage imagetype="image" path="{posterpath}" x="0" y="0" width="100%" height="100%"/>
 		</area>
-		<area condition="not{isdummy}++{hasposter}++not{tvgngDescriptionScroll}"  x="42%" y="58%" width="41%" height="32%" layer="3">
+		<area condition="not{isdummy}++{hasposter}++not{tvgngDescriptionScroll}" x="42%" y="58%" width="41%" height="32%" layer="3">
 			<drawtextbox x="0" y="0" width="100%" font="{light}" fontsize="10%" color="{clrWhite}" text="{description}" />
 		</area>
 		<areascroll condition="not{isdummy}++{hasposter}++{tvgngDescriptionScroll}" orientation="vertical" mode="forthandback" delay="1000" scrollspeed="medium" x="42%" y="58%" width="41%" height="32%" layer="3">
@@ -92,7 +92,7 @@
 		</areascroll>
 	</viewelement>
 	<viewelement name="header_ver">
-			<area condition="not{isdummy}++not{hasposter}"  x="3%" y="1%" width="54%" height="9%" layer="3">
+			<area condition="not{isdummy}++not{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
 			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}. {start} - {stop}"/>
 			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
 		</area>
@@ -105,7 +105,7 @@
 			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
 		</area>
 	</viewelement>
-    
+
     <!-- Available Variables Footer:
     {red1}                    true if red button is button 1
     {red2}                    true if red button is button 2
@@ -129,93 +129,92 @@
     {blue}                    label of blue button
     -->
 	<viewelement name="footer_hor">
-		<area  x="41%" y="92%" width="14%" height="5%" layer="3">
+		<area x="41%" y="92%" width="14%" height="5%" layer="3">
 			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
-			<drawtext condition="{red1}" x="9%" y="{areaheight}*0.15"  font="{light}" fontsize="60%" color="{clrLightGray}" text="{red}" />
-			<drawimage  condition="{red1}++isset{red}" x="3%" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
+			<drawtext condition="{red1}" x="9%" y="{areaheight}*0.15" font="{light}" fontsize="60%" color="{clrLightGray}" text="{red}" />
+			<drawimage condition="{red1}++isset{red}" x="3%" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
 			<drawtext condition="{green1}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{green}" />
-			<drawimage  condition="{green1}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path"buttonGreenMain" />            
+			<drawimage condition="{green1}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
 			<drawtext condition="{yellow1}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{yellow}" />
-			<drawimage  condition="{yellow1}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />           
+			<drawimage condition="{yellow1}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
 			<drawtext condition="{blue1}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{blue}" />
-			<drawimage  condition="{blue1}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />           
+			<drawimage condition="{blue1}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area>
 		<area x="55%" y="92%" width="14%" height="5%" layer="3">
 			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
 			<drawtext condition="{red2}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{red}" />
-			<drawimage  condition="{red2}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
+			<drawimage condition="{red2}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
 			<drawtext condition="{green2}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{green}" />
-			<drawimage  condition="{green2}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
+			<drawimage condition="{green2}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
 			<drawtext condition="{yellow2}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{yellow}" />
-			<drawimage  condition="{yellow2}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />                    
+			<drawimage condition="{yellow2}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
 			<drawtext condition="{blue2}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{blue}" />
-			<drawimage  condition="{blue2}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
+			<drawimage condition="{blue2}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area>
 		<area x="69%" y="92%" width="14%" height="5%" layer="3">
 			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
 			<drawtext condition="{red3}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{red}" />
-			<drawimage  condition="{red3}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
+			<drawimage condition="{red3}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
 			<drawtext condition="{green3}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{green}" />
-			<drawimage  condition="{green3}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />           
+			<drawimage condition="{green3}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
 			<drawtext condition="{yellow3}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{yellow}" />
-			<drawimage  condition="{yellow3}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />            
+			<drawimage condition="{yellow3}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
 			<drawtext condition="{blue3}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{blue}" />
-			<drawimage  condition="{blue3}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
+			<drawimage condition="{blue3}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area>
 		<area x="81%" y="92%" width="15%" height="5%" layer="3">
 			<drawtext condition="{red4}" x="20" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{red}" />
-			<drawimage  condition="{red4}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />           
+			<drawimage condition="{red4}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
 			<drawtext condition="{green4}" x="20" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{green}" />
-			<drawimage  condition="{green4}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
+			<drawimage condition="{green4}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
 			<drawtext condition="{yellow4}" x="20" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{yellow}" />
-			<drawimage  condition="{yellow4}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
+			<drawimage condition="{yellow4}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
 			<drawtext condition="{blue4}" x="37%" y="{areaheight}*0.15" font="{light}" fontsize="60%" color="{clrLightGray}" text="{blue}" />
-			<drawimage  condition="{blue4}++isset{blue}" x="10%" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
+			<drawimage condition="{blue4}++isset{blue}" x="10%" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area> 
 	</viewelement>
 	<viewelement name="footer_ver">
-		<area  x="41%" y="92%" width="14%" height="5%" layer="3">
+		<area x="41%" y="92%" width="14%" height="5%" layer="3">
 			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
-			<drawtext condition="{red1}" x="9%" y="{areaheight}*0.15"  font="{light}" fontsize="60%" color="{clrLightGray}" text="{red}" />
-			<drawimage  condition="{red1}++isset{red}" x="3%" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
+			<drawtext condition="{red1}" x="9%" y="{areaheight}*0.15" font="{light}" fontsize="60%" color="{clrLightGray}" text="{red}" />
+			<drawimage condition="{red1}++isset{red}" x="3%" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
 			<drawtext condition="{green1}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{green}" />
-			<drawimage  condition="{green1}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
+			<drawimage condition="{green1}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
 			<drawtext condition="{yellow1}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{yellow}" />
-			<drawimage  condition="{yellow1}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
+			<drawimage condition="{yellow1}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
 			<drawtext condition="{blue1}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{blue}" />
-			<drawimage  condition="{blue1}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />           
+			<drawimage condition="{blue1}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area>
-        <area x="55%" y="92%" width="14%" height="5%" layer="3">
+		<area x="55%" y="92%" width="14%" height="5%" layer="3">
 			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
 			<drawtext condition="{red2}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{red}" />
-			<drawimage  condition="{red2}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />           
-			<drawtext condition="{green2}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{green}" />
-			<drawimage  condition="{green2}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
+			<drawimage condition="{red2}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" /><drawtext condition="{green2}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{green}" />
+			<drawimage condition="{green2}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
 			<drawtext condition="{yellow2}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{yellow}" />
-			<drawimage  condition="{yellow2}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />                    
+			<drawimage condition="{yellow2}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
 			<drawtext condition="{blue2}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{blue}" />
-			<drawimage  condition="{blue2}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
+			<drawimage condition="{blue2}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area>
 		<area x="69%" y="92%" width="14%" height="5%" layer="3">
 			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
 			<drawtext condition="{red3}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{red}" />
-			<drawimage  condition="{red3}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
+			<drawimage condition="{red3}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
 			<drawtext condition="{green3}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{green}" />
-			<drawimage  condition="{green3}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
+			<drawimage condition="{green3}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
 			<drawtext condition="{yellow3}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{yellow}" />
-			<drawimage  condition="{yellow3}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
+			<drawimage condition="{yellow3}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
 			<drawtext condition="{blue3}" x="0" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{blue}" />
-			<drawimage  condition="{blue3}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
+			<drawimage condition="{blue3}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area>
 		<area x="81%" y="92%" width="15%" height="5%" layer="3">
 			<drawtext condition="{red4}" x="20" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{red}" />
-			<drawimage  condition="{red4}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
+			<drawimage condition="{red4}++isset{red}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonRedMain" />
 			<drawtext condition="{green4}" x="20" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{green}" />
-			<drawimage  condition="{green4}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
+			<drawimage condition="{green4}++isset{green}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonGreenMain" />
 			<drawtext condition="{yellow4}" x="20" y="{areaheight}*0.15" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{yellow}" />
-			<drawimage  condition="{yellow4}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
+			<drawimage condition="{yellow4}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />
 			<drawtext condition="{blue4}" x="37%" y="{areaheight}*0.15" font="{light}" fontsize="60%" color="{clrLightGray}" text="{blue}" />
-			<drawimage  condition="{blue4}++isset{blue}" x="10%" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
+			<drawimage condition="{blue4}++isset{blue}" x="10%" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area> 
 	</viewelement>
     <!-- Available Variables time:
@@ -278,7 +277,7 @@
 			<drawimage imagetype="skinpart" path="timeLine_hor" x="0" y="0" width="100%" height="100%"/>
 		</area>
 		<area layer="3">
-			<drawtext condition="{fullhour}" x="5%"  font="{light}" fontsize="70%" color="{clrWhite}" text="{timestring}" />
+			<drawtext condition="{fullhour}" x="5%" font="{light}" fontsize="70%" color="{clrWhite}" text="{timestring}" />
 			<drawtext condition="not{fullhour}" x="5%" font="{light}" fontsize="70%" color="{clrLightGray}" text="{timestring}" />
 		</area>
 	</grid>
@@ -354,7 +353,7 @@
 		</area>
 		<area layer="2">
 			<drawtext condition="not{dummy}++not{timer}" x="5%" y="15%" width="94%" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
-			<drawtext condition="not{dummy}++{timer}" x="5%" y="15%" width="94%" font="{light}" fontsize="65%" color="{clrRed}" text="{title}" />            
+			<drawtext condition="not{dummy}++{timer}" x="5%" y="15%" width="94%" font="{light}" fontsize="65%" color="{clrRed}" text="{title}" />
 			<drawtext condition="{dummy}" x="5%" valign="center" width="94%" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area layer="3">
@@ -385,7 +384,7 @@
 		<area layer="4">
 			<drawimage condition="not{dummy}++{switchtimer}" imagetype="icon" animtype="blink" animfreq="700" path="switchMarker" x="{areawidth}-{areawidth}*0.15" y="{areaheight}-{areawidth}*0.15" width="{areawidth}*0.1" height="{areawidth}*0.1"/>
 		</area>
-    </grid>
+	</grid>
 
     <!-- Tokens available in channeljump
     {channel}                current user input for channel jump
