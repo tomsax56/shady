@@ -3,6 +3,7 @@ shady-skin Revision History
 
 2016-04-10:
 - Added lost equal sign and removed redundant whitespaces in tvguideng-root
+- Optimized tablabels in detailviews
 
 2016-04-07:
 - Added marker for switchtimer in tvguideng
