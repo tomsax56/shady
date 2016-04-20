@@ -1,6 +1,10 @@
 shady-skin Revision History
 ----------------------------------
 
+2016-04-20:
+- Added setup for epg2vdrShowHostname
+- Added setup if skindesigner is patched for epg2vdr
+
 2016-04-18:
 - First steps with epg2vdr
 - New icons for remote-timers
