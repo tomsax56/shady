@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2016-04-27:
+- Fixed scrollareas in displaymenutimer
+
 2016-04-20:
 - Added setup for epg2vdrShowHostname
 - Added setup if skindesigner is patched for epg2vdr
