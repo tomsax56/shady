@@ -54,11 +54,15 @@
 			<parameter type="int" name="07_notNewWatched-recordingsMarker" min="0" max="9" displaytext="{tr(07_notNewWatched-recordingsMarker)}">6</parameter>
 		</submenu>
 		<submenu name="Plugins" displaytext="Plugins">
+			<parameter type="separator" name="epg2vdr" displaytext="Plugin epg2vdr"/>
 			<parameter type="bool" name="epg2vdr-skdPatch" displaytext="{tr(epg2vdr-skdPatch)}">0</parameter>
 			<parameter type="bool" name="epg2vdrShowHostname" displaytext="{tr(epg2vdrShowHostname)}">1</parameter>
 			<parameter type="int" name="hostnameChars" min="5" max="12" displaytext="{tr(hostnameChars)}">8</parameter>
+			<parameter type="separator" name="plex" displaytext="Plugin plex"/>
 			<parameter type="string" name="plexDetail" displaytext="{tr(plexDetail)}" options="shadyStyle,fanartStyle">0</parameter>
+			<parameter type="separator" name="systeminfo" displaytext="Plugin systeminfo"/>
 			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
+			<parameter type="separator" name="tvguideng" displaytext="Plugin TVguideNG"/>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
 		</submenu>
 		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
