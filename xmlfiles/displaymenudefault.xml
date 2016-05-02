@@ -96,16 +96,16 @@
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
 				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
 			</area>
-			<areascroll condition="{separator}++{fritzbox}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="25%" layer="4">
+			<area condition="{separator}++{fritzbox}" x="5%" width="25%" layer="4">
 				<drawtext x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
-			</areascroll>
+			</area>
 			<area x="30%" condition="{separator}++{fritzbox}" width="62%" layer="4">
 				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
 			</area>
 <!--setup-plex-UUID-->
-			<areascroll condition="{separator}++{setup}++{column2set}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="45%" layer="4">
+			<area condition="{separator}++{setup}++{column2set}" x="5%" width="45%" layer="4">
 				<drawtext x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{column1}" />
-			</areascroll>
+			</area>
 			<area x="50%" condition="{separator}++{setup}++{column2set}" width="42%" layer="4">
 				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrHigh}" text="{column2}" />
 			</area>
@@ -116,9 +116,9 @@
 				<drawtext align="center" valign="center"  font="{light}" fontsize="70%" color="{clrHigh}" text="{column1}" />
 			</area>
 <!-- setup-->
-			<areascroll condition="not{separator}++{setup}++{column2set}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="45%" layer="4">
+			<area condition="not{separator}++{setup}++{column2set}" x="5%" width="45%" layer="4">
 				<drawtext x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
-			</areascroll>
+			</area>
 			<area x="50%" condition="not{separator}++{setup}++strnotcontains({column1}, 'Marker')" width="42%" layer="4">
 				<drawtext condition="strcontains({column1}, '(4 = Detail')++strnotequal({column2}, '4')" align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
 				<drawtext condition="strnotcontains({column1}, '(4 = Detail')" align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
