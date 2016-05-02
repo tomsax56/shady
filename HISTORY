@@ -3,6 +3,7 @@ shady-skin Revision History
 
 2016-05-02:
 - Revoved some areascrolls in displaymenudefault
+- Added setup for number of hostnamechars in epg2vdr-menu Timer
 
 2016-04-27:
 - Fixed scrollareas in displaymenutimer

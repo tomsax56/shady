@@ -27,6 +27,7 @@
         <color name="clrRecMenuBorderBottom">FF171717</color>
         <color name="clrPlexFill">EB000000</color>
         <color name="clrBar">C8009CD7</color>
+        <color name="clrRecMenuConflTop">FF373938</color>
     </colors>
     <!--
     these variables can be used everywhere in the templates

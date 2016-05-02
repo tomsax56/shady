@@ -56,6 +56,7 @@
 		<submenu name="Plugins" displaytext="Plugins">
 			<parameter type="bool" name="epg2vdr-skdPatch" displaytext="{tr(epg2vdr-skdPatch)}">0</parameter>
 			<parameter type="bool" name="epg2vdrShowHostname" displaytext="{tr(epg2vdrShowHostname)}">1</parameter>
+			<parameter type="int" name="hostnameChars" min="5" max="12" displaytext="{tr(hostnameChars)}">8</parameter>
 			<parameter type="string" name="plexDetail" displaytext="{tr(plexDetail)}" options="shadyStyle,fanartStyle">0</parameter>
 			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
@@ -312,6 +313,10 @@
 		<token name="tr(epg2vdrShowHostname)">
 			<trans lang="en_EN">Shown hostname of remote-timers in epg2vdr-menu 'Timer'</trans>
 			<trans lang="de_DE">Zeige Hostname der Remote-Timer im epg2vdr-Menü 'Timer'</trans>
+		</token>
+		<token name="tr(hostnameChars)">
+			<trans lang="en_EN">Number of chars of Hostname in epg2vdr-menu 'Timer'</trans>
+			<trans lang="de_DE">Anzahl der Zeichen des Hostnamens im epg2vdr-Menü 'Timer'</trans>
 		</token>
 		<token name="tr(plexDetail)">
 			<trans lang="en_EN">Background Plex-Detail</trans>

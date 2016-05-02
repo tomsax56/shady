@@ -63,9 +63,12 @@
 					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 				</areascroll>
-				<areascroll condition="{isremote}++{epg2vdr-skdPatch}++{epg2vdrShowHostname}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.555" width="38%" layer="3">
-					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{vdrname} - {title}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{vdrname} - {title}"/>
+				<areascroll condition="{isremote}++{epg2vdrShowHostname}++{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.555" width="{areawidth}*0.38" layer="3">
+					<drawtext name="vdrname" valign="center" width="{areawidth}*0.0216*{hostnameChars}" font="{light}" fontsize="70%" color="{clrLightGray}" text="{vdrname}"/>
+					<drawrectangle x="{areawidth}*0.0216*{hostnameChars}" y="1" width="1" height="{areaheight}-2" color="{clrBlack}" />
+					<drawrectangle x="{areawidth}*0.0216*{hostnameChars}+1" y="1" width="1" height="{areaheight}-2" color="{clrRecMenuConflTop}" />
+					<drawtext condition="{current}" x="{areawidth}*0.0216*{hostnameChars}+10" name="timertext" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+					<drawtext condition="not{current}" x="{areawidth}*0.0216*{hostnameChars}+10" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 				</areascroll>
 				<areascroll condition="{isremote}++{epg2vdr-skdPatch}++not{epg2vdrShowHostname}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.555" width="38%" layer="3">
 					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
@@ -103,9 +106,12 @@
 					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 				</areascroll>
-				<areascroll condition="{isremote}++{epg2vdr-skdPatch}++{epg2vdrShowHostname}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="60%" width="34%" layer="3">
-					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{vdrname} - {title}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{vdrname} - {title}"/>
+				<areascroll condition="{isremote}++{epg2vdrShowHostname}++{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="60%" width="{areawidth}*0.34" layer="3">
+					<drawtext name="vdrname" valign="center" width="{areawidth}*0.0242*{hostnameChars}" font="{light}" fontsize="70%" color="{clrLightGray}" text="{vdrname}"/>
+					<drawrectangle x="{areawidth}*0.0242*{hostnameChars}" y="1" width="1" height="{areaheight}-2" color="{clrBlack}" />
+					<drawrectangle x="{areawidth}*0.0242*{hostnameChars}+1" y="1" width="1" height="{areaheight}-2" color="{clrRecMenuConflTop}" />
+					<drawtext condition="{current}" x="{areawidth}*0.0242*{hostnameChars}+10" name="timertext" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+					<drawtext condition="not{current}" x="{areawidth}*0.0242*{hostnameChars}+10" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 				</areascroll>
 			</areacontainer>
 		</listelement>
