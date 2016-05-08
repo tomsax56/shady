@@ -55,7 +55,7 @@
 				<area condition="{isremote}++{epg2vdr-skdPatch}" x="{areawidth}*0.535" width="2%" layer="4">
 					<drawimage condition="{flagactive}" x="10%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
 					<drawimage condition="not{flagactive}" x="10%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
-					<drawimage condition="{flagrecording}" x="10%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
+					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="10%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
 				</area>
 				<areascroll condition="not{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.555" width="38%" layer="3">
 					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
@@ -93,7 +93,7 @@
 				<area condition="{isremote}++{epg2vdr-skdPatch}" x="{areawidth}*0.5775" width="2%" layer="4">
 					<drawimage condition="{flagactive}" x="10%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
 					<drawimage condition="not{flagactive}" x="10%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
-					<drawimage condition="{flagrecording}" x="10%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
+					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="10%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
 				</area>	
 				<areascroll condition="not{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="60%" width="34%" layer="3">
 					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>

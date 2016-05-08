@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2016-05-08:
+- Fixes for epg2vdr and running timers
+
 2016-05-03:
 - Show even local hostname in epg2vdr-menu Timer
 

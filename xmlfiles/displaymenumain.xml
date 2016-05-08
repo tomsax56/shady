@@ -209,7 +209,7 @@
 					<drawtextbox x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
 					<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
 					<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
-					<drawimage condition="{timers[isremotetimer]}" x="{columnwidth}*0.78" y="78%" width="{columnwidth}*0.16" height="20%" imagetype="skinpart" path="remoteTimers" />
+					<drawimage condition="{timers[isremotetimer]}" x="{columnwidth}*0.08" y="80%" width="{columnwidth}*0.12" height="12%" imagetype="icon" path="remoteTimer" />
 				</loop>
 			</area>
 			<area condition="{showLastrecordings}" x="1%" y="80%" width="44%" height="18%" layer="3">
@@ -218,7 +218,7 @@
 					<drawtextbox x="2%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
 					<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
 					<drawtext condition="{timers[recording]}" align="center" x="10" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
-					<drawimage condition="{timers[isremotetimer]}" x="{columnwidth}*0.8" y="78%" width="{columnwidth}*0.16" height="20%" imagetype="skinpart" path="remoteTimers" />
+					<drawimage condition="{timers[isremotetimer]}" x="{columnwidth}*0.8" y="78%" width="{columnwidth}*0.08" height="10%" imagetype="icon" path="remoteTimer" />
 				</loop>
 			</area>
 		</areacontainer>
@@ -301,7 +301,7 @@
 					<drawtextbox x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
 					<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
 					<drawtext condition="{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
-					<drawimage condition="{timers[isremotetimer]}" x="{columnwidth}*0.78" y="78%" width="{columnwidth}*0.16" height="20%" imagetype="skinpart" path="remoteTimers" />
+					<drawimage condition="{timers[isremotetimer]}" x="{columnwidth}*0.08" y="80%" width="{columnwidth}*0.12" height="12%" imagetype="icon" path="remoteTimer" />
 				</loop>
 			</area>
 			<area condition="{showLastrecordings}" x="21%" y="80%" width="44%" height="18%" layer="3">
@@ -310,7 +310,7 @@
 					<drawtextbox x="2%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
 					<drawtext condition="not{timers[recording]}" align="center" y="78%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[datetime]}"/>
 					<drawtext condition="{timers[recording]}" align="center" x="10" y="78%" font="{light}" fontsize="15%" color="{clrRed}" text="{timers[datetime]}"/>
-					<drawimage condition="{timers[isremotetimer]}" x="{columnwidth}*0.8" y="78%" width="{columnwidth}*0.16" height="20%" imagetype="skinpart" path="remoteTimers" />
+					<drawimage condition="{timers[isremotetimer]}" x="{columnwidth}*0.8" y="78%" width="{columnwidth}*0.08" height="10%" imagetype="icon" path="remoteTimer" />
 				</loop>
 			</area>
 		</areacontainer>
