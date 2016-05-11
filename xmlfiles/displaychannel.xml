@@ -25,11 +25,12 @@
 	</channelinfo>
 
 	<epginfo>
-		<area x="78%" y="95%" width="9%" height="4%" layer="3">
-			<drawtext condition="{currentrecording}" x="0" y="0" animtype="blink" animfreq="1000" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="65%" color="{clrRed}" text="REC" />
-			<drawtext condition="not{currentrecording}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="REC"/>
+		<area condition="{currentrecording}" x="87%" y="77%" width="2%" height="7%" layer="3">
+			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.6*39/57" height="60%" valign="center" />
 		</area>
-		
+		<area condition="{nextrecording}" x="87%" y="{areaheight}*0.875" width="2%" height="7%" layer="3">
+			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.6*39/57" height="60%" valign="center" />
+		</area>
 		<area x="19%" y="77%" width="15%" height="7%" layer="3">
 			<drawtext x="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currentstart} - {currentstop}"/>
 		</area>
@@ -121,10 +122,10 @@
 			<drawtext condition="{hasVT}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="65%" color="{clrHigh}" text="VTX" />
 			<drawtext condition="not{hasVT}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="VTX"/>
 		</area>
-		<!--<area x="78%" y="95%" width="9%" height="4%" layer="3">
+		<area x="78%" y="95%" width="9%" height="4%" layer="3">
 			<drawtext condition="{isRecording}" x="0" y="0" animtype="blink" animfreq="1000" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="65%" color="{clrRed}" text="REC" />
 			<drawtext condition="not{isRecording}" x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="REC"/>
-		</area>-->
+		</area>
 	</statusinfo>
 
 	<audioinfo>
