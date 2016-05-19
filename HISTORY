@@ -4,6 +4,7 @@ shady-skin Revision History
 2016-05-19:
 - Adjustments for timerstates in timermenus
 - Added setup for number of devices in mainmenu
+- Fixed empty cell for hostname in vdr's timermenu
 
 2016-05-11:
 - Reimplemented 'isRecording' and added 'current- and nextrecording' in displaychannel
