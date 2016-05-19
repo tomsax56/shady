@@ -525,8 +525,8 @@
 	</discusage>
 
 	<devices mode="light" delay="{04_devicesDelay}" fadetime="{04_devicesFadetime}">
-		<area condition="eq({indexmainMenuOrientation},0)" x="80%" y="74%" width="16%" height="12%" layer="3">
-			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/2" overflow="cut">
+		<area condition="eq({indexmainMenuOrientation},0)" x="80%" y="74%" width="16%" height="{areaheight}*0.06*{numDevices}" layer="3">
+			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/{numDevices}" overflow="cut">
 				<drawtext name="label" x="5" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{devices[num]}: {devices[type]}" />
 				<drawimage cache="true" x="80%" y="8%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
 				<drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="LiveTV, Recording" />
@@ -536,8 +536,8 @@
 			</loop>
 		</area>
 			
-		<area condition="eq({indexmainMenuOrientation},1)" x="4%" y="74%" width="16%" height="12%" layer="3">
-			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/2" overflow="cut">
+		<area condition="eq({indexmainMenuOrientation},1)" x="4%" y="74%" width="16%" height="{areaheight}*0.06*{numDevices}" layer="3">
+			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/{numDevices}" overflow="cut">
 				<drawtext name="label" x="5" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{devices[num]}: {devices[type]}" />
 				<drawimage cache="true" x="80%" y="8%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
 				<drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="LiveTV, Recording" />
@@ -548,11 +548,11 @@
 		</area>
 	</devices>
 
-	<!--<systemmemory>
-		<area condition="eq({numdevices}, 1})" x="80%" y="80%" width="16%" height="6%" layer="3">
-			<drawtext x="0" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{totalmem}MB/{usedmem}MB" />
+	<vdrstatistics>
+		<area condition="eq({numDevices}, 1)" x="80%" y="80%" width="17%" height="6%" layer="3">
+			<drawtext x="0" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="VDR-CPU: {vdrcpu}%   MEM: {vdrmem}%" />
 		</area>
-	</systemmemory>-->
+    </vdrstatistics>
 
 	<currentweather delay="{08_currentweatherDelay}" fadetime="{08_currentweatherFadetime}" >
 		<areacontainer condition="eq({indexmainMenuOrientation},0)">

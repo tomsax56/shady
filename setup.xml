@@ -19,6 +19,7 @@
 		<submenu name="MainMenu" displaytext="{tr(MainMenu)}">
 			<parameter type="bool" name="showLastrecordings" displaytext="{tr(showLastrecordings)}">1</parameter>
 			<parameter type="string" name="mainMenuOrientation" displaytext="{tr(mainMenuOrientation)}" options="right, left">0</parameter>
+			<parameter type="int" name="numDevices" min="1" max="2" displaytext="{tr(numDevices)}">2</parameter>
 		</submenu>
 		<submenu name="MenuItems" displaytext="{tr(menuItems)}">
 			<parameter type="int" name="numShortMenuitems" min="8" max="10" displaytext="{tr(numShortMenuitems)}">10</parameter>
@@ -92,6 +93,10 @@
 		<token name="tr(mainMenuOrientation)">
 			<trans lang="en_EN">Position list main- and setupmenu</trans>
 			<trans lang="de_DE">Position Liste Haupt- und Setupmenü</trans>
+		</token>
+		<token name="tr(numDevices)">
+			<trans lang="en_EN">Number of devices</trans>
+			<trans lang="de_DE">Anzahl der Devices</trans>
 		</token>
 		<token name="tr(left)">
 			<trans lang="en_EN">left</trans>
