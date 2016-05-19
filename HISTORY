@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2016-05-19:
+- Adjustments for timerstates in timermenus
+
 2016-05-11:
 - Reimplemented 'isRecording' and added 'current- and nextrecording' in displaychannel
 

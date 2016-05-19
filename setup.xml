@@ -55,7 +55,6 @@
 		</submenu>
 		<submenu name="Plugins" displaytext="Plugins">
 			<parameter type="separator" name="epg2vdr" displaytext="Plugin epg2vdr"/>
-			<parameter type="bool" name="epg2vdr-skdPatch" displaytext="{tr(epg2vdr-skdPatch)}">0</parameter>
 			<parameter type="bool" name="epg2vdrShowHostname" displaytext="{tr(epg2vdrShowHostname)}">1</parameter>
 			<parameter type="int" name="hostnameChars" min="5" max="12" displaytext="{tr(hostnameChars)}">8</parameter>
 			<parameter type="separator" name="plex" displaytext="Plugin plex"/>
