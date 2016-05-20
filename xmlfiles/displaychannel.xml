@@ -25,11 +25,11 @@
 	</channelinfo>
 
 	<epginfo>
-		<area condition="{currentrecording}" x="87%" y="77%" width="2%" height="7%" layer="3">
-			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.6*39/57" height="60%" valign="center" />
+		<area condition="{currentrecording}" x="{areawidth}*0.177" y="77%" width="2%" height="7%" layer="3">
+			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.5*39/57" height="50%" valign="center" />
 		</area>
-		<area condition="{nextrecording}" x="87%" y="{areaheight}*0.875" width="2%" height="7%" layer="3">
-			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.6*39/57" height="60%" valign="center" />
+		<area condition="{nextrecording}" x="{areawidth}*0.177" y="{areaheight}*0.87" width="2%" height="7%" layer="3">
+			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.5*39/57" height="50%" valign="center" />
 		</area>
 		<area x="19%" y="77%" width="15%" height="7%" layer="3">
 			<drawtext x="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currentstart} - {currentstop}"/>

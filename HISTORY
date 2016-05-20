@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2016-05-20:
+- Changed position of marker for current and nextrecording in displaychannel
+
 2016-05-19:
 - Adjustments for timerstates in timermenus
 - Added setup for number of devices in mainmenu
