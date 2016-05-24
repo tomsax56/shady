@@ -18,350 +18,437 @@
         <token name="tr(activetimers)">
             <trans lang="en_EN">Active Timers</trans>
             <trans lang="de_DE">Aktive Timer</trans>
+            <trans lang="it_IT">Timer attivi</trans>
         </token>
         <token name="tr(activetimer)">
             <trans lang="en_EN">Active Timer</trans>
             <trans lang="de_DE">Aktiver Timer</trans>
+            <trans lang="it_IT">Timer attivo</trans>
         </token>
         <token name="tr(conflict)">
             <trans lang="en_EN">Conflict</trans>
             <trans lang="de_DE">Konflikt</trans>
+            <trans lang="it_IT">Conflitto</trans>
         </token>        
         <token name="tr(conflicts)">
             <trans lang="en_EN">Conflicts</trans>
             <trans lang="de_DE">Konflikte</trans>
+            <trans lang="it_IT">Conflitti</trans>
         </token>
         <token name="tr(lastrecordings)">
             <trans lang="en_EN">Last recordings</trans>
             <trans lang="de_DE">Letzte Aufzeichnungen</trans>
+            <trans lang="it_IT">Ultime registrazioni</trans>
         </token>
         <token name="tr(last)">
             <trans lang="en_EN">Last</trans>
             <trans lang="de_DE">Letzte</trans>
+            <trans lang="it_IT">Ultimo</trans>
         </token>
         <token name="tr(disc)">
             <trans lang="en_EN">Disc</trans>
             <trans lang="de_DE">Disk</trans>
+            <trans lang="it_IT">Disco</trans>
         </token>
         <token name="tr(free)">
             <trans lang="en_EN">free</trans>
             <trans lang="de_DE">frei</trans>
+            <trans lang="it_IT">libero</trans>
         </token>
         <token name="tr(hours)">
             <trans lang="en_EN">hours</trans>
             <trans lang="de_DE">Stunden</trans>
+            <trans lang="it_IT">ore</trans>
         </token>
         <token name="tr(reruns)">
             <trans lang="en_EN">Reruns</trans>
             <trans lang="de_DE">Wiederholungen</trans>
+            <trans lang="it_IT">Riavvii</trans>
         </token>
         <token name="tr(rerunsof)">
             <trans lang="en_EN">Reruns of</trans>
             <trans lang="de_DE">Wiederholungen von</trans>
+            <trans lang="it_IT">Riavvi di</trans>
         </token>
         <token name="tr(actors)">
             <trans lang="en_EN">Actors</trans>
             <trans lang="de_DE">Schauspieler</trans>
+            <trans lang="it_IT">Attori</trans>
         </token>
         <token name="tr(episode)">
             <trans lang="en_EN">Episode</trans>
             <trans lang="de_DE">Folge</trans>
+            <trans lang="it_IT">Episodio</trans>
         </token>
         <token name="tr(season)">
             <trans lang="en_EN">Season</trans>
             <trans lang="de_DE">Staffel</trans>
+            <trans lang="it_IT">Stagione</trans>
         </token>
         <token name="tr(gueststars)">
             <trans lang="en_EN">Guest Stars</trans>
             <trans lang="de_DE">Gaststars</trans>
+            <trans lang="it_IT">Guest Stars</trans>
         </token>
         <token name="tr(seriesfirstaired)">
             <trans lang="en_EN">Series First Aired</trans>
             <trans lang="de_DE">Erstausstrahlung der Serie</trans>
+            <trans lang="it_IT">Prima uscita della serie</trans>
         </token>
         <token name="tr(episodefirstaired)">
             <trans lang="en_EN">Episode First Aired</trans>
             <trans lang="de_DE">Erstausstrahlung der Episode</trans>
+            <trans lang="it_IT">Prima uscita dell'episodio</trans>
         </token>
         <token name="tr(network)">
             <trans lang="en_EN">Network</trans>
             <trans lang="de_DE">TV Station</trans>
+            <trans lang="en_EN">Network</trans>
         </token>
         <token name="tr(genre)">
             <trans lang="en_EN">Genre</trans>
             <trans lang="de_DE">Genre</trans>
+            <trans lang="it_IT">Genere</trans>
         </token>
         <token name="tr(status)">
             <trans lang="en_EN">Status</trans>
             <trans lang="de_DE">Status</trans>
+            <trans lang="it_IT">Stato</trans>
         </token>
         <token name="tr(rating)">
             <trans lang="en_EN">Rating</trans>
             <trans lang="de_DE">Bewertung</trans>
+            <trans lang="it_IT">Voto</trans>
         </token>
         <token name="tr(episoderating)">
             <trans lang="en_EN">Episode Rating</trans>
             <trans lang="de_DE">Bewertung der Folge</trans>
+            <trans lang="it_IT">Voto episodio</trans>
         </token>
         <token name="tr(recinfo)">
             <trans lang="en_EN">Recordinginfos</trans>
             <trans lang="de_DE">Aufnahmeinfos</trans>
+            <trans lang="it_IT">Informazioni registrazione</trans>
         </token>
         <token name="tr(seriesgalery)">
             <trans lang="en_EN">Series Galery</trans>
             <trans lang="de_DE">Serien Galerie</trans>
+            <trans lang="it_IT">Catalogo Serie</trans>
         </token>
         <token name="tr(moviegalery)">
             <trans lang="en_EN">Movie Galery</trans>
             <trans lang="de_DE">Spielfilm Galerie</trans>
+            <trans lang="it_IT">Catalogo Film</trans>
         </token>
         <token name="tr(originaltitle)">
             <trans lang="en_EN">Original Title</trans>
             <trans lang="de_DE">Originaltitel</trans>
+            <trans lang="it_IT">Titolo originale</trans>
         </token>
         <token name="tr(budget)">
             <trans lang="en_EN">Budget</trans>
             <trans lang="de_DE">Budget</trans>
+            <trans lang="it_IT">Budget</trans>
         </token>
         <token name="tr(revenue)">
             <trans lang="en_EN">Revenue</trans>
             <trans lang="de_DE">Einnahmen</trans>
+            <trans lang="it_IT">Incassi</trans>
         </token>
         <token name="tr(adult)">
             <trans lang="en_EN">Adult</trans>
             <trans lang="de_DE">Nur für Erwachsene</trans>
+            <trans lang="it_IT">Adulti</trans>
         </token>
         <token name="tr(releasedate)">
             <trans lang="en_EN">Release Date</trans>
             <trans lang="de_DE">Erscheinungsdatum</trans>
+            <trans lang="it_IT">Data di produzione</trans>
         </token>
         <token name="tr(runtime)">
             <trans lang="en_EN">Runtime</trans>
             <trans lang="de_DE">Laufzeit</trans>
+            <trans lang="it_IT">Runtime</trans>
         </token>
         <token name="tr(popularity)">
             <trans lang="en_EN">Popularity</trans>
             <trans lang="de_DE">Popularität</trans>
+            <trans lang="it_IT">Popolarità</trans>
         </token>
         <token name="tr(voteaverage)">
             <trans lang="en_EN">Vote Average</trans>
             <trans lang="de_DE">Durchschnittliche Wertung</trans>
+            <trans lang="it_IT">Voto medio</trans>
         </token>
         <token name="tr(homepage)">
             <trans lang="en_EN">Homepage</trans>
             <trans lang="de_DE">Homepage</trans>
+            <trans lang="it_IT">Homepage</trans>
         </token>
         <token name="tr(recsize)">
             <trans lang="en_EN">Recording size</trans>
             <trans lang="de_DE">Größe der Aufzeichnung</trans>
+            <trans lang="it_IT">Dimensione registrazione</trans>
         </token>
         <token name="tr(recsizecutted)">
             <trans lang="en_EN">Cutted Recording Size</trans>
             <trans lang="de_DE">Größe der geschnittenen Aufzeichnung</trans>
+            <trans lang="it_IT">Dimensione registrazione tagliata</trans>
         </token>
         <token name="tr(reclength)">
             <trans lang="en_EN">Recording Length</trans>
             <trans lang="de_DE">Länge der Aufzeichnung</trans>
+            <trans lang="it_IT">Lnghezza registrazzione</trans>
         </token>
         <token name="tr(reclengthcutted)">
             <trans lang="en_EN">Cutted Recording Length</trans>
             <trans lang="de_DE">Länge der geschnittenen Aufzeichnung</trans>
+            <trans lang="it_IT">Lunghezza registrazione tagliata</trans>
         </token>
         <token name="tr(bitrate)">
             <trans lang="en_EN">Bit Rate</trans>
             <trans lang="de_DE">Bitrate</trans>
+            <trans lang="it_IT">Bit rate</trans>
         </token>
         <token name="tr(format)">
             <trans lang="en_EN">Format</trans>
             <trans lang="de_DE">Format</trans>
+            <trans lang="en_EN">Formato</trans>
         </token>
         <token name="tr(searchtimer)">
             <trans lang="en_EN">Searchtimer</trans>
             <trans lang="de_DE">Suchtimer</trans>
+            <trans lang="it_IT">Cerca timer</trans>
         </token>
         <token name="tr(volume)">
             <trans lang="en_EN">Volume</trans>
             <trans lang="de_DE">Lautstärke</trans>
+            <trans lang="it_IT">Volume</trans>
         </token>
          <token name="tr(mute)">
             <trans lang="en_EN">Mute</trans>
             <trans lang="de_DE">Stumm</trans>
+            <trans lang="it_IT">Muto</trans>
         </token>      
         <token name="tr(pause)">
             <trans lang="en_EN">Pause</trans>
             <trans lang="de_DE">Pause</trans>
+            <trans lang="it_IT">Pausa</trans>
         </token>
          <token name="tr(new)">
             <trans lang="en_EN">new</trans>
             <trans lang="de_DE">neu</trans>
+            <trans lang="it_IT">nuovo</trans>
         </token>
          <token name="tr(recording)">
             <trans lang="en_EN">Recording</trans>
             <trans lang="de_DE">Aufzeichnung</trans>
+            <trans lang="it_IT">Registrazione</trans>
         </token>
           <token name="tr(recordings)">
             <trans lang="en_EN">Recordings</trans>
             <trans lang="de_DE">Aufzeichnungen</trans>
+            <trans lang="it_IT">Registrazioni</trans>
         </token>       
         <token name="tr(temp)">
             <trans lang="en_EN">Temperature</trans>
             <trans lang="de_DE">Temperatur</trans>
+            <trans lang="it_IT">Temperatura</trans>
         </token>
         <token name="tr(apparenttemp)">
             <trans lang="en_EN">Felt Temperature</trans>
             <trans lang="de_DE">Gefühlte Temperatur</trans>
+            <trans lang="it_IT">Temperatura percepita</trans>
         </token>
         <token name="tr(todaymin)">
             <trans lang="en_EN">minimum today</trans>
             <trans lang="de_DE">heutiges Minimum</trans>
+            <trans lang="it_IT">minima oggi</trans>
         </token>
         <token name="tr(todaymax)">
             <trans lang="en_EN">maximum today</trans>
             <trans lang="de_DE">heutiges Maximum</trans>
+            <trans lang="it_IT">massima oggi</trans>
         </token>
         <token name="tr(precipitationprobability)">
             <trans lang="en_EN">Precipitation Probality</trans>
             <trans lang="de_DE">Regenwahrscheinlichkeit</trans>
+            <trans lang="it_IT">Probabilità precipitazioni</trans>
         </token>
         <token name="tr(precipitationintensity)">
             <trans lang="en_EN">Precipitation Intensity</trans>
             <trans lang="de_DE">Regenmenge</trans>
+            <trans lang="it_IT">Intensità precipitazioni</trans>
         </token>
         <token name="tr(precipitationtype)">
             <trans lang="en_EN">Precipitation Type</trans>
             <trans lang="de_DE">Niederschlagsart</trans>
+            <trans lang="it_IT">Tipo precipitazioni</trans>
         </token>
         <token name="tr(humidity)">
             <trans lang="en_EN">Humidity</trans>
             <trans lang="de_DE">Luftfeuchtigkeit</trans>
+            <trans lang="it_IT">Umidità</trans>
         </token>
         <token name="tr(apparenttemp)">
             <trans lang="en_EN">Felt Temperature</trans>
             <trans lang="de_DE">Gefühlte Temperatur</trans>
+            <trans lang="it_IT">Temperatura percepita</trans>
         </token>
         <token name="tr(windbearing)">
             <trans lang="en_EN">Wind Bearing</trans>
             <trans lang="de_DE">Windrichtung</trans>
+            <trans lang="it_IT">Direzione vento</trans>
         </token>
         <token name="tr(windspeed)">
             <trans lang="en_EN">Wind Speed</trans>
             <trans lang="de_DE">Windgeschwindigkeit</trans>
+            <trans lang="it_IT">Velocità vento</trans>
         </token>
         <token name="tr(cloudcover)">
             <trans lang="en_EN">Cloud Cover</trans>
             <trans lang="de_DE">Bewölkung</trans>
+            <trans lang="it_IT">Copertura nuvole</trans>
         </token>
         <token name="tr(pressure)">
             <trans lang="en_EN">Pressure</trans>
             <trans lang="de_DE">Luftdruck</trans>
+            <trans lang="it_IT">Pressione</trans>
         </token>
         <token name="tr(ozone)">
             <trans lang="en_EN">Ozone</trans>
             <trans lang="de_DE">Ozon</trans>
+            <trans lang="it_IT">Ozono</trans>
         </token>
         <token name="tr(visibility)">
             <trans lang="en_EN">visibility</trans>
             <trans lang="de_DE">Sicht</trans>
+            <trans lang="it_IT">Ozono</trans>
         </token>
         <token name="tr(conditions)">
             <trans lang="en_EN">Weather Conditions</trans>
             <trans lang="de_DE">Wetterlage</trans>
+            <trans lang="it_IT">Condizioni del tempo</trans>
         </token>
         <token name="tr(from)">
             <trans lang="en_EN">from</trans>
             <trans lang="de_DE">aus</trans>
+            <trans lang="it_IT">da</trans>
         </token>
         <token name="tr(felt)">
             <trans lang="en_EN">felt</trans>
             <trans lang="de_DE">gefühlt</trans>
+            <trans lang="it_IT">percepita</trans>
         </token>
         <token name="tr(min)">
             <trans lang="en_EN">min</trans>
             <trans lang="de_DE">min</trans>
+            <trans lang="it_IT">min</trans>
         </token>
         <token name="tr(max)">
             <trans lang="en_EN">max</trans>
             <trans lang="de_DE">max</trans>
+            <trans lang="it_IT">max</trans>
         </token>
        <token name="tr(for)">
             <trans lang="en_EN">for</trans>
             <trans lang="de_DE">für</trans>
+            <trans lang="it_IT">per</trans>
         </token>
         <token name="tr(recordedat)">
         <trans lang="en_EN">rec at</trans>
             <trans lang="de_DE">rec am</trans>
+            <trans lang="it_IT">reg a</trans>
         </token>
        <token name="tr(replayends)">
             <trans lang="en_EN">Replay ends</trans>
             <trans lang="de_DE">Wiedergabe endet</trans>
+            <trans lang="it_IT">Riproduzione finisce</trans>
         </token>
         <token name="tr(Plex for VDR)">
 			<trans lang="en_EN">Plex for VDR</trans>
 			<trans lang="de_DE">Plex für VDR</trans>
+			<trans lang="it_IT">Plex per VDR</trans>
 		</token>
 		<token name="tr(For_Cover-View_please_set)">
 			<trans lang="en_EN">For Cover-View please set</trans>
 			<trans lang="de_DE">Für den Plakat-Modus setze</trans>
+			<trans lang="it_IT">Per visualizzare copertina impostare</trans>
 		</token>
 		<token name="tr(For_Detail-View_please_set)">
 			<trans lang="en_EN">For Detail-View please set</trans>
 			<trans lang="de_DE">Für den Detail-Modus setze</trans>
+			<trans lang="it_IT">Per visualizzare dettagli impostare</trans>
 		</token>
 		<token name="tr(For_List-View_please_set)">
 			<trans lang="en_EN">For List-View please set</trans>
 			<trans lang="de_DE">Für den Listen-Modus setze</trans>
+			<trans lang="it_IT">Per visualizzare la lista impostare</trans>
 		</token>
 		<token name="tr(Cover_Grid_Columns)">
 			<trans lang="en_EN">Cover-Grid Columns</trans>
 			<trans lang="de_DE">Plakat-Modus Spalten</trans>
+			<trans lang="it_IT">Colonne griglia copertine</trans>
 		</token>
 		<token name="tr(Detail_Grid_Columns)">
 			<trans lang="en_EN">Detail-Grid Columns</trans>
 			<trans lang="de_DE">Detail-Modus Spalten</trans>
+			<trans lang="it_IT">Colonne griglia dettagli</trans>
 		</token>
 		<token name="tr(List_Grid_Columns)">
 			<trans lang="en_EN">List-Grid Columns</trans>
 			<trans lang="de_DE">Listen-Modus Spalten</trans>
+			<trans lang="it_IT">Colonne griglia liste</trans>
 		</token>
 		<token name="tr(Cover_Grid_Rows)">
 			<trans lang="en_EN">Cover-Grid Rows</trans>
 			<trans lang="de_DE">Plakat-Modus Reihen</trans>
+			<trans lang="it_IT">Righe griglia copertine</trans>
 		</token>
 		<token name="tr(Detail_Grid_Rows)">
 			<trans lang="en_EN">Detail-Grid Rows</trans>
 			<trans lang="de_DE">Detail-Modus Reihen</trans>
+			<trans lang="it_IT">Righe griglia dettagli</trans>
 		</token>
 		<token name="tr(List_Grid_Rows)">
 			<trans lang="en_EN">List-Grid Rows</trans>
 			<trans lang="de_DE">Listen-Modus Reihen</trans>
+			<trans lang="it_IT">Righe griglia liste</trans>
 		</token>
 		<token name="tr(List_Grid_Rows)">
 			<trans lang="en_EN">List-Grid Rows</trans>
 			<trans lang="de_DE">Listen-Modus Reihen</trans>
+			<trans lang="it_IT">Righe griglia liste</trans>
 		</token>
 		<token name="tr(Supported_Plugins)">
 			<trans lang="en_EN">Supported Plugins</trans>
 			<trans lang="de_DE">Unterstützte Plugins</trans>
+			<trans lang="it_IT">Plugin supportati</trans>
 		</token>
 		<token name="tr(Used_Fonts)">
 			<trans lang="en_EN">Used Fonts</trans>
 			<trans lang="de_DE">Benötigte Fonts</trans>
+			<trans lang="it_IT">Font utilizzati</trans>
 		</token>
 		<token name="tr(installed)">
 			<trans lang="en_EN">installed</trans>
 			<trans lang="de_DE">installiert</trans>
+			<trans lang="it_IT">installato</trans>
 		</token>
 		<token name="tr(not_installed)">
 			<trans lang="en_EN">not installed</trans>
 			<trans lang="de_DE">nicht installiert</trans>
+			<trans lang="it_IT">non installato</trans>
 		</token>
 		<token name="tr(Large_Screenshots)">
 			<trans lang="en_EN">Large Screenshots</trans>
 			<trans lang="de_DE">Große Screenshots</trans>
+			<trans lang="it_IT">Screenshots grandi</trans>
 		</token>
 		<token name="tr(Detail_View)">
 			<trans lang="en_EN">Detailview</trans>
 			<trans lang="de_DE">Detailansicht</trans>
+			<trans lang="it_IT">Vista dettagliate</trans>
 		</token>
 	</translations>
     <!--

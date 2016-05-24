@@ -89,42 +89,52 @@
 		<token name="tr(MainMenu)">
 			<trans lang="en_EN">Main menu</trans>
 			<trans lang="de_DE">Hauptmenü</trans>
+			<trans lang="it_IT">Menù principale</trans>
 		</token>
 		<token name="tr(mainMenuOrientation)">
 			<trans lang="en_EN">Position list main- and setupmenu</trans>
 			<trans lang="de_DE">Position Liste Haupt- und Setupmenü</trans>
+			<trans lang="it_IT">Posizione lista principale e setup del menù</trans>
 		</token>
 		<token name="tr(numDevices)">
 			<trans lang="en_EN">Number of devices</trans>
 			<trans lang="de_DE">Anzahl der Devices</trans>
+			<trans lang="it_IT">Numero dei devices</trans>
 		</token>
 		<token name="tr(left)">
 			<trans lang="en_EN">left</trans>
 			<trans lang="de_DE">links</trans>
+			<trans lang="it_IT">sinistra</trans>
 		</token>
 		<token name="tr(right)">
 			<trans lang="en_EN">right</trans>
 			<trans lang="de_DE">rechts</trans>
+			<trans lang="it_IT">destra</trans>
 		</token>
 		<token name="tr(menuItems)">
 			<trans lang="en_EN">Number of menu items </trans>
 			<trans lang="de_DE">Anzahl der Menüpunkte</trans>
+			<trans lang="it_IT">Numero voci del Menù</trans>
 		</token>
 		<token name="tr(miscellaneous)">
 			<trans lang="en_EN">Miscellaneous </trans>
 			<trans lang="de_DE">Sonstiges</trans>
+			<trans lang="it_IT">Miscellanea</trans>
 		</token>
 		<token name="tr(numShortMenuitems)">
 			<trans lang="en_EN">Number of items in main and setup menu (default=10)</trans>
 			<trans lang="de_DE">Anzahl der Elemente im Haupt- und Setupmenü (default=10)</trans>
+			<trans lang="it_IT">Numero di voci del menù e del setup  (default=10)</trans>
 		</token>
 		<token name="tr(numLongSubmenuitems)">
 			<trans lang="en_EN">Number of items in submenus (long, default=14)</trans>
 			<trans lang="de_DE">Anzahl der Elemente in Submenüs (lang, default=14)</trans>
+			<trans lang="it_IT">Numero di voci del submenù (lungo, default=14)</trans>
 		</token>
 		<token name="tr(numShortSubmenuitems)">
 			<trans lang="en_EN">Number of items in submenus (short, default=14)</trans>
 			<trans lang="de_DE">Anzahl der Elemente in Submenüs (kurz, default=14)</trans>
+			<trans lang="it_IT">Numero di voci del submenù (corto, default=14)</trans>
 		</token>
 		
 		
@@ -132,211 +142,262 @@
 		<!--<token name="tr(00_numRecordingsmenuitems)">
 			<trans lang="en_EN">Number of items in recordingsmenu (4 = Detailview)</trans>
 			<trans lang="de_DE">Anzahl der Elemente im Aufnahmenmenü (4 = Detailansicht)</trans>
+			<trans lang="it_IT">Numero di voci del menù registrazioni (4 = Vista dettagliata)</trans>
 		</token>-->
 		
 		
 		<token name="tr(00_numRecordingsmenuitems)">
 			<trans lang="en_EN">Number of items in recordingsmenu (default=14)</trans>
 			<trans lang="de_DE">Anzahl der Elemente im Aufnahmenmenü (default=14)</trans>
+			<trans lang="it_IT">Numero di voci del menù registrazioni (default=14)</trans>
 		</token>
 		
 		<token name="tr(brightBackground)">
 			<trans lang="en_EN">Bright backgroundgradient</trans>
 			<trans lang="de_DE">Heller Hintergrundverlauf</trans>
+			<trans lang="it_IT">Gradiente background luminoso</trans>
 		</token>
 		<token name="tr(twoLineDisplay)">
 			<trans lang="en_EN">Two-line display of titel/subtitle in channelinfo</trans>
 			<trans lang="de_DE">Zweizeilige Anzeige von Titel/Subtitel in Kanalinfo</trans>
+			<trans lang="it_IT">Nelle info canale visualizzazione di due linee titolo/sottotitolo</trans>
 		</token>
 		<token name="tr(twoLineDisplayReplay)">
 			<trans lang="en_EN">Two-line display of titel/subtitle in replay</trans>
 			<trans lang="de_DE">Zweizeilige Anzeige von Titel/Subtitel in Replay</trans>
+			<trans lang="it_IT">Nella riproduzione visualizzazione di due linee titolo/sottotitolo</trans>
 		</token>
 		<token name="tr(showChannelDetails)">
 			<trans lang="en_EN">Show details of channels</trans>
 			<trans lang="de_DE">Zeige Kanaldetails</trans>
+			<trans lang="it_IT">Mostra dettagli canali</trans>
 		</token>
 		<token name="tr(showTimerStopTime)">
 			<trans lang="en_EN">Show timersstoptime</trans>
 			<trans lang="de_DE">Zeige Endzeit für Timer</trans>
+			<trans lang="it_IT">Mostra timersstoptime</trans>
 		</token>
 		<token name="tr(showLastrecordings)">
 			<trans lang="en_EN">Show beside timers at least three last recordings</trans>
 			<trans lang="de_DE">Zeige neben Timern min. die drei letzten Aufnahmen</trans>
+			<trans lang="it_IT">Mostra accanto al timer almeno le tre ultime registrazioni</trans>
 		</token>
 		<token name="tr(setupIconbar)">
 			<trans lang="en_EN">Show iconbar in setup-menu</trans>
 			<trans lang="de_DE">Zeige Leiste mit Icons im Setup-Menü</trans>
+			<trans lang="it_IT">Mostra barra icone nel menù setup</trans>
 		</token>
 		<token name="tr(coloredButtons)">
 			<trans lang="en_EN">Colored active buttons (0=no, 1=only border, 2=gradient)</trans>
 			<trans lang="de_DE">Farbige Auswahlbalken (0=nein, 1=nur Rand, 2=Farbverlauf)</trans>
+			<trans lang="it_IT">Bottoni colorati attivi (0=no, 1=solo bordi, 2=gradiente)</trans>
 		</token>
 		<token name="tr(currentTitle)">
 			<trans lang="en_EN">Show title and progressbar in active menuelement</trans>
 			<trans lang="de_DE">Zeige Titel und Progressbar im aktiven Menüelement </trans>
+			<trans lang="it_IT">Mostra titolo e barra avanzamento nell'elemento attivo del menù</trans>
 		</token>
 		<token name="tr(showPosterAndEPGpic)">
 			<trans lang="en_EN">Poster and EPGpic in Details</trans>
 			<trans lang="de_DE">Poster und EPGpic in Details</trans>
+			<trans lang="it_IT">Poster e pic dell'EPG nei dettagli</trans>
 		</token>
 		<token name="tr(primarilyOnlyPoster)">
 			<trans lang="en_EN">Primarily poster</trans>
 			<trans lang="de_DE">Vorrangig Poster</trans>
+			<trans lang="it_IT">Poster primario</trans>
 		</token>
 		<token name="tr(postersAndEPGpic)">
 			<trans lang="en_EN">If available both</trans>
 			<trans lang="de_DE">Wenn vorhanden beides</trans>
+			<trans lang="it_IT">Se disponibili entrambi</trans>
 		</token>
 		<token name="tr(tvgngDescriptionScroll)">
 			<trans lang="en_EN">Scroll descriptions in TVGuideNG</trans>
 			<trans lang="de_DE">Scrolltext bei Beschreibungen in TVGuideNG</trans>
+			<trans lang="it_IT">Scorri descrizioni in TVGuideNG</trans>
 		</token>
 		<token name="tr(sysinfoPBtheme)">
 			<trans lang="en_EN">Bars in systeminfo-plugin in themecolors</trans>
 			<trans lang="de_DE">Balken im systeminfo-plugin in Themefarben</trans>
+			<trans lang="it_IT">Barre del plugin systeminfo in tema </trans>
 		</token>
 		<token name="tr(coloredElapsed)">
 			<trans lang="en_EN">Bars for elapsed (recordings, whatsonnow) in themecolors</trans>
 			<trans lang="de_DE">Balken für abgelaufene Zeit (Aufzeichnungen, Jetzt) in Themefarben</trans>
+			<trans lang="it_IT">Barre del tempo trascorso in tema (registrazioni, in onda ora)</trans>
 		</token>
 		<token name="tr(ecmInside)">
 			<trans lang="en_EN">ECM inside of channelinfo</trans>
 			<trans lang="de_DE">ECM innerhalb der Kanalinfo</trans>
+			<trans lang="it_IT">ECM dentro alle info canali</trans>
 		</token>
 		<token name="tr(showDiscUsage)">
 			<trans lang="en_EN">Show discusage in recordings- and timersmenu</trans>
 			<trans lang="de_DE">Zeige Festplattenausnutzung im Aufnahmen- und Timermenü</trans>
+			<trans lang="it_IT">Mostrare utilizzo del disco nelle registrazioni e nel menù del timer</trans>
 		</token>
 		<!--<token name="tr(devices)">
 			<trans lang="en_EN">DVB-Devices in mainmenu (0=light, 1=with bars)</trans>
 			<trans lang="de_DE">DVB-Geräte im Hauptmenü (0=light, 1=mit Balkenanzeige)</trans>
+			<trans lang="it_IT">DVB-Devices nel menù principale</trans>
 		</token>-->
 <!--Delay, Shift- and Fadetimes-->
 		<token name="tr(Delay, Shift- and Fadetimes)">
 			<trans lang="en_EN">Delay, Shift- and Fadetimes</trans>
 			<trans lang="de_DE">Verzögerungen, Einfahr- und Einblendzeiten</trans>
+			<trans lang="it_IT">Ritardo, Cambio e tempi di dissolvenza</trans>
 		</token>
 		<token name="tr(00_menuFadetime)">
 			<trans lang="en_EN">Fadetime (audio, channel, message, replay, vol)</trans>
 			<trans lang="de_DE">Einblendzeit (audio, channel, message, replay, vol)</trans>
+			<trans lang="it_IT">Tempo di dissolvenza (audio, canale, messagggio, replay, vol)</trans>
 		</token>
 		<token name="tr(01_ShifttimeChannelDisplay)">
 			<trans lang="en_EN">Shift time Channel Display</trans>
 			<trans lang="de_DE">Einfahrzeit Kanalanzeige</trans>
+			<trans lang="it_IT">Visualizzazione tempo di cambio canale</trans>
 		</token>
 		<token name="tr(01_ShifttimeMessageDisplay)">
 			<trans lang="en_EN">Shift time for Message, Replay and Volume Display</trans>
 			<trans lang="de_DE">Einfahrzeit Nachrichten-, Wiedergabe- und Lautstärkeanzeige</trans>
+			<trans lang="it_IT">Visualizzazione tempo di cambio per messaggi, riproduzione e volume</trans>
 		</token>
 		<token name="tr(02_timersDelay)">
 			<trans lang="en_EN">Delay timers</trans>
 			<trans lang="de_DE">Verzögerung Timer</trans>
+			<trans lang="it_IT">Timer ritardo</trans>
 		</token>
 		<token name="tr(02_timersFadetime)">
 			<trans lang="en_EN">Fadetime timers</trans>
 			<trans lang="de_DE">Einblendzeit Timer</trans>
+			<trans lang="it_IT">Timers tempi di dissolvenza</trans>
 		</token>
 		<token name="tr(03_lastrecordingsDelay)">
 			<trans lang="en_EN">Delay last recordings</trans>
 			<trans lang="de_DE">Verzögerung 'letzte Aufzeichnungen'</trans>
+			<trans lang="it_IT">Ritardo ultime registrazioni</trans>
 		</token>
 		<token name="tr(03_lastrecordingsFadetime)">
 			<trans lang="en_EN">Fadetime last recordings</trans>
 			<trans lang="de_DE">Einblendzeit 'letzte Aufzeichnungen'</trans>
+			<trans lang="it_IT">Tempo di dissolvenza ultime registrazioni</trans>
 		</token>
 		<token name="tr(04_devicesDelay)">
 			<trans lang="en_EN">Delay DVB-devices</trans>
 			<trans lang="de_DE">Verzögerung DVB-Geräte</trans>
+			<trans lang="it_IT">Ritardo DVB-devices</trans>
 		</token>
 		<token name="tr(04_devicesFadetime)">
 			<trans lang="en_EN">Fadetime DVB-devices</trans>
 			<trans lang="de_DE">Einblendzeit DVB-Geräte</trans>
+			<trans lang="it_IT">Tempo di dissolvenza DVB-devices</trans>
 		</token>
 		<token name="tr(08_currentweatherDelay)">
 			<trans lang="en_EN">Delay weather</trans>
 			<trans lang="de_DE">Verzögerung Wetter</trans>
+			<trans lang="it_IT">Ritardo condizioni del tempo</trans>
 		</token>
 		<token name="tr(08_currentweatherFadetime)">
 			<trans lang="en_EN">Fadetime weather</trans>
 			<trans lang="de_DE">Einblendzeit Wetterdaten</trans>
+			<trans lang="it_IT">Tempo di dissolvenza condizioni del tempo</trans>
 		</token>
 		<token name="tr(07_temperaturesDelay)">
 			<trans lang="en_EN">Delay temps</trans>
 			<trans lang="de_DE">Verzögerung Temperaturen</trans>
+			<trans lang="it_IT">Ritardo temperature</trans>
 		</token>        
 		<token name="tr(07_temperaturesFadetime)">
 			<trans lang="en_EN">Fadetime temps</trans>
 			<trans lang="de_DE">Einblendzeit Temperaturen</trans>
+			<trans lang="it_IT">Tempo di dissolvenza temperatura</trans>
 		</token>
 		<token name="tr(05_discusageDelay)">
 			<trans lang="en_EN">Delay discusage</trans>
 			<trans lang="de_DE">Verzögerung Festplattenausnutzung</trans>
+			<trans lang="it_IT">Ritardo utilizzo del disco</trans>
 		</token>        
 		<token name="tr(05_discusageFadetime)">
 			<trans lang="en_EN">Fadetime discusage</trans>
 			<trans lang="de_DE">Einblendzeit Festplattenausnutzung</trans>
+			<trans lang="it_IT">Tempo di dissolvenza utilizzo del disco</trans>
 		</token>
 		<token name="tr(06_systemloadDelay)">
 			<trans lang="en_EN">Delay load</trans>
 			<trans lang="de_DE">Verzögerung Last</trans>
+			<trans lang="it_IT">Ritardo caricato</trans>
 		</token>        
 		<token name="tr(06_systemloadFadetime)">
 			<trans lang="en_EN">Fadetime load</trans>
 			<trans lang="de_DE">Einblendzeit Last</trans>
+			<trans lang="it_IT">Tempo di dissolvenza caricato</trans>
 		</token>
 <!--RecordingMarkersProgress-->
 		<token name="tr(recordingsmarkerandprogress)">
 			<trans lang="en_EN">Recordings</trans>
 			<trans lang="de_DE">Aufzeichnungen</trans>
+			<trans lang="it_IT">Registrazioni</trans>
 		</token>
 		<token name="tr(replayPGBG)">
 			<trans lang="en_EN">Bright cutbars in replayprogressbar</trans>
 			<trans lang="de_DE">Helle Schnittbalken in der Wiedergabeprogressbar</trans>
+			<trans lang="it_IT">Barra luminosa nell'avanzamento registrazioni</trans>
 		</token>
 		<token name="tr(01_seenProgress)">
 			<trans lang="en_EN">Show 'percentseen-bar' for recordings</trans>
 			<trans lang="de_DE">Zeige 'Prozent-gesehen-Balken' für Aufnahmen</trans>
+			<trans lang="it_IT">Mostra barra percentuale avanzamento registrazioni</trans>
 		</token>
 		<token name="tr(02_showRecordingTime)">
 			<trans lang="en_EN">Show time of recordings</trans>
 			<trans lang="de_DE">Zeige Uhrzeit der Aufnahmen</trans>
+			<trans lang="it_IT">Mostra tempo della registrazione</trans>
 		</token>
 				<token name="tr(03_new-recordingsMarker)">
 			<trans lang="en_EN">Marker for new recordings</trans>
 			<trans lang="de_DE">Marker f&#252;r neue Aufnahmen</trans>
+			<trans lang="it_IT">Marker per nuove registrazioni</trans>
 		</token>
 		<token name="tr(05_notNewNotWatched-recordingsMarker)">
 			<trans lang="en_EN">Marker for recordings seen &lt; 85%</trans>
 			<trans lang="de_DE">Marker f&#252;r Aufnahmen gesehen &lt; 85%</trans>
+			<trans lang="it_IT">Marker per registrazioni viste &lt; 85%</trans>
 		</token>
 		<token name="tr(07_notNewWatched-recordingsMarker)">
 			<trans lang="en_EN">Marker for recordings seen &gt; 85%</trans>
 			<trans lang="de_DE">Marker f&#252;r Aufnahmen gesehen &gt; 85%</trans>
+			<trans lang="it_IT">Marker per registrazioni viste &gt; 85%</trans>
 		</token>
 		<token name="tr(epg2vdr-skdPatch)">
 			<trans lang="en_EN">Skindesigner is patched for epg2vdr</trans>
 			<trans lang="de_DE">Skindesigner ist gepatcht für epg2vdr</trans>
+			<trans lang="it_IT">Skindesigner è patchato per epg2vdr</trans>
 		</token>
 		<token name="tr(epg2vdrShowHostname)">
 			<trans lang="en_EN">Shown hostname of remote-timers in epg2vdr-menu 'Timer'</trans>
 			<trans lang="de_DE">Zeige Hostname der Remote-Timer im epg2vdr-Menü 'Timer'</trans>
+			<trans lang="it_IT">Mostra hostname di timers in remoto nel menù epg2vdr 'Timer'</trans>
 		</token>
 		<token name="tr(hostnameChars)">
 			<trans lang="en_EN">Number of chars of Hostname in epg2vdr-menu 'Timer'</trans>
 			<trans lang="de_DE">Anzahl der Zeichen des Hostnamens im epg2vdr-Menü 'Timer'</trans>
+			<trans lang="it_IT">Numero di caratteri degli hostname nel menù epg2vdr 'Timer'</trans>
 		</token>
 		<token name="tr(plexDetail)">
 			<trans lang="en_EN">Background Plex-Detail</trans>
 			<trans lang="de_DE">Hintergrund Plex-Detail</trans>
+			<trans lang="it_IT">Dettagli di Plex in background</trans>
 		</token>
 		<token name="tr(shadyStyle)">
 			<trans lang="en_EN">Shady</trans>
 			<trans lang="de_DE">Shady</trans>
+			<trans lang="it_IT">Shady</trans>
 		</token>
 		<token name="tr(fanartStyle)">
 			<trans lang="en_EN">Art</trans>
 			<trans lang="de_DE">Art</trans>
+			<trans lang="it_IT">Arte</trans>
 		</token>
 	</translations>
 </setup>
