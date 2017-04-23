@@ -79,7 +79,7 @@
 	the correct column widths -->
 	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" menuitemwidth="94%" determinatefont="column1" numlistelements="{numLongSubmenuitems}">
 		<listelement>
-				<area condition="not{separator}" x="2%" width="92%" layer="3">
+			<area condition="not{separator}" x="2%" width="92%" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong1" />
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
@@ -89,6 +89,25 @@
 			<area condition="{separator}++not{fritzbox}" x="2%" width="92%" layer="3">
 				<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorLong" />
 			</area>
+<!--separators-bgprocess-->			
+			<area x="4%" condition="{separator}++{column3pb}" width="4%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
+			</area>
+			<area x="9%" condition="{separator}++{column3pb}" width="11%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+			</area>
+			<area x="20%" condition="{separator}++{column3pb}" width="{areawidth}*0.135" layer="4">
+				<drawimage x="0" y="0" valign="center" width="{areawidth}" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
+				<drawimage x="{column3pbsize}*2.6" y="0" valign="center" width="{column3pbtotalsize}*2.6-{column3pbsize}*2.6" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMask" />
+				<drawimage x="0" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
+				<drawimage x="{areawidth}-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
+			</area>
+			<area x="33%" condition="{separator}++{column3pb}" width="5%" layer="4">
+				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column4}" />
+			</area>
+			<area x="40%" condition="{separator}++{column3pb}" width="50%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column5}" />
+			</area>			
 <!--separators-fritzbox-Anrufdetails-->
 			<area condition="{separator}++{fritzbox}" x="2%" width="92%" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong1" />
@@ -112,7 +131,7 @@
 			<area condition="{separator}++{setup}++not{column2set}" x="4%" width="91%" layer="4">
 				<drawtext align="center" valign="center"  font="{light}" fontsize="70%" color="{clrHigh}" text="{column1}" />
 			</area>
-			<area condition="{separator}++not{setup}++not{fritzbox}" x="4%" width="91%" layer="4">
+			<area condition="{separator}++not{setup}++not{fritzbox}++not{column3pb}" x="4%" width="91%" layer="4">
 				<drawtext align="center" valign="center"  font="{light}" fontsize="70%" color="{clrHigh}" text="{column1}" />
 			</area>
 <!-- setup-->

@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2017-04-23:
+- Added special handling for bgprocess
+
 2016-05-28:
 - Added Zapcockpit
 
