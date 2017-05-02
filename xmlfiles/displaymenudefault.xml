@@ -107,7 +107,26 @@
 			</area>
 			<area x="40%" condition="{separator}++{column3pb}" width="50%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column5}" />
-			</area>			
+			</area>
+			
+			<area x="4%" condition="{separator}++{column5set}++not{column3pb}" width="4%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
+			</area>
+			<area x="9%" condition="{separator}++{column5set}++not{column3pb}" width="11%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+			</area>
+			<area x="20%" condition="{separator}++{column5set}++not{column3pb}" width="{areawidth}*0.135" layer="4">
+				<drawtext align="center" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column3}" />
+			</area>
+			<area x="40%" condition="{separator}++{column5set}++not{column3pb}" width="50%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column5}" />
+			</area>
+			
+			
+			
+			
+			
+					
 <!--separators-fritzbox-Anrufdetails-->
 			<area condition="{separator}++{fritzbox}" x="2%" width="92%" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong1" />
@@ -131,7 +150,7 @@
 			<area condition="{separator}++{setup}++not{column2set}" x="4%" width="91%" layer="4">
 				<drawtext align="center" valign="center"  font="{light}" fontsize="70%" color="{clrHigh}" text="{column1}" />
 			</area>
-			<area condition="{separator}++not{setup}++not{fritzbox}++not{column3pb}" x="4%" width="91%" layer="4">
+			<area condition="{separator}++not{setup}++not{fritzbox}++not{column3pb}++not{column5set}" x="4%" width="91%" layer="4">
 				<drawtext align="center" valign="center"  font="{light}" fontsize="70%" color="{clrHigh}" text="{column1}" />
 			</area>
 <!-- setup-->
