@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2017-05-25:
+- Fixed cam-menu
+
 2017-05-02:
 - Fixed handling for bgprocess
 

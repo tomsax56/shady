@@ -121,12 +121,6 @@
 			<area x="40%" condition="{separator}++{column5set}++not{column3pb}" width="50%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column5}" />
 			</area>
-			
-			
-			
-			
-			
-					
 <!--separators-fritzbox-Anrufdetails-->
 			<area condition="{separator}++{fritzbox}" x="2%" width="92%" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong1" />
@@ -221,8 +215,13 @@
 				<area x="31%" condition="not{separator}++{neutrinoepg}++not{column5set}" width="65%" layer="4">
 					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column4}" />
 				</area>
+<!--div einspaltig-->
+			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}++not{timeredit}++not{recordingedit}++not{column2set}"  scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="4%" width="92%" layer="4">
+				<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+			</areascroll>
 <!--default-->
-			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="4%" width="{column1width}" layer="4">
+			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++{column2set}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="4%" width="{column1width}" layer="4">
 				<drawtext condition="{current}" name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 				<drawtext condition="not{current}" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
