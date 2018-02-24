@@ -26,13 +26,28 @@
 		<listelement>
 			<area condition="not{whatsonfavorites}" x="53%" width="42%" layer="3">
 				<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
-				<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparator"/>
+				<!--<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparator"/>-->
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" />
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
 				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />
 			</area>
-			<area x="{areawidth}*0.5355" width="2%" layer="4">
-				<drawimage condition="{timerfull}++not{whatsonfavorites}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+			<area condition="{timerfull}++not{whatsonfavorites}" x="{areawidth}*0.536" width="2%" layer="4">
+				
+				
+				<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+				<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+				<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
+				<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteSwitchTimer" />
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 			</area>
 			<area condition="{whatsonfavorites}" x="55%" width="39%" layer="3">
 				<drawimage condition="not{current}++not{separator}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
@@ -41,8 +56,13 @@
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient"/>
 				<drawimage condition="{current}++eq({coloredButtons},1)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color"/>
 			</area>
-			<area x="{areawidth}*0.57" width="2%" layer="4">
-				<drawimage condition="{timerfull}++{whatsonfavorites}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+			<area condition="{timerfull}++{whatsonfavorites}" x="{areawidth}*0.5715" width="2%" layer="4">
+				
+				<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+				<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+				<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
+				<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteSwitchTimer" />
+				
 			</area>
 
 <!-- WHATSON -->
