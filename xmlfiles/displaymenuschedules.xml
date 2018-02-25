@@ -26,45 +26,28 @@
 		<listelement>
 			<area condition="not{whatsonfavorites}" x="53%" width="42%" layer="3">
 				<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
-				<!--<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparator"/>-->
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" />
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
 				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />
 			</area>
-			<area condition="{timerfull}++not{whatsonfavorites}" x="{areawidth}*0.536" width="2%" layer="4">
-				
-				
+			<area condition="{timerfull}++not{whatsonfavorites}" x="{areawidth}*0.537" width="2%" layer="4">
 				<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 				<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
-				<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
-				<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteSwitchTimer" />
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+				<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="13%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
+				<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="13%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteSwitchTimer" />
 			</area>
 			<area condition="{whatsonfavorites}" x="55%" width="39%" layer="3">
 				<drawimage condition="not{current}++not{separator}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
-				<drawimage condition="not{current}++{separator}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonSeparator"/>
 				<drawimage condition="{current}++eq({coloredButtons},0)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient"/>
 				<drawimage condition="{current}++eq({coloredButtons},1)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color"/>
 			</area>
-			<area condition="{timerfull}++{whatsonfavorites}" x="{areawidth}*0.5715" width="2%" layer="4">
-				
+			<area condition="{timerfull}++{whatsonfavorites}" x="{areawidth}*0.5715" width="2%" layer="4">	
 				<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 				<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
-				<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
-				<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteSwitchTimer" />
-				
+				<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="13%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
+				<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="13%" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteSwitchTimer" />
 			</area>
-
 <!-- WHATSON -->
 			<area condition="not{separator}++{whatson}" x="42%" width="7%" layer="4">
 				<drawtext x="0" width="100%" valign="center" font="{light}" fontsize="55%" color="{clrLightGray}" text="{day} {printf('%02d.%02d', daynumeric, month)}."/>
@@ -88,10 +71,10 @@
 			<area condition="not{separator}++{whatsonnow}" x="{areawidth}*0.485" width="5%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{start}" />
 			</area>
-			<areascroll condition="not{separator}++{whatsonnow}++empty{shorttext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.552" width="37%" layer="4">
+			<areascroll condition="not{separator}++{whatsonnow}++empty{shorttext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.555" width="37%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 			</areascroll>
-			<areascroll condition="not{separator}++{whatsonnow}++isset{shorttext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.552" width="37%" layer="4">
+			<areascroll condition="not{separator}++{whatsonnow}++isset{shorttext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.555" width="37%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title} - {shorttext}"/>
 			</areascroll>
 			<area condition="not{separator}++{whatsonnow}++{running}" x="52%" width="43%" layer="4">
@@ -108,10 +91,10 @@
 			<area condition="not{separator}++{whatsonnext}" x="{areawidth}*0.485" width="5%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{start}" />
 			</area>
-			<areascroll condition="not{separator}++{whatsonnext}++empty{shorttext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.552" width="37%" layer="4">
+			<areascroll condition="not{separator}++{whatsonnext}++empty{shorttext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.555" width="37%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 			</areascroll>
-			<areascroll condition="not{separator}++{whatsonnext}++isset{shorttext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.552" width="37%" layer="4">
+			<areascroll condition="not{separator}++{whatsonnext}++isset{shorttext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.555" width="37%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title} - {shorttext}"/>
 			</areascroll>
 <!-- WHATSONFAVORITES -->
@@ -132,9 +115,20 @@
 				<drawtext condition="empty{shorttext}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 			</areascroll>
 <!-- Separator -->
-			<area condition="{separator}" x="50%" width="45%" layer="4">
-				<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{title}" />
-			</area>
+			<areacontainer condition="{separator}">
+				<area condition="not{whatson}" x="53%" width="42%" layer="3">
+					<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparator"/>
+				</area>
+				<area condition="not{whatson}" x="53%" width="42%" layer="4">
+					<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{title}" />
+				</area>
+				<area condition="{whatson}" x="55%" width="39%" layer="3">
+					<drawimage condition="not{current}++{separator}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonSeparator"/>
+				</area>
+				<area condition="{whatson}" x="55%" width="39%" layer="4">
+					<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{title}" />
+				</area>
+			</areacontainer>
 		</listelement>
 
 		<currentelement delay="0" fadetime="0">
