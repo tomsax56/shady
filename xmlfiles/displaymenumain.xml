@@ -21,16 +21,17 @@
 			<drawimage condition="eq({indexmainMenuOrientation},0)" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMainBottom" />
 			<drawimage condition="eq({indexmainMenuOrientation},1)" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMainBottomLeft" />
 		</area>
-		<area condition="eq({indexmainMenuOrientation},0)" x="2%" y="0" width="10%" height="10%" layer="4">
-			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="VDR" />
-		</area>
-		<area condition="eq({indexmainMenuOrientation},1)" x="4%" y="0" width="10%" height="10%" layer="4">
-			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="VDR" />
-		</area>
 	</background>
 
 	<header>
-		<area x="0" y="0" width="0" height="0" layer="3">
+		<area x="3%" y="2%" width="58%" height="7%" layer="4">
+			<drawtext condition="strnotequal({title}, 'VDR')" valign="center" fontsize="80%" font="{light}" color="{clrLightGray}" text="{title}" />
+		</area>
+		<area condition="eq({indexmainMenuOrientation},0)++strequal({title}, 'VDR')" x="2%" y="0" width="10%" height="10%" layer="4">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="VDR" />
+		</area>
+		<area condition="eq({indexmainMenuOrientation},1)++strequal({title}, 'VDR')" x="4%" y="0" width="10%" height="10%" layer="4">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="VDR" />
 		</area>
 	</header>
 
