@@ -26,6 +26,7 @@
 		<listelement>
 			<area condition="not{whatsonfavorites}" x="53%" width="42%" layer="3">
 				<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
+				<!--<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparator"/>-->
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" />
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
 				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />
@@ -115,7 +116,11 @@
 				<drawtext condition="empty{shorttext}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 			</areascroll>
 <!-- Separator -->
-			<areacontainer condition="{separator}">
+			<area condition="{separator}" x="50%" width="45%" layer="4">
+-				<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{title}" />
+-			</area>
+			<!--<areacontainer condition="{separator}">
+				
 				<area condition="not{whatson}" x="53%" width="42%" layer="3">
 					<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparator"/>
 				</area>
@@ -128,7 +133,7 @@
 				<area condition="{whatson}" x="55%" width="39%" layer="4">
 					<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{title}" />
 				</area>
-			</areacontainer>
+			</areacontainer>-->
 		</listelement>
 
 		<currentelement delay="0" fadetime="0">
