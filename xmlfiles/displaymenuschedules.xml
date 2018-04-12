@@ -117,8 +117,8 @@
 			</areascroll>
 <!-- Separator -->
 			<area condition="{separator}" x="50%" width="45%" layer="4">
--				<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{title}" />
--			</area>
+				<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{title}" />
+			</area>
 			<!--<areacontainer condition="{separator}">
 				
 				<area condition="not{whatson}" x="53%" width="42%" layer="3">
