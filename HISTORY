@@ -1,6 +1,9 @@
 shady-skin Revision History
 ----------------------------------
 
+2018-05-01:
+- Fixed state-markers if no epgd/epg2vdr ist used
+
 2018-04-12:
 - Small fix
 
